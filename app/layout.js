@@ -22,10 +22,18 @@ const fraunces = Fraunces({
 
 export const metadata = {
   metadataBase: new URL('https://livephoneanswering.com'),
+
   title: 'Live Phone Answering Services | Generate Leads While You Sleep',
+
   description:
     'Professional live phone answering services for US businesses. Real human receptionists available 24/7.',
-  robots: { index: true, follow: true },
+
+  // Prevent search engines from indexing the website
+  robots: {
+    index: false,
+    follow: false,
+  },
+
   openGraph: {
     type: 'website',
     siteName: 'LivePhoneAnswering',
@@ -34,8 +42,16 @@ export const metadata = {
     title: 'Live Phone Answering Services | Generate Leads While You Sleep',
     description:
       'Professional live phone answering services for US businesses. Real human receptionists available 24/7.',
-    images: [{ url: '/images/Phone Answering Services.webp', width: 1122, height: 1402, alt: 'Live Phone Answering Service' }],
+    images: [
+      {
+        url: '/images/Phone Answering Services.webp',
+        width: 1122,
+        height: 1402,
+        alt: 'Live Phone Answering Service',
+      },
+    ],
   },
+
   twitter: {
     card: 'summary_large_image',
     title: 'Live Phone Answering Services | Generate Leads While You Sleep',
@@ -43,13 +59,33 @@ export const metadata = {
       'Professional live phone answering services for US businesses. Real human receptionists available 24/7.',
     images: ['/images/Phone Answering Services.webp'],
   },
+
   icons: {
     icon: [
-      { url: '/images/LPA_Favicon.png', sizes: '16x16', type: 'image/png' },
-      { url: '/images/LPA_Favicon.png', sizes: '32x32', type: 'image/png' },
-      { url: '/images/LPA_Favicon.png', sizes: '192x192', type: 'image/png' },
+      {
+        url: '/images/LPA_Favicon.png',
+        sizes: '16x16',
+        type: 'image/png',
+      },
+      {
+        url: '/images/LPA_Favicon.png',
+        sizes: '32x32',
+        type: 'image/png',
+      },
+      {
+        url: '/images/LPA_Favicon.png',
+        sizes: '192x192',
+        type: 'image/png',
+      },
     ],
-    apple: [{ url: '/images/LPA_Favicon.png', sizes: '180x180' }],
+
+    apple: [
+      {
+        url: '/images/LPA_Favicon.png',
+        sizes: '180x180',
+      },
+    ],
+
     shortcut: ['/images/LPA_Favicon.png'],
   },
 }
@@ -75,16 +111,26 @@ const organizationSchema = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en-US" className={`scroll-smooth ${outfit.variable} ${fraunces.variable}`}>
+    <html
+      lang="en-US"
+      className={`scroll-smooth ${outfit.variable} ${fraunces.variable}`}
+    >
       <body className="font-sans bg-white text-navy antialiased overflow-x-hidden">
         <SiteHeader />
+
         {children}
+
         <SiteFooter />
+
         <BackToTop />
+
         <SiteScripts />
+
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
         />
       </body>
     </html>
