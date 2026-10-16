@@ -37,58 +37,24 @@ export default function CallExperience() {
 
         <div className="bg-[#f2f9ee] rounded-3xl p-6 sm:p-8 lg:p-12">
           <div className="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-[minmax(0,300px)_1fr] gap-10 lg:gap-16 items-center">
-            <div className="relative z-10 bg-[#0f2925] rounded-3xl px-6 py-8 text-center">
-              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/60">Oak &amp; Pine Services</p>
-
-              <p className="inline-block mt-3 rounded-full bg-[#8CA365]/25 px-4 py-1 text-xs font-semibold text-[#cfe3b4]">
-                Incoming inquiry
-              </p>
-
-              <img
-                src="/images/receptionist-avatar.webp"
-                alt="Virtual receptionist wearing a headset greeting a caller"
-                width={240}
-                height={240}
-                loading="lazy"
-                decoding="async"
-                sizes="150px"
-                className="mt-6 mx-auto w-[130px] h-[130px] sm:w-[150px] sm:h-[150px] rounded-full object-cover border-4 border-white/10"
-              />
-
-              <p className="mt-6 text-lg font-bold text-white">A real person. Your greeting.</p>
-              <p className="mt-1 text-sm text-white/60">Welcoming a new customer</p>
-
-              <svg
-                viewBox="0 0 242 32"
-                className="mt-6 w-full h-8  text-[#8CA365]"
-                aria-hidden="true"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-              >
-                <path d={WAVEFORM} />
-              </svg>
-
-              <span
-                className="icon-mask icon-phone [--icon-size:1.25rem] mt-6 mx-auto w-12 h-12 rounded-full bg-[#8CA365] text-white flex items-center justify-center"
-                aria-hidden="true"
-              ></span>
-
-              <p className="absolute -right-3 sm:-right-10 top-[27%] -translate-y-1/2 w-44 sm:w-48 rounded-2xl bg-white p-4 text-left shadow-lg before:absolute before:-left-2 before:top-1/2 before:-translate-y-1/2 before:border-y-8 before:border-r-8 before:border-y-transparent before:border-r-white before:content-['']">
-                <span className="block text-[9px] font-bold uppercase tracking-[0.18em] text-gray-400">
-                  The customer
-                </span>
-                <span className="mt-1 block text-sm font-medium leading-snug text-[#34414A]">
-                  &ldquo;I&rsquo;d like a quote for a bathroom repair.&rdquo;
-                </span>
-              </p>
-            </div>
+            {/* Supplied as one rendered card. The copy baked into it is
+                carried in the alt text so it is still read and indexed. */}
+            <img
+              src="/images/call-card.webp"
+              srcSet="/images/call-card-300.webp 300w, /images/call-card.webp 416w"
+              sizes="(max-width: 1024px) 280px, 300px"
+              alt="Oak &amp; Pine Services receiving an incoming inquiry: the caller says they need a quick fix for a plumbing issue, and a real person answers for a quick response"
+              width={416}
+              height={600}
+              loading="lazy"
+              decoding="async"
+              className="relative z-10 mx-auto w-full max-w-[300px] h-auto"
+            />
 
             <div className="relative">
               {/* Lead-in line from the call card across the grid gap. */}
               <div
-                className="hidden lg:block absolute right-full top-[18px] w-16 h-px bg-[#8CA365]/35"
+                className="hidden lg:block absolute right-full top-[18px] w-20 h-px bg-[#8CA365]/35"
                 aria-hidden="true"
               ></div>
 

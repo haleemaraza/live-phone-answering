@@ -31,7 +31,9 @@ const DARK = {
 
 function Card({ theme, eyebrow, title, body, idealFor, children }) {
   return (
-    <li className={`flex flex-col rounded-3xl p-7 lg:p-8 ${theme.card}`}>
+    <li
+      className={`flex flex-col rounded-3xl p-7 lg:p-8 transition-all duration-300 hover:-translate-y-1.5 hover:border-[#8CA365] hover:shadow-2xl ${theme.card}`}
+    >
       <p className={`text-[10px] font-bold uppercase tracking-[0.18em] mb-5 ${theme.eyebrow}`}>{eyebrow}</p>
 
       <div className={`rounded-2xl px-5 py-6 mb-7 ${theme.panel}`} aria-hidden="true">

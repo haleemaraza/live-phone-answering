@@ -8,7 +8,7 @@ import { useState } from 'react'
 // Every scene shares one centred backdrop ellipse and keeps its shapes inside
 // it, so no element hangs off the edge of the blob.
 function Backdrop() {
-  return <ellipse cx="130" cy="100" rx="118" ry="92" fill="#eef6e8" />
+  return <circle cx="130" cy="100" r="92" fill="#eef6e8" />
 }
 
 function BriefIllustration() {
@@ -58,9 +58,9 @@ function UpdatesIllustration() {
   return (
     <svg viewBox="0 0 260 200" className="w-full h-auto" aria-hidden="true">
       <Backdrop />
-      <rect x="56" y="50" width="64" height="110" rx="12" fill="#0f2925" />
-      <rect x="64" y="64" width="48" height="82" rx="6" fill="#f7fbf5" />
-      <circle cx="88" cy="152" r="4" fill="#8CA365" />
+      <rect x="60" y="52" width="62" height="104" rx="12" fill="#0f2925" />
+      <rect x="68" y="66" width="46" height="76" rx="6" fill="#f7fbf5" />
+      <circle cx="91" cy="148" r="4" fill="#8CA365" />
       <rect x="132" y="62" width="74" height="38" rx="10" fill="#ffffff" />
       <rect x="144" y="76" width="42" height="8" rx="4" fill="#8CA365" />
       <rect x="132" y="112" width="74" height="38" rx="10" fill="#8CA365" />

@@ -35,6 +35,7 @@ const NAV_LINKS = [
   },
   { href: '/how-it-works', label: 'How It Works' },
   { href: '/pricing', label: 'Pricing' },
+  { href: '/blog', label: 'Blog' },
 ]
 
 export default function SiteHeader() {
