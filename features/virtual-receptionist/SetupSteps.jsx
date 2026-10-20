@@ -109,7 +109,7 @@ export default function SetupSteps() {
           </p>
           <h2
             id="setup-heading"
-            className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#34414A] leading-tight tracking-tight mb-5"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] leading-tight tracking-tight mb-5"
           >
             How Our Virtual Receptionist
             <br className="hidden sm:block" /> Service Works

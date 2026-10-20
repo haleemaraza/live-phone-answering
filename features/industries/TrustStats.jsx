@@ -22,7 +22,7 @@ export default function TrustStats() {
           <p className="icon-mask icon-shield-check inline-flex items-center gap-2 bg-[#295657]/10 text-[#295657] rounded-full text-sm font-semibold px-4 py-1.5 mb-5">
             Trusted Across Industries
           </p>
-          <h2 id="trust-stats-heading" className="text-3xl md:text-4xl font-extrabold text-[#34414A] tracking-tight">
+          <h2 id="trust-stats-heading" className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] tracking-tight">
             Why Businesses Trust Us With Their Calls
           </h2>
         </div>

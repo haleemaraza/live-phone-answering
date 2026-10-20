@@ -72,7 +72,7 @@ export default function ProblemSolution() {
           </p>
           <h2
             id="compare-heading"
-            className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#34414A] tracking-tight mb-4"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] tracking-tight mb-4"
           >
             Why Businesses Switch to Live Phone Answering
           </h2>

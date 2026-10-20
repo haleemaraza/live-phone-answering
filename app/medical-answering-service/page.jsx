@@ -592,7 +592,7 @@ export default function MedicalAnsweringServicePage() {
                 />
               </svg>
               <h2
-                className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-[#34414A] mb-6 leading-tight relative z-10"
+                className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] mb-6 leading-tight relative z-10"
               >
                 What Is a Medical Answering Service — And Why Every Healthcare Practice Needs One
               </h2>
@@ -671,7 +671,7 @@ export default function MedicalAnsweringServicePage() {
           <div className="max-w-7xl mx-auto relative z-10">
             {/* Header Section */}
             <h2
-              className="block text-3xl md:text-4xl lg:text-5xl font-extrabold text-white text-center mb-16 max-w-4xl mx-auto leading-tight reveal"
+              className="block text-3xl sm:text-4xl md:text-5xl font-bold text-white text-center mb-16 max-w-4xl mx-auto leading-tight reveal"
             >
               Why Doctors, Nurses, and Practice Managers Choose Our Medical Answering Service
             </h2>
@@ -779,7 +779,7 @@ export default function MedicalAnsweringServicePage() {
           <div className="max-w-7xl mx-auto relative z-10">
             {/* Header Section */}
             <h2
-              className="block text-3xl md:text-4xl lg:text-5xl font-extrabold text-white text-center mb-6 max-w-4xl mx-auto leading-tight reveal drop-shadow-md"
+              className="block text-3xl sm:text-4xl md:text-5xl font-bold text-white text-center mb-6 max-w-4xl mx-auto leading-tight reveal drop-shadow-md"
             >
               Medical Answering Service Features — HIPAA-Compliant from the Very First Call
             </h2>
@@ -1083,7 +1083,7 @@ export default function MedicalAnsweringServicePage() {
                 Setup in 24 Hours
               </span>
               <h2
-                className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#34414A] mb-6 leading-tight max-w-4xl mx-auto"
+                className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] mb-6 leading-tight max-w-4xl mx-auto"
               >
                 How Our Medical Answering Service Works — HIPAA-Compliant Setup in 24 Hours
               </h2>
@@ -1263,7 +1263,7 @@ export default function MedicalAnsweringServicePage() {
                 All Specialties Covered
               </span>
               <h2
-                className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-6 leading-tight max-w-4xl mx-auto"
+                className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 leading-tight max-w-4xl mx-auto"
               >
                 Medical Answering Service for Every Specialty — Trained for Your Practice Type
               </h2>
@@ -1690,7 +1690,7 @@ export default function MedicalAnsweringServicePage() {
                 Proven ROI
               </span>
               <h2
-                className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#34414A] mb-6 leading-tight max-w-4xl mx-auto"
+                className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] mb-6 leading-tight max-w-4xl mx-auto"
               >
                 Measurable Outcomes for Your Medical Practice — What Changes When You Switch
               </h2>
@@ -1852,7 +1852,7 @@ export default function MedicalAnsweringServicePage() {
                 HIPAA Secured
               </span>
               <h2
-                className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-6 leading-tight max-w-4xl mx-auto"
+                className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 leading-tight max-w-4xl mx-auto"
               >
                 HIPAA-Compliant Medical Answering — What Every Practice Should Know Before Choosing a Service
               </h2>
@@ -2136,7 +2136,7 @@ export default function MedicalAnsweringServicePage() {
           <div className="max-w-7xl mx-auto">
             {/* Header Section */}
             <h2
-              className="block text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#34414A] text-center mb-4 max-w-4xl mx-auto leading-tight reveal"
+              className="block text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] text-center mb-4 max-w-4xl mx-auto leading-tight reveal"
             >
               What Medical Practices Say After Switching to Our Answering Service
             </h2>
@@ -2465,7 +2465,7 @@ export default function MedicalAnsweringServicePage() {
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
               <div className="lg:col-span-4 lg:sticky lg:top-24">
-                <h2 className="text-3xl md:text-4xl font-extrabold text-[#34414A] leading-tight mb-6">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] leading-tight mb-6">
                   Frequently Asked Questions About Medical Answering Services
                 </h2>
                 <p className="text-gray-600 mb-8">
@@ -2537,7 +2537,7 @@ export default function MedicalAnsweringServicePage() {
                 HIPAA-Ready in 24 Hours
               </span>
               <h2
-                className="text-3xl md:text-4xl lg:text-5xl font-black text-white text-center mb-6 leading-tight tracking-tight"
+                className="text-3xl sm:text-4xl md:text-5xl font-bold text-white text-center mb-6 leading-tight tracking-tight"
               >
                 Ready to Give Your Patients a Better Experience?
                 <br className="hidden md:block" />

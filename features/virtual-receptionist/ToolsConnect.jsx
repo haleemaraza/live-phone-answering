@@ -52,7 +52,7 @@ export default function ToolsConnect() {
           </p>
           <h2
             id="tools-heading"
-            className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#34414A] leading-tight tracking-tight mb-5"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] leading-tight tracking-tight mb-5"
           >
             Bring Calls, Calendars,
             <br className="hidden sm:block" /> and Customer Details Together.

@@ -6,7 +6,7 @@ export default function OriginStory() {
       <div className="max-w-7xl mx-auto">
         <h2
           id="origin-heading"
-          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#34414A] text-center mb-10 md:mb-16 max-w-4xl mx-auto leading-tight"
+          className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] text-center mb-10 md:mb-16 max-w-4xl mx-auto leading-tight"
         >
           Why We Started Live Phone Answering — And the Problem We&apos;re Solving
         </h2>

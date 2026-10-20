@@ -49,7 +49,7 @@ export default function CallHandling() {
           </p>
           <h2
             id="call-handling-heading"
-            className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#34414A] leading-tight tracking-tight mb-5"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] leading-tight tracking-tight mb-5"
           >
             What Our Virtual Receptionists
             <br className="hidden sm:block" /> Can Handle for You

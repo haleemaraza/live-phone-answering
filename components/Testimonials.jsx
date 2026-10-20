@@ -147,7 +147,7 @@ export default function Testimonials({ id }) {
       <div className="max-w-7xl mx-auto">
         <h2
           id="testimonials-heading"
-          className="text-2xl sm:text-3xl md:text-5xl font-bold text-[#34414A] text-center mb-6 max-w-4xl mx-auto leading-tight"
+          className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] text-center mb-6 max-w-4xl mx-auto leading-tight"
         >
           What Real Business Owners Achieve With Our Live Phone Answering Service
         </h2>

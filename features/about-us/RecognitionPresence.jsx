@@ -66,7 +66,7 @@ export default function RecognitionPresence() {
 
             <h2
               id="recognition-heading"
-              className="block text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-400 mb-6 leading-tight tracking-tight"
+              className="block text-3xl sm:text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-400 mb-6 leading-tight tracking-tight"
             >
               Recognition &amp; Industry Presence &mdash; Rooted in the Business Community
             </h2>

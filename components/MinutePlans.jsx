@@ -1,4 +1,6 @@
-const PLANS = [
+// Exported so other pages can present the same plans in their own layout —
+// prices must never be duplicated into a second file.
+export const PLANS = [
   {
     tag: 'Starter',
     minutes: '100 Minutes',
@@ -189,7 +191,7 @@ export default function MinutePlans({ theme = 'dark', ctaHref = '#contact' }) {
           <p className={`inline-flex items-center rounded-full border px-5 py-2 text-sm font-semibold shadow-sm ${t.eyebrow}`}>
             Simple Monthly Minute Plans • Live Receptionists • No Long-Term Contract
           </p>
-          <h2 id="minute-plans-heading" className={`mt-6 text-4xl font-bold tracking-tight sm:text-5xl ${t.heading}`}>
+          <h2 id="minute-plans-heading" className={`mt-6 text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight ${t.heading}`}>
             Live Phone Answering Pricing
           </h2>
           <p className={`mt-5 text-lg leading-8 ${t.intro}`}>

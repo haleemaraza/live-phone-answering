@@ -48,7 +48,7 @@ export default function Certifications() {
         <div className="text-center mb-16 max-w-4xl mx-auto">
           <h2
             id="certifications-heading"
-            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#34414A] leading-tight mb-6"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] leading-tight mb-6"
           >
             Certified, Accredited, and Held to the Highest Industry Standards
           </h2>

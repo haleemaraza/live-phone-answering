@@ -34,7 +34,7 @@ export default function FinalTrustCta() {
 
           <h2
             id="final-cta-heading"
-            className="text-3xl md:text-4xl lg:text-5xl font-black text-[#34414A] mb-6 leading-tight tracking-tight max-w-3xl"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] mb-6 leading-tight tracking-tight max-w-3xl"
           >
             Ready to Work With a Phone Answering Team You Can Actually Trust?
           </h2>

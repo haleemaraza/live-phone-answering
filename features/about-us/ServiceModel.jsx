@@ -42,7 +42,7 @@ export default function ServiceModel() {
         <div className="text-center mb-20 max-w-4xl mx-auto">
           <h2
             id="service-model-heading"
-            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#34414A] leading-tight mb-6"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] leading-tight mb-6"
           >
             How We&apos;re Built: US-Led Management, 24/7 Global Receptionist Coverage
           </h2>

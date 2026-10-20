@@ -24,7 +24,7 @@ export default function CallExperience() {
           </p>
           <h2
             id="call-experience-heading"
-            className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#34414A] leading-tight tracking-tight mb-5"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] leading-tight tracking-tight mb-5"
           >
             A better call experience.
             <br className="hidden sm:block" /> A simpler day for your team.

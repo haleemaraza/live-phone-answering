@@ -63,7 +63,7 @@ export default function ThankYouPage() {
             </h1>
             <div className="relative z-10 flex flex-col items-center w-full">
               <h2
-                className="text-4xl sm:text-5xl font-extrabold text-[#34414A] leading-tight mb-4 text-center"
+                className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] leading-tight mb-4 text-center"
               >
                 Thank You!
               </h2>

@@ -69,7 +69,7 @@ export default function ServicesList() {
           </p>
           <h2
             id="services-list-heading"
-            className="text-3xl md:text-5xl font-extrabold text-[#34414A] tracking-tight mb-4"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] tracking-tight mb-4"
           >
             Every Answering Service Your Business Needs
           </h2>

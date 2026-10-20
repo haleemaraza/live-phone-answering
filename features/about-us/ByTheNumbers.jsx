@@ -112,7 +112,7 @@ export default function ByTheNumbers() {
           </p>
           <h2
             id="numbers-heading"
-            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white leading-tight tracking-tight max-w-3xl mx-auto"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight tracking-tight max-w-3xl mx-auto"
           >
             Live Phone Answering by the Numbers — <span className="text-[#8CA365]">4 Years</span> of Real Results
           </h2>

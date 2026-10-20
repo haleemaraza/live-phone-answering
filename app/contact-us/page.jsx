@@ -84,7 +84,7 @@ export default function ContactUsPage() {
             Get In Touch
           </div>
           <h1
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.6rem] font-extrabold text-[#1a2e35] leading-[1.1] tracking-tight"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.6rem] font-bold text-[#1a2e35] leading-[1.1] tracking-tight"
             style={{ animation: "blobFadeUp 0.7s cubic-bezier(0.16,1,0.3,1) 0.1s both" }}
           >
             Let's Get Your Phones
@@ -225,7 +225,7 @@ export default function ContactUsPage() {
         </div>
         <div className="max-w-4xl mx-auto relative z-10 text-center">
           <h2
-            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-tight mb-4 md:mb-6"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-4 md:mb-6"
           >
             Never Miss Another Call Again
           </h2>

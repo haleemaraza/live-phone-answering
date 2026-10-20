@@ -71,7 +71,12 @@ function MarqueeSet({ duplicate = false }) {
           alt={duplicate ? '' : `${logo.name} integration`}
           width={40}
           height={40}
-          loading="lazy"
+          // Not lazy: the track is far wider than the viewport, so most logos
+          // start off-screen horizontally and the load never triggers — they
+          // scroll past as blanks. All 13 files together are 18 KB, so they
+          // load up front at low priority instead of competing with the LCP.
+          loading="eager"
+          fetchPriority="low"
           decoding="async"
           className="h-10 w-auto transition-transform hover:scale-110"
         />
@@ -124,7 +129,7 @@ export default function IntegrationsSection() {
       <div className="bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] opacity-50 absolute inset-0 -z-10"></div>
 
       <div className="max-w-7xl mx-auto">
-        <h2 id="integrations-heading" className="text-3xl md:text-5xl font-bold text-[#34414A] text-center mb-6 max-w-4xl mx-auto">
+        <h2 id="integrations-heading" className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] text-center mb-6 max-w-4xl mx-auto">
           Works With the Tools You Already Use — 1,000+ Integrations
         </h2>
         <p className="text-lg text-gray-600 text-center mb-10 max-w-2xl mx-auto">

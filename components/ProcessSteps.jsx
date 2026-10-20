@@ -100,7 +100,7 @@ export default function ProcessSteps({
           )}
           <h2
             id="process-steps-heading"
-            className={`text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight ${theme.heading}`}
+            className={`text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight leading-tight ${theme.heading}`}
           >
             {heading ?? (
               <>

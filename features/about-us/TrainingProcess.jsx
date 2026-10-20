@@ -65,7 +65,7 @@ export default function TrainingProcess() {
           <p className="inline-flex items-center rounded-full bg-[#E6F0EE] px-4 py-2 text-sm font-bold text-[#295657] mb-5">
             Receptionist Training &amp; Call Quality
           </p>
-          <h2 id="training-heading" className="text-3xl md:text-5xl font-extrabold text-[#34414A] leading-tight mb-6">
+          <h2 id="training-heading" className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] leading-tight mb-6">
             How We Train Receptionists to Represent Your Business Professionally
           </h2>
           <p className="text-lg md:text-xl text-gray-600 leading-relaxed">

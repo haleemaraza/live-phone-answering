@@ -14,7 +14,7 @@ export default function DarkCtaBanner({ heading, body, points, primary, secondar
       <div className="max-w-4xl mx-auto relative z-10 text-center">
         <h2
           id={headingId}
-          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-tight mb-4 md:mb-6"
+          className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-4 md:mb-6"
         >
           {heading}
         </h2>

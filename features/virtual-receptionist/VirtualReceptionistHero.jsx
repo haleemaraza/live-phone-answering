@@ -87,7 +87,7 @@ export default function VirtualReceptionistHero() {
 
           <h1
             id="vr-hero-heading"
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.4rem] font-extrabold text-[#1a2e35] leading-[1.1] tracking-tight"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#1a2e35] leading-[1.1] tracking-tight"
           >
             Virtual Receptionist Service That Keeps Your Business Moving
           </h1>
@@ -101,7 +101,7 @@ export default function VirtualReceptionistHero() {
             <Link
               prefetch={false}
               href="/contact-us"
-              className="inline-flex justify-center items-center bg-[#34414A] hover:bg-[#2a353c] text-white font-bold py-3.5 px-9 rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5 text-center"
+              className="inline-flex justify-center items-center bg-[#8CA365] hover:bg-[#9cb374] text-white font-bold py-3.5 px-9 rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5 text-center"
             >
               Get a Custom Quote &rarr;
             </Link>

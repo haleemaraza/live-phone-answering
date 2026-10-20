@@ -73,7 +73,7 @@ export default function ContactFormSection({ theme = 'dark' }) {
           <div>
             <h2
               id="contact-heading"
-              className={`text-2xl sm:text-3xl md:text-4xl ${theme === 'dark' ? 'lg:text-5xl' : ''} font-extrabold ${t.heading} leading-tight mb-4 md:mb-6`}
+              className={`text-3xl sm:text-4xl md:text-5xl font-bold ${t.heading} leading-tight mb-4 md:mb-6`}
             >
               Get Started Today  No Credit Card, No Contract
             </h2>

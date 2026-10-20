@@ -112,7 +112,7 @@ export default function CallFlow() {
           <p className="icon-mask icon-phone inline-flex items-center gap-2 bg-[#295657]/10 text-[#295657] rounded-full text-sm font-semibold px-4 py-1.5 mb-5">
             Behind Every Call
           </p>
-          <h2 id="call-flow-heading" className="text-3xl md:text-5xl font-extrabold text-[#34414A] tracking-tight mb-4">
+          <h2 id="call-flow-heading" className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] tracking-tight mb-4">
             What Happens On Every Call
           </h2>
           <p className="text-lg text-gray-600">

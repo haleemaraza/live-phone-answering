@@ -71,7 +71,7 @@ export default function FaqSection({ heading, intro, sideTitle, sideBody, linkTe
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           <div className="lg:col-span-4 lg:sticky lg:top-24">
-            <h2 id="faq-heading" className="text-3xl md:text-4xl font-extrabold text-[#34414A] leading-tight mb-6">
+            <h2 id="faq-heading" className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] leading-tight mb-6">
               {heading}
             </h2>
             <p className="text-gray-600 mb-8">{intro}</p>

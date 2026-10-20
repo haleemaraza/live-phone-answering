@@ -87,9 +87,12 @@ function ArrowIcon() {
   )
 }
 
+// No .reveal here on purpose: this is a client component, so React rewrites
+// className on re-render and wipes the 'active' class the global reveal
+// observer adds — leaving the heading stuck at opacity 0 for good.
 export default function IndustriesTabs({
   sectionClassName = 'py-20 md:py-32 bg-white font-sans relative overflow-hidden',
-  headingClassName = 'text-3xl md:text-5xl font-extrabold text-[#34414A] tracking-tight mb-4',
+  headingClassName = 'text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] tracking-tight mb-4',
   heading = 'Trained for your exact workflow.',
   intro = 'We serve over 50+ verticals. Select your category to see how we integrate seamlessly into your specialized software and daily operations.',
 }) {
@@ -98,7 +101,7 @@ export default function IndustriesTabs({
   return (
     <section className={sectionClassName} id="industries" aria-labelledby="industries-heading">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-16 reveal">
+        <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 id="industries-heading" className={headingClassName}>
             {heading}
           </h2>
@@ -106,7 +109,7 @@ export default function IndustriesTabs({
         </div>
 
         <div
-          className="flex flex-nowrap overflow-x-auto justify-start md:justify-center gap-2 md:gap-8 border-b border-gray-100 mb-12 pb-px no-scroll reveal reveal-delay-1"
+          className="flex flex-nowrap overflow-x-auto justify-start md:justify-center gap-2 md:gap-8 border-b border-gray-100 mb-12 pb-px no-scroll"
           role="tablist"
           aria-label="Industries we serve"
         >

@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --webpack",
-    "build": "next build --webpack && node scripts/clean-export.mjs",
+    "dev": "next dev",
+    "build": "next build && node scripts/clean-export.mjs",
     "start": "next start"
   },
   "dependencies": {

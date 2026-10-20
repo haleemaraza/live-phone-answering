@@ -76,7 +76,7 @@ export default function PricingSection({ eyebrow, heading, intro, trustNote, pla
           <p className="inline-flex items-center bg-white/10 border border-white/15 text-[#dce8d0] text-sm font-semibold px-4 py-2 rounded-full mb-5">
             {eyebrow}
           </p>
-          <h2 id="pricing-heading" className="text-2xl sm:text-3xl md:text-4xl font-bold text-white leading-tight mb-4">
+          <h2 id="pricing-heading" className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-4">
             {heading}
           </h2>
           <p className="text-gray-300 text-base sm:text-lg leading-relaxed">{intro}</p>

@@ -28,7 +28,7 @@ export default function FrontDeskIntro() {
           </p>
           <h2
             id="front-desk-heading"
-            className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#34414A] leading-tight tracking-tight"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] leading-tight tracking-tight"
           >
             A professional front desk.
             <br className="hidden sm:block" /> Without the extra desk.

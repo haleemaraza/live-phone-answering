@@ -106,7 +106,7 @@ export default function BlogIndexPage() {
 
           <h1
             id="blog-heading"
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.6rem] font-extrabold text-[#1a2e35] leading-[1.1] tracking-tight"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.6rem] font-bold text-[#1a2e35] leading-[1.1] tracking-tight"
             style={rise('0.1s')}
           >
             Answer More Calls.
@@ -136,7 +136,7 @@ export default function BlogIndexPage() {
                   <p className="w-max rounded-md bg-[#8CA365]/10 px-2.5 py-1 text-[11px] font-bold uppercase tracking-[0.14em] text-[#6b8a3e]">
                     {post.category}
                   </p>
-                  <h2 className="mt-4 text-lg font-bold leading-snug text-[#34414A] transition-colors group-hover:text-[#295657] sm:text-xl">
+                  <h2 className="mt-4 text-lg sm:text-xl font-bold leading-snug text-[#34414A] transition-colors group-hover:text-[#295657]">
                     {post.title}
                   </h2>
                   <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-gray-600">{post.excerpt}</p>

@@ -136,7 +136,7 @@ export default async function BlogPostPage({ params }) {
             </nav>
 
             <p className="mt-7 text-[11px] font-bold uppercase tracking-[0.18em] text-[#6b8a3e]">{post.category}</p>
-            <h1 className="mt-3 text-3xl font-extrabold leading-tight tracking-tight text-[#34414A] sm:text-4xl md:text-5xl">
+            <h1 className="mt-3 text-3xl font-bold leading-tight tracking-tight text-[#34414A] sm:text-4xl md:text-5xl">
               {post.title}
             </h1>
             <p className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-gray-500">
@@ -189,7 +189,7 @@ export default async function BlogPostPage({ params }) {
             <div>
             {post.sections.map((section) => (
               <section key={section.heading} className="mt-10 first:mt-0 scroll-mt-28" id={slugify(section.heading)}>
-                <h2 className="border-l-4 border-[#8CA365] pl-4 text-2xl font-extrabold leading-snug text-[#34414A] sm:text-3xl">
+                <h2 className="border-l-4 border-[#8CA365] pl-4 text-2xl sm:text-3xl font-bold leading-snug text-[#34414A]">
                   {section.heading}
                 </h2>
                 {section.paragraphs.map((paragraph) => (
@@ -216,7 +216,7 @@ export default async function BlogPostPage({ params }) {
             ))}
 
             <section className="mt-14 scroll-mt-28" id="faqs" aria-labelledby="faqs-heading">
-              <h2 id="faqs-heading" className="border-l-4 border-[#8CA365] pl-4 text-2xl font-extrabold text-[#34414A] sm:text-3xl">
+              <h2 id="faqs-heading" className="border-l-4 border-[#8CA365] pl-4 text-2xl sm:text-3xl font-bold text-[#34414A]">
                 Frequently asked questions
               </h2>
               <dl className="mt-6 divide-y divide-gray-100 border-y border-gray-100">
@@ -255,7 +255,7 @@ export default async function BlogPostPage({ params }) {
 
       <section className="w-full bg-slate-50 px-4 py-16 md:py-20" aria-labelledby="related-heading">
         <div className="mx-auto max-w-3xl">
-          <h2 id="related-heading" className="mb-8 text-2xl font-extrabold text-[#34414A] sm:text-3xl">
+          <h2 id="related-heading" className="mb-8 text-2xl sm:text-3xl font-bold text-[#34414A]">
             Keep reading
           </h2>
           <ul className="flex list-none flex-col gap-5">

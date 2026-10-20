@@ -306,3 +306,81 @@ export const virtualReceptionistFaq = {
     }
   ]
 }
+
+export const afterHoursFaq = {
+  "heading": "After-Hours Answering Service — Frequently Asked Questions",
+  "intro": "How evening, weekend and holiday cover works, what it costs to run, and what your callers hear once your office closes.",
+  "sideTitle": "Have a specific question?",
+  "sideBody": "Tell us your hours and call-handling rules and we will map out the cover that fits.",
+  "linkText": "Contact Support",
+  "linkHref": "/contact-us",
+  "items": [
+    {
+      "q": "What is an after-hours answering service?",
+      "a": "An after-hours answering service is a team of live receptionists who answer your business calls once your own office has closed — evenings, overnight, weekends and holidays. They pick up in your business name, follow the greeting and questions you have approved, and pass the details on the way you prefer, so callers reach a person instead of voicemail."
+    },
+    {
+      "q": "Which hours can you cover?",
+      "a": "Cover is built around your own opening hours. Most businesses start with evenings and weekends, then add holidays and planned closures. You tell us when your office closes and in which time zone, and calls outside those hours follow your forwarding rule."
+    },
+    {
+      "q": "What happens to a call that needs someone urgently?",
+      "a": "You decide in advance which situations count as urgent and who should be contacted. Those calls follow your escalation list and contact method. Anything outside that definition is recorded as a message for your next business day rather than guessed at."
+    },
+    {
+      "q": "Will callers know they have reached an answering service?",
+      "a": "Not unless you want them to. Receptionists answer with the greeting you have approved, using your business name, and work from the service information you supply. The aim is for the call to feel like a continuation of your own front desk."
+    },
+    {
+      "q": "How do I receive messages taken overnight?",
+      "a": "Each call arrives as a written summary through the channel you choose — commonly email or text, and in some setups directly into your CRM. The summary records who called, why, how to reach them, and anything you asked us to collect."
+    },
+    {
+      "q": "Do I need to change my phone number?",
+      "a": "No. You keep your existing business number and set a forwarding rule on your own phone system, so calls reach your team first and only pass through once your office is closed or the line goes unanswered. Available options depend on your phone system."
+    },
+    {
+      "q": "How is after-hours cover priced?",
+      "a": "Plans are based on receptionist time rather than a flat per-call rate, so a quiet month costs less than a busy one. Because after-hours volume is usually lower than daytime volume, most businesses start on a smaller plan and adjust once they can see their real call pattern."
+    }
+  ],
+}
+
+export const overflowFaq = {
+  "heading": "Overflow Call Answering — Frequently Asked Questions",
+  "intro": "How overflow cover sits alongside your own team, when calls pass through, and what your callers hear when your staff are already busy.",
+  "sideTitle": "Have a specific question?",
+  "sideBody": "Tell us your phone setup and we will map out how overflow calls should reach you.",
+  "linkText": "Contact Support",
+  "linkHref": "/contact-us",
+  "items": [
+    {
+      "q": "What is overflow call answering?",
+      "a": "Overflow call answering gives your business a backup route for calls your own team cannot take. Your staff always ring first; if every line is busy, a call goes unanswered, or your team is on a planned break, the call passes to a live receptionist who answers in your business name and follows the instructions you have agreed."
+    },
+    {
+      "q": "How is overflow different from an after-hours service?",
+      "a": "After-hours cover starts once your office has closed. Overflow cover runs during your working day, catching the calls your team cannot reach while they are on the phone, with customers, or away from their desks. Many businesses use both."
+    },
+    {
+      "q": "Do my own staff still answer the phone first?",
+      "a": "Yes. Your office rings first on every call. Overflow only engages when your forwarding rule is triggered, so your team keeps the conversations they are able to take."
+    },
+    {
+      "q": "When exactly does a call pass through to you?",
+      "a": "You choose the trigger. Common setups are busy line, no answer after an agreed number of rings, and scheduled breaks. Which options are available depends on your phone system, and we confirm what will work during setup."
+    },
+    {
+      "q": "Will the receptionist know about my business?",
+      "a": "They work from the greeting, service information, and approved answers you provide. Anything outside that guidance is captured as a message and passed to your team rather than guessed at."
+    },
+    {
+      "q": "Can overflow calls be booked into my calendar?",
+      "a": "Where supported, receptionists can arrange appointments using your availability and booking rules. When direct booking is not available, the caller's preferred times are passed to your team for confirmation."
+    },
+    {
+      "q": "How is overflow answering priced?",
+      "a": "Plans are based on receptionist time rather than a flat per-call rate. Because overflow volume depends on how busy your own team is, most businesses start on a smaller plan and adjust once they can see their real pattern."
+    }
+  ],
+}

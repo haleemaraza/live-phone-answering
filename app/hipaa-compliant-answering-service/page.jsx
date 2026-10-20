@@ -346,7 +346,7 @@ export default function HipaaCompliantAnsweringServicePage() {
                 </div>
                 {/* H1 */}
                 <h1
-                  className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-[#34414A] leading-tight mb-6 tracking-tight font-sans"
+                  className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#34414A] leading-tight mb-6 tracking-tight font-sans"
                 >
                   HIPAA Compliant Answering Service — Certified, BAA-Signed & Built for Medical Practices
                 </h1>
@@ -837,7 +837,7 @@ export default function HipaaCompliantAnsweringServicePage() {
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10zM11 7h2v3h3v2h-3v3h-2v-3H8v-2h3V7z" />
               </svg>
               <h2
-                className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-[#34414A] mb-6 leading-tight tracking-tight max-w-4xl relative z-10"
+                className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] mb-6 leading-tight tracking-tight max-w-4xl relative z-10"
               >
                 What Is a HIPAA Compliant Answering Service? (And What Actually Makes One Truly Compliant)
               </h2>
@@ -2370,7 +2370,7 @@ export default function HipaaCompliantAnsweringServicePage() {
           <div className="max-w-7xl mx-auto">
             {/* Header Section */}
             <h2
-              className="text-3xl md:text-4xl font-extrabold text-[#34414A] text-center mb-4 leading-tight"
+              className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] text-center mb-4 leading-tight"
             >
               What Medical Practices Say About Our HIPAA Compliant Answering Service
             </h2>
@@ -2669,7 +2669,7 @@ export default function HipaaCompliantAnsweringServicePage() {
           >
           </div>
           <div className="max-w-4xl mx-auto relative z-10 flex flex-col items-center">
-            <h2 className="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
               Start Filling Your Calendar Today — No Contracts, No Setup Fees
             </h2>
             <h3 className="text-xl text-slate-300 font-medium mb-10 max-w-2xl leading-relaxed">
