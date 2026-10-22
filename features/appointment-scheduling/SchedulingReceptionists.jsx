@@ -21,10 +21,10 @@ const POINTS = [
 export default function SchedulingReceptionists() {
   return (
     <section
-      className="w-full bg-[#f8f7f1] px-4 py-14 md:py-16 lg:px-[5%]"
+      className="w-full bg-[#f8f7f1] py-14 md:py-16"
       aria-labelledby="scheduling-receptionists-heading"
     >
-      <div className="mx-auto grid max-w-6xl grid-cols-1 items-stretch gap-9 lg:grid-cols-2 lg:gap-12">
+      <div className="site-container grid grid-cols-1 items-stretch gap-9 lg:grid-cols-2 lg:gap-12">
         {/* The headset icon and caption panel are part of the supplied artwork,
             so they are not drawn again in HTML and the photo is not cropped. */}
         <figure className="overflow-hidden rounded-xl">
@@ -55,7 +55,7 @@ export default function SchedulingReceptionists() {
             Scheduling
           </h2>
 
-          <p className="mt-4 text-[0.95rem] leading-relaxed text-gray-600">
+          <p className="mt-4 text-lg leading-relaxed text-gray-600">
             Give callers a helpful person to speak with when they need to book, reschedule, or ask about an
             appointment. Our receptionists follow your business&rsquo;s greeting, intake questions, and scheduling
             instructions.
@@ -70,7 +70,7 @@ export default function SchedulingReceptionists() {
                 ></span>
                 <span className="min-w-0">
                   <span className="block text-[1rem] font-bold leading-snug text-[#1b4332]">{point.title}</span>
-                  <span className="mt-1 block text-[0.84rem] leading-relaxed text-gray-600">{point.body}</span>
+                  <span className="mt-1 block text-base leading-relaxed text-gray-600">{point.body}</span>
                 </span>
               </li>
             ))}
@@ -84,7 +84,7 @@ export default function SchedulingReceptionists() {
             Build My Receptionist Plan
           </Link>
 
-          <p className="mt-3 text-[0.84rem] text-gray-600">
+          <p className="mt-3 text-base text-gray-600">
             Tell us how you handle appointments. We&rsquo;ll plan the support around you.
           </p>
         </div>

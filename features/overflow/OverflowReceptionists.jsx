@@ -26,10 +26,10 @@ const FEATURES = [
 export default function OverflowReceptionists() {
   return (
     <section
-      className="w-full bg-[#f7f6f0] px-4 py-14 md:py-16 lg:px-[5%]"
+      className="w-full bg-[#f7f6f0] py-14 md:py-16"
       aria-labelledby="overflow-receptionists-heading"
     >
-      <div className="mx-auto max-w-6xl">
+      <div className="site-container">
         <div className="mx-auto max-w-3xl text-center">
           <p className="icon-mask icon-headset [--icon-size:1rem] inline-flex items-center gap-2 bg-[#8CA365]/10 text-[#5f7a3a] rounded-full text-sm font-semibold px-4 py-1.5">
             Real people. Your business voice.
@@ -42,7 +42,7 @@ export default function OverflowReceptionists() {
             <br />
             for Overflow Call Support
           </h2>
-          <p className="mt-3 text-[0.95rem] leading-relaxed text-gray-600">
+          <p className="mt-3 text-lg leading-relaxed text-gray-600">
             Give callers a helpful conversation when your team is busy. Our receptionists answer in your business name
             and follow the instructions that make your service feel familiar.
           </p>
@@ -67,7 +67,7 @@ export default function OverflowReceptionists() {
                 decoding="async"
                 className="aspect-[6/5] w-full object-cover"
               />
-              <figcaption className="bg-[#1d4b37] px-5 py-3 text-center text-[0.84rem] text-white/90">
+              <figcaption className="bg-[#1d4b37] px-5 py-3 text-center text-base text-white/90">
                 A helpful voice, guided by your business.
               </figcaption>
             </figure>
@@ -81,7 +81,7 @@ export default function OverflowReceptionists() {
                 <span className="block text-[0.58rem] font-bold uppercase tracking-[0.14em] text-gray-600">
                   Your approved greeting
                 </span>
-                <span className="mt-1 block text-[0.88rem] font-bold leading-snug text-[#1a2e35]">
+                <span className="mt-1 block text-base font-bold leading-snug text-[#1a2e35]">
                   &ldquo;Thank you for calling. How can I help?&rdquo;
                 </span>
               </span>
@@ -97,7 +97,7 @@ export default function OverflowReceptionists() {
                     aria-hidden="true"
                   ></span>
                   <h3 className="mt-3.5 text-[1.02rem] font-bold leading-snug text-[#1d4b37]">{feature.title}</h3>
-                  <p className="mt-2 text-[0.84rem] leading-relaxed text-gray-600">{feature.body}</p>
+                  <p className="mt-2 text-base leading-relaxed text-gray-600">{feature.body}</p>
                 </li>
               ))}
             </ul>
@@ -109,11 +109,11 @@ export default function OverflowReceptionists() {
               <Link
                 prefetch={false}
                 href="/contact-us"
-                className="icon-mask icon-arrow-right [--icon-size:0.9rem] mt-4 inline-flex flex-row-reverse items-center gap-3 rounded-lg bg-[#8CA365] px-7 py-3 text-[0.88rem] font-bold text-white transition-all hover:-translate-y-0.5 hover:bg-[#9cb374]"
+                className="icon-mask icon-arrow-right [--icon-size:0.9rem] mt-4 inline-flex flex-row-reverse items-center gap-3 rounded-lg bg-[#8CA365] px-7 py-3 text-base font-bold text-white transition-all hover:-translate-y-0.5 hover:bg-[#9cb374]"
               >
                 Discuss My Receptionist Support
               </Link>
-              <p className="mt-3 text-[0.78rem] text-gray-500">
+              <p className="mt-3 text-sm text-gray-500">
                 Tell us how you want your callers to be helped.
               </p>
             </div>

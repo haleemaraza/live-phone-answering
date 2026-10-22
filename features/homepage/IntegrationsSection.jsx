@@ -1,17 +1,5 @@
 import Link from 'next/link'
-
-const MARQUEE_LOGOS = [
-  { slug: 'hubspot', name: 'HubSpot' },
-  { slug: 'zoho', name: 'Zoho' },
-  { slug: 'zendesk', name: 'Zendesk' },
-  { slug: 'calendly', name: 'Calendly' },
-  { slug: 'shopify', name: 'Shopify' },
-  { slug: 'intercom', name: 'Intercom' },
-  { slug: 'mailchimp', name: 'Mailchimp' },
-  { slug: 'notion', name: 'Notion' },
-  { slug: 'stripe', name: 'Stripe' },
-  { slug: 'zapier', name: 'Zapier' },
-]
+import LogoMarquee from '@/components/LogoMarquee'
 
 const BENTO_CARDS = [
   {
@@ -58,33 +46,6 @@ function HeadsetIcon() {
   )
 }
 
-function MarqueeSet({ duplicate = false }) {
-  return (
-    <div
-      className="flex items-center gap-16 px-8 flex-shrink-0 justify-around min-w-full"
-      aria-hidden={duplicate ? 'true' : undefined}
-    >
-      {MARQUEE_LOGOS.map((logo) => (
-        <img
-          key={logo.slug}
-          src={`/logos/${logo.slug}.svg`}
-          alt={duplicate ? '' : `${logo.name} integration`}
-          width={40}
-          height={40}
-          // Not lazy: the track is far wider than the viewport, so most logos
-          // start off-screen horizontally and the load never triggers — they
-          // scroll past as blanks. All 13 files together are 18 KB, so they
-          // load up front at low priority instead of competing with the LCP.
-          loading="eager"
-          fetchPriority="low"
-          decoding="async"
-          className="h-10 w-auto transition-transform hover:scale-110"
-        />
-      ))}
-    </div>
-  )
-}
-
 function BentoCard({ card }) {
   return (
     <div className="bg-white/80 backdrop-blur-md rounded-3xl p-8 border border-gray-200 shadow-sm hover:shadow-xl hover:border-[#8CA365] transition-all duration-300 group flex flex-col">
@@ -125,10 +86,10 @@ function BentoCard({ card }) {
 
 export default function IntegrationsSection() {
   return (
-    <section className="bg-white py-24 px-4 relative overflow-hidden" aria-labelledby="integrations-heading">
+    <section className="bg-white py-24 relative overflow-hidden" aria-labelledby="integrations-heading">
       <div className="bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] opacity-50 absolute inset-0 -z-10"></div>
 
-      <div className="max-w-7xl mx-auto">
+      <div className="site-container">
         <h2 id="integrations-heading" className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] text-center mb-6 max-w-4xl mx-auto">
           Works With the Tools You Already Use — 1,000+ Integrations
         </h2>
@@ -137,17 +98,7 @@ export default function IntegrationsSection() {
           into your existing tech stack.
         </p>
 
-        <div className="relative w-full max-w-6xl mx-auto flex overflow-hidden group/marquee mb-16">
-          <div className="absolute top-0 left-0 w-32 h-full bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
-          <div className="absolute top-0 right-0 w-32 h-full bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
-
-          <div className="flex animate-marquee whitespace-nowrap items-center w-max">
-            {/* The loop only looks seamless with a second copy of the track, so
-                it is rendered from the same data and hidden from assistive tech. */}
-            <MarqueeSet />
-            <MarqueeSet duplicate />
-          </div>
-        </div>
+        <LogoMarquee fade="#ffffff" className="max-w-6xl mx-auto mb-16" />
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
           {BENTO_CARDS.map((card) => (

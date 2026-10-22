@@ -57,8 +57,8 @@ export default function HumanVsBots() {
   const [activeId, setActiveId] = useState(TABS[0].id)
 
   return (
-    <section className="bg-slate-50 py-14 sm:py-24 px-4" aria-labelledby="human-vs-bots-heading">
-      <div className="max-w-7xl mx-auto">
+    <section className="bg-slate-50 py-14 sm:py-24" aria-labelledby="human-vs-bots-heading">
+      <div className="site-container">
         <h2
           id="human-vs-bots-heading"
           className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] text-center mb-6 max-w-4xl mx-auto leading-tight"

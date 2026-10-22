@@ -67,8 +67,8 @@ function ServiceCard({ service }) {
 
 export default function CoreServices() {
   return (
-    <section className="bg-white py-14 sm:py-24 px-4 border-t border-gray-100" id="services" aria-labelledby="services-heading">
-      <div className="max-w-7xl mx-auto">
+    <section className="bg-white py-14 sm:py-24 border-t border-gray-100" id="services" aria-labelledby="services-heading">
+      <div className="site-container">
         <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
           <h2 id="services-heading" className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] mb-4 md:mb-6">
             Live Phone Answering Services Built Around Your Business

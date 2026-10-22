@@ -44,7 +44,7 @@ const PLAQUE_CLASSNAME =
 
 export default function RecognitionPresence() {
   return (
-    <section className="bg-[#0B1120] py-32 px-4 relative overflow-hidden" aria-labelledby="recognition-heading">
+    <section className="bg-[#0B1120] py-32 relative overflow-hidden" aria-labelledby="recognition-heading">
       <img
         src="/images/hand.jpg"
         alt=""
@@ -57,7 +57,7 @@ export default function RecognitionPresence() {
       />
       <div className="absolute inset-0 bg-[#0B1120]/80" aria-hidden="true"></div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="site-container relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-start">
           <div className="lg:col-span-5 lg:sticky lg:top-32 flex flex-col">
             <p className="inline-flex items-center gap-2 bg-[#8CA365]/10 text-[#8CA365] text-xs font-bold px-4 py-1.5 rounded-full mb-8 border border-[#8CA365]/20 uppercase tracking-widest w-max">

@@ -32,7 +32,7 @@ function LiveDot({ size = 'h-2 w-2', ping = 'bg-green-500', core = 'bg-green-600
 export default function HeroSection() {
   return (
     <section
-      className="relative overflow-hidden bg-white min-h-[70vh] flex items-center px-4 py-12 sm:py-16 lg:px-[5%]"
+      className="relative overflow-hidden bg-white min-h-[70vh] flex items-center py-12 sm:py-16"
       aria-label="Live phone answering service introduction"
     >
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none" aria-hidden="true">
@@ -40,7 +40,7 @@ export default function HeroSection() {
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-slate-200/50 rounded-full mix-blend-multiply filter blur-3xl opacity-70"></div>
       </div>
 
-      <div className="max-w-[1280px] mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+      <div className="site-container grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
         <div className="flex flex-col items-start z-10">
           <p className="inline-flex items-center gap-2 bg-green-100 text-green-800 rounded-full text-sm font-semibold px-4 py-1 mb-2">
             <LiveDot />

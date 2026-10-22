@@ -75,7 +75,6 @@ const TESTIMONIALS = [
     avatar: '/images/testimonial-james-l.webp',
     quote:
       '"In real estate, speed to lead is everything. Having a 24/7 live person answer our property inquiries means we secure tenants faster than our competitors. The immediate text alerts are incredible."',
-    recommends: true,
   },
   {
     name: 'Amanda P.',
@@ -132,19 +131,15 @@ function TestimonialCard({ item }) {
         <blockquote className="text-gray-700 text-sm leading-relaxed mb-3">{item.quote}</blockquote>
       </div>
 
-      {item.recommends && (
-        <div className="text-xs font-semibold text-gray-500 mt-2">
-          Recommends <span className="font-bold text-gray-800">Live Phone Answering</span>
-        </div>
-      )}
+     
     </figure>
   )
 }
 
 export default function Testimonials({ id }) {
   return (
-    <section className="bg-slate-50 py-14 sm:py-24 px-4 relative" id={id} aria-labelledby="testimonials-heading">
-      <div className="max-w-7xl mx-auto">
+    <section className="bg-slate-50 py-14 sm:py-24 relative" id={id} aria-labelledby="testimonials-heading">
+      <div className="site-container">
         <h2
           id="testimonials-heading"
           className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] text-center mb-6 max-w-4xl mx-auto leading-tight"

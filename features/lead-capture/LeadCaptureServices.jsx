@@ -37,10 +37,10 @@ const SERVICES = [
 export default function LeadCaptureServices() {
   return (
     <section
-      className="w-full bg-[#f7f6f1] px-4 py-14 md:py-16 lg:px-[5%]"
+      className="w-full bg-[#f7f6f1] py-14 md:py-16"
       aria-labelledby="lead-capture-services-heading"
     >
-      <div className="mx-auto max-w-6xl">
+      <div className="site-container">
         <div className="mx-auto max-w-3xl text-center">
           <p className="icon-mask icon-user-plus [--icon-size:1rem] inline-flex items-center gap-2 bg-[#8CA365]/10 text-[#5f7a3a] rounded-full text-sm font-semibold px-4 py-1.5">
             Lead capture support
@@ -53,7 +53,7 @@ export default function LeadCaptureServices() {
             <br />
             Services We Handle
           </h2>
-          <p className="mt-3 text-[0.95rem] leading-relaxed text-gray-600">
+          <p className="mt-3 text-lg leading-relaxed text-gray-600">
             Give every enquiry a consistent first response. Choose the intake, screening, and handoff support that fits
             your business.
           </p>
@@ -75,13 +75,13 @@ export default function LeadCaptureServices() {
                 <h3 className="text-[1.02rem] font-bold leading-snug text-[#1b4332]">{service.title}</h3>
               </div>
 
-              <p className="mt-4 flex-grow text-[0.84rem] leading-relaxed text-gray-600">{service.body}</p>
+              <p className="mt-4 flex-grow text-base leading-relaxed text-gray-600">{service.body}</p>
 
               {service.cta && (
                 <Link
                   prefetch={false}
                   href={service.cta.href}
-                  className="icon-mask icon-arrow-right [--icon-size:0.8rem] mt-3 inline-flex flex-row-reverse items-center gap-2 self-start text-[0.82rem] font-semibold text-[#5f7a3a] underline underline-offset-4 transition-colors hover:text-[#1b4332]"
+                  className="icon-mask icon-arrow-right [--icon-size:0.8rem] mt-3 inline-flex flex-row-reverse items-center gap-2 self-start text-base font-semibold text-[#5f7a3a] underline underline-offset-4 transition-colors hover:text-[#1b4332]"
                 >
                   {service.cta.label}
                 </Link>
@@ -97,7 +97,7 @@ export default function LeadCaptureServices() {
           <Link
             prefetch={false}
             href="/contact-us"
-            className="icon-mask icon-arrow-right [--icon-size:0.9rem] inline-flex flex-shrink-0 flex-row-reverse items-center gap-3 rounded-lg bg-[#1d4b37] px-6 py-3.5 text-[0.88rem] font-bold text-white transition-all hover:-translate-y-0.5 hover:bg-[#164032]"
+            className="icon-mask icon-arrow-right [--icon-size:0.9rem] inline-flex flex-shrink-0 flex-row-reverse items-center gap-3 rounded-lg bg-[#1d4b37] px-6 py-3.5 text-base font-bold text-white transition-all hover:-translate-y-0.5 hover:bg-[#164032]"
           >
             Build My Lead Capture Plan
           </Link>
@@ -105,7 +105,7 @@ export default function LeadCaptureServices() {
 
         {/* What a given plan covers is agreed at setup, so the cards describe
             tasks rather than promise all of them. */}
-        <p className="mt-5 text-center text-[0.78rem] text-gray-600">
+        <p className="mt-5 text-center text-sm text-gray-600">
           Intake questions, routing rules, and delivery options are agreed during setup.
         </p>
       </div>

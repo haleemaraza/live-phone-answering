@@ -26,10 +26,10 @@ const BENEFITS = [
 export default function CallRoutingBenefits() {
   return (
     <section
-      className="w-full bg-[#f8f7f2] px-4 py-14 md:py-16 lg:px-[5%]"
+      className="w-full bg-[#f8f7f2] py-14 md:py-16"
       aria-labelledby="call-routing-benefits-heading"
     >
-      <div className="mx-auto max-w-6xl">
+      <div className="site-container">
         <div className="mx-auto max-w-3xl text-center">
           <p className="icon-mask icon-smile [--icon-size:1rem] inline-flex items-center gap-2 bg-[#8CA365]/10 text-[#5f7a3a] rounded-full text-sm font-semibold px-4 py-1.5">
             Benefits of call routing
@@ -42,7 +42,7 @@ export default function CallRoutingBenefits() {
             <br />
             Better Call Handling.
           </h2>
-          <p className="mt-3 text-[0.95rem] leading-relaxed text-gray-600">
+          <p className="mt-3 text-lg leading-relaxed text-gray-600">
             Give callers a helpful first response while your team stays focused on the work that needs them.
           </p>
         </div>
@@ -67,7 +67,7 @@ export default function CallRoutingBenefits() {
                 <br />
                 focused work
               </span>
-              <span className="mt-2 block text-[0.86rem] leading-relaxed text-white/70">
+              <span className="mt-2 block text-base leading-relaxed text-white/70">
                 Let receptionists screen incoming enquiries and follow your contact rules, so your team can give
                 attention to relevant calls.
               </span>
@@ -86,7 +86,7 @@ export default function CallRoutingBenefits() {
           {BENEFITS.map((benefit) => (
             <div
               key={benefit.title}
-              className="flex h-full flex-col rounded-xl border border-gray-300/50 bg-[#fbfaf6] p-5 sm:p-6"
+              className="flex h-full flex-col rounded-xl border border-gray-300/50 bg-[#fff] p-5 sm:p-6"
             >
               <div className="flex items-center gap-4">
                 <span
@@ -95,7 +95,7 @@ export default function CallRoutingBenefits() {
                 ></span>
                 <h3 className="text-[1.05rem] font-bold leading-snug text-[#1b4332]">{benefit.title}</h3>
               </div>
-              <p className="mt-4 flex-grow text-[0.84rem] leading-relaxed text-gray-600">{benefit.body}</p>
+              <p className="mt-4 flex-grow text-base leading-relaxed text-gray-600">{benefit.body}</p>
             </div>
           ))}
         </div>
@@ -107,7 +107,7 @@ export default function CallRoutingBenefits() {
           <Link
             prefetch={false}
             href="/contact-us"
-            className="icon-mask icon-arrow-right [--icon-size:0.9rem] inline-flex flex-shrink-0 flex-row-reverse items-center gap-3 rounded-lg bg-[#1d4b37] px-6 py-3.5 text-[0.88rem] font-bold text-white transition-all hover:-translate-y-0.5 hover:bg-[#164032]"
+            className="icon-mask icon-arrow-right [--icon-size:0.9rem] inline-flex flex-shrink-0 flex-row-reverse items-center gap-3 rounded-lg bg-[#1d4b37] px-6 py-3.5 text-base font-bold text-white transition-all hover:-translate-y-0.5 hover:bg-[#164032]"
           >
             Plan My Call Routing
           </Link>

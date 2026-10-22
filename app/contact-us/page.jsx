@@ -28,7 +28,7 @@ export default function ContactUsPage() {
     <>
       {/* HERO SECTION (Mint Green) */}
       <section
-        className="relative overflow-hidden py-16 sm:py-20 lg:py-24 px-4 lg:px-[5%]"
+        className="relative overflow-hidden py-16 sm:py-20 lg:py-24 px-4 md:px-8"
         aria-label="Contact Hero"
       >
         <div
@@ -101,8 +101,8 @@ export default function ContactUsPage() {
       </section>
       <ContactFormSection theme="light" />
       {/* CONTACT INFO CARDS */}
-      <section className="py-14 sm:py-20 bg-slate-50 border-t border-gray-100 px-4">
-        <div className="max-w-7xl mx-auto">
+      <section className="py-14 sm:py-20 bg-slate-50 border-t border-gray-100">
+        <div className="site-container">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Phone */}
             <div

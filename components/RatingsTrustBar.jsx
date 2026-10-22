@@ -18,8 +18,8 @@ export default function RatingsTrustBar({
   label = 'Trusted by 5,000+ high-volume local businesses & multi-line front desks',
 }) {
   return (
-    <section className="w-full px-4 py-8 md:py-9 lg:px-[5%]" style={BAND_BACKGROUND} aria-label="Ratings and compliance">
-      <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-6 lg:grid-cols-[minmax(0,20rem)_minmax(0,1fr)] lg:gap-10">
+    <section className="w-full py-8 md:py-9" style={BAND_BACKGROUND} aria-label="Ratings and compliance">
+      <div className="site-container grid grid-cols-1 items-center gap-6 lg:grid-cols-[minmax(0,20rem)_minmax(0,1fr)] lg:gap-10">
         <p className="text-[0.68rem] font-bold uppercase leading-relaxed tracking-[0.14em] text-[#5b6b72]">{label}</p>
 
         <ul className="flex list-none flex-wrap items-center gap-3 lg:justify-end">
@@ -32,7 +32,7 @@ export default function RatingsTrustBar({
               ) : (
                 <span className={`icon-mask ${badge.icon} [--icon-size:0.9rem] ${badge.iconClass}`} aria-hidden="true"></span>
               )}
-              <span className="whitespace-nowrap text-[0.8rem] font-bold text-[#1a2e35]">
+              <span className="whitespace-nowrap text-base font-bold text-[#1a2e35]">
                 {badge.label}
                 {badge.stars ? '★' : ''}
               </span>

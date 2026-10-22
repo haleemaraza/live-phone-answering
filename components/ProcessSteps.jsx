@@ -91,7 +91,7 @@ export default function ProcessSteps({
         </div>
       )}
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="site-container relative z-10">
         <div className="text-center max-w-4xl mx-auto mb-16 md:mb-20">
           {eyebrow && (
             <p className="icon-mask icon-bolt inline-flex items-center gap-2 bg-[#8CA365]/10 text-[#6b8a3e] rounded-full text-sm font-semibold px-4 py-1.5 mb-5">

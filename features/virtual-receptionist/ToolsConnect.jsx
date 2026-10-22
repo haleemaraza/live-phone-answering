@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import LogoMarquee from '@/components/LogoMarquee'
 
 const TOOLS = [
   {
@@ -44,8 +45,8 @@ const DOTS = [
 
 export default function ToolsConnect() {
   return (
-    <section className="w-full bg-[#f7fbf5] py-20 md:py-24 px-4" aria-labelledby="tools-heading">
-      <div className="max-w-6xl mx-auto">
+    <section className="w-full bg-[#f7fbf5] py-20 md:py-24" aria-labelledby="tools-heading">
+      <div className="site-container">
         <div className="text-center max-w-3xl mx-auto mb-10">
           <p className="icon-mask icon-share inline-flex items-center gap-2 bg-white text-[#4a7a3e] rounded-full text-sm font-semibold px-5 py-2 mb-6 shadow-sm border border-white/60">
             Connected to the way you work
@@ -62,9 +63,8 @@ export default function ToolsConnect() {
           </p>
         </div>
 
-        <p className="mx-auto mb-8 w-max max-w-full rounded-full bg-white border border-gray-200/70 px-4 py-1.5 text-center text-[11px] font-medium text-gray-500">
-          Example workflow &middot; Compatibility confirmed during setup
-        </p>
+        {/* fade matches this section's background so the strip edges dissolve */}
+        <LogoMarquee fade="#f7fbf5" className="mb-14" />
 
         <div className="relative grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 items-center">
           <svg

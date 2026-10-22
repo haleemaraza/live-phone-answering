@@ -56,7 +56,7 @@ const rise = (delay) => ({ animation: `blobFadeUp 0.7s cubic-bezier(0.16,1,0.3,1
 export default function IndustriesHero() {
   return (
     <section
-      className="relative overflow-hidden py-16 sm:py-20 lg:py-24 px-4 lg:px-[5%]"
+      className="relative overflow-hidden py-16 sm:py-20 lg:py-24 px-4 md:px-8"
       style={SECTION_BACKGROUND}
       aria-label="Industries we serve"
     >

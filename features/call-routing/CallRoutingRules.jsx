@@ -42,8 +42,8 @@ const PLAN_ROWS = [
 
 export default function CallRoutingRules() {
   return (
-    <section className="w-full bg-[#f8f7f2] px-4 py-14 md:py-16 lg:px-[5%]" aria-labelledby="call-routing-rules-heading">
-      <div className="mx-auto max-w-6xl">
+    <section className="w-full bg-[#f8f7f2] py-14 md:py-16" aria-labelledby="call-routing-rules-heading">
+      <div className="site-container">
         <div className="grid grid-cols-1 items-start gap-9 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1fr)] lg:gap-12">
           <div>
             <p className="icon-mask icon-sliders [--icon-size:1rem] inline-flex items-center gap-2 bg-[#8CA365]/10 text-[#5f7a3a] rounded-full text-sm font-semibold px-4 py-1.5">
@@ -61,7 +61,7 @@ export default function CallRoutingRules() {
               Backup Plan
             </h2>
 
-            <p className="mt-4 text-[0.95rem] leading-relaxed text-gray-600">
+            <p className="mt-4 text-lg leading-relaxed text-gray-600">
               Tell us who should receive each type of call, when to try them, and what to do if they cannot answer. Our
               receptionists follow the instructions you approve.
             </p>
@@ -75,7 +75,7 @@ export default function CallRoutingRules() {
                   ></span>
                   <span className="min-w-0">
                     <span className="block text-[1rem] font-bold leading-snug text-[#1a2e35]">{step.title}</span>
-                    <span className="mt-1 block text-[0.84rem] leading-relaxed text-gray-600">{step.body}</span>
+                    <span className="mt-1 block text-base leading-relaxed text-gray-600">{step.body}</span>
                   </span>
                 </li>
               ))}
@@ -84,7 +84,7 @@ export default function CallRoutingRules() {
             <Link
               prefetch={false}
               href="/contact-us"
-              className="icon-mask icon-arrow-right [--icon-size:0.95rem] mt-7 inline-flex flex-row-reverse items-center gap-3 rounded-lg bg-[#1d4b37] px-7 py-3.5 text-[0.95rem] font-bold text-white transition-all hover:-translate-y-0.5 hover:bg-[#164032]"
+              className="icon-mask icon-arrow-right [--icon-size:0.95rem] mt-7 inline-flex flex-row-reverse items-center gap-3 rounded-lg bg-[#1d4b37] px-7 py-3.5 text-lg font-bold text-white transition-all hover:-translate-y-0.5 hover:bg-[#164032]"
             >
               Build My Routing Plan
             </Link>
@@ -97,7 +97,7 @@ export default function CallRoutingRules() {
                   Illustrative routing plan
                 </p>
                 <p className="mt-1 text-[1.45rem] font-extrabold leading-tight text-white">Medical Practice</p>
-                <p className="mt-1 text-[0.86rem] font-semibold text-[#a8c47d]">
+                <p className="mt-1 text-base font-semibold text-[#a8c47d]">
                   Administrative calls &bull; Approved contacts
                 </p>
               </div>
@@ -115,11 +115,11 @@ export default function CallRoutingRules() {
                         <span className="text-[0.62rem] font-bold uppercase tracking-[0.12em] text-gray-500">
                           First contact
                         </span>
-                        <span className="text-[0.84rem] text-gray-700">{row.first}</span>
+                        <span className="text-base text-gray-700">{row.first}</span>
                         <span className="text-[0.62rem] font-bold uppercase tracking-[0.12em] text-gray-500">
                           If unavailable
                         </span>
-                        <span className="text-[0.84rem] text-gray-700">{row.fallback}</span>
+                        <span className="text-base text-gray-700">{row.fallback}</span>
                       </span>
                     </span>
                   </div>
@@ -132,8 +132,8 @@ export default function CallRoutingRules() {
                   aria-hidden="true"
                 ></span>
                 <span className="min-w-0">
-                  <span className="block text-[0.92rem] font-bold text-[#1a2e35]">Useful callback details</span>
-                  <span className="mt-0.5 block text-[0.82rem] text-gray-600">
+                  <span className="block text-lg font-bold text-[#1a2e35]">Useful callback details</span>
+                  <span className="mt-0.5 block text-base text-gray-600">
                     Caller name &bull; Callback number &bull; Reason for calling
                   </span>
                 </span>
@@ -148,7 +148,7 @@ export default function CallRoutingRules() {
           </div>
         </div>
 
-        <p className="icon-mask icon-check-circle [--icon-size:1.25rem] mt-9 flex items-center gap-3 border-t border-gray-300/50 pt-6 text-[0.86rem] text-gray-600 before:text-[#5f7a3a]">
+        <p className="icon-mask icon-check-circle [--icon-size:1.25rem] mt-9 flex items-center gap-3 border-t border-gray-300/50 pt-6 text-base text-gray-600 before:text-[#5f7a3a]">
           Your contact list, transfer options, and backup instructions are confirmed during setup.
         </p>
       </div>

@@ -253,24 +253,25 @@ export default async function BlogPostPage({ params }) {
         </div>
       </article>
 
-      <section className="w-full bg-slate-50 px-4 py-16 md:py-20" aria-labelledby="related-heading">
-        <div className="mx-auto max-w-3xl">
+      <section className="w-full bg-slate-50 py-16 md:py-20" aria-labelledby="related-heading">
+        <div className="site-container">
           <h2 id="related-heading" className="mb-8 text-2xl sm:text-3xl font-bold text-[#34414A]">
             Keep reading
           </h2>
-          <ul className="flex list-none flex-col gap-5">
+          {/* Same three-up grid as the blog index, so the cards match. */}
+          <ul className="grid list-none grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {related.map((item) => (
-              <li key={item.slug}>
+              <li key={item.slug} className="flex">
                 <Link
                   prefetch={false}
                   href={`/blog/${item.slug}`}
-                  className="group block rounded-2xl border border-gray-200/70 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#8CA365] hover:shadow-xl"
+                  className="group flex w-full flex-col rounded-2xl border border-gray-200/70 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#8CA365] hover:shadow-xl"
                 >
                   <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-[#6b8a3e]">{item.category}</p>
                   <p className="mt-2 text-lg font-bold leading-snug text-[#34414A] transition-colors group-hover:text-[#295657]">
                     {item.title}
                   </p>
-                  <p className="mt-2 text-sm leading-relaxed text-gray-600">{item.excerpt}</p>
+                  <p className="mt-2 flex-grow text-sm leading-relaxed text-gray-600">{item.excerpt}</p>
                 </Link>
               </li>
             ))}
@@ -278,14 +279,7 @@ export default async function BlogPostPage({ params }) {
         </div>
       </section>
 
-      <DarkCtaBanner
-        headingId="post-cta-heading"
-        heading="Ready to Stop Missing Calls & Start Growing?"
-        body="Join 2,400+ US businesses who trust our professional receptionists. Setup takes less than 5 minutes — no contracts, no hidden fees."
-        points={['No lock-in contracts', '100% US-based receptionists', '24/7/365 coverage', 'HIPAA compliant']}
-        primary={{ href: '/contact-us', label: 'Get Started Today →' }}
-        secondary={{ href: '/pricing', label: 'View Pricing Plans' }}
-      />
+      
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
     </main>

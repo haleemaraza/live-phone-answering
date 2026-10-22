@@ -3,6 +3,26 @@
 @tailwind utilities;
 
 @layer components {
+  /* One content box for the whole site. Every section's inner wrapper uses
+     this, and so does the header, so their left and right edges line up on
+     every page. The max-width and the gutters are both fixed pixel values on
+     purpose: a percentage gutter widens as the viewport grows, which is what
+     made the content edge drift when the page was zoomed out. */
+  .site-container {
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  @media (min-width: 768px) {
+    .site-container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
   .reveal {
     @apply opacity-0 translate-y-8 transition-all duration-700 ease-out;
   }

@@ -26,10 +26,10 @@ const BENEFITS = [
 export default function LeadCaptureBenefits() {
   return (
     <section
-      className="w-full bg-[#f8f7f2] px-4 py-14 md:py-16 lg:px-[5%]"
+      className="w-full bg-[#f8f7f2] py-14 md:py-16"
       aria-labelledby="lead-capture-benefits-heading"
     >
-      <div className="mx-auto max-w-6xl">
+      <div className="site-container">
         <div className="mx-auto max-w-3xl text-center">
           <p className="icon-mask icon-smile [--icon-size:1rem] inline-flex items-center gap-2 bg-[#8CA365]/10 text-[#5f7a3a] rounded-full text-sm font-semibold px-4 py-1.5">
             Benefits of lead capture answering
@@ -42,13 +42,13 @@ export default function LeadCaptureBenefits() {
             <br />
             Into Clear Next Steps
           </h2>
-          <p className="mt-3 text-[0.95rem] leading-relaxed text-gray-600">
+          <p className="mt-3 text-lg leading-relaxed text-gray-600">
             Give your team useful caller details and more time to act on them. Help prospective customers move forward
             with a clear, professional first response.
           </p>
         </div>
 
-        <div className="mt-9 grid grid-cols-1 items-stretch gap-8 lg:grid-cols-[minmax(0,0.92fr)_minmax(0,1fr)] lg:gap-11">
+        <div className="mt-9 grid grid-cols-1 items-stretch gap-8 lg:grid-cols-[minmax(0,1.22fr)_minmax(0,1fr)] lg:gap-11">
           {/* The photo absorbs the height difference so both columns stay level. */}
           {/* The caption panel is part of the supplied artwork, so it is not
               drawn again in HTML and the photo is not cropped. */}
@@ -76,7 +76,7 @@ export default function LeadCaptureBenefits() {
                 ></span>
                 <span className="min-w-0">
                   <span className="block text-[1rem] font-bold leading-snug text-[#1a2e35]">{benefit.title}</span>
-                  <span className="mt-1 block text-[0.84rem] leading-relaxed text-gray-600">{benefit.body}</span>
+                  <span className="mt-1 block text-base leading-relaxed text-gray-600">{benefit.body}</span>
                 </span>
               </li>
             ))}
@@ -90,7 +90,7 @@ export default function LeadCaptureBenefits() {
           <Link
             prefetch={false}
             href="/contact-us"
-            className="icon-mask icon-arrow-right [--icon-size:0.9rem] inline-flex flex-shrink-0 flex-row-reverse items-center gap-3 rounded-lg bg-[#1d4b37] px-6 py-3.5 text-[0.88rem] font-bold text-white transition-all hover:-translate-y-0.5 hover:bg-[#164032]"
+            className="icon-mask icon-arrow-right [--icon-size:0.9rem] inline-flex flex-shrink-0 flex-row-reverse items-center gap-3 rounded-lg bg-[#1d4b37] px-6 py-3.5 text-base font-bold text-white transition-all hover:-translate-y-0.5 hover:bg-[#164032]"
           >
             Get My Lead Capture Quote
           </Link>

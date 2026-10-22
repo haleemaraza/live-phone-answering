@@ -139,7 +139,7 @@ function PlanCard({ plan, theme, ctaHref }) {
 
 const THEMES = {
   dark: {
-    section: 'bg-[#092f28] py-20 px-4 sm:px-6 lg:px-8',
+    section: 'bg-[#092f28] py-20',
     price: 'text-[#26333d]',
     eyebrow: 'border-white/15 bg-white/10 text-white',
     heading: 'text-white',
@@ -155,7 +155,7 @@ const THEMES = {
     customCta: 'bg-white text-[#26333d] hover:bg-[#f2f5ea]',
   },
   light: {
-    section: 'bg-white py-14 sm:py-20 px-4 border-t border-gray-100',
+    section: 'bg-white py-14 sm:py-20 border-t border-gray-100',
     price: 'text-[#34414A]',
     eyebrow: 'bg-[#8CA365]/10 text-[#6b8a3e] border-transparent',
     heading: 'text-[#34414A]',
@@ -186,7 +186,7 @@ export default function MinutePlans({ theme = 'dark', ctaHref = '#contact' }) {
         <div className={`absolute bottom-0 right-0 h-96 w-96 rounded-full blur-3xl ${t.orb}`}></div>
       </div>
 
-      <div className="relative mx-auto max-w-7xl">
+      <div className="site-container relative">
         <div className="mx-auto max-w-3xl text-center">
           <p className={`inline-flex items-center rounded-full border px-5 py-2 text-sm font-semibold shadow-sm ${t.eyebrow}`}>
             Simple Monthly Minute Plans • Live Receptionists • No Long-Term Contract
@@ -200,7 +200,7 @@ export default function MinutePlans({ theme = 'dark', ctaHref = '#contact' }) {
           </p>
         </div>
 
-        <div className={`mx-auto mt-10 max-w-4xl rounded-2xl border px-6 py-5 text-center shadow-md ${t.panel}`}>
+        <div className={`mt-10 rounded-2xl border px-6 py-5 text-center shadow-md ${t.panel}`}>
           <p className="text-sm font-semibold">
             Start with the minutes you need. Upgrade anytime as your call volume grows.
           </p>
@@ -214,7 +214,7 @@ export default function MinutePlans({ theme = 'dark', ctaHref = '#contact' }) {
           ))}
         </ul>
 
-        <div className={`mx-auto mt-10 max-w-5xl rounded-3xl border p-8 text-center shadow-md ${t.panel}`}>
+        <div className={`mt-10 rounded-3xl border p-8 text-center shadow-md ${t.panel}`}>
           <h3 className="text-2xl font-bold">Need 1,000+ Minutes or Special Coverage?</h3>
           <p className={`mx-auto mt-3 max-w-3xl text-sm leading-7 ${t.customBody}`}>
             Custom volume plans are available for high-call-volume businesses, after-hours answering, weekend coverage, bilingual

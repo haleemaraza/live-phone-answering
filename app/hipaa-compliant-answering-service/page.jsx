@@ -321,7 +321,7 @@ export default function HipaaCompliantAnsweringServicePage() {
               </g>
             </svg>
           </div>
-          <div className="max-w-7xl mx-auto px-4 py-16 lg:py-24 w-full relative z-10">
+          <div className="site-container py-16 lg:py-24 w-full relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
               {/* Left Column (Copy) */}
               <div className="lg:col-span-7 flex flex-col reveal">
@@ -373,7 +373,7 @@ export default function HipaaCompliantAnsweringServicePage() {
                         strokeWidth="1.5"
                       />
                     </svg>
-                    <span className="text-[0.9rem] font-bold text-[#34414A]">
+                    <span className="text-lg font-bold text-[#34414A]">
                       HIPAA Certified Staff
                     </span>
                   </div>
@@ -394,7 +394,7 @@ export default function HipaaCompliantAnsweringServicePage() {
                         strokeWidth="1.5"
                       />
                     </svg>
-                    <span className="text-[0.9rem] font-bold text-[#34414A]">
+                    <span className="text-lg font-bold text-[#34414A]">
                       BAA Readily Available
                     </span>
                   </div>
@@ -415,7 +415,7 @@ export default function HipaaCompliantAnsweringServicePage() {
                         strokeWidth="1.5"
                       />
                     </svg>
-                    <span className="text-[0.9rem] font-bold text-[#34414A]">
+                    <span className="text-lg font-bold text-[#34414A]">
                       End-to-End Encryption
                     </span>
                   </div>
@@ -436,7 +436,7 @@ export default function HipaaCompliantAnsweringServicePage() {
                         strokeWidth="1.5"
                       />
                     </svg>
-                    <span className="text-[0.9rem] font-bold text-[#34414A]">
+                    <span className="text-lg font-bold text-[#34414A]">
                       A+ BBB Accredited
                     </span>
                   </div>
@@ -499,7 +499,7 @@ export default function HipaaCompliantAnsweringServicePage() {
                   <h4 className="text-2xl font-bold text-white mb-1">
                     Request HIPAA-Compliant Quote
                   </h4>
-                  <p className="text-[0.85rem] text-teal-100/80 mb-6">
+                  <p className="text-base text-teal-100/80 mb-6">
                     Secure, 24/7 patient answering. No credit card required.
                   </p>
                   {/* Form */}
@@ -595,7 +595,7 @@ export default function HipaaCompliantAnsweringServicePage() {
           </div>
         </section>
         {/* HIPAA Risk & Penalty Dashboard */}
-        <section className="bg-[#0f2925] py-24 md:py-32 px-4 relative overflow-hidden">
+        <section className="bg-[#0f2925] py-24 md:py-32 relative overflow-hidden">
           {/* Premium Colorful Mesh Gradient Background */}
           <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
             {/* Glowing Orb 1 (Brand Green) */}
@@ -619,7 +619,7 @@ export default function HipaaCompliantAnsweringServicePage() {
             className="absolute top-0 right-1/4 w-[600px] h-[600px] bg-red-600/5 rounded-full blur-[120px] pointer-events-none"
           >
           </div>
-          <div className="max-w-7xl mx-auto flex flex-col gap-12 relative z-10">
+          <div className="site-container flex flex-col gap-12 relative z-10">
             {/* Header Section */}
             <div>
               <span
@@ -822,8 +822,8 @@ export default function HipaaCompliantAnsweringServicePage() {
           </div>
         </section>
         {/* Definition + BAA Explained Section */}
-        <section className="bg-white py-24 md:py-32 px-4 border-t border-gray-100 relative">
-          <div className="max-w-7xl mx-auto flex flex-col gap-12">
+        <section className="bg-white py-24 md:py-32 border-t border-gray-100 relative">
+          <div className="site-container flex flex-col gap-12">
             {/* Top Block (The Snippet Magnet) */}
             <div
               className="bg-blue-50/40 border-l-8 border-[#8CA365] rounded-r-3xl p-8 md:p-12 shadow-sm relative overflow-hidden"
@@ -1180,8 +1180,8 @@ export default function HipaaCompliantAnsweringServicePage() {
           </div>
         </section>
         {/* Core Features Strata Section */}
-        <section className="bg-white py-24 md:py-32 px-4 border-t border-slate-100 relative">
-          <div className="max-w-6xl mx-auto">
+        <section className="bg-white py-24 md:py-32 border-t border-slate-100 relative">
+          <div className="site-container">
             {/* Header Section */}
             <div className="mb-16">
               <span
@@ -1498,8 +1498,8 @@ export default function HipaaCompliantAnsweringServicePage() {
           </div>
         </section>
         {/* Medical Specialties Silo Section */}
-        <section className="bg-slate-50 py-24 md:py-32 px-4 border-t border-gray-200 relative">
-          <div className="max-w-7xl mx-auto">
+        <section className="bg-slate-50 py-24 md:py-32 border-t border-gray-200 relative">
+          <div className="site-container">
             {/* Header Section */}
             <div className="mb-16">
               <span
@@ -1802,9 +1802,9 @@ export default function HipaaCompliantAnsweringServicePage() {
         </section>
         {/* HIPAA Setup Process Section */}
         <section
-          className="bg-gradient-to-br from-white to-slate-50 py-24 md:py-32 px-4 border-t border-gray-200 relative overflow-hidden"
+          className="bg-gradient-to-br from-white to-slate-50 py-24 md:py-32 border-t border-gray-200 relative overflow-hidden"
         >
-          <div className="max-w-7xl mx-auto relative z-10">
+          <div className="site-container relative z-10">
             {/* Header Section */}
             <div className="mb-16 relative z-10">
               <span
@@ -1942,7 +1942,7 @@ export default function HipaaCompliantAnsweringServicePage() {
           </div>
         </section>
         {/* Receptionist Training Expertise Section */}
-        <section className="bg-[#0f2925] py-24 md:py-32 px-4 relative overflow-hidden">
+        <section className="bg-[#0f2925] py-24 md:py-32 relative overflow-hidden">
           {/* Premium Colorful Mesh Gradient Background */}
           <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
             {/* Glowing Orb 1 (Brand Green) */}
@@ -1971,7 +1971,7 @@ export default function HipaaCompliantAnsweringServicePage() {
           >
           </div>
           <div
-            className="max-w-7xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center"
+            className="site-container relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center"
           >
             {/* Left Column: Intro & Quote */}
             <div className="lg:col-span-5 flex flex-col gap-10">
@@ -2142,14 +2142,14 @@ export default function HipaaCompliantAnsweringServicePage() {
         {/* Trust Wall & Certifications Section */}
         {/* Trust Wall & Certifications Section */}
         <section
-          className="bg-white py-24 md:py-32 px-4 relative overflow-hidden border-t border-slate-100"
+          className="bg-white py-24 md:py-32 relative overflow-hidden border-t border-slate-100"
         >
           {/* Abstract Glow Elements */}
           <div
             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#8CA365] opacity-[0.03] rounded-full blur-[100px] pointer-events-none"
           >
           </div>
-          <div className="max-w-7xl mx-auto relative z-10">
+          <div className="site-container relative z-10">
             {/* Header */}
             <div className="mb-16 text-center max-w-3xl mx-auto">
               <span
@@ -2366,8 +2366,8 @@ export default function HipaaCompliantAnsweringServicePage() {
         </section>
         <PricingSection {...hipaaPricing} />
         {/* SOCIAL PROOF & REVIEWS SECTION */}
-        <section className="bg-slate-50 py-24 px-4 relative w-full">
-          <div className="max-w-7xl mx-auto">
+        <section className="bg-slate-50 py-24 relative w-full">
+          <div className="site-container">
             {/* Header Section */}
             <h2
               className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] text-center mb-4 leading-tight"

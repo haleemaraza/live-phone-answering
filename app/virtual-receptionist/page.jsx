@@ -12,7 +12,7 @@ import ToolsConnect from '@/features/virtual-receptionist/ToolsConnect'
 import BusinessVoice from '@/features/virtual-receptionist/BusinessVoice'
 import MinutePlans from '@/components/MinutePlans'
 import ContactFormSection from '@/components/ContactFormSection'
-
+import RatingsTrustBar from '@/components/RatingsTrustBar'
 export const metadata = {
   title: "Virtual Receptionist Service | Live Phone Answering",
   description: "Professional virtual receptionist service for US businesses. Real human receptionists answer every call 24/7 in your company's name. Get started today.",
@@ -40,13 +40,14 @@ export default function VirtualReceptionistPage() {
       {/* Main Content for Virtual Receptionist */}
       <main className="w-full">
         <VirtualReceptionistHero />
+        <RatingsTrustBar label="Trusted by 5,000+ US businesses booking appointments by phone every day" />
     
       <FrontDeskIntro />
       
       <CallHandling />
       <CallExperience />
-      <CoverageOptions />
       <SetupSteps />
+      <CoverageOptions />
       <MinutePlans />
       <ToolsConnect />
       <IndustriesTabs />

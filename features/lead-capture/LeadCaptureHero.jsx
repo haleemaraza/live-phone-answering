@@ -45,11 +45,11 @@ const breadcrumbSchema = {
 export default function LeadCaptureHero() {
   return (
     <section
-      className="relative w-full overflow-hidden px-4 lg:px-[5%] pt-8 pb-0"
+      className="relative w-full overflow-hidden pt-8 pb-0"
       style={SECTION_BACKGROUND}
       aria-labelledby="lead-capture-hero-heading"
     >
-      <div className="relative z-10 mx-auto max-w-7xl">
+      <div className="site-container relative z-10">
         <nav aria-label="Breadcrumb">
           <ol className="flex flex-wrap items-center gap-2 text-sm text-gray-600 list-none">
             {CRUMBS.map((crumb) => (
@@ -70,7 +70,7 @@ export default function LeadCaptureHero() {
 
         {/* The photo is portrait, so its column is narrowed until its height
             lands near the copy beside it rather than towering over it. */}
-        <div className="grid grid-cols-1 items-center gap-10 pt-10 pb-16 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.62fr)] lg:gap-14 lg:pt-14 lg:pb-20">
+        <div className="grid grid-cols-1 items-center gap-10 pt-10 pb-16 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.93fr)] lg:gap-14 lg:pt-14 lg:pb-20">
           <div>
             <p className="icon-mask icon-user-plus inline-flex items-center gap-2 bg-white/70 backdrop-blur-sm text-[#295657] rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider px-5 py-2 mb-6 shadow-sm border border-white/50">
               Live receptionists. Useful lead details.
@@ -91,12 +91,12 @@ export default function LeadCaptureHero() {
               Give every new enquiry a clear next step.
             </p>
 
-            <p className="mt-4 max-w-lg text-[0.93rem] leading-relaxed text-gray-600">
+            <p className="mt-4 max-w-lg text-lg leading-relaxed text-gray-600">
               Give prospective customers a real person to speak with when they call. Our receptionists collect contact
               details, ask your approved intake questions, and capture what your team needs to follow up.
             </p>
 
-            <p className="mt-4 max-w-lg text-[0.93rem] leading-relaxed text-gray-600">
+            <p className="mt-4 max-w-lg text-lg leading-relaxed text-gray-600">
               Keep your team focused while we organize incoming enquiries around your instructions. With agreed
               qualification and routing rules, suitable callers reach the right person or leave a clear request for a
               callback.
@@ -106,14 +106,14 @@ export default function LeadCaptureHero() {
               <Link
                 prefetch={false}
                 href="/contact-us"
-                className="icon-mask icon-arrow-right [--icon-size:0.95rem] inline-flex flex-row-reverse items-center justify-center gap-3 rounded-lg bg-[#8CA365] hover:bg-[#9cb374] px-7 py-3.5 text-[0.95rem] font-bold text-white transition-all hover:-translate-y-0.5"
+                className="icon-mask icon-arrow-right [--icon-size:0.95rem] inline-flex flex-row-reverse items-center justify-center gap-3 rounded-lg bg-[#8CA365] hover:bg-[#9cb374] px-7 py-3.5 text-lg font-bold text-white transition-all hover:-translate-y-0.5"
               >
                 Get My Lead Capture Quote
               </Link>
               <Link
                 prefetch={false}
                 href="/pricing"
-                className="inline-flex items-center justify-center rounded-lg border-2 border-[#1a2e35] bg-white px-7 py-3.5 text-[0.95rem] font-bold text-[#1a2e35] transition-all hover:-translate-y-0.5 hover:bg-[#f3f4f1]"
+                className="inline-flex items-center justify-center rounded-lg border-2 border-[#1a2e35] bg-white px-7 py-3.5 text-lg font-bold text-[#1a2e35] transition-all hover:-translate-y-0.5 hover:bg-[#f3f4f1]"
               >
                 View Plans &amp; Pricing
               </Link>
@@ -126,7 +126,7 @@ export default function LeadCaptureHero() {
                     className="icon-mask icon-check [--icon-size:0.7rem] flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-[#8CA365] text-white"
                     aria-hidden="true"
                   ></span>
-                  <span className="text-[0.85rem] text-[#1a2e35]">{check}</span>
+                  <span className="text-base text-[#1a2e35]">{check}</span>
                 </li>
               ))}
             </ul>

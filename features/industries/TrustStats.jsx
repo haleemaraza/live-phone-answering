@@ -17,7 +17,7 @@ export default function TrustStats() {
         <div className="absolute bottom-0 -left-16 w-80 h-80 bg-[#295657]/5 rounded-full blur-3xl"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 relative z-10">
+      <div className="site-container relative z-10">
         <div className="text-center mb-14 reveal">
           <p className="icon-mask icon-shield-check inline-flex items-center gap-2 bg-[#295657]/10 text-[#295657] rounded-full text-sm font-semibold px-4 py-1.5 mb-5">
             Trusted Across Industries

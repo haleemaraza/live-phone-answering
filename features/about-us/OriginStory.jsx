@@ -2,8 +2,8 @@ import { ArrowRightIcon } from './icons'
 
 export default function OriginStory() {
   return (
-    <section className="bg-stone-50 py-14 sm:py-24 px-4 border-y border-gray-200" aria-labelledby="origin-heading">
-      <div className="max-w-7xl mx-auto">
+    <section className="bg-stone-50 py-14 sm:py-24 border-y border-gray-200" aria-labelledby="origin-heading">
+      <div className="site-container">
         <h2
           id="origin-heading"
           className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] text-center mb-10 md:mb-16 max-w-4xl mx-auto leading-tight"

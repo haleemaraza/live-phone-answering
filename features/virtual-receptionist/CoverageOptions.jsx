@@ -51,8 +51,8 @@ function Card({ theme, eyebrow, title, body, idealFor, children }) {
 
 export default function CoverageOptions() {
   return (
-    <section className="w-full  py-20 md:py-24 px-4" aria-labelledby="coverage-heading">
-      <div className="max-w-7xl mx-auto">
+    <section className="w-full py-20 md:py-24" aria-labelledby="coverage-heading">
+      <div className="site-container">
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-14">
           <p className="icon-mask icon-clock inline-flex items-center gap-2 bg-white text-[#4a7a3e] rounded-full text-sm font-semibold px-5 py-2 mb-6 shadow-sm border border-white/60">
             Flexible call coverage

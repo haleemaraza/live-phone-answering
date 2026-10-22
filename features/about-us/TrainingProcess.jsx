@@ -59,8 +59,8 @@ const BULLET =
 
 export default function TrainingProcess() {
   return (
-    <section className="bg-slate-50 py-20 md:py-28 px-4" aria-labelledby="training-heading">
-      <div className="max-w-7xl mx-auto">
+    <section className="bg-slate-50 py-20 md:py-28" aria-labelledby="training-heading">
+      <div className="site-container">
         <div className="text-center max-w-4xl mx-auto mb-14">
           <p className="inline-flex items-center rounded-full bg-[#E6F0EE] px-4 py-2 text-sm font-bold text-[#295657] mb-5">
             Receptionist Training &amp; Call Quality

@@ -43,11 +43,11 @@ const breadcrumbSchema = {
 export default function OverflowHero() {
   return (
     <section
-      className="relative w-full overflow-hidden px-4 lg:px-[5%] pt-8 pb-0"
+      className="relative w-full overflow-hidden pt-8 pb-0"
       style={SECTION_BACKGROUND}
       aria-labelledby="overflow-hero-heading"
     >
-      <div className="relative z-10 mx-auto max-w-7xl">
+      <div className="site-container relative z-10">
         <nav aria-label="Breadcrumb">
           <ol className="flex flex-wrap items-center gap-2 text-sm text-gray-600 list-none">
             {CRUMBS.map((crumb) => (
@@ -85,13 +85,13 @@ export default function OverflowHero() {
               Your team answers first. We handle the calls they can&rsquo;t reach.
             </p>
 
-            <p className="mt-3.5 max-w-lg text-[0.93rem] leading-relaxed text-gray-600">
+            <p className="mt-3.5 max-w-lg text-lg leading-relaxed text-gray-600">
               Give callers a helpful response when your staff are already on the phone, assisting customers, or away
               from their desks. Our overflow call answering service provides live receptionist support for calls your
               team cannot take, helping you capture inquiries and keep conversations moving.
             </p>
 
-            <p className="mt-3.5 max-w-lg text-[0.93rem] leading-relaxed text-gray-600">
+            <p className="mt-3.5 max-w-lg text-lg leading-relaxed text-gray-600">
               With your greeting, approved questions, and call-handling instructions, our receptionists become a
               familiar point of contact for your callers. Keep your team focused on the work in front of them while we
               collect the details they need for the next step.
@@ -101,13 +101,13 @@ export default function OverflowHero() {
               <Link
                 prefetch={false}
                 href="/contact-us"
-                className="icon-mask icon-arrow-right [--icon-size:1rem] inline-flex flex-row-reverse items-center justify-center gap-3 rounded-xl bg-[#8CA365] px-8 py-3.5 text-[0.95rem] font-bold text-white shadow-lg transition-all hover:-translate-y-0.5 hover:bg-[#9cb374]"
+                className="icon-mask icon-arrow-right [--icon-size:1rem] inline-flex flex-row-reverse items-center justify-center gap-3 rounded-xl bg-[#8CA365] px-8 py-3.5 text-lg font-bold text-white shadow-lg transition-all hover:-translate-y-0.5 hover:bg-[#9cb374]"
               >
                 Get My Overflow Quote
               </Link>
               <a
                 href="tel:8574531055"
-                className="icon-mask icon-phone [--icon-size:1.1rem] inline-flex items-center justify-center gap-3 rounded-xl border-2 border-[#1a2e35]/15 bg-white px-8 py-3.5 text-[0.95rem] font-bold text-[#1a2e35] transition-all hover:-translate-y-0.5 hover:border-[#8CA365] before:text-[#295657]"
+                className="icon-mask icon-phone [--icon-size:1.1rem] inline-flex items-center justify-center gap-3 rounded-xl border-2 border-[#1a2e35]/15 bg-white px-8 py-3.5 text-lg font-bold text-[#1a2e35] transition-all hover:-translate-y-0.5 hover:border-[#8CA365] before:text-[#295657]"
               >
                 Call Our Team
               </a>
@@ -116,7 +116,7 @@ export default function OverflowHero() {
             <p className="mt-6">
               <a
                 href="#how-overflow-works"
-                className="icon-mask icon-arrow-down [--icon-size:0.9rem] inline-flex flex-row-reverse items-center gap-2 text-[0.9rem] font-semibold text-[#34414A] underline underline-offset-[6px] transition-colors hover:text-[#6b8a3e]"
+                className="icon-mask icon-arrow-down [--icon-size:0.9rem] inline-flex flex-row-reverse items-center gap-2 text-lg font-semibold text-[#34414A] underline underline-offset-[6px] transition-colors hover:text-[#6b8a3e]"
               >
                 See How Overflow Works
               </a>
@@ -166,16 +166,16 @@ export default function OverflowHero() {
                 aria-hidden="true"
               ></span>
               <span className="min-w-0">
-                <span className="block text-[0.9rem] font-bold leading-tight text-[#1a2e35]">Your office</span>
-                <span className="mt-0.5 block text-[0.8rem] text-gray-600">Team busy</span>
+                <span className="block text-lg font-bold leading-tight text-[#1a2e35]">Your office</span>
+                <span className="mt-0.5 block text-base text-gray-600">Team busy</span>
               </span>
             </p>
 
             <p className="absolute right-0 top-[47%] z-20 flex items-center gap-3 rounded-xl bg-[#0f2925] px-4 py-3 shadow-xl">
               <span className="mt-1 h-2.5 w-2.5 flex-shrink-0 self-start rounded-full bg-[#8CA365]" aria-hidden="true"></span>
               <span className="min-w-0">
-                <span className="block text-[0.9rem] font-bold leading-tight text-white">Live receptionist</span>
-                <span className="mt-0.5 block text-[0.8rem] text-white/60">Ready to help your caller</span>
+                <span className="block text-lg font-bold leading-tight text-white">Live receptionist</span>
+                <span className="mt-0.5 block text-base text-white/60">Ready to help your caller</span>
               </span>
             </p>
 
@@ -184,7 +184,7 @@ export default function OverflowHero() {
                 className="icon-mask icon-report [--icon-size:1.05rem] flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-[#eef3e4] text-[#295657]"
                 aria-hidden="true"
               ></span>
-              <span className="text-[0.9rem] font-bold text-[#1a2e35]">Your greeting. Your instructions.</span>
+              <span className="text-lg font-bold text-[#1a2e35]">Your greeting. Your instructions.</span>
             </p>
           </div>
         </div>

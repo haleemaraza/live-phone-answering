@@ -89,10 +89,10 @@ function IntegrationCard({ group }) {
 export default function OverflowIntegrations() {
   return (
     <section
-      className="w-full bg-[#fafaf8] px-4 py-14 md:py-16 lg:px-[5%]"
+      className="w-full bg-[#fafaf8] py-14 md:py-16"
       aria-labelledby="overflow-integrations-heading"
     >
-      <div className="mx-auto max-w-6xl">
+      <div className="site-container">
         <div className="mx-auto max-w-3xl text-center">
           <p className="icon-mask icon-share [--icon-size:1rem] inline-flex items-center gap-2 bg-[#8CA365]/10 text-[#5f7a3a] rounded-full text-sm font-semibold px-4 py-1.5">Platform and integrations</p>
           <h2
@@ -103,7 +103,7 @@ export default function OverflowIntegrations() {
             <br />
             With Your Everyday Business Tools
           </h2>
-          <p className="mt-3 text-[0.9rem] leading-relaxed text-gray-600">
+          <p className="mt-3 text-lg leading-relaxed text-gray-600">
             Keep caller information moving through your business. Plan lead capture, appointment requests, and message
             delivery around the tools your team uses.
           </p>
@@ -139,10 +139,10 @@ export default function OverflowIntegrations() {
 
         <div className="mt-5 flex flex-col items-start gap-5 rounded-xl bg-[#1d4b37] px-6 py-5 sm:flex-row sm:items-center sm:justify-between">
           <p>
-            <span className="block text-[0.95rem] font-bold text-white">
+            <span className="block text-lg font-bold text-white">
               Have a specific tool in mind? Let&rsquo;s check your setup.
             </span>
-            <span className="mt-1 block text-[0.78rem] text-white/70">
+            <span className="mt-1 block text-sm text-white/70">
               Tell us which phone system and business tools you use.
             </span>
           </p>
@@ -150,7 +150,7 @@ export default function OverflowIntegrations() {
           <Link
             prefetch={false}
             href="/contact-us"
-            className="icon-mask icon-arrow-right [--icon-size:0.85rem] inline-flex flex-shrink-0 flex-row-reverse items-center gap-2.5 rounded-lg bg-[#8CA365] px-6 py-3 text-[0.82rem] font-bold text-white transition-all hover:-translate-y-0.5 hover:bg-[#9cb374]"
+            className="icon-mask icon-arrow-right [--icon-size:0.85rem] inline-flex flex-shrink-0 flex-row-reverse items-center gap-2.5 rounded-lg bg-[#8CA365] px-6 py-3 text-base font-bold text-white transition-all hover:-translate-y-0.5 hover:bg-[#9cb374]"
           >
             Check My Integrations
           </Link>

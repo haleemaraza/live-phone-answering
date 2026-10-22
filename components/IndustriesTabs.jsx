@@ -13,11 +13,11 @@ const INDUSTRIES = [
     body: 'Our HIPAA-compliant agents are trained to handle sensitive patient data, route emergency escalations accurately, and schedule appointments directly into your EMR/EHR systems.',
     badge: { text: 'HIPAA Compliant', className: 'bg-blue-50 text-blue-700 border-blue-100' },
     cards: [
-      { name: 'Medical Clinics', href: '/medical-answering-service' },
-      { name: 'Dental Offices', href: '/medical-answering-service' },
-      { name: 'Specialists & Surgeons', href: '/medical-answering-service' },
-      { name: 'Pharmacies', href: '/medical-answering-service' },
-      { name: 'Home Health & Hospice', href: '/hipaa-compliant-answering-service' },
+      { name: 'Medical Clinics', href: '/medical-answering-service', icon: 'health-care/medical-clinics' },
+      { name: 'Dental Offices', href: '/medical-answering-service', icon: 'health-care/dental-offices' },
+      { name: 'Specialists & Surgeons', href: '/medical-answering-service', icon: 'health-care/specialists-and-surgeons' },
+      { name: 'Pharmacies', href: '/medical-answering-service', icon: 'health-care/pharmacies' },
+      { name: 'Home Health & Hospice', href: '/hipaa-compliant-answering-service', icon: 'health-care/home-health-and-hospice' },
     ],
   },
   {
@@ -29,11 +29,11 @@ const INDUSTRIES = [
     body: 'We act as the front line for your firm, filtering out spam, completing complex legal intake forms, and routing high-value prospects directly to your cell.',
     badge: { text: 'Confidential Intake', className: 'bg-slate-100 text-slate-700 border-slate-200' },
     cards: [
-      { name: 'Law Firms', href: '/industries-served' },
-      { name: 'Real Estate Brokers', href: '/industries-served' },
-      { name: 'Accounting & CPA', href: '/industries-served' },
-      { name: 'Insurance Agencies', href: '/industries-served' },
-      { name: 'Financial Advisors', href: '/industries-served' },
+      { name: 'Law Firms', href: '/industries-served', icon: 'legal-professional/law-firms' },
+      { name: 'Real Estate Brokers', href: '/industries-served', icon: 'legal-professional/real-estate-brokers' },
+      { name: 'Accounting & CPA', href: '/industries-served', icon: 'legal-professional/accounting-cpa' },
+      { name: 'Insurance Agencies', href: '/industries-served', icon: 'legal-professional/insurance-agencies' },
+      { name: 'Financial Advisors', href: '/industries-served', icon: 'legal-professional/financial-advisors' },
     ],
   },
   {
@@ -45,10 +45,10 @@ const INDUSTRIES = [
     body: 'Never lose a job to a competitor because you were on a roof or under a sink. We qualify leads and book them straight into ServiceTitan or Housecall Pro.',
     badge: { text: 'CRM Integration', className: 'bg-amber-50 text-amber-700 border-amber-100' },
     cards: [
-      { name: 'HVAC & Cooling', href: '/industries-served' },
-      { name: 'Plumbing', href: '/industries-served' },
-      { name: 'Roofing', href: '/industries-served' },
-      { name: 'Electrical', href: '/industries-served' },
+      { name: 'HVAC & Cooling', href: '/industries-served', icon: 'home-service/hvac-cooling' },
+      { name: 'Plumbing', href: '/industries-served', icon: 'home-service/plumbing' },
+      { name: 'Roofing', href: '/industries-served', icon: 'home-service/roofing' },
+      { name: 'Electrical', href: '/industries-served', icon: 'home-service/electrical' },
       { name: 'Cleaning & Janitorial', href: '/industries-served' },
     ],
   },
@@ -60,11 +60,11 @@ const INDUSTRIES = [
     body: 'Whether you are managing massive apartment portfolios, running a marketing agency, or booking salon appointments, we adapt strictly to your exact protocols.',
     badge: { text: 'Custom Protocols', className: 'bg-purple-50 text-purple-700 border-purple-100' },
     cards: [
-      { name: 'Property Management', href: '/industries-served' },
-      { name: 'Marketing Agencies', href: '/industries-served' },
-      { name: 'IT & Tech Support', href: '/industries-served' },
-      { name: 'Salons & Spas', href: '/industries-served' },
-      { name: 'E-commerce & Retail', href: '/industries-served' },
+      { name: 'Property Management', href: '/industries-served', icon: 'specialized/property-management' },
+      { name: 'Marketing Agencies', href: '/industries-served', icon: 'specialized/marketing-agencies' },
+      { name: 'IT & Tech Support', href: '/industries-served', icon: 'specialized/it-tech-support' },
+      { name: 'Salons & Spas', href: '/industries-served', icon: 'specialized/salons-spas' },
+      { name: 'E-commerce & Retail', href: '/industries-served', icon: 'specialized/ecommerce-retail' },
     ],
   },
 ]
@@ -100,7 +100,7 @@ export default function IndustriesTabs({
 
   return (
     <section className={sectionClassName} id="industries" aria-labelledby="industries-heading">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="site-container">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 id="industries-heading" className={headingClassName}>
             {heading}
@@ -163,9 +163,22 @@ export default function IndustriesTabs({
                     <li key={card.name}>
                       <Link prefetch={false}
                         href={card.href}
-                        className="group p-5 bg-gray-50 border border-gray-100 rounded-2xl hover:bg-white hover:border-[#8CA365] hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex items-center justify-between"
+                        className="group p-5 bg-[#fff] border-2 border-gray-100 rounded-2xl hover:bg-white hover:border-[#8CA365] hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex items-center gap-4"
                       >
-                        <span className="font-bold text-[#34414A] group-hover:text-[#8CA365] transition-colors">{card.name}</span>
+                        {/* Lazy on purpose: the three inactive panels are
+                            display:none, so only the open tab's icons load. */}
+                        {card.icon && (
+                          <img
+                            src={`/icons/train/${card.icon}.webp`}
+                            alt=""
+                            width={56}
+                            height={56}
+                            loading="lazy"
+                            decoding="async"
+                            className="h-14 w-14 flex-shrink-0 object-contain"
+                          />
+                        )}
+                        <span className="flex-grow font-bold text-[#34414A] group-hover:text-[#8CA365] transition-colors">{card.name}</span>
                         <ArrowIcon />
                       </Link>
                     </li>

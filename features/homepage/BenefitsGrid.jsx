@@ -109,7 +109,7 @@ export default function BenefitsGrid() {
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-1/2 bg-gradient-to-b from-[#E6F0EE] to-transparent blur-3xl"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="site-container relative z-10">
         <div className="max-w-3xl mx-auto text-center mb-16 md:mb-24">
           <h2 id="benefits-heading" className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] tracking-tight mb-6 font-sans">
             Benefits of Live Phone

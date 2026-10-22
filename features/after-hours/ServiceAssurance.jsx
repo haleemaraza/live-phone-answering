@@ -25,10 +25,10 @@ const ASSURANCES = [
 
 export default function ServiceAssurance() {
   return (
-    <section className="w-full bg-[#0f2925] px-4 py-14 md:py-16 lg:px-[5%]" aria-labelledby="assurance-heading">
+    <section className="w-full bg-[#0f2925] py-14 md:py-16" aria-labelledby="assurance-heading">
       {/* The divider is the grid's own border so it sits exactly in the gutter
           and disappears with the single-column layout on small screens. */}
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 lg:grid-cols-[minmax(0,1.08fr)_minmax(0,1fr)] lg:gap-12">
+      <div className="site-container grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,1.08fr)_minmax(0,1fr)] lg:gap-12">
         <div className="lg:py-2">
           <p className="icon-mask icon-shield-check [--icon-size:1rem] inline-flex items-center gap-2 bg-white/10 text-[#a8c47d] rounded-full text-sm font-semibold px-4 py-1.5">
             After-hours confidence
@@ -59,7 +59,7 @@ export default function ServiceAssurance() {
                 aria-hidden="true"
               ></span>
               <h3 className="mt-3 text-lg font-bold leading-snug text-white">{item.title}</h3>
-              <p className="mt-1.5 text-[0.88rem] leading-relaxed text-white/60">{item.body}</p>
+              <p className="mt-1.5 text-base leading-relaxed text-white/60">{item.body}</p>
             </li>
           ))}
         </ul>

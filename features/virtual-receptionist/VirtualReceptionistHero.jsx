@@ -57,11 +57,11 @@ const breadcrumbSchema = {
 export default function VirtualReceptionistHero() {
   return (
     <section
-      className="relative overflow-hidden px-4 lg:px-[5%] pt-8 pb-0"
+      className="relative overflow-hidden pt-8 pb-0"
       style={SECTION_BACKGROUND}
       aria-labelledby="vr-hero-heading"
     >
-      <nav aria-label="Breadcrumb" className="max-w-7xl mx-auto relative z-10">
+      <nav aria-label="Breadcrumb" className="site-container relative z-10">
         <ol className="flex flex-wrap items-center gap-2 text-sm text-[#5a6c6e] list-none">
           {CRUMBS.map((crumb) => (
             <li key={crumb.href} className="flex items-center gap-2">
@@ -79,7 +79,7 @@ export default function VirtualReceptionistHero() {
         </ol>
       </nav>
 
-      <div className="max-w-7xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center pt-10 pb-16 lg:pt-14 lg:pb-20">
+      <div className="site-container relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center pt-10 pb-16 lg:pt-14 lg:pb-20">
         <div>
           <p className="icon-mask icon-headset inline-flex items-center gap-2 bg-white/70 backdrop-blur-sm text-[#295657] rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider px-5 py-2 mb-6 shadow-sm border border-white/50">
             Real people. A professional first impression.
@@ -147,41 +147,11 @@ export default function VirtualReceptionistHero() {
             Your business. Your greeting.
           </p>
 
-          <div className="mt-6 lg:mt-0 lg:absolute lg:-bottom-10 lg:-left-10 bg-white rounded-2xl p-6 shadow-xl border border-gray-100 lg:w-80">
-            <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-[#8CA365] mb-1">
-              Example call workflow
-            </p>
-            <p className="text-lg font-bold text-[#34414A] mb-5">From first hello to next step</p>
-            <ol className="space-y-4 list-none">
-              {WORKFLOW.map((step) => (
-                <li key={step.title} className="flex items-start gap-3">
-                  <span
-                    className={`icon-mask ${step.icon} [--icon-size:1.125rem] w-9 h-9 rounded-full bg-[#8CA365]/10 text-[#8CA365] flex items-center justify-center flex-shrink-0`}
-                    aria-hidden="true"
-                  ></span>
-                  <span className="min-w-0">
-                    <span className="block text-sm font-bold text-[#34414A]">{step.title}</span>
-                    <span className="block text-xs text-gray-500 mt-0.5">{step.body}</span>
-                  </span>
-                </li>
-              ))}
-            </ol>
-          </div>
+        
         </div>
       </div>
 
-      <div className="relative z-10 border-t border-[#8CA365]/20 bg-white/50">
-        <ul className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-8 py-6 list-none">
-          {PILLARS.map((pillar) => (
-            <li
-              key={pillar.label}
-              className={`icon-mask ${pillar.icon} [--icon-size:1.375rem] flex items-center justify-center gap-3 text-sm font-semibold text-[#34414A] before:text-[#295657]`}
-            >
-              {pillar.label}
-            </li>
-          ))}
-        </ul>
-      </div>
+     
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     </section>

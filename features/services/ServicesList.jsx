@@ -62,7 +62,7 @@ export default function ServicesList() {
       className="py-20 md:py-28 bg-white relative overflow-hidden font-sans"
       aria-labelledby="services-list-heading"
     >
-      <div className="max-w-5xl mx-auto px-4 relative z-10">
+      <div className="site-container relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-14">
           <p className="icon-mask icon-bolt inline-flex items-center gap-2 bg-[#8CA365]/10 text-[#6b8a3e] rounded-full text-sm font-semibold px-4 py-1.5 mb-5">
             What We Do

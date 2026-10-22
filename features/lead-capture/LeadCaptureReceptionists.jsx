@@ -21,12 +21,12 @@ const POINTS = [
 export default function LeadCaptureReceptionists() {
   return (
     <section
-      className="w-full bg-[#f8f7f1] px-4 py-14 md:py-16 lg:px-[5%]"
+      className="w-full bg-[#f8f7f1] py-14 md:py-16"
       aria-labelledby="lead-capture-receptionists-heading"
     >
       {/* Narrower photo column: the artwork is portrait, so an even split made
           it far taller than the list of points beside it. */}
-      <div className="mx-auto grid max-w-6xl grid-cols-1 items-start gap-9 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.75fr)] lg:gap-12">
+      <div className="site-container grid grid-cols-1 items-start gap-9 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.75fr)] lg:gap-12">
         <div>
           <p className="icon-mask icon-headset [--icon-size:1rem] inline-flex items-center gap-2 bg-[#8CA365]/10 text-[#5f7a3a] rounded-full text-sm font-semibold px-4 py-1.5">
             A human voice for new enquiries
@@ -41,7 +41,7 @@ export default function LeadCaptureReceptionists() {
             for Lead Capture and Intake
           </h2>
 
-          <p className="mt-4 text-[0.95rem] leading-relaxed text-gray-600">
+          <p className="mt-4 text-lg leading-relaxed text-gray-600">
             Give prospective customers a helpful person to speak with. Our receptionists represent your business, ask
             the questions you approve, and organize the details your team needs for the next conversation.
           </p>
@@ -55,7 +55,7 @@ export default function LeadCaptureReceptionists() {
                 ></span>
                 <span className="min-w-0">
                   <span className="block text-[1rem] font-bold leading-snug text-[#1b4332]">{point.title}</span>
-                  <span className="mt-1 block text-[0.84rem] leading-relaxed text-gray-600">{point.body}</span>
+                  <span className="mt-1 block text-base leading-relaxed text-gray-600">{point.body}</span>
                 </span>
               </li>
             ))}
@@ -72,13 +72,13 @@ export default function LeadCaptureReceptionists() {
             <Link
               prefetch={false}
               href="/pricing"
-              className="text-[0.92rem] font-semibold text-[#1b4332] underline underline-offset-4 transition-colors hover:text-[#5f7a3a]"
+              className="text-lg font-semibold text-[#1b4332] underline underline-offset-4 transition-colors hover:text-[#5f7a3a]"
             >
               View Plans &amp; Pricing
             </Link>
           </div>
 
-          <p className="mt-4 text-[0.82rem] text-gray-600">
+          <p className="mt-4 text-base text-gray-600">
             Your greeting, intake questions, and handoff process are agreed during setup.
           </p>
         </div>

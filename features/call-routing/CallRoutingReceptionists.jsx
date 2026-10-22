@@ -21,10 +21,10 @@ const POINTS = [
 export default function CallRoutingReceptionists() {
   return (
     <section
-      className="w-full bg-[#f8f7f2] px-4 py-14 md:py-16 lg:px-[5%]"
+      className="w-full bg-[#f8f7f2] py-14 md:py-16"
       aria-labelledby="call-routing-receptionists-heading"
     >
-      <div className="mx-auto grid max-w-6xl grid-cols-1 items-stretch gap-9 lg:grid-cols-2 lg:gap-12">
+      <div className="site-container grid grid-cols-1 items-stretch gap-9 lg:grid-cols-2 lg:gap-12">
         {/* Photo grows to match the column beside it, so the two stay level. */}
         <figure className="flex flex-col overflow-hidden rounded-xl">
           <span className="relative block min-h-[18rem] flex-grow">
@@ -41,7 +41,7 @@ export default function CallRoutingReceptionists() {
           <figcaption className="bg-[#1d4b37] px-6 py-6">
             <span className="block text-[1.15rem] font-bold text-white">A real person. A considered next step.</span>
             <span className="mt-4 block h-px w-16 bg-[#a8c47d]" aria-hidden="true"></span>
-            <span className="mt-4 block text-[0.86rem] leading-relaxed text-white/70">
+            <span className="mt-4 block text-base leading-relaxed text-white/70">
               Listening to your callers. Following your instructions.
             </span>
           </figcaption>
@@ -63,7 +63,7 @@ export default function CallRoutingReceptionists() {
             Transfers
           </h2>
 
-          <p className="mt-4 text-[0.95rem] leading-relaxed text-gray-600">
+          <p className="mt-4 text-lg leading-relaxed text-gray-600">
             Give callers a helpful first point of contact. Our receptionists answer in your business name, understand
             why someone is calling, and follow your instructions for the next step.
           </p>
@@ -77,7 +77,7 @@ export default function CallRoutingReceptionists() {
                 ></span>
                 <span className="min-w-0">
                   <span className="block text-[1rem] font-bold leading-snug text-[#1b4332]">{point.title}</span>
-                  <span className="mt-1 block text-[0.84rem] leading-relaxed text-gray-600">{point.body}</span>
+                  <span className="mt-1 block text-base leading-relaxed text-gray-600">{point.body}</span>
                 </span>
               </li>
             ))}
@@ -91,7 +91,7 @@ export default function CallRoutingReceptionists() {
             Plan My Receptionist Support
           </Link>
 
-          <p className="mt-3 text-[0.82rem] text-gray-600">
+          <p className="mt-3 text-base text-gray-600">
             Greetings, transfer options, and backup steps are agreed during setup.
           </p>
         </div>

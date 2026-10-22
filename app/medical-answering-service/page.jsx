@@ -150,7 +150,7 @@ export default function MedicalAnsweringServicePage() {
             <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-white to-transparent">
             </div>
           </div>
-          <div className="max-w-7xl mx-auto px-4 py-20 lg:py-0 w-full relative z-10">
+          <div className="site-container py-20 lg:py-0 w-full relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
               {/* Left Column (Authority & SEO Content) */}
               <div className="lg:col-span-7 flex flex-col reveal">
@@ -417,7 +417,7 @@ export default function MedicalAnsweringServicePage() {
         <section
           className="w-full bg-white border-t border-b border-gray-200 py-6 md:py-8 shadow-sm relative z-20 reveal reveal-delay-2"
         >
-          <div className="max-w-7xl mx-auto px-4 lg:px-8">
+          <div className="site-container">
             {/* Screen Reader Accessibility */}
             <h4 className="sr-only">
               10,000+ businesses trust our after hours answering service · Rated 4.9/5 · $4.6B industry · HIPAA Certified
@@ -575,11 +575,11 @@ export default function MedicalAnsweringServicePage() {
           </div>
         </section>
         {/* FEATURED SNIPPET & COMPARISON SECTION */}
-        <section className="bg-slate-50 py-24 px-4 border-y border-gray-200 relative z-10">
-          <div className="max-w-7xl mx-auto flex flex-col gap-16">
+        <section className="bg-slate-50 py-24 border-y border-gray-200 relative z-10">
+          <div className="site-container flex flex-col gap-16">
             {/* Block 1: The Featured Snippet Box (Top) */}
             <div
-              className="bg-white rounded-3xl p-8 md:p-12 shadow-[0_10px_40px_-10px_rgba(0,0,0,0.05)] border-l-8 border-[#8CA365] max-w-4xl mx-auto w-full relative reveal"
+              className="bg-white rounded-3xl p-8 md:p-12 shadow-[0_10px_40px_-10px_rgba(0,0,0,0.05)] border-l-8 border-[#8CA365] w-full relative reveal"
             >
               {/* Subtle quote/definition SVG watermark */}
               <svg
@@ -649,7 +649,7 @@ export default function MedicalAnsweringServicePage() {
           </div>
         </section>
         {/* DUAL PERSONA SECTION */}
-        <section className="w-full bg-[#0f2925] py-24 px-4 relative overflow-hidden">
+        <section className="w-full bg-[#0f2925] py-24 relative overflow-hidden">
           {/* Premium Colorful Mesh Gradient Background */}
           <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
             {/* Glowing Orb 1 (Brand Green) */}
@@ -668,7 +668,7 @@ export default function MedicalAnsweringServicePage() {
             >
             </div>
           </div>
-          <div className="max-w-7xl mx-auto relative z-10">
+          <div className="site-container relative z-10">
             {/* Header Section */}
             <h2
               className="block text-3xl sm:text-4xl md:text-5xl font-bold text-white text-center mb-16 max-w-4xl mx-auto leading-tight reveal"
@@ -770,13 +770,13 @@ export default function MedicalAnsweringServicePage() {
           </div>
         </section>
         {/* CORE FEATURES — MEDICAL-SPECIFIC SERVICE GRID */}
-        <section className="w-full bg-[#8CA365] py-24 px-4 relative overflow-hidden">
+        <section className="w-full bg-[#8CA365] py-24 relative overflow-hidden">
           {/* Subtle dot pattern overlay */}
           <div
             className="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.08)_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none"
           >
           </div>
-          <div className="max-w-7xl mx-auto relative z-10">
+          <div className="site-container relative z-10">
             {/* Header Section */}
             <h2
               className="block text-3xl sm:text-4xl md:text-5xl font-bold text-white text-center mb-6 max-w-4xl mx-auto leading-tight reveal drop-shadow-md"
@@ -1055,13 +1055,13 @@ export default function MedicalAnsweringServicePage() {
           </div>
         </section>
         {/* HOW IT WORKS — MEDICAL SETUP PROCESS */}
-        <section className="bg-gray-50 py-24 md:py-32 px-4 relative overflow-hidden">
+        <section className="bg-gray-50 py-24 md:py-32 relative overflow-hidden">
           {/* Subtle dot background */}
           <div
             className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:20px_20px] opacity-60 pointer-events-none"
           >
           </div>
-          <div className="max-w-7xl mx-auto relative z-10">
+          <div className="site-container relative z-10">
             {/* Section Header */}
             <div className="text-center mb-16 reveal">
               <span
@@ -1213,7 +1213,7 @@ export default function MedicalAnsweringServicePage() {
           </div>
         </section>
         {/* MEDICAL SPECIALTIES SERVED — VERTICAL SEO SILO */}
-        <section className="w-full bg-[#0f2925] py-24 px-4 relative overflow-hidden">
+        <section className="w-full bg-[#0f2925] py-24 relative overflow-hidden">
           {/* Premium Colorful Mesh Gradient Background */}
           <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
             {/* Glowing Orb 1 (Brand Green) */}
@@ -1241,7 +1241,7 @@ export default function MedicalAnsweringServicePage() {
             className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#8CA365]/8 rounded-full blur-3xl pointer-events-none"
           >
           </div>
-          <div className="max-w-7xl mx-auto relative z-10">
+          <div className="site-container relative z-10">
             {/* Section Header */}
             <div className="text-center mb-16 reveal">
               <span
@@ -1655,7 +1655,7 @@ export default function MedicalAnsweringServicePage() {
           </div>
         </section>
         {/* MEASURABLE OUTCOMES — ROI & RESULTS SECTION */}
-        <section className="bg-white py-24 md:py-32 px-4 relative overflow-hidden">
+        <section className="bg-white py-24 md:py-32 relative overflow-hidden">
           {/* Subtle background texture */}
           <div className="absolute inset-0 pointer-events-none">
             <div
@@ -1668,7 +1668,7 @@ export default function MedicalAnsweringServicePage() {
             <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-white to-transparent">
             </div>
           </div>
-          <div className="max-w-7xl mx-auto relative z-10">
+          <div className="site-container relative z-10">
             {/* Section Header */}
             <div className="text-center mb-16 reveal">
               <span
@@ -1801,7 +1801,7 @@ export default function MedicalAnsweringServicePage() {
           </div>
         </section>
         {/* HIPAA COMPLIANCE & SECURITY CROSS-REFERENCE */}
-        <section className="w-full bg-[#0f2925] py-24 md:py-32 px-4 relative overflow-hidden">
+        <section className="w-full bg-[#0f2925] py-24 md:py-32 relative overflow-hidden">
           {/* Premium Colorful Mesh Gradient Background */}
           <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
             {/* Glowing Orb 1 (Brand Green) */}
@@ -1830,7 +1830,7 @@ export default function MedicalAnsweringServicePage() {
             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#8CA365]/5 rounded-full blur-[120px] pointer-events-none"
           >
           </div>
-          <div className="max-w-7xl mx-auto relative z-10">
+          <div className="site-container relative z-10">
             {/* Section Header */}
             <div className="text-center mb-16 reveal">
               <span
@@ -2132,8 +2132,8 @@ export default function MedicalAnsweringServicePage() {
           </div>
         </section>
         {/* SOCIAL PROOF — MEDICAL PROFESSIONAL TESTIMONIALS */}
-        <section className="bg-stone-50 py-24 md:py-32 px-4 border-t border-gray-200">
-          <div className="max-w-7xl mx-auto">
+        <section className="bg-stone-50 py-24 md:py-32 border-t border-gray-200">
+          <div className="site-container">
             {/* Header Section */}
             <h2
               className="block text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] text-center mb-4 max-w-4xl mx-auto leading-tight reveal"
@@ -2461,8 +2461,8 @@ export default function MedicalAnsweringServicePage() {
         </section>
         {/* FAQ — MEDICAL ANSWERING FEATURED SNIPPETS */}
         {/* FAQ SECTION (SPLIT-PANE STYLE) */}
-        <section className="bg-white py-14 sm:py-24 px-4 border-t border-gray-100" id="faq">
-          <div className="max-w-7xl mx-auto">
+        <section className="bg-white py-14 sm:py-24 border-t border-gray-100" id="faq">
+          <div className="site-container">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
               <div className="lg:col-span-4 lg:sticky lg:top-24">
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] leading-tight mb-6">

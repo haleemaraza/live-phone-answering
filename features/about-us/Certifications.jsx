@@ -43,8 +43,8 @@ export default function Certifications() {
   const active = CERTIFICATIONS.find((c) => c.id === activeId)
 
   return (
-    <section className="bg-white py-14 sm:py-24 px-4 border-t border-gray-100" aria-labelledby="certifications-heading">
-      <div className="max-w-7xl mx-auto relative z-10">
+    <section className="bg-white py-14 sm:py-24 border-t border-gray-100" aria-labelledby="certifications-heading">
+      <div className="site-container relative z-10">
         <div className="text-center mb-16 max-w-4xl mx-auto">
           <h2
             id="certifications-heading"

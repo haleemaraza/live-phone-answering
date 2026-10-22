@@ -27,10 +27,10 @@ export default function OverflowBenefits() {
   return (
     <section
       id="how-overflow-works"
-      className="w-full scroll-mt-28 bg-[#f8f8f1] px-4 py-14 md:py-16 lg:px-[5%]"
+      className="w-full scroll-mt-28 bg-[#f8f8f1] py-14 md:py-16"
       aria-labelledby="overflow-benefits-heading"
     >
-      <div className="mx-auto max-w-6xl">
+      <div className="site-container">
         <div className="mx-auto max-w-2xl text-center">
           <p className="icon-mask icon-bolt [--icon-size:1rem] inline-flex items-center gap-2 bg-[#8CA365]/10 text-[#5f7a3a] rounded-full text-sm font-semibold px-4 py-1.5">
             How overflow answering helps
@@ -43,13 +43,13 @@ export default function OverflowBenefits() {
             <br />
             Your Team Gets Busy
           </h2>
-          <p className="mt-3 text-[0.93rem] leading-relaxed text-gray-600">
+          <p className="mt-3 text-lg leading-relaxed text-gray-600">
             From everyday interruptions to seasonal demand, overflow answering supports your team when calls need extra
             attention.
           </p>
         </div>
 
-        <div className="mt-9 grid grid-cols-1 items-start gap-8 lg:grid-cols-[minmax(0,0.82fr)_minmax(0,1fr)] lg:gap-11">
+        <div className="mt-9 grid grid-cols-1 items-start gap-8 lg:grid-cols-[minmax(0,1.18fr)_minmax(0,1fr)] lg:gap-11">
           {/* The caption panel is part of the supplied artwork, so it is not
               drawn again in HTML. The photo keeps its own aspect ratio rather
               than being cropped, and the column ratio above is what lines its
@@ -77,8 +77,8 @@ export default function OverflowBenefits() {
                   aria-hidden="true"
                 ></span>
                 <span className="min-w-0">
-                  <span className="block text-[0.96rem] font-bold leading-snug text-[#1d4b37]">{benefit.title}</span>
-                  <span className="mt-1 block text-[0.82rem] leading-relaxed text-gray-600">{benefit.body}</span>
+                  <span className="block text-lg font-bold leading-snug text-[#1d4b37]">{benefit.title}</span>
+                  <span className="mt-1 block text-base leading-relaxed text-gray-600">{benefit.body}</span>
                 </span>
               </li>
             ))}
@@ -86,13 +86,13 @@ export default function OverflowBenefits() {
         </div>
 
         <div className="mt-9 flex flex-col items-start gap-5 border-t border-gray-300/50 pt-6 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-[0.96rem] font-bold text-[#1d4b37]">
+          <p className="text-lg font-bold text-[#1d4b37]">
             Support for busy moments. Built around your team.
           </p>
           <Link
             prefetch={false}
             href="/contact-us"
-            className="icon-mask icon-arrow-right [--icon-size:0.95rem] inline-flex flex-shrink-0 flex-row-reverse items-center gap-3 rounded-lg bg-[#8CA365] px-6 py-3 text-[0.9rem] font-bold text-white transition-all hover:-translate-y-0.5 hover:bg-[#9cb374]"
+            className="icon-mask icon-arrow-right [--icon-size:0.95rem] inline-flex flex-shrink-0 flex-row-reverse items-center gap-3 rounded-lg bg-[#8CA365] px-6 py-3 text-lg font-bold text-white transition-all hover:-translate-y-0.5 hover:bg-[#9cb374]"
           >
             Find My Overflow Coverage
           </Link>

@@ -89,7 +89,7 @@ function StatCard({ stat }) {
 
 export default function ByTheNumbers() {
   return (
-    <section className="bg-[#0f2925] py-14 sm:py-24 px-4 relative overflow-hidden" aria-labelledby="numbers-heading">
+    <section className="bg-[#0f2925] py-14 sm:py-24 relative overflow-hidden" aria-labelledby="numbers-heading">
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none" aria-hidden="true">
         <div className="absolute -top-32 -left-32 w-[600px] h-[600px] bg-[#8CA365]/40 rounded-full blur-[120px]"></div>
         <div className="absolute bottom-0 -right-20 w-[700px] h-[700px] bg-[#00cc7a]/20 rounded-full blur-[150px]"></div>
@@ -104,7 +104,7 @@ export default function ByTheNumbers() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(140,163,101,0.08)_0%,_transparent_70%)]"></div>
       </div>
 
-      <div className="max-w-6xl mx-auto relative z-10">
+      <div className="site-container relative z-10">
         <div className="text-center mb-16">
           <p className="inline-flex items-center gap-2 bg-[#8CA365]/10 border border-[#8CA365]/30 text-[#8CA365] text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-widest mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-[#8CA365] animate-pulse inline-block" aria-hidden="true"></span>

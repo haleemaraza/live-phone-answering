@@ -37,8 +37,8 @@ const POINTS = [
 
 export default function BusinessVoice() {
   return (
-    <section className="w-full bg-white py-20 md:py-24 px-4" aria-labelledby="business-voice-heading">
-      <div className="max-w-6xl mx-auto">
+    <section className="w-full bg-white py-20 md:py-24" aria-labelledby="business-voice-heading">
+      <div className="site-container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-16 items-end pb-8 border-b border-gray-200/70">
           <div>
             <p className="icon-mask icon-chat inline-flex items-center gap-2 bg-[#8CA365]/10 text-[#6b8a3e] rounded-full text-sm font-semibold px-4 py-1.5 mb-5">

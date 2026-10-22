@@ -67,8 +67,8 @@ export default function FaqSection({ heading, intro, sideTitle, sideBody, linkTe
   const CtaTag = isInternal ? Link : 'a'
 
   return (
-    <section className="bg-white py-14 sm:py-24 px-4 border-t border-gray-100" id="faq" aria-labelledby="faq-heading">
-      <div className="max-w-7xl mx-auto">
+    <section className="bg-white py-14 sm:py-24 border-t border-gray-100" id="faq" aria-labelledby="faq-heading">
+      <div className="site-container">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           <div className="lg:col-span-4 lg:sticky lg:top-24">
             <h2 id="faq-heading" className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] leading-tight mb-6">

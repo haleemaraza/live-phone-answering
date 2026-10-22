@@ -70,11 +70,11 @@ export default function TrustBar() {
       className="py-12 bg-white border-y border-slate-200 overflow-hidden relative flex flex-col items-center"
       aria-labelledby="trustbar-heading"
     >
-      <h2 id="trustbar-heading" className="text-xs font-bold text-slate-400 tracking-[0.2em] uppercase mb-8 text-center px-4">
+      <h2 id="trustbar-heading" className="text-xs font-bold text-slate-400 tracking-[0.2em] uppercase mb-8 text-center site-container">
         Trusted by top professionals across healthcare, legal, and home services
       </h2>
 
-      <div className="relative w-full max-w-7xl mx-auto flex overflow-hidden group/marquee">
+      <div className="site-container relative w-full flex overflow-hidden group/marquee">
         <div className="absolute top-0 left-0 w-32 h-full bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" aria-hidden="true"></div>
         <div className="absolute top-0 right-0 w-32 h-full bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" aria-hidden="true"></div>
 

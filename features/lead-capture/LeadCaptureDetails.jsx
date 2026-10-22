@@ -32,10 +32,10 @@ const STAGES = [
 export default function LeadCaptureDetails() {
   return (
     <section
-      className="w-full bg-[#faf9f4] px-4 py-14 md:py-16 lg:px-[5%]"
+      className="w-full bg-[#faf9f4] py-14 md:py-16"
       aria-labelledby="lead-capture-details-heading"
     >
-      <div className="mx-auto max-w-6xl">
+      <div className="site-container">
         <p className="icon-mask icon-report [--icon-size:1rem] inline-flex items-center gap-2 bg-[#8CA365]/10 text-[#5f7a3a] rounded-full text-sm font-semibold px-4 py-1.5">
           Clear details. Informed follow-up.
         </p>
@@ -47,7 +47,7 @@ export default function LeadCaptureDetails() {
           <br />
           Needs to Follow Up
         </h2>
-        <p className="mt-3 max-w-4xl text-[0.95rem] leading-relaxed text-gray-600">
+        <p className="mt-3 max-w-4xl text-lg leading-relaxed text-gray-600">
           Know who called, what they need, and what should happen next. We collect the information agreed for your
           business and organize it for your team.
         </p>
@@ -62,7 +62,7 @@ export default function LeadCaptureDetails() {
                 ></span>
                 <span className="min-w-0">
                   <span className="block text-[1rem] font-bold leading-snug text-[#1a2e35]">{question.title}</span>
-                  <span className="mt-1 block text-[0.84rem] leading-relaxed text-gray-600">{question.body}</span>
+                  <span className="mt-1 block text-base leading-relaxed text-gray-600">{question.body}</span>
                 </span>
               </li>
             ))}
@@ -91,19 +91,19 @@ export default function LeadCaptureDetails() {
             <div key={stage.label} className={index > 0 ? 'sm:pl-8' : 'sm:pr-8'}>
               <p className="text-[0.62rem] font-bold uppercase tracking-[0.16em] text-[#5f7a3a]">{stage.label}</p>
               <p className="mt-1.5 text-[1.15rem] font-extrabold text-[#1a2e35]">{stage.title}</p>
-              <p className="mt-1 text-[0.84rem] text-gray-600">{stage.body}</p>
+              <p className="mt-1 text-base text-gray-600">{stage.body}</p>
             </div>
           ))}
         </div>
 
         <div className="mt-5 flex flex-col items-start gap-5 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-[0.8rem] text-gray-600">
+          <p className="text-base text-gray-600">
             Qualification checks are included only where agreed in your plan.
           </p>
           <Link
             prefetch={false}
             href="/contact-us"
-            className="icon-mask icon-arrow-right [--icon-size:0.9rem] inline-flex flex-shrink-0 flex-row-reverse items-center gap-3 rounded-lg bg-[#1d4b37] px-6 py-3.5 text-[0.88rem] font-bold text-white transition-all hover:-translate-y-0.5 hover:bg-[#164032]"
+            className="icon-mask icon-arrow-right [--icon-size:0.9rem] inline-flex flex-shrink-0 flex-row-reverse items-center gap-3 rounded-lg bg-[#1d4b37] px-6 py-3.5 text-base font-bold text-white transition-all hover:-translate-y-0.5 hover:bg-[#164032]"
           >
             Customize My Lead Intake
           </Link>

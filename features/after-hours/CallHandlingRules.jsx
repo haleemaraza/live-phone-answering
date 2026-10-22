@@ -29,8 +29,8 @@ const ROWS = [
 
 export default function CallHandlingRules() {
   return (
-    <section className="w-full bg-[#f8f6ec] px-4 py-14 md:py-16 lg:px-[5%]" aria-labelledby="call-handling-heading">
-      <div className="mx-auto max-w-8xl">
+    <section className="w-full bg-[#f8f6ec] py-14 md:py-16" aria-labelledby="call-handling-heading">
+      <div className="site-container">
         <div className="grid grid-cols-1 items-start gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,25rem)] lg:gap-12">
           <div>
             <p className="icon-mask icon-sliders [--icon-size:1rem] inline-flex items-center gap-2 bg-[#8CA365]/10 text-[#5f7a3a] rounded-full text-sm font-semibold px-4 py-1.5">
@@ -45,7 +45,7 @@ export default function CallHandlingRules() {
               <span className="text-[#295657]">Handled Your Way.</span>
             </h2>
           </div>
-          <p className="text-[0.95rem] leading-relaxed text-gray-600 lg:pt-8">
+          <p className="text-lg leading-relaxed text-gray-600 lg:pt-8">
             Tell us which calls need a message and which should reach your on-call team. We follow your agreed
             instructions.
           </p>
@@ -89,13 +89,13 @@ export default function CallHandlingRules() {
                     ></span>
                     <span className="min-w-0">
                       <span className="block text-[1.12rem] font-bold leading-snug text-[#295657]">{row.trigger}</span>
-                      <span className="mt-1 block text-[0.93rem] leading-relaxed text-gray-600">{row.triggerBody}</span>
+                      <span className="mt-1 block text-lg leading-relaxed text-gray-600">{row.triggerBody}</span>
                     </span>
                   </div>
                 </td>
                 <td className="block px-5 pb-5 pt-0 align-top md:table-cell md:px-6 md:py-4">
                   <span className="block text-[1.12rem] font-bold leading-snug text-[#1a2e35]">{row.action}</span>
-                  <span className="mt-1 block text-[0.93rem] leading-relaxed text-gray-600">{row.actionBody}</span>
+                  <span className="mt-1 block text-lg leading-relaxed text-gray-600">{row.actionBody}</span>
                 </td>
               </tr>
             ))}
@@ -112,7 +112,7 @@ export default function CallHandlingRules() {
               <span className="block text-[1.12rem] font-bold text-[#1a2e35]">
                 You set the rules. We follow the plan.
               </span>
-              <span className="mt-1 block text-[0.93rem] text-gray-600">
+              <span className="mt-1 block text-lg text-gray-600">
                 Call-handling options are confirmed during setup.
               </span>
             </span>
@@ -121,7 +121,7 @@ export default function CallHandlingRules() {
           <Link
             prefetch={false}
             href="/contact-us"
-            className="icon-mask icon-arrow-right [--icon-size:1rem] inline-flex flex-shrink-0 flex-row-reverse items-center gap-3 rounded-lg bg-[#8CA365] px-7 py-3.5 text-[0.95rem] font-bold text-white transition-all hover:-translate-y-0.5 hover:bg-[#9cb374]"
+            className="icon-mask icon-arrow-right [--icon-size:1rem] inline-flex flex-shrink-0 flex-row-reverse items-center gap-3 rounded-lg bg-[#8CA365] px-7 py-3.5 text-lg font-bold text-white transition-all hover:-translate-y-0.5 hover:bg-[#9cb374]"
           >
             Discuss My Call Handling
           </Link>

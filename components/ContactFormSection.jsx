@@ -52,7 +52,7 @@ export default function ContactFormSection({ theme = 'dark' }) {
   const t = THEMES[theme]
 
   return (
-    <section className={`${t.section} py-14 sm:py-24 px-4 relative overflow-hidden`} id="contact" aria-labelledby="contact-heading">
+    <section className={`${t.section} py-14 sm:py-24 relative overflow-hidden`} id="contact" aria-labelledby="contact-heading">
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none" aria-hidden="true">
         {theme === 'dark' ? (
           <>
@@ -68,7 +68,7 @@ export default function ContactFormSection({ theme = 'dark' }) {
         )}
       </div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="site-container relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div>
             <h2

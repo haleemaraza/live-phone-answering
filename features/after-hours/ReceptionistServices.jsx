@@ -66,8 +66,8 @@ export default function ReceptionistServices() {
   const [open, setOpen] = useState(SERVICES[0].id)
 
   return (
-    <section className="w-full bg-[#f7f4e8] px-4 py-14 md:py-16 lg:px-[5%]" aria-labelledby="services-heading">
-      <div className="mx-auto max-w-7xl">
+    <section className="w-full bg-[#f7f4e8] py-14 md:py-16" aria-labelledby="services-heading">
+      <div className="site-container">
         <div className="grid grid-cols-1 items-start gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,26rem)] lg:gap-12">
           <div>
             <p className="icon-mask icon-headset [--icon-size:1rem] inline-flex items-center gap-2 bg-[#8CA365]/10 text-[#5f7a3a] rounded-full text-sm font-semibold px-4 py-1.5">
@@ -82,7 +82,7 @@ export default function ReceptionistServices() {
               <span className="text-[#295657]">Receptionists Can Handle</span>
             </h2>
           </div>
-          <p className="text-[0.95rem] leading-relaxed text-gray-600 lg:pt-8">
+          <p className="text-lg leading-relaxed text-gray-600 lg:pt-8">
             Choose a service to see how your callers can be supported after closing.
           </p>
         </div>
@@ -111,7 +111,7 @@ export default function ReceptionistServices() {
                       onClick={() => setOpen(expanded ? null : service.id)}
                       className="flex w-full items-center gap-5 px-5 py-3.5 text-left transition-colors hover:text-[#295657]"
                     >
-                      <span className="text-[0.85rem] font-semibold tabular-nums text-[#566e34]">{service.number}</span>
+                      <span className="text-base font-semibold tabular-nums text-[#566e34]">{service.number}</span>
                       <span
                         className={`flex-grow text-[1.02rem] font-bold leading-snug ${
                           expanded ? 'text-[#295657]' : 'text-[#34414A]'
@@ -127,11 +127,11 @@ export default function ReceptionistServices() {
                   </h3>
 
                   <div id={`service-panel-${service.id}`} hidden={!expanded} className="px-5 pb-4 pl-[4.1rem]">
-                    <p className="max-w-md text-[0.88rem] leading-relaxed text-gray-600">{service.body}</p>
+                    <p className="max-w-md text-base leading-relaxed text-gray-600">{service.body}</p>
                     <Link
                       prefetch={false}
                       href={service.cta.href}
-                      className="icon-mask icon-arrow-right [--icon-size:0.85rem] mt-2.5 inline-flex flex-row-reverse items-center gap-2.5 text-[0.85rem] font-bold text-[#295657] underline underline-offset-4 transition-colors hover:text-[#8CA365]"
+                      className="icon-mask icon-arrow-right [--icon-size:0.85rem] mt-2.5 inline-flex flex-row-reverse items-center gap-2.5 text-base font-bold text-[#295657] underline underline-offset-4 transition-colors hover:text-[#8CA365]"
                     >
                       {service.cta.label}
                     </Link>
@@ -169,7 +169,7 @@ export default function ReceptionistServices() {
 
                   <ul className="mt-4 list-none space-y-2.5 border-t border-white/15 pt-4">
                     {service.checks.map((check) => (
-                      <li key={check} className="flex items-center gap-3 text-[0.88rem] text-white/80">
+                      <li key={check} className="flex items-center gap-3 text-base text-white/80">
                         <span
                           className="icon-mask icon-check [--icon-size:0.7rem] flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-[#8CA365] text-white"
                           aria-hidden="true"
@@ -189,16 +189,16 @@ export default function ReceptionistServices() {
         </div>
 
         <p className="mt-5 flex flex-col items-center gap-x-4 gap-y-2 border-t border-gray-300/50 pt-4 sm:flex-row">
-          <span className="icon-mask icon-check-circle [--icon-size:1.05rem] inline-flex items-center gap-2.5 text-[0.82rem] font-semibold text-[#34414A] before:text-[#8CA365]">
+          <span className="icon-mask icon-check-circle [--icon-size:1.05rem] inline-flex items-center gap-2.5 text-base font-semibold text-[#34414A] before:text-[#8CA365]">
             Built around your instructions.
           </span>
-          <span className="text-[0.8rem] text-gray-600 sm:border-l sm:border-gray-300/70 sm:pl-4">
+          <span className="text-base text-gray-600 sm:border-l sm:border-gray-300/70 sm:pl-4">
             Available tasks depend on your plan and agreed workflow.
           </span>
           <Link
             prefetch={false}
             href="/contact-us"
-            className="icon-mask icon-arrow-right [--icon-size:0.85rem] inline-flex flex-row-reverse items-center gap-2.5 text-[0.85rem] font-semibold text-[#295657] transition-colors hover:text-[#8CA365] sm:ml-auto"
+            className="icon-mask icon-arrow-right [--icon-size:0.85rem] inline-flex flex-row-reverse items-center gap-2.5 text-base font-semibold text-[#295657] transition-colors hover:text-[#8CA365] sm:ml-auto"
           >
             Discuss my call handling
           </Link>

@@ -64,8 +64,8 @@ const FRAME =
 
 export default function ProblemSolution() {
   return (
-    <section className="bg-slate-50 py-20 px-4" id="compare" aria-labelledby="compare-heading">
-      <div className="max-w-6xl mx-auto">
+    <section className="bg-slate-50 py-20" id="compare" aria-labelledby="compare-heading">
+      <div className="site-container">
         <div className="text-center max-w-3xl mx-auto mb-14 md:mb-16">
           <p className="icon-mask icon-bolt inline-flex items-center gap-2 bg-[#8CA365]/10 text-[#6b8a3e] rounded-full text-sm font-semibold px-4 py-1.5 mb-5">
             The Problem &amp; The Fix

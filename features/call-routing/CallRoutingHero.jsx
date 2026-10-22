@@ -45,11 +45,11 @@ const breadcrumbSchema = {
 export default function CallRoutingHero() {
   return (
     <section
-      className="relative w-full overflow-hidden px-4 lg:px-[5%] pt-8 pb-0"
+      className="relative w-full overflow-hidden pt-8 pb-0"
       style={SECTION_BACKGROUND}
       aria-labelledby="call-routing-hero-heading"
     >
-      <div className="relative z-10 mx-auto max-w-7xl">
+      <div className="site-container relative z-10">
         <nav aria-label="Breadcrumb">
           <ol className="flex flex-wrap items-center gap-2 text-sm text-gray-600 list-none">
             {CRUMBS.map((crumb) => (
@@ -87,13 +87,13 @@ export default function CallRoutingHero() {
               A helpful first answer. A clear path to the right person.
             </p>
 
-            <p className="mt-4 max-w-lg text-[0.93rem] leading-relaxed text-gray-600">
+            <p className="mt-4 max-w-lg text-lg leading-relaxed text-gray-600">
               Give callers a real person who understands why they are calling. Our receptionists screen enquiries and
               follow your routing instructions to connect suitable calls with your agreed staff or department
               contacts.
             </p>
 
-            <p className="mt-4 max-w-lg text-[0.93rem] leading-relaxed text-gray-600">
+            <p className="mt-4 max-w-lg text-lg leading-relaxed text-gray-600">
               When someone is unavailable, the next step is already planned. We follow your approved backup
               instructions, capture useful details, and pass a clear message to the right person for follow-up.
             </p>
@@ -102,14 +102,14 @@ export default function CallRoutingHero() {
               <Link
                 prefetch={false}
                 href="/contact-us"
-                className="icon-mask icon-arrow-right [--icon-size:0.95rem] inline-flex flex-row-reverse items-center justify-center gap-3 rounded-lg bg-[#8CA365] hover:bg-[#9cb374] px-7 py-3.5 text-[0.95rem] font-bold text-white transition-all hover:-translate-y-0.5"
+                className="icon-mask icon-arrow-right [--icon-size:0.95rem] inline-flex flex-row-reverse items-center justify-center gap-3 rounded-lg bg-[#8CA365] hover:bg-[#9cb374] px-7 py-3.5 text-lg font-bold text-white transition-all hover:-translate-y-0.5"
               >
                 Get My Call Routing Quote
               </Link>
               <Link
                 prefetch={false}
                 href="/pricing"
-                className="inline-flex items-center justify-center rounded-lg border-2 border-[#1a2e35] bg-white px-7 py-3.5 text-[0.95rem] font-bold text-[#1a2e35] transition-all hover:-translate-y-0.5 hover:bg-[#f3f4f1]"
+                className="inline-flex items-center justify-center rounded-lg border-2 border-[#1a2e35] bg-white px-7 py-3.5 text-lg font-bold text-[#1a2e35] transition-all hover:-translate-y-0.5 hover:bg-[#f3f4f1]"
               >
                 View Plans &amp; Pricing
               </Link>
@@ -122,7 +122,7 @@ export default function CallRoutingHero() {
                     className="icon-mask icon-check [--icon-size:0.7rem] flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-[#8CA365] text-white"
                     aria-hidden="true"
                   ></span>
-                  <span className="text-[0.85rem] text-[#1a2e35]">{check}</span>
+                  <span className="text-base text-[#1a2e35]">{check}</span>
                 </li>
               ))}
             </ul>
@@ -149,7 +149,7 @@ export default function CallRoutingHero() {
               ></span>
               <span className="min-w-0">
                 <span className="block text-[1.05rem] font-bold text-white">The right contact. A clear next step.</span>
-                <span className="mt-1 block text-[0.86rem] leading-relaxed text-white/70">
+                <span className="mt-1 block text-base leading-relaxed text-white/70">
                   Screen the call. Follow your rules. Keep your team informed.
                 </span>
               </span>

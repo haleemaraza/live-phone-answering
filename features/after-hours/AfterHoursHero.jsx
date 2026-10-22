@@ -43,11 +43,11 @@ const breadcrumbSchema = {
 export default function AfterHoursHero() {
   return (
     <section
-      className="relative overflow-hidden px-4 lg:px-[5%] pt-8 pb-0"
+      className="relative overflow-hidden pt-8 pb-0"
       style={SECTION_BACKGROUND}
       aria-labelledby="after-hours-hero-heading"
     >
-      <nav aria-label="Breadcrumb" className="max-w-7xl mx-auto relative z-10">
+      <nav aria-label="Breadcrumb" className="site-container relative z-10">
         <ol className="flex flex-wrap items-center gap-2 text-sm text-[#5a6c6e] list-none">
           {CRUMBS.map((crumb) => (
             <li key={crumb.href} className="flex items-center gap-2">
@@ -65,7 +65,7 @@ export default function AfterHoursHero() {
         </ol>
       </nav>
 
-      <div className="max-w-7xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center pt-10 pb-16 lg:pt-[2rem] lg:pb-20">
+      <div className="site-container relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center pt-10 pb-16 lg:pt-[2rem] lg:pb-20">
         <div>
           <p className="icon-mask icon-moon inline-flex items-center gap-2 bg-white/70 backdrop-blur-sm text-[#295657] rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider px-5 py-2 mb-6 shadow-sm border border-white/50">
             Live support after your office closes

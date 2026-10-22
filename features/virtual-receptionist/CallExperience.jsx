@@ -16,8 +16,8 @@ const WAVEFORM = Array.from({ length: 48 }, (_, i) => {
 
 export default function CallExperience() {
   return (
-    <section className="w-full bg-white py-20 md:py-24 px-4" aria-labelledby="call-experience-heading">
-      <div className="max-w-7xl mx-auto">
+    <section className="w-full bg-white py-20 md:py-24" aria-labelledby="call-experience-heading">
+      <div className="site-container">
         <div className="text-center max-w-3xl mx-auto mb-10 md:mb-12">
           <p className="icon-mask icon-bolt inline-flex items-center gap-2 bg-[#8CA365]/10 text-[#6b8a3e] rounded-full text-sm font-semibold px-4 py-1.5 mb-5">
             Every call has a next step
@@ -52,28 +52,13 @@ export default function CallExperience() {
             />
 
             <div className="relative">
-              {/* Lead-in line from the call card across the grid gap. */}
-              <div
-                className="hidden lg:block absolute right-full top-[18px] w-20 h-px bg-[#8CA365]/35"
-                aria-hidden="true"
-              ></div>
-
-              {/* Both connector rails are drawn with the list's own pseudo-elements:
-                  ::after runs through the dots, ::before through the number circles. */}
+              {/* No connector rails or lead-in lines here on purpose: the
+                  numbered circles carry the sequence on their own. */}
               <ol className="relative list-none">
                 {STEPS.map((step) => (
-                  <li
-                    key={step.number}
-                    className="relative flex items-start gap-5 pl-14 pb-9 last:pb-0 before:absolute before:left-0 before:top-[15px] before:z-10 before:h-2.5 before:w-2.5 before:rounded-full before:border-2 before:border-[#8CA365] before:bg-[#f2f9ee] before:content-[''] after:absolute after:left-[4px] after:top-5 after:-bottom-5 after:w-px after:bg-[#8CA365]/35 after:content-[''] last:after:hidden"
-                  >
-                    {/* Rail between the number circles: from this circle's bottom
-                        edge to the next li's top edge, so it adapts to any height. */}
+                  <li key={step.number} className="relative flex items-start gap-5 pb-9 last:pb-0">
                     <span
-                      className="absolute left-[4.75rem] top-10 bottom-0 w-px bg-[#8CA365]/35 [li:last-child_&]:hidden"
-                      aria-hidden="true"
-                    ></span>
-                    <span
-                      className="relative z-10 flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full border border-[#8CA365]/40 bg-white text-xs font-bold text-[#295657] before:absolute before:right-full before:top-1/2 before:h-px before:w-[2.875rem] before:bg-[#8CA365]/35 before:content-['']"
+                      className="relative z-10 flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full border border-[#8CA365]/40 bg-white text-xs font-bold text-[#295657]"
                       aria-hidden="true"
                     >
                       {step.number}
@@ -86,7 +71,7 @@ export default function CallExperience() {
                 ))}
               </ol>
 
-              <div className="mt-2 ml-14 flex items-center gap-4 rounded-2xl bg-white p-5 shadow-sm border border-gray-100">
+              <div className="mt-2 flex items-center gap-4 rounded-2xl bg-white p-5 shadow-sm border border-gray-100">
                 <span
                   className="icon-mask icon-report [--icon-size:1.25rem] h-11 w-11 flex-shrink-0 rounded-xl bg-[#295657] text-white flex items-center justify-center"
                   aria-hidden="true"

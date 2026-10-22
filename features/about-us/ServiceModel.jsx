@@ -35,10 +35,10 @@ export default function ServiceModel() {
   return (
     <section
       id="team"
-      className="bg-white py-14 sm:py-24 px-4 border-t border-gray-100 relative overflow-hidden"
+      className="bg-white py-14 sm:py-24 border-t border-gray-100 relative overflow-hidden"
       aria-labelledby="service-model-heading"
     >
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="site-container relative z-10">
         <div className="text-center mb-20 max-w-4xl mx-auto">
           <h2
             id="service-model-heading"

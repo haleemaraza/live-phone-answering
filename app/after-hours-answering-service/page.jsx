@@ -11,6 +11,8 @@ import ReceptionistServices from '@/features/after-hours/ReceptionistServices'
 import HowItWorksSteps from '@/features/after-hours/HowItWorksSteps'
 import CallHandlingRules from '@/features/after-hours/CallHandlingRules'
 import CoverageComparison from '@/features/after-hours/CoverageComparison'
+import RatingsTrustBar from '@/components/RatingsTrustBar'
+import ContactFormSection from '@/components/ContactFormSection'
 
 export const metadata = {
   title: "After-Hours Answering Service | Live Phone Answering",
@@ -71,6 +73,8 @@ export default function AfterHoursAnsweringServicePage() {
     <>
       <main>
         <AfterHoursHero />
+  <RatingsTrustBar label="Trusted by 5,000+ US businesses booking appointments by phone every day" />
+        
         <ServiceAssurance />
         <AfterHoursCoverage />
         <ReceptionistServices />
@@ -81,14 +85,8 @@ export default function AfterHoursAnsweringServicePage() {
 
         <MinutePlans />
         <FaqSection {...afterHoursFaq} />
-        <DarkCtaBanner
-          headingId='after-hours-cta-heading'
-          heading='Your Office Closes. Your Phone Keeps Working.'
-          body='Give evening, weekend and holiday callers a real person to speak to, using your greeting and your call-handling rules. Setup takes less than 5 minutes.'
-          points={['No lock-in contracts', '100% US-based receptionists', 'Your hours, your rules', 'HIPAA compliant']}
-          primary={{ href: '/contact-us', label: 'Get My After-Hours Plan →' }}
-          secondary={{ href: '/pricing', label: 'View Pricing Plans' }}
-        />
+                    <ContactFormSection theme="dark" />
+        
        
       </main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }} />

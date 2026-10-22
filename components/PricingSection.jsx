@@ -64,14 +64,14 @@ function PlanCard({ plan }) {
 
 export default function PricingSection({ eyebrow, heading, intro, trustNote, plans, specialistTitle, specialistTags, footnote }) {
   return (
-    <section className="relative bg-[#0f2925] py-14 sm:py-20 px-4 overflow-hidden" id="pricing" aria-labelledby="pricing-heading">
+    <section className="relative bg-[#0f2925] py-14 sm:py-20 overflow-hidden" id="pricing" aria-labelledby="pricing-heading">
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none" aria-hidden="true">
         <div className="absolute -top-32 -left-32 w-[560px] h-[560px] bg-[#8CA365]/30 rounded-full blur-[120px]"></div>
         <div className="absolute bottom-0 -right-24 w-[620px] h-[620px] bg-[#00cc7a]/12 rounded-full blur-[140px]"></div>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[760px] h-[360px] bg-[#215153]/45 rounded-full blur-[120px]"></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto">
+      <div className="site-container relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-10">
           <p className="inline-flex items-center bg-white/10 border border-white/15 text-[#dce8d0] text-sm font-semibold px-4 py-2 rounded-full mb-5">
             {eyebrow}
