@@ -5,6 +5,32 @@ import { BLOG_POSTS, getPost, slugify } from '@/features/blog/posts'
 
 const BASE_URL = 'https://livephoneanswering.com'
 
+// Each network's own share endpoint, so no SDK or tracking script is needed.
+const SHARE_LINKS = [
+  {
+    name: 'Facebook',
+    href: (url) => `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`,
+    path: 'M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z',
+  },
+  {
+    name: 'X',
+    href: (url, title) =>
+      `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(title)}`,
+    path: 'M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z',
+  },
+  {
+    name: 'LinkedIn',
+    href: (url) => `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`,
+    path: 'M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z',
+  },
+  {
+    name: 'Pinterest',
+    href: (url, title) =>
+      `https://pinterest.com/pin/create/button/?url=${encodeURIComponent(url)}&description=${encodeURIComponent(title)}`,
+    path: 'M12 2C6.477 2 2 6.477 2 12c0 4.237 2.636 7.855 6.356 9.312-.088-.791-.167-2.005.035-2.868.182-.78 1.172-4.97 1.172-4.97s-.299-.6-.299-1.486c0-1.39.806-2.428 1.81-2.428.852 0 1.264.64 1.264 1.408 0 .858-.546 2.14-.828 3.33-.236.995.499 1.807 1.48 1.807 1.778 0 3.144-1.874 3.144-4.58 0-2.393-1.72-4.068-4.177-4.068-2.845 0-4.515 2.135-4.515 4.34 0 .859.331 1.781.744 2.282a.3.3 0 01.069.287c-.076.315-.245.994-.278 1.133-.44.183-.145.222-.334.134-1.249-.581-2.03-2.407-2.03-3.874 0-3.154 2.292-6.051 6.607-6.051 3.47 0 6.166 2.472 6.166 5.775 0 3.447-2.173 6.22-5.19 6.22-1.013 0-1.966-.527-2.292-1.148l-.623 2.378c-.226.869-.835 1.957-1.243 2.621A10 10 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z',
+  },
+]
+
 const HEADER_BACKGROUND = {
   backgroundImage: [
     'linear-gradient(rgba(52,65,74,0.045) 1px, transparent 1px)',
@@ -247,6 +273,30 @@ export default async function BlogPostPage({ params }) {
               >
                 See Pricing &rarr;
               </Link>
+            </div>
+
+            {/* Plain share links rather than platform scripts: they work on a
+                static export, cost no JavaScript, and load no third-party code
+                that could track the reader. */}
+            <div className="mt-12 border-t border-gray-200 pt-8">
+              <h2 className="text-sm font-bold uppercase tracking-[0.12em] text-[#34414A]">Share this article</h2>
+              <ul className="mt-4 flex list-none flex-wrap gap-3">
+                {SHARE_LINKS.map((item) => (
+                  <li key={item.name}>
+                    <a
+                      href={item.href(url, post.title)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Share this article on ${item.name}`}
+                      className="flex h-11 w-11 items-center justify-center rounded-lg bg-[#8CA365] text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#6b8a3e] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#4f6630] focus-visible:ring-offset-2"
+                    >
+                      <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d={item.path} />
+                      </svg>
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </div>
             </div>
           </div>

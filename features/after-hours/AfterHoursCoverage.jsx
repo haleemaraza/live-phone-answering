@@ -109,7 +109,9 @@ export default function AfterHoursCoverage() {
               aria-selected={active === tab.id}
               aria-controls={`coverage-panel-${tab.id}`}
               onClick={() => setActive(tab.id)}
-              className={`icon-mask ${tab.icon} [--icon-size:1.25rem] -mb-px flex items-center gap-3.5 border-b-2 pb-3 pt-2 text-lg font-semibold transition-colors ${
+              // w-fit so the underline is only as wide as the icon and label,
+              // instead of stretching across the whole grid cell.
+              className={`icon-mask ${tab.icon} [--icon-size:1.25rem] -mb-px flex w-fit items-center gap-3.5 border-b-2 pb-3 pt-2 text-lg font-semibold transition-colors ${
                 active === tab.id
                   ? 'border-[#8CA365] text-[#295657]'
                   : 'border-transparent text-gray-600 hover:text-[#295657]'

@@ -8,15 +8,15 @@ const PHONE_SYSTEMS = [
 
 const CRM_TOOLS = [
   { name: 'HubSpot', detail: 'CRM records', logo: 'hubspot.webp' },
-  { name: 'Salesforce', detail: 'CRM records', logo: 'salesforce.svg' },
+  { name: 'Salesforce', detail: 'CRM records', logo: 'Salesforce.com_logo.svg.svg' },
   { name: 'Zapier', detail: 'Workflow automation', logo: 'zapier.webp' },
 ]
 
 const FLOW = ['Screen the enquiry', 'Follow your routing rules', 'Connect or capture a message']
 
-// aspect-square keeps every tool in a square box rather than a wide strip.
+// Sized to its contents: logo over a one-line label, the way the design has it.
 const CARD =
-  'relative flex aspect-square h-full flex-col items-center justify-center gap-2 rounded-xl border border-gray-300/60 bg-white px-4 py-4 text-center'
+  'relative flex h-full flex-col items-center justify-center gap-1.5 rounded-xl border border-gray-300/60 bg-white px-4 py-3.5 text-center'
 
 function ToolCard({ tool }) {
   return (
@@ -25,12 +25,12 @@ function ToolCard({ tool }) {
         src={`/icons/logo/${tool.logo}`}
         alt={`${tool.name} logo`}
         width={120}
-        height={40}
+        height={28}
         loading="lazy"
         decoding="async"
-        className="h-9 w-auto max-w-[75%] object-contain"
+        className="h-7 w-auto max-w-[70%] object-contain"
       />
-      <span className="text-base leading-snug text-gray-600">{tool.detail}</span>
+      <span className="text-sm leading-snug text-gray-600">{tool.detail}</span>
     </li>
   )
 }

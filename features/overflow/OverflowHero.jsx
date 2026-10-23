@@ -160,32 +160,9 @@ export default function OverflowHero() {
               />
             </svg>
 
-            <p className="absolute left-0 top-[12%] z-20 flex items-center gap-3 rounded-xl bg-white px-4 py-3 shadow-lg">
-              <span
-                className="icon-mask icon-phone [--icon-size:1.1rem] flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-[#eef3e4] text-[#295657]"
-                aria-hidden="true"
-              ></span>
-              <span className="min-w-0">
-                <span className="block text-lg font-bold leading-tight text-[#1a2e35]">Your office</span>
-                <span className="mt-0.5 block text-base text-gray-600">Team busy</span>
-              </span>
-            </p>
+            
 
-            <p className="absolute right-0 top-[47%] z-20 flex items-center gap-3 rounded-xl bg-[#0f2925] px-4 py-3 shadow-xl">
-              <span className="mt-1 h-2.5 w-2.5 flex-shrink-0 self-start rounded-full bg-[#8CA365]" aria-hidden="true"></span>
-              <span className="min-w-0">
-                <span className="block text-lg font-bold leading-tight text-white">Live receptionist</span>
-                <span className="mt-0.5 block text-base text-white/60">Ready to help your caller</span>
-              </span>
-            </p>
-
-            <p className="absolute bottom-[4%] left-[6%] z-20 flex items-center gap-3 rounded-xl bg-white px-4 py-3 shadow-lg">
-              <span
-                className="icon-mask icon-report [--icon-size:1.05rem] flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-[#eef3e4] text-[#295657]"
-                aria-hidden="true"
-              ></span>
-              <span className="text-lg font-bold text-[#1a2e35]">Your greeting. Your instructions.</span>
-            </p>
+           
           </div>
         </div>
       </div>
