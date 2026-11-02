@@ -172,7 +172,13 @@ const THEMES = {
   },
 }
 
-export default function MinutePlans({ theme = 'dark', ctaHref = '#contact' }) {
+export default function MinutePlans({
+  theme = 'dark',
+  ctaHref = '#contact',
+  // Pages can retitle the block; the plans themselves never change.
+  heading = 'Live Phone Answering Pricing',
+  intro = 'Choose the monthly minutes your business needs. Our live receptionists answer calls, take messages, route callers, and help you capture more opportunities without hiring in-house staff.',
+}) {
   const t = THEMES[theme]
 
   return (
@@ -192,12 +198,9 @@ export default function MinutePlans({ theme = 'dark', ctaHref = '#contact' }) {
             Simple Monthly Minute Plans • Live Receptionists • No Long-Term Contract
           </p>
           <h2 id="minute-plans-heading" className={`mt-6 text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight ${t.heading}`}>
-            Live Phone Answering Pricing
+            {heading}
           </h2>
-          <p className={`mt-5 text-lg leading-8 ${t.intro}`}>
-            Choose the monthly minutes your business needs. Our live receptionists answer calls, take messages, route callers, and
-            help you capture more opportunities without hiring in-house staff.
-          </p>
+          <p className={`mt-5 text-lg leading-8 ${t.intro}`}>{intro}</p>
         </div>
 
         <div className={`mt-10 rounded-2xl border px-6 py-5 text-center shadow-md ${t.panel}`}>

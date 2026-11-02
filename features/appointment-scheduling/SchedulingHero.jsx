@@ -19,7 +19,7 @@ const CRUMBS = [
   { label: 'Services', href: '/services' },
 ]
 
-const CHECKS = ['Live receptionists', 'Your booking rules', 'Supported calendar access']
+const CHECKS = ['Human receptionists', '24/7 call handling', 'Integrates with your existing tech']
 
 // Tells Google where this page sits in the site, which is what produces the
 // Home > Services > Appointment Scheduling trail in search results.
@@ -72,18 +72,16 @@ export default function SchedulingHero() {
           <div>
 
             <p className="icon-mask icon-calendar inline-flex items-center gap-2 bg-white/70 backdrop-blur-sm text-[#295657] rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider px-5 py-2 mb-6 shadow-sm border border-white/50">
-              Live call answering + appointment booking
+              24/7 Appointment Scheduling &amp; Live Call Answering
             </p>
 
             <h1
               id="scheduling-hero-heading"
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#1a2e35] leading-[1.1] tracking-tight"
             >
-              Appointment Scheduling
+              Appointment Scheduling Answering Service
               <br />
-              Answering Service
-              <br />
-              <span className="text-[#7d9b4e]">for Your Business</span>
+              <span className="text-[#7d9b4e]">That Books Appointments for You 24/7</span>
             </h1>
 
             <p className="mt-5 text-[1.12rem] font-bold text-[#1a2e35]">
@@ -91,13 +89,14 @@ export default function SchedulingHero() {
             </p>
 
             <p className="mt-4 max-w-lg text-lg leading-relaxed text-gray-600">
-              Give customers a real person to speak with when they call to book. Our live receptionists collect the
-              right details and help arrange appointments using your approved availability and scheduling rules.
+              Whether someone calls during lunch, after business hours, or on weekends, our live agents schedule,
+              reschedule, and confirm appointments so your calendar stays full and your team stays focused.
             </p>
 
             <p className="mt-4 max-w-lg text-lg leading-relaxed text-gray-600">
-              Keep your team focused on serving customers while we handle booking inquiries. With supported calendar
-              access, callers can reserve a suitable time; other requests reach your team for confirmation.
+              Our agents book appointments, reschedule visits, cancel bookings, answer basic questions, and update
+              your calendar in real time. Your customers get immediate help, and you never lose an opportunity
+              because no one picked up the phone.
             </p>
 
             <div className="mt-7 flex flex-col gap-4 sm:flex-row">

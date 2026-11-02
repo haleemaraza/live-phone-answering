@@ -68,33 +68,34 @@ export default function OverflowHero() {
 
         <div className="grid grid-cols-1 items-center gap-10 pt-10 pb-16 lg:pt-[4rem] lg:pb-20 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.95fr)] lg:gap-14">
           <div>
-            <p className="icon-mask icon-phone-forward inline-flex items-center gap-2 bg-white/70 backdrop-blur-sm text-[#295657] rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider px-5 py-2 mb-6 shadow-sm border border-white/50">Live receptionist backup</p>
+            <p className="icon-mask icon-phone-forward inline-flex items-center gap-2 bg-white/70 backdrop-blur-sm text-[#295657] rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider px-5 py-2 mb-6 shadow-sm border border-white/50">24/7 Live Receptionist Backup</p>
 
             <h1
               id="overflow-hero-heading"
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#1a2e35] leading-[1.1] tracking-tight"
             >
-              Overflow Call
+              Overflow Call Answering Service
               <br />
               Answering Service
               <br />
-              <span className="text-[#6b8a3e]">for Busy Teams</span>
+              <span className="text-[#6b8a3e]">for Busy Businesses</span>
             </h1>
 
             <p className="mt-4 text-[1.12rem] font-bold text-[#1a2e35] sm:text-[1.22rem]">
-              Your team answers first. We handle the calls they can&rsquo;t reach.
+              Your team takes the calls they can. We handle the calls they can&rsquo;t.
             </p>
 
             <p className="mt-3.5 max-w-lg text-lg leading-relaxed text-gray-600">
-              Give callers a helpful response when your staff are already on the phone, assisting customers, or away
-              from their desks. Our overflow call answering service provides live receptionist support for calls your
-              team cannot take, helping you capture inquiries and keep conversations moving.
+              When your team is busy helping customers, on other calls, or away from their desks, some calls can go
+              unanswered. Our overflow call answering service makes sure callers always reach a live receptionist who
+              can help.
             </p>
 
             <p className="mt-3.5 max-w-lg text-lg leading-relaxed text-gray-600">
-              With your greeting, approved questions, and call-handling instructions, our receptionists become a
-              familiar point of contact for your callers. Keep your team focused on the work in front of them while we
-              collect the details they need for the next step.
+              Whether you receive too many calls at once, experience busy periods, or have limited staff available,
+              our call overflow service helps you capture inquiries, assist customers, and avoid missed business
+              opportunities. With your preferred greeting and call-handling instructions, our receptionists work as an
+              extension of your team.
             </p>
 
             <div className="mt-7 flex flex-col gap-4 sm:flex-row">

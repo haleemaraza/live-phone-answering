@@ -3,27 +3,27 @@ import ProcessBand from '@/components/ProcessBand'
 const STEPS = [
   {
     number: '01',
-    icon: 'icon-headset-call',
-    title: 'We Answer Your Call',
-    body: 'A live receptionist greets the caller in your business name and finds out which service or appointment they need.',
+    icon: 'icon-phone-forward',
+    title: 'Your Phone Sends the Call to Us',
+    body: 'When you are too busy to answer, your line passes the call to our team. Instead of a voicemail machine, your customer talks to a real person right away.',
   },
   {
     number: '02',
-    icon: 'icon-intake-list',
-    title: 'We Collect the Details',
-    body: 'We gather contact information, service needs, and the questions you require before an appointment can be arranged.',
+    icon: 'icon-headset-call',
+    title: 'We Talk Just Like Your Office Team',
+    body: 'You tell us how you greet people. When a customer calls, your notes appear on our screens, so we use your business name and sound like your own office team.',
   },
   {
     number: '03',
     icon: 'icon-calendar-clock',
-    title: 'We Check Availability',
-    body: 'Using supported tools, we check available times against your appointment lengths, staff schedules, and booking rules.',
+    title: 'We Check Your Online Calendar Live',
+    body: 'While we are on the phone we look at your calendar, see which times are open, help the customer pick a slot, and enter their details into the system.',
   },
   {
     number: '04',
     icon: 'icon-calendar-check',
-    title: 'We Arrange the Next Step',
-    body: 'Where direct booking is supported, we reserve the appointment. Otherwise we send a complete request for your team.',
+    title: 'Your Schedule Updates Instantly',
+    body: 'The moment the appointment is booked, your calendar updates. Because it happens in real time, two people cannot accidentally book the same slot.',
   },
 ]
 
@@ -31,15 +31,15 @@ export default function SchedulingHowItWorks() {
   return (
     <ProcessBand
       headingId="scheduling-how-heading"
-      badge="From first hello to the next appointment"
+      badge="From picking the call to booking an appointment"
       heading={
         <>
-          How Our Appointment Scheduling
+          How Does Our Appointment 
           <br />
-          Answering Service Works
+         Scheduling Answering Service Work?
         </>
       }
-      intro="We answer your calls, collect the right details, and follow your booking rules to help callers take the next step."
+      intro="No waiting for ages. We answer your calls and book the meeting while the caller is still on the line."
       steps={STEPS}
       ctaLabel="Plan My Scheduling Setup"
       // Capabilities depend on the caller's own tools, so the claim is scoped.

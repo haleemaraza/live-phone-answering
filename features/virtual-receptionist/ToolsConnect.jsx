@@ -4,26 +4,26 @@ import LogoMarquee from '@/components/LogoMarquee'
 const TOOLS = [
   {
     icon: 'icon-calendar',
-    title: 'Calendar & booking',
-    body: 'Check scheduling options for your calendar and booking rules.',
+    title: 'Calendar & Booking',
+    body: 'Connect booking tools like Calendly and Google Calendar. We check available slots and follow your booking rules to avoid double bookings.',
     place: 'lg:col-start-1 lg:row-start-1',
   },
   {
     icon: 'icon-users',
-    title: 'Customer records',
-    body: 'Discuss how caller details can reach your existing CRM.',
+    title: 'Customer Records & CRM',
+    body: 'Keep records organised in CRMs like HubSpot and Salesforce, so caller details and call history reach your existing system.',
     place: 'lg:col-start-1 lg:row-start-2',
   },
   {
     icon: 'icon-chat',
-    title: 'Messages & updates',
-    body: 'Agree on how your team receives call summaries and follow-ups.',
+    title: 'Messages & Updates',
+    body: 'Get call summaries and customer requests through Slack or Microsoft Teams, with the caller details your team needs to follow up.',
     place: 'lg:col-start-3 lg:row-start-1',
   },
   {
     icon: 'icon-sliders',
-    title: 'A setup that fits',
-    body: 'Confirm supported connections and any manual steps.',
+    title: 'Custom Workflow Integration',
+    body: 'Fit call handling into tools like Shopify, Notion, Ringba and CallRail, including any manual steps needed.',
     place: 'lg:col-start-3 lg:row-start-2',
   },
 ]
@@ -49,17 +49,18 @@ export default function ToolsConnect() {
       <div className="site-container">
         <div className="text-center max-w-3xl mx-auto mb-10">
           <p className="icon-mask icon-share inline-flex items-center gap-2 bg-white text-[#4a7a3e] rounded-full text-sm font-semibold px-5 py-2 mb-6 shadow-sm border border-white/60">
-            Connected to the way you work
+            Work with your existing tools
           </p>
           <h2
             id="tools-heading"
             className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] leading-tight tracking-tight mb-5"
           >
-            Bring Calls, Calendars,
-            <br className="hidden sm:block" /> and Customer Details Together.
+            Seamlessly Connect Your Calls,
+            <br className="hidden sm:block" /> Schedules, and Workflows
           </h2>
           <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
-            Explore how receptionist support can fit your existing tools and keep your team informed.
+            Explore how receptionist support integrates with your existing tools to keep your team aligned and
+            informed.
           </p>
         </div>
 

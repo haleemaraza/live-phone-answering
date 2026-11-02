@@ -3,23 +3,23 @@ import Link from 'next/link'
 const FEATURES = [
   {
     icon: 'icon-chat',
-    title: 'A Greeting That Reflects Your Business',
-    body: "Set the tone from the first hello. Share your preferred introduction, business-name pronunciation, and the questions that help us understand each caller's needs.",
+    title: 'A Greeting That Fits Your Practice',
+    body: 'Set a professional and welcoming tone with your preferred greeting, clinic name, and questions for callers. Make every patient feel welcome from the first call.',
   },
   {
     icon: 'icon-doc-check',
-    title: 'Answers You Have Approved',
-    body: 'Give receptionists a clear reference for your services, hours, and common questions. Requests outside that guidance are passed to your team for a response.',
+    title: 'Approved Answers & Guidelines',
+    body: 'Help receptionists answer common questions about your services, office hours, appointment availability, and clinic policies. Calls requiring medical advice are directed to your clinical team.',
   },
   {
     icon: 'icon-sliders',
-    title: 'Clear Call-Handling Boundaries',
-    body: 'Choose which calls to transfer, what information to collect, and when to take a message. Your instructions define the next step.',
+    title: 'Secure Call Handling',
+    body: 'Set clear rules for call transfers, message-taking, and patient information. Our HIPAA-compliant call handling process is designed to protect patient confidentiality and follow your approved instructions.',
   },
   {
     icon: 'icon-doc-refresh',
-    title: 'Instructions That Stay Relevant',
-    body: 'Keep greetings, service information, contact lists, and routing arrangements aligned with changes to your business.',
+    title: 'Updated Practice Information',
+    body: 'Keep greetings, contact details, office hours, and call-handling instructions up to date so patients always receive accurate information. This helps avoid misunderstandings and delays.',
   },
 ]
 
@@ -32,19 +32,20 @@ export default function OverflowReceptionists() {
       <div className="site-container">
         <div className="mx-auto max-w-3xl text-center">
           <p className="icon-mask icon-headset [--icon-size:1rem] inline-flex items-center gap-2 bg-[#8CA365]/10 text-[#5f7a3a] rounded-full text-sm font-semibold px-4 py-1.5">
-            Real people. Your business voice.
+            Healthcare call support
           </p>
           <h2
             id="overflow-receptionists-heading"
             className="mt-3 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.14] tracking-tight text-[#1d4b37]"
           >
-            Live Virtual Receptionists
+            HIPAA-Compliant Live Answering
             <br />
-            for Overflow Call Support
+            for Healthcare Practices
           </h2>
           <p className="mt-3 text-lg leading-relaxed text-gray-600">
-            Give callers a helpful conversation when your team is busy. Our receptionists answer in your business name
-            and follow the instructions that make your service feel familiar.
+            Give patients a helpful and confidential response, even when your clinic team is busy. Our virtual
+            receptionists answer in your practice name, handle patient inquiries, schedule appointments, and follow
+            your instructions for calls and messages.
           </p>
         </div>
 
@@ -68,7 +69,7 @@ export default function OverflowReceptionists() {
                 className="aspect-[6/5] w-full object-cover"
               />
               <figcaption className="bg-[#1d4b37] px-5 py-3 text-center text-base text-white/90">
-                A helpful voice, guided by your business.
+                Your practice&rsquo;s voice. Confidential patient support.
               </figcaption>
             </figure>
 
@@ -104,14 +105,14 @@ export default function OverflowReceptionists() {
 
             <div className="mt-8 border-t border-gray-300/60 pt-5 text-center">
               <p className="text-[1.02rem] font-bold text-[#1d4b37]">
-                Your greeting. Your knowledge. Your call flow.
+                Tell us how you want your patients&rsquo; calls handled.
               </p>
               <Link
                 prefetch={false}
                 href="/contact-us"
                 className="icon-mask icon-arrow-right [--icon-size:0.9rem] mt-4 inline-flex flex-row-reverse items-center gap-3 rounded-lg bg-[#8CA365] px-7 py-3 text-base font-bold text-white transition-all hover:-translate-y-0.5 hover:bg-[#9cb374]"
               >
-                Discuss My Receptionist Support
+                Discuss My Healthcare Support
               </Link>
               <p className="mt-3 text-sm text-gray-500">
                 Tell us how you want your callers to be helped.

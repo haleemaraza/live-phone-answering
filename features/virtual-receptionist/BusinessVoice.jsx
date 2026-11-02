@@ -17,20 +17,20 @@ const TO_LEFT = 'lg:after:right-full lg:after:w-8 lg:before:right-[calc(100%+1.7
 const POINTS = [
   {
     number: '01',
-    title: 'A greeting that sounds like you',
-    body: 'Define your business name, tone, and preferred opening.',
+    title: 'A Greeting That Sounds Like You',
+    body: '“Thank you for calling ABC Services! We’re happy to help. How can we assist you today?”',
     place: `lg:col-start-1 lg:row-start-1 ${TO_RIGHT}`,
   },
   {
     number: '02',
-    title: 'Clear guidance for each call',
-    body: 'Agree on questions, transfer rules, and what to do when your team is unavailable.',
+    title: 'Clear Guidance for Each Call',
+    body: '“I’d be happy to help. Let me check who is available to assist you. If they’re unavailable, I can take a message and arrange a callback.”',
     place: `lg:col-start-3 lg:row-start-1 ${TO_LEFT}`,
   },
   {
     number: '03',
-    title: 'Room to review and refine',
-    body: 'Discuss how feedback, instruction changes, and call reviews will be handled.',
+    title: 'Room to Review and Refine',
+    body: '“We’ve updated your call instructions. Urgent inquiries now go to your designated team member, and all other callers are offered a callback.”',
     place: `lg:col-start-3 lg:row-start-2 ${TO_LEFT}`,
   },
 ]
@@ -42,19 +42,18 @@ export default function BusinessVoice() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-16 items-end pb-8 border-b border-gray-200/70">
           <div>
             <p className="icon-mask icon-chat inline-flex items-center gap-2 bg-[#8CA365]/10 text-[#6b8a3e] rounded-full text-sm font-semibold px-4 py-1.5 mb-5">
-              Confidence in every conversation
+              Premium virtual receptionist service
             </p>
             <h2
               id="business-voice-heading"
               className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] leading-tight tracking-tight"
             >
-              Your Business Voice.
-              <br className="hidden sm:block" /> Handled With Care.
+              With Live Phone Answering
+              <br className="hidden sm:block" /> Every Call is Received.
             </h2>
           </div>
           <p className="text-base sm:text-lg text-gray-600 leading-relaxed lg:pb-2">
-            A professional caller experience starts with clear instructions, thoughtful handling, and a way to keep
-            improving.
+            Never miss a lead and keep your team focused with a professional receptionist for every call.
           </p>
         </div>
 
@@ -91,10 +90,11 @@ export default function BusinessVoice() {
                 Keep control of the details
               </p>
               <p className="text-xl sm:text-2xl font-extrabold text-white leading-snug">
-                Know who answers&mdash;and what happens next.
+                Full transparency into every call &amp; conversation.
               </p>
               <p className="mt-2 text-sm text-white/60">
-                Ask about the receptionist team, quality checks, and how caller information is handled.
+                See exactly who answers your lines, review call transcripts and quality checks, and customize how
+                caller details flow straight into your tools.
               </p>
             </div>
             <Link
@@ -102,7 +102,7 @@ export default function BusinessVoice() {
               href="/contact-us"
               className="inline-flex items-center justify-center gap-2 flex-shrink-0 rounded-full border border-white/25 bg-white/5 px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-white/15"
             >
-              Talk Through Your Requirements &rarr;
+              Let&rsquo;s Talk About Your Requirements &rarr;
             </Link>
           </div>
         </div>

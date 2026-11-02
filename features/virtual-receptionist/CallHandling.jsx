@@ -6,42 +6,42 @@ const CAPABILITIES = [
   {
     icon: 'icon-headset',
     title: 'Personalized Call Answering',
-    body: 'Welcome callers in your business name with a greeting and tone tailored to your company.',
+    body: 'Greet callers warmly using your business name and with a custom script. This makes every caller feel welcomed and this builds a positive first impression of your business.',
     note: 'A consistent first impression',
     href: '/services',
   },
   {
     icon: 'icon-phone-forward',
     title: 'Call Screening & Transfers',
-    body: "Identify why someone is calling and route them according to your team's instructions.",
+    body: "Calls screened and directed to the right team member based on your instructions. This saves your team time and ensures callers reach the right person without being passed around.",
     note: 'The right calls to the right people',
     href: '/call-routing',
   },
   {
     icon: 'icon-calendar',
     title: 'Appointment Scheduling',
-    body: 'Help callers book appointments using your approved availability and scheduling rules.',
+    body: 'Appointments booked according to your availability and scheduling preferences. We make booking easy for your customers while helping you keep your schedule organized.',
     note: 'Booking support that fits your workflow',
     href: '/appointment-scheduling',
   },
   {
     icon: 'icon-user-plus',
     title: 'Lead Capture & Client Intake',
-    body: 'Collect contact details and ask your chosen questions so your team can follow up prepared.',
+    body: 'Caller details and important information collected to help your team follow up. This way, you can keep track of potential customers and make sure valuable leads do not slip through the cracks.',
     note: 'Useful details from the first call',
     href: '/lead-capture',
   },
   {
     icon: 'icon-report',
     title: 'Messages & Call Summaries',
-    body: 'Capture who called, what they need, and the next step in a clear message for your team.',
+    body: 'Clear messages capture caller details, requests, and required next steps. With these details, you will always know who called, what they needed, and whether any action is required.',
     note: 'Clear information for follow-up',
     href: '/how-it-works',
   },
   {
     icon: 'icon-question',
     title: 'Answers to Common Questions',
-    body: 'Give callers helpful answers using your approved information about services, hours, and policies.',
+    body: 'Callers get accurate answers about your services, business hours, and policies. This gives customers the information they need without interrupting your workday.',
     note: 'Helpful answers in your business voice',
     href: '/after-hours-answering-service',
   },
@@ -53,18 +53,18 @@ export default function CallHandling() {
       <div className="site-container">
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-14">
           <p className="icon-mask icon-phone inline-flex items-center gap-2 bg-white text-[#4a7a3e] rounded-full text-sm font-semibold px-5 py-2 mb-6 shadow-sm border border-white/60">
-            Your calls, professionally handled
+            All Your Calls, Handled By Professionals
+
           </p>
           <h2
             id="call-handling-heading"
             className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] leading-tight tracking-tight mb-5"
           >
-            What Our Virtual Receptionists
-            <br className="hidden sm:block" /> Can Handle for You
+            What can Our Virtual Receptionist 
+            <br className="hidden sm:block" /> do for Your Business
           </h2>
           <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
-            From the first greeting to the next step, give callers the support they need while your team stays focused.
-          </p>
+From picking the call to taking the message, booking an appointment, and transferring the call, we do it all.          </p>
         </div>
 
         <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 list-none">
@@ -93,7 +93,7 @@ export default function CallHandling() {
         </ul>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mt-12">
-          <p className="text-gray-600">Tell us how you want your calls handled.</p>
+          <p className="text-gray-600">Tell us what you need.</p>
           <Link
             prefetch={false}
             href="/contact-us"

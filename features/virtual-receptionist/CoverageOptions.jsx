@@ -61,11 +61,11 @@ export default function CoverageOptions() {
             id="coverage-heading"
             className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] leading-tight tracking-tight mb-5"
           >
-            Choose When Your
-            <br className="hidden sm:block" /> Virtual Receptionist Answers
+            When Your Virtual Receptionist
+            <br className="hidden sm:block" /> Answers the Calls &mdash; You Choose
           </h2>
           <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
-            Support for your whole day, your busiest moments, or the calls that come after closing.
+            Get call support during business hours, busy periods, or after closing.
           </p>
         </div>
 
@@ -74,8 +74,8 @@ export default function CoverageOptions() {
             theme={LIGHT}
             eyebrow="Your remote front desk"
             title="All Incoming Calls"
-            body="Let receptionists handle your incoming calls during your agreed coverage hours."
-            idealFor="Day-to-day reception support"
+            body="Let our receptionists answer your calls during your selected business hours. We greet your customers, answer their questions, take messages, and make sure no important call goes unanswered."
+            idealFor="Everyday call support"
           >
             <div className="flex items-center justify-center gap-3">
               <span className="flex flex-col gap-1.5">
@@ -100,8 +100,8 @@ export default function CoverageOptions() {
           <Card
             theme={DARK}
             eyebrow="Backup when you need it"
-            title="Overflow Calls"
-            body="Keep your team as the first point of contact, with backup when calls go unanswered."
+            title="Overflow Call Support"
+            body="Keep your team’s lines open while our receptionists answer calls that go unanswered. When your team is busy or taking a break, we step in so no caller is left waiting."
             idealFor="Busy periods and staff breaks"
           >
             <div className="flex items-center justify-center gap-3">
@@ -120,9 +120,9 @@ export default function CoverageOptions() {
           <Card
             theme={LIGHT}
             eyebrow="Beyond business hours"
-            title="After-Hours Calls"
-            body="Arrange reception support outside your normal opening hours, based on your coverage plan."
-            idealFor="Inquiries after your team signs off"
+            title="After-Hours Call Support"
+            body="Make sure callers can reach someone during evenings, weekends, or other agreed hours. We answer questions, take messages, and capture new leads even when your office is closed."
+            idealFor="Calls outside normal business hours"
           >
             <div className="flex items-center justify-center gap-4">
               <span className="icon-mask icon-moon [--icon-size:1.75rem] flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-full bg-[#0f2925] text-white"></span>

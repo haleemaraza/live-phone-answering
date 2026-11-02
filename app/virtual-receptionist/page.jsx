@@ -1,9 +1,10 @@
 import FaqSection from '@/components/FaqSection'
-import { homeFaq } from '@/components/faq-content'
+import { virtualReceptionistFaq } from '@/components/faq-content'
 import IndustriesTabs from '@/components/IndustriesTabs'
 import Link from 'next/link'
 import VirtualReceptionistHero from '@/features/virtual-receptionist/VirtualReceptionistHero'
 import FrontDeskIntro from '@/features/virtual-receptionist/FrontDeskIntro'
+import ComparisonOptions from '@/features/virtual-receptionist/ComparisonOptions'
 import CallHandling from '@/features/virtual-receptionist/CallHandling'
 import CallExperience from '@/features/virtual-receptionist/CallExperience'
 import CoverageOptions from '@/features/virtual-receptionist/CoverageOptions'
@@ -14,23 +15,23 @@ import MinutePlans from '@/components/MinutePlans'
 import ContactFormSection from '@/components/ContactFormSection'
 import RatingsTrustBar from '@/components/RatingsTrustBar'
 export const metadata = {
-  title: "Virtual Receptionist Service | Live Phone Answering",
-  description: "Professional virtual receptionist service for US businesses. Real human receptionists answer every call 24/7 in your company's name. Get started today.",
+  title: "24/7 Virtual Receptionist Service | Live Phone Answering Support",
+  description: " Hire a professional virtual receptionist for 24/7 live phone answering. Save 50–80% vs. in-house staff. Handle calls, appointments, messages & more. Call now!" ,
   alternates: { canonical: "/virtual-receptionist" },
   openGraph: {
     type: 'website',
     siteName: 'LivePhoneAnswering',
     locale: 'en_US',
     images: [{ url: '/images/Phone Answering Services.webp', width: 1122, height: 1402, alt: 'Live Phone Answering Service' }],
-    title: "Virtual Receptionist Service | Live Phone Answering",
-    description: "Professional virtual receptionist service for US businesses. Real human receptionists answer every call 24/7 in your company's name. Get started today.",
+    title: "24/7 Virtual Receptionist Service | Live Phone Answering Support",
+    description: " Hire a professional virtual receptionist for 24/7 live phone answering. Save 50–80% vs. in-house staff. Handle calls, appointments, messages & more. Call now!" ,
     url: "/virtual-receptionist",
   },
   twitter: {
     card: 'summary_large_image',
     images: ['/images/Phone Answering Services.webp'],
-    title: "Virtual Receptionist Service | Live Phone Answering",
-    description: "Professional virtual receptionist service for US businesses. Real human receptionists answer every call 24/7 in your company's name. Get started today.",
+    title: "24/7 Virtual Receptionist Service | Live Phone Answering Support",
+    description: " Hire a professional virtual receptionist for 24/7 live phone answering. Save 50–80% vs. in-house staff. Handle calls, appointments, messages & more. Call now!" ,
   },
 }
 
@@ -44,16 +45,25 @@ export default function VirtualReceptionistPage() {
     
       <FrontDeskIntro />
       
+      <ComparisonOptions />
       <CallHandling />
       <CallExperience />
       <SetupSteps />
       <CoverageOptions />
-      <MinutePlans />
+      <MinutePlans
+        heading="Live Phone Answering Plans That Fit Your Business"
+        intro="Choose a plan based on your call volume, business hours, and support needs. Get reliable call handling without the cost of hiring a full-time receptionist."
+      />
       <ToolsConnect />
-      <IndustriesTabs />
+      <IndustriesTabs heading="Tailored to Match Your Operational Workflow" intro="Supporting specialized industries, our receptionists integrate directly into your software and daily operations to ensure effortless team alignment." />
       <BusinessVoice />
-      <FaqSection {...homeFaq} />
-            <ContactFormSection theme="dark" />
+      <FaqSection {...virtualReceptionistFaq} />
+            <ContactFormSection
+        theme="dark"
+        heading="Get Started with Your Virtual Receptionist Today — No Credit Card, No Long-Term Contract"
+        subheading="Set up in under 5 minutes. Cancel anytime."
+        body="Stop losing leads and start growing your business with a professional, 24/7 receptionist team."
+      />
       
       </main>
     </>

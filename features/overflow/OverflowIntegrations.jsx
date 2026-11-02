@@ -11,8 +11,8 @@ const TOOLS = [
 
 const GROUPS = [
   {
-    title: 'CRM & Lead Capture',
-    body: 'Capture caller details, service needs, and follow-up notes. Where supported, add inquiries to your CRM or deliver them through your agreed process so your team knows where to find each lead.',
+    title: 'CRM & Lead Management',
+    body: 'Turn more inbound calls into useful business opportunities without adding extra work for your team. We collect caller details, record service inquiries, and add follow-up notes to your existing CRM, such as HubSpot or Notion, so lead tracking stays easy.',
     logos: [
       { slug: 'hubspot', name: 'HubSpot' },
       { slug: 'zoho', name: 'Zoho' },
@@ -21,7 +21,7 @@ const GROUPS = [
   },
   {
     title: 'Scheduling & Calendar Tools',
-    body: "Use supported calendars and your availability rules to arrange appointments. When direct booking is unavailable, pass the caller's preferred dates and times to your team for confirmation.",
+    body: 'Make booking appointments easier for both your team and your callers. We work with tools like Google Calendar, Calendly, and Microsoft Outlook to check availability, schedule appointments, confirm bookings, and handle rescheduling requests.',
     logos: [
       { slug: 'calendly', name: 'Calendly' },
       { slug: 'googlecalendar', name: 'Google Calendar' },
@@ -30,7 +30,7 @@ const GROUPS = [
   },
   {
     title: 'Messages & Support Requests',
-    body: 'Send useful call details to the right people through supported delivery channels. Define how customer questions and priority requests should be recorded and passed to your team.',
+    body: 'Make sure important customer requests reach the right person without delay. We can send urgent messages and call summaries through Slack, create support tickets in Zendesk, or use Zapier to trigger custom notifications and workflows.',
     logos: [
       { slug: 'zendesk', name: 'Zendesk' },
       { slug: 'intercom', name: 'Intercom' },
@@ -99,13 +99,13 @@ export default function OverflowIntegrations() {
             id="overflow-integrations-heading"
             className="mt-3 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.14] tracking-tight text-[#1d4b37]"
           >
-            Connect Overflow Calls
+            Sync Every Call with
             <br />
-            With Your Everyday Business Tools
+            Your Existing Tech Stack
           </h2>
           <p className="mt-3 text-lg leading-relaxed text-gray-600">
-            Keep caller information moving through your business. Plan lead capture, appointment requests, and message
-            delivery around the tools your team uses.
+            Automatically route lead data, calendar bookings, and detailed messages directly into the software your
+            team already relies on.
           </p>
         </div>
 
@@ -140,10 +140,10 @@ export default function OverflowIntegrations() {
         <div className="mt-5 flex flex-col items-start gap-5 rounded-xl bg-[#1d4b37] px-6 py-5 sm:flex-row sm:items-center sm:justify-between">
           <p>
             <span className="block text-lg font-bold text-white">
-              Have a specific tool in mind? Let&rsquo;s check your setup.
+              Using a custom setup or different software?
             </span>
             <span className="mt-1 block text-sm text-white/70">
-              Tell us which phone system and business tools you use.
+              Let us know what CRM, calendar, or phone system you run, and we&rsquo;ll map out your integration.
             </span>
           </p>
 

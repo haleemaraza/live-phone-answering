@@ -1,9 +1,9 @@
 import Link from 'next/link'
 
 const TRUST_POINTS = [
-  'No lock-in contracts or hidden fees',
-  '100% US-based, highly trained receptionists',
-  '24/7/365 coverage, including holidays',
+  '​Zero Lock-In Contracts & No Hidden Fees',
+  '​100% US-Based, Professionally Trained Receptionists',
+  '​24/7/365 Coverage Including After-Hours & Holidays',
 ]
 
 const INDUSTRIES = [
@@ -48,7 +48,13 @@ function CheckIcon() {
   )
 }
 
-export default function ContactFormSection({ theme = 'dark' }) {
+export default function ContactFormSection({
+  theme = 'dark',
+  // Pages can retitle the block; the form itself never changes.
+  heading = 'Get Started Today  No Credit Card, No Contract',
+  subheading = 'Set up takes less than 5 minutes. Cancel anytime.',
+  body = 'Ready to stop missing leads and start growing your business? Experience the difference a professional, 24/7 US-based team makes.',
+}) {
   const t = THEMES[theme]
 
   return (
@@ -75,13 +81,10 @@ export default function ContactFormSection({ theme = 'dark' }) {
               id="contact-heading"
               className={`text-3xl sm:text-4xl md:text-5xl font-bold ${t.heading} leading-tight mb-4 md:mb-6`}
             >
-              Get Started Today  No Credit Card, No Contract
+              {heading}
             </h2>
-            <p className={`text-xl font-medium ${t.subheading} mb-6`}>Set up takes less than 5 minutes. Cancel anytime.</p>
-            <p className={`${t.body} text-lg leading-relaxed mb-10 max-w-lg`}>
-              Ready to stop missing leads and start growing your business? Experience the difference a professional, 24/7 US-based
-              team makes.
-            </p>
+            <p className={`text-xl font-medium ${t.subheading} mb-6`}>{subheading}</p>
+            <p className={`${t.body} text-lg leading-relaxed mb-10 max-w-lg`}>{body}</p>
 
             <ul className="flex flex-col gap-4 list-none">
               {TRUST_POINTS.map((point) => (
@@ -95,7 +98,7 @@ export default function ContactFormSection({ theme = 'dark' }) {
             <div className={`border-t ${t.divider} my-8 w-3/4`}></div>
 
             <p className={`${t.callout} text-lg`}>
-              Prefer to talk first? Call us at{' '}
+              ​Want to speak with us first? Call{' '}
               <a href="tel:8574531055" className={`font-bold ${t.phone} transition-colors`}>
                 (857) 453-1055
               </a>

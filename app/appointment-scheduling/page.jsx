@@ -4,35 +4,36 @@ import SchedulingHero from '@/features/appointment-scheduling/SchedulingHero'
 import RatingsTrustBar from '@/components/RatingsTrustBar'
 import SchedulingServices from '@/features/appointment-scheduling/SchedulingServices'
 import SchedulingHowItWorks from '@/features/appointment-scheduling/SchedulingHowItWorks'
-import IntegrationsSection from '@/features/homepage/IntegrationsSection'
+import SchedulingTools from '@/features/appointment-scheduling/SchedulingTools'
+import SchedulingIndustries from '@/features/appointment-scheduling/SchedulingIndustries'
+import SchedulingNoShows from '@/features/appointment-scheduling/SchedulingNoShows'
 import SchedulingBenefits from '@/features/appointment-scheduling/SchedulingBenefits'
 import IndustriesTabs from '@/components/IndustriesTabs'
 import SchedulingReceptionists from '@/features/appointment-scheduling/SchedulingReceptionists'
 import SchedulingWhyChooseUs from '@/features/appointment-scheduling/SchedulingWhyChooseUs'
 import PlanPricing from '@/components/PlanPricing'
-import Testimonials from '@/components/Testimonials'
 import FaqSection from '@/components/FaqSection'
 import ContactFormSection from '@/components/ContactFormSection'
-import { homeFaq } from '@/components/faq-content'
+import { appointmentSchedulingFaq } from '@/components/faq-content'
 
 export const metadata = {
-  title: "Appointment Scheduling Service | Live Phone Answering",
-  description: "Live receptionists book appointments straight into your calendar 24/7. Syncs with Calendly, Acuity, Google Calendar and 1,000+ tools.",
+  title: "24/7 Appointment Scheduling Service - Reliable & Certified",
+  description: "HIPAA compliant appointment scheduling answering service. 100% reliable with expert and trained receptionists. No AI chatbots, only human receptionists.",
   alternates: { canonical: "/appointment-scheduling" },
   openGraph: {
     type: 'website',
     siteName: 'LivePhoneAnswering',
     locale: 'en_US',
     images: [{ url: '/images/Phone Answering Services.webp', width: 1122, height: 1402, alt: 'Live Phone Answering Service' }],
-    title: "Appointment Scheduling Service | Live Phone Answering",
-    description: "Live receptionists book appointments directly into your calendar 24/7. Syncs with Calendly, Acuity, Google Calendar & 1,000+ scheduling tools. Get started today.",
+    title: "24/7 Appointment Scheduling Service - Reliable & Certified",
+    description: "HIPAA compliant appointment scheduling answering service. 100% reliable with expert and trained receptionists. No AI chatbots, only human receptionists.",
     url: "/appointment-scheduling",
   },
   twitter: {
     card: 'summary_large_image',
     images: ['/images/Phone Answering Services.webp'],
-    title: "Appointment Scheduling Service | Live Phone Answering",
-    description: "Live receptionists book appointments directly into your calendar 24/7. Syncs with Calendly, Acuity, Google Calendar & 1,000+ scheduling tools. Get started today.",
+    title: "24/7 Appointment Scheduling Service - Reliable & Certified",
+    description: "HIPAA compliant appointment scheduling answering service. 100% reliable with expert and trained receptionists. No AI chatbots, only human receptionists.",
   },
 }
 
@@ -148,11 +149,15 @@ export default function AppointmentSchedulingPage() {
         <RatingsTrustBar label="Trusted by 5,000+ US businesses booking appointments by phone every day" />
         <SchedulingServices />
         <SchedulingHowItWorks />
-        <IntegrationsSection />
+        <SchedulingTools />
         <SchedulingBenefits />
-        <IndustriesTabs />
+        <IndustriesTabs heading="Tailored to Match Your Operational Workflow" intro="Supporting specialized industries, our receptionists integrate directly into your software and daily operations to ensure effortless team alignment." />
+        <SchedulingIndustries />
         <SchedulingWhyChooseUs />
         <SchedulingReceptionists />
+        <SchedulingWhyChooseUs />
+
+        <SchedulingNoShows />
         <PlanPricing
           headingId='scheduling-pricing-heading'
           heading='Appointment Scheduling Answering Service Pricing'
@@ -167,8 +172,7 @@ export default function AppointmentSchedulingPage() {
           customBody='Discuss direct booking, calendar compatibility, and scheduling requirements with our team.'
           footnote='Appointment request handling captures booking requests for your team. Direct calendar booking and integrations are confirmed separately.'
         />
-        <Testimonials />
-        <FaqSection {...homeFaq} />
+        <FaqSection {...appointmentSchedulingFaq} />
         <ContactFormSection theme="dark" />
       </main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }} />

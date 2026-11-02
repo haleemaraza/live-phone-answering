@@ -3,27 +3,27 @@ import ProcessBand from '@/components/ProcessBand'
 const STEPS = [
   {
     number: '01',
-    icon: 'icon-sliders',
-    title: 'Set your instructions',
-    body: 'Tell us when you close, how to greet callers, and what information to collect, plus which requests reach your on-call contact.',
+    icon: 'icon-phone-forward',
+    title: 'Calls Are Forwarded',
+    body: 'When your office closes, incoming calls are routed to our answering team. We work with your phone system or forwarding settings so the switch is seamless, and you control the hours and any conditional routing.',
   },
   {
     number: '02',
-    icon: 'icon-phone-forward',
-    title: 'Forward and test',
-    body: 'Forward your number when you close, then run a test call so you can hear the greeting and check how messages arrive.',
+    icon: 'icon-headset',
+    title: 'Calls Are Answered Professionally',
+    body: 'A live receptionist answers using your business name and follows your instructions. We train agents on your scripts, tone, and escalation preferences, and confirm caller details to reduce errors.',
   },
   {
     number: '03',
-    icon: 'icon-headset',
-    title: 'We answer your calls',
-    body: 'After closing, a receptionist answers in your business name, follows your instructions, and captures the details your team needs.',
+    icon: 'icon-intake-list',
+    title: 'Information Is Collected',
+    body: 'The receptionist takes messages, captures lead information, schedules appointments, or handles basic questions, logging the caller name, contact details, reason for calling, and any qualifying details.',
   },
   {
     number: '04',
-    icon: 'icon-doc-arrow',
-    title: 'Receive the handoff',
-    body: 'Each call arrives as a written summary through the channel you choose, so your team can pick up where the caller left off.',
+    icon: 'icon-call-transfer',
+    title: 'Urgent Calls Are Escalated',
+    body: 'If the situation is urgent, the call is forwarded to the right team member. We follow your triage protocols and notify on-call contacts through your chosen channels, documenting every escalation.',
   },
 ]
 
@@ -31,18 +31,18 @@ export default function HowItWorksSteps() {
   return (
     <ProcessBand
       headingId="how-it-works-heading"
-      badge="A clear process. A confident handoff."
+      badge="Clear process that we follow"
       heading={
         <>
-          How After-Hours
+          How Does an After Hours
           <br />
-          Call Answering Works
+          Answering Service Work?
         </>
       }
-      intro="Set your instructions, connect your line, and give your callers a clear next step."
+      intro="Tell us how you want us to attend and forward your calls."
       steps={STEPS}
-      ctaLabel="Plan My After-Hours Cover"
-      footnote="Coverage hours and routing are confirmed during setup."
+      ctaLabel="Plan My After Hours Coverage Plan"
+      footnote="Coverage hours and other details will be discussed during setup."
     />
   )
 }

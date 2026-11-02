@@ -4,26 +4,26 @@ const STEPS = [
   {
     number: '01',
     icon: 'icon-chats',
-    title: 'Tell us about your business',
-    body: 'Share your services, opening hours, and the questions callers ask most often. We use this to build the brief your receptionists work from.',
+    title: 'Tell Us Your Needs',
+    body: "Share your business details, call handling needs, and preferences. We'll learn how you work and what your customers expect so we can provide the right support from day one.",
   },
   {
     number: '02',
     icon: 'icon-sliders',
-    title: 'Set your call-handling rules',
-    body: 'Choose your greeting, the details to collect on every call, and who to transfer to. You decide what happens when nobody is available.',
+    title: 'Set Up Your Call Flow',
+    body: 'We create a call handling plan for greetings, transfers, bookings, and messages. This ensures every call is handled smoothly and your team avoids unnecessary interruptions.',
   },
   {
     number: '03',
-    icon: 'icon-phone-ring',
-    title: 'Connect and test your calls',
-    body: 'Set up call forwarding from your existing number, then place a test call and hear the experience for yourself before you go live.',
+    icon: 'icon-headset-call',
+    title: 'We Handle Your Calls',
+    body: 'Our virtual receptionists answer incoming calls, handle customer questions, book appointments, and take messages while you focus on running your business.',
   },
   {
     number: '04',
     icon: 'icon-doc-arrow',
-    title: 'Start receiving calls and updates',
-    body: 'Caller details and messages reach your team the way you chose. Request changes to your greeting, questions or routing at any time.',
+    title: 'Stay Informed',
+    body: 'Receive call summaries, customer details, and important updates so you always know what needs attention and can follow up on leads.',
   },
 ]
 
@@ -31,7 +31,7 @@ export default function SetupSteps() {
   return (
     <ProcessBand
       headingId="setup-heading"
-      badge="Set up around your business"
+      badge="Designed around your business needs"
       heading={
         <>
           How Our Virtual Receptionist
@@ -39,10 +39,10 @@ export default function SetupSteps() {
           Service Works
         </>
       }
-      intro="You set the instructions. We help put the right call-handling process in place."
+      intro="You set the rules. Your dedicated virtual receptionist handles all the rest."
       steps={STEPS}
-      ctaLabel="Plan My Setup"
-      footnote="Agree on backup contacts and next steps before your calls go live."
+      ctaLabel="Tell Us What You Need"
+      footnote="Before moving forward with your work, we'll plan next steps."
     />
   )
 }

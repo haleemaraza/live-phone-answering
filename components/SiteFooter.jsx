@@ -6,13 +6,13 @@ export default function SiteFooter() {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-5xl bg-gradient-to-r from-[#8CA365] to-[#6b7d4c] rounded-3xl p-10 shadow-2xl flex flex-col md:flex-row items-center justify-between z-20">
         <div>
           <h3 className="text-3xl font-extrabold text-white mb-2">Ready to stop missing leads?</h3>
-          <p className="text-green-100 text-lg">Get started today. Setup in 5 minutes.</p>
+          <p className="text-green-100 text-lg">Start in under 5 minutes with zero risk.</p>
         </div>
         <Link prefetch={false}
           href="/contact-us"
           className="mt-6 md:mt-0 bg-white text-[#34414A] font-bold py-3 px-8 rounded-xl shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-300 whitespace-nowrap"
         >
-          Get Started
+          Get Started Now
         </Link>
       </div>
 

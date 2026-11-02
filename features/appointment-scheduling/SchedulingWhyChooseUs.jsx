@@ -3,33 +3,33 @@ import Link from 'next/link'
 const REASONS = [
   {
     icon: 'icon-sliders',
-    title: 'Your Rules Come First',
-    body: 'Define appointment types, booking windows, staff availability, and intake questions. Receptionists follow the instructions you approve.',
+    title: 'Real People Answer Every Call',
+    body: 'Instead of a robotic machine, a friendly person answers every single call. This real human connection builds trust right away and keeps callers happy, because they never get stuck waiting for a late callback or leaving a voicemail.',
   },
   {
     icon: 'icon-headset-call',
-    title: 'A Real Person for Every Conversation',
-    body: 'Give callers a welcoming voice to discuss appointments, ask routine questions, and understand their next step.',
+    title: 'Available 24/7, Including Weekends and Holidays',
+    body: 'Our team answers the phone all day and all night. We capture late-night callers so you never lose a booking just because your office is closed.',
   },
   {
     icon: 'icon-calendar-check',
-    title: 'Clear Booking Boundaries',
-    body: "Set when receptionists can book directly and when a request needs your team's confirmation. Keep exceptions in your hands.",
+    title: 'Fast, Accurate Appointment Booking',
+    body: 'Our agents book, change, or cancel appointments quickly and correctly. Your customers get help instantly, and your main team can focus entirely on their daily work without distractions.',
   },
   {
     icon: 'icon-intake-list',
-    title: 'Useful Details, Ready for Your Team',
-    body: 'Capture contact information, service needs, and approved intake details so your team can prepare for the appointment.',
+    title: 'Customized Call Scripts That Match Your Brand',
+    body: 'We use custom talking plans made just for your company. We learn your specific words and values so we sound like your real office staff, keeping things simple and friendly so callers feel comfortable.',
   },
   {
     icon: 'icon-layers',
-    title: 'Tools Reviewed Before Setup',
-    body: 'We check your calendar and scheduling requirements to confirm which connections and booking actions are supported.',
+    title: 'Secure Calendar Management and Scheduling Processes',
+    body: 'Our system connects to your online calendar and updates it in real time. This tracking stops people from booking the same slot twice and keeps your business data private, safe and neat.',
   },
   {
     icon: 'icon-refresh',
-    title: 'A Process You Can Refine',
-    body: 'Review your call instructions as your services or schedules change. Keep the booking experience aligned with your business.',
+    title: 'Reduce Administrative Work for Your Team',
+    body: 'We take over bookings, confirmations, and simple changes so your team can focus on higher-value work. Fewer emails and scheduling headaches frees your staff to serve clients better.',
   },
 ]
 
@@ -46,16 +46,13 @@ export default function SchedulingWhyChooseUs() {
               id="scheduling-why-heading"
               className="mt-4 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.12] tracking-tight text-white"
             >
-              Appointment Scheduling
+              Why Choose Our Appointment
               <br />
-              Support Built Around
-              <br />
-              Your Business
+              Scheduling Answering Service?
             </h2>
           </div>
           <p className="text-lg leading-relaxed text-white/70 lg:pt-14">
-            Keep control of your calendar while giving callers a helpful, professional response. We shape the
-            scheduling process around your instructions, your team, and the tools you use.
+            We handle your phone calls so you can focus on making your business better.
           </p>
         </div>
 

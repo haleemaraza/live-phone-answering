@@ -262,125 +262,140 @@ export const servicesFaq = {
 
 export const virtualReceptionistFaq = {
   "heading": "Frequently Asked Questions About Virtual Receptionist Services",
-  "intro": "Everything you need to know about getting started, pricing, and how our receptionists act as an extension of your business.",
-  "sideTitle": "Have a specific question?",
-  "sideBody": "Our team is here to help you build the perfect custom call flow.",
+  "intro": "Have questions about costs, setup, and getting started with your live phone answering? We've answered your questions below.",
+  "sideTitle": "Have a specific question not answered here?",
+  "sideBody": "Contact us and we will be happy to answer your questions.",
   "linkText": "Contact Support",
   "linkHref": "/contact-us",
   "items": [
     {
-      "q": "What is a virtual receptionist service?",
-      "a": "A virtual receptionist service provides live, remote professionals who handle your inbound calls, answer questions, and capture leads just like an in-house employee. We seamlessly integrate with your business, ensuring you project a Fortune 500 image while you focus on closing high-ticket jobs."
+      "q": "What is a virtual receptionist and how does it work?",
+      "a": "A virtual receptionist is a trained professional who answers your business calls remotely, using your company name. They handle incoming calls just like an in-house receptionist. They work from outside your office but represent your business professionally."
     },
     {
-      "q": "How much does a virtual receptionist cost per month?",
-      "a": "Our premium live virtual receptionist plans are highly affordable, starting at just $149 per month. Compared to hiring a dedicated in-house employee at $38,000 annually, our flexible pay-per-call and unlimited tier options offer massive operational savings while guaranteeing your business phones are answered professionally 24/7."
+      "q": "Can a virtual receptionist handle industry-specific tasks like healthcare or legal calls?",
+      "a": "Yes. Virtual receptionists can be trained on industry-specific requirements. Healthcare receptionists follow privacy protocols (HIPAA), legal receptionists maintain confidentiality standards, and retail receptionists handle order processing. Many services offer receptionists with experience in your specific field."
     },
     {
-      "q": "What is the difference between a virtual receptionist and an answering service?",
-      "a": "While a basic answering service merely takes messages and forwards calls, a virtual receptionist acts as a fully integrated extension of your team. We follow your custom scripts, qualify high-value leads, answer complex FAQs, and book appointments directly into your dispatch software for seamless operations."
+      "q": "What happens if I need coverage after hours or 24/7?",
+      "a": "Virtual receptionist services offer 24/7 coverage, including weekends and holidays. Your calls are answered at any time, so you never miss a customer."
     },
     {
-      "q": "Can a virtual receptionist schedule appointments?",
-      "a": "Yes, comprehensive appointment scheduling is a core feature. Our receptionists securely log into your existing calendar or dispatch software to book, modify, or cancel appointments in real time. We ensure your schedule stays full of qualified jobs, completely eliminating the frustrating back-and-forth of scheduling."
-    },
-    {
-      "q": "Is a virtual receptionist HIPAA compliant?",
-      "a": "Yes, our specialized medical virtual receptionist services are 100% HIPAA compliant. We utilize highly secure, encrypted platforms to handle sensitive patient data, intake details, and confidential message delivery, ensuring your practice meets all strict federal privacy regulations without ever compromising on excellent service quality."
-    },
-    {
-      "q": "Do virtual receptionists answer calls 24 hours a day?",
-      "a": "Yes, we provide round-the-clock, 24/7 coverage, including nights, weekends, and major holidays. Whether a customer calls at noon for an estimate or at 2 AM for an emergency carpet cleaning or plumbing repair, a live, US-based professional will always be there to answer."
-    },
-    {
-      "q": "Is there a long-term commitment or contract?",
-      "a": "No, we operate on a month-to-month basis with no long-term contracts. You can scale, adjust, or cancel your plan at any time. Our onboarding team will set up your custom script and call routing in minutes so you can get started quickly."
-    },
-    {
-      "q": "What happens if I receive a high volume of calls?",
-      "a": "Our scalable infrastructure is built to seamlessly handle sudden call spikes. Whether you run a seasonal business or launch a massive marketing campaign across multiple US cities, our team dynamically routes your calls to ensure every single lead is captured with zero hold times."
-    },
-    {
-      "q": "How is a virtual receptionist different from an AI bot?",
-      "a": "Unlike frustrating AI bots that struggle with accents and background noise, a human virtual receptionist provides immediate empathy and critical thinking. Real humans navigate complex emotional situations and secure high-ticket bookings far better than automated systems, ensuring your callers never hang up in frustration."
+      "q": "What tasks can a virtual receptionist do beyond answering phones?",
+      "a": "Beyond call answering, virtual receptionists can schedule appointments, manage calendars, take live chat support, process orders, enter data, screen calls, capture leads, answer FAQs, send follow-up emails, and handle basic administrative tasks. You can customize their duties based on your business needs."
     }
   ]
 }
 
 export const afterHoursFaq = {
   "heading": "After-Hours Answering Service — Frequently Asked Questions",
-  "intro": "How evening, weekend and holiday cover works, what it costs to run, and what your callers hear once your office closes.",
-  "sideTitle": "Have a specific question?",
-  "sideBody": "Tell us your hours and call-handling rules and we will map out the cover that fits.",
+  "intro": "Have questions about how after-hours, weekend, holiday and evening phone answering services work? We've answered them below.",
+  "sideTitle": "Have a specific question not answered here?",
+  "sideBody": "Contact us and we will be happy to answer your questions.",
   "linkText": "Contact Support",
   "linkHref": "/contact-us",
   "items": [
     {
-      "q": "What is an after-hours answering service?",
-      "a": "An after-hours answering service is a team of live receptionists who answer your business calls once your own office has closed — evenings, overnight, weekends and holidays. They pick up in your business name, follow the greeting and questions you have approved, and pass the details on the way you prefer, so callers reach a person instead of voicemail."
+      "q": "What is an after hours answering service?",
+      "a": "It is a professional service that handles your incoming calls during evenings, weekends, and holidays. It manages tasks like taking messages, scheduling appointments, and routing urgent calls when your office is closed."
     },
     {
-      "q": "Which hours can you cover?",
-      "a": "Cover is built around your own opening hours. Most businesses start with evenings and weekends, then add holidays and planned closures. You tell us when your office closes and in which time zone, and calls outside those hours follow your forwarding rule."
+      "q": "How much does an after hours answering service cost?",
+      "a": "Pricing depends on your call volume, required features, and coverage hours. Our monthly minute plans start at $199, and we confirm the right plan for your coverage during setup."
     },
     {
-      "q": "What happens to a call that needs someone urgently?",
-      "a": "You decide in advance which situations count as urgent and who should be contacted. Those calls follow your escalation list and contact method. Anything outside that definition is recorded as a message for your next business day rather than guessed at."
+      "q": "Can you schedule appointments after business hours?",
+      "a": "Yes. Live receptionists can book appointments directly into your calendar where supported, letting customers schedule at their convenience so your team wakes up to confirmed bookings."
     },
     {
-      "q": "Will callers know they have reached an answering service?",
-      "a": "Not unless you want them to. Receptionists answer with the greeting you have approved, using your business name, and work from the service information you supply. The aim is for the call to feel like a continuation of your own front desk."
+      "q": "Do you provide bilingual after hours answering?",
+      "a": "Yes. We provide bilingual support to help you serve a wider audience, improve accessibility, and give non-English speakers a smooth experience."
     },
     {
-      "q": "How do I receive messages taken overnight?",
-      "a": "Each call arrives as a written summary through the channel you choose — commonly email or text, and in some setups directly into your CRM. The summary records who called, why, how to reach them, and anything you asked us to collect."
+      "q": "Can emergency calls be transferred immediately?",
+      "a": "Yes. Urgent calls are identified and escalated to your designated on-call team members according to your specific instructions."
     },
     {
-      "q": "Do I need to change my phone number?",
-      "a": "No. You keep your existing business number and set a forwarding rule on your own phone system, so calls reach your team first and only pass through once your office is closed or the line goes unanswered. Available options depend on your phone system."
+      "q": "What industries use after hours answering services?",
+      "a": "They are widely used by medical practices, law firms, HVAC and plumbing companies, contractors, property managers, and real estate agencies."
     },
     {
-      "q": "How is after-hours cover priced?",
-      "a": "Plans are based on receptionist time rather than a flat per-call rate, so a quiet month costs less than a busy one. Because after-hours volume is usually lower than daytime volume, most businesses start on a smaller plan and adjust once they can see their real call pattern."
+      "q": "What is the difference between voicemail and live answering?",
+      "a": "Voicemail forces customers to leave a message and wait for a callback. Live answering connects them with a real person who provides immediate assistance and captures the lead."
+    },
+    {
+      "q": "Do you offer overnight, weekend, and holiday answering services?",
+      "a": "Yes. The service provides 24/7 coverage during overnights, weekends, and holidays so your business never misses an opportunity."
     }
-  ],
+  ]
 }
 
 export const overflowFaq = {
   "heading": "Overflow Call Answering — Frequently Asked Questions",
-  "intro": "How overflow cover sits alongside your own team, when calls pass through, and what your callers hear when your staff are already busy.",
-  "sideTitle": "Have a specific question?",
-  "sideBody": "Tell us your phone setup and we will map out how overflow calls should reach you.",
+  "intro": "Everything you need to know about how we work, how you can get started and pricing.",
+  "sideTitle": "Have a specific question not answered here?",
+  "sideBody": "Contact us and we will be happy to answer your questions.",
   "linkText": "Contact Support",
   "linkHref": "/contact-us",
   "items": [
     {
-      "q": "What is overflow call answering?",
-      "a": "Overflow call answering gives your business a backup route for calls your own team cannot take. Your staff always ring first; if every line is busy, a call goes unanswered, or your team is on a planned break, the call passes to a live receptionist who answers in your business name and follows the instructions you have agreed."
+      "q": "What is overflow call handling?",
+      "a": "It's a service that answers calls when your team is busy or unavailable, so callers don't go unanswered."
     },
     {
-      "q": "How is overflow different from an after-hours service?",
-      "a": "After-hours cover starts once your office has closed. Overflow cover runs during your working day, catching the calls your team cannot reach while they are on the phone, with customers, or away from their desks. Many businesses use both."
+      "q": "When does a business need overflow answering?",
+      "a": "During busy hours, staff shortages, lunch breaks, seasonal rushes, or after-hours periods."
     },
     {
-      "q": "Do my own staff still answer the phone first?",
-      "a": "Yes. Your office rings first on every call. Overflow only engages when your forwarding rule is triggered, so your team keeps the conversations they are able to take."
+      "q": "How does overflow call forwarding work?",
+      "a": "Your phone system forwards unanswered or busy-line calls to our receptionists, who answer using your business name and instructions."
     },
     {
-      "q": "When exactly does a call pass through to you?",
-      "a": "You choose the trigger. Common setups are busy line, no answer after an agreed number of rings, and scheduled breaks. Which options are available depends on your phone system, and we confirm what will work during setup."
+      "q": "What's the difference between overflow answering and full-time answering?",
+      "a": "Overflow answering handles extra calls when your team is unavailable. Full-time answering handles all incoming calls."
     },
     {
-      "q": "Will the receptionist know about my business?",
-      "a": "They work from the greeting, service information, and approved answers you provide. Anything outside that guidance is captured as a message and passed to your team rather than guessed at."
+      "q": "Can you handle after-hours and emergency calls?",
+      "a": "Yes. We answer after-hours calls and follow your emergency call dispatch instructions to contact the right person."
     },
     {
-      "q": "Can overflow calls be booked into my calendar?",
-      "a": "Where supported, receptionists can arrange appointments using your availability and booking rules. When direct booking is not available, the caller's preferred times are passed to your team for confirmation."
+      "q": "How much does overflow call handling cost?",
+      "a": "Pricing depends on your call volume, coverage hours, and service requirements. Our monthly minute plans start at $199, and we confirm the right plan with you during setup."
     },
     {
-      "q": "How is overflow answering priced?",
-      "a": "Plans are based on receptionist time rather than a flat per-call rate. Because overflow volume depends on how busy your own team is, most businesses start on a smaller plan and adjust once they can see their real pattern."
+      "q": "Do you offer overflow answering without a contract?",
+      "a": "Yes. We offer flexible answering plans without requiring a long-term contract."
     }
-  ],
+  ]
+}
+
+export const appointmentSchedulingFaq = {
+  "heading": "Frequently Asked Questions About Appointment Scheduling",
+  "intro": "Everything you need to know about how we work, how you can get started and pricing.",
+  "sideTitle": "Have a specific question not answered here?",
+  "sideBody": "Contact us and we will be happy to answer your questions.",
+  "linkText": "Contact Support",
+  "linkHref": "/contact-us",
+  "items": [
+    {
+      "q": "What is an appointment scheduling answering service?",
+      "a": "It is a live answering service that answers calls and books appointments directly into your calendar."
+    },
+    {
+      "q": "How does appointment scheduling answering work?",
+      "a": "A trained agent answers your calls, checks availability, schedules appointments, and updates your calendar in real time."
+    },
+    {
+      "q": "Can you send appointment reminders?",
+      "a": "Yes. We offer appointment reminder services through calls, emails, and text messages."
+    },
+    {
+      "q": "Can your service integrate with my calendar?",
+      "a": "Yes. We work with Google Calendar, Calendly, Acuity Scheduling, Setmore, and other scheduling systems."
+    },
+    {
+      "q": "Is your appointment scheduling service available after business hours?",
+      "a": "Yes. Our after-hours appointment scheduling service is available 24/7, including weekends and holidays."
+    }
+  ]
 }

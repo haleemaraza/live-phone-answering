@@ -11,19 +11,19 @@ const OPTIONS = [
     name: 'After-Hours Answering',
     featured: true,
     cells: [
-      'Outside your agreed business hours',
-      'Stay with your in-house team',
-      'You want support after closing',
+      'The moment your office closes for the day, weekend, or holiday.',
+      'Keep them in-house with your existing team.',
+      'You want full coverage after hours.',
     ],
   },
   {
-    id: 'always-on',
-    icon: 'icon-clock',
-    name: '24/7 Answering',
+    id: 'lead-capture',
+    icon: 'icon-user-plus',
+    name: 'Lead Capture Answering',
     cells: [
-      'Across daytime and nighttime hours',
-      'Can be handled by the answering service',
-      'You want answering throughout the day and night',
+      'Whenever prospects and inbound inquiries land.',
+      'Qualified, logged, and routed to sales.',
+      'You want to turn every prospect into a booked opportunity.',
     ],
   },
   {
@@ -31,9 +31,9 @@ const OPTIONS = [
     icon: 'icon-phone-forward',
     name: 'Overflow Answering',
     cells: [
-      'When your team is busy or a call goes unanswered',
-      'Reach your team first, with backup when needed',
-      'You need extra help during busy periods',
+      'During call surges or whenever lines are tied up.',
+      'Route to your team first, with our live reps as backup.',
+      'You cannot afford long hold times during peak hours.',
     ],
   },
 ]
@@ -46,13 +46,13 @@ export default function CoverageComparison() {
       <div className="site-container">
         <div className="mx-auto max-w-2xl text-center">
           <p className="icon-mask icon-check-circle [--icon-size:1rem] inline-flex items-center gap-2 bg-[#8CA365]/10 text-[#5f7a3a] rounded-full text-sm font-semibold px-4 py-1.5">
-            Find the right coverage
+            Choose coverage that you need
           </p>
           <h2
             id="comparison-heading"
             className="mt-2 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.1] tracking-tight text-[#34414A]"
           >
-            After-Hours, 24/7 or Overflow?
+            After-Hours, Overflow or Lead Capture?
           </h2>
           <p className="mt-3 text-lg leading-relaxed text-gray-600">
             Choose coverage based on when your business needs help answering calls.
@@ -102,10 +102,10 @@ export default function CoverageComparison() {
             ></span>
             <span className="min-w-0">
               <span className="block text-[1.05rem] font-bold text-[#1a2e35]">
-                Need more than one type of coverage?
+                Need a hybrid setup?
               </span>
               <span className="mt-1 block text-lg text-gray-600">
-                Discuss a setup that combines the support your business needs.
+                We can combine multiple coverage types into a single custom plan.
               </span>
             </span>
           </p>

@@ -3,27 +3,27 @@ import ProcessBand from '@/components/ProcessBand'
 const STEPS = [
   {
     number: '01',
-    icon: 'icon-phone',
-    title: 'Customer Calls You',
-    body: 'Customers dial your existing business number. Calls reach your team first through your agreed phone setup.',
+    icon: 'icon-phone-forward',
+    title: 'Set Up Your Call Forwarding',
+    body: 'We help you set up call forwarding to match the way your business works. Choose when calls should come to us, whether your lines are busy, your team cannot answer, or you need extra coverage.',
   },
   {
     number: '02',
-    icon: 'icon-phone-forward',
-    title: 'Your Team Answers First',
-    body: 'Your staff have the first opportunity to answer. If the call remains unanswered, your forwarding rule activates.',
+    icon: 'icon-headset',
+    title: 'We Answer Your Overflow Calls',
+    body: 'When a call is forwarded to us, our receptionists answer using your business name, preferred greeting, and specific instructions, so every caller feels welcome and heard.',
   },
   {
     number: '03',
-    icon: 'icon-headset',
-    title: 'We Answer in Your Name',
-    body: "A live receptionist uses your greeting, understands the caller's request, and follows your approved instructions.",
+    icon: 'icon-intake-list',
+    title: 'We Handle Each Call',
+    body: 'We answer common questions, take detailed messages, collect caller information, and follow your instructions for urgent requests, so callers get a helpful response rather than feeling passed around.',
   },
   {
     number: '04',
     icon: 'icon-doc-check',
-    title: 'You Receive the Details',
-    body: 'Caller details and the next step reach your team through your agreed delivery method, ready for follow-up.',
+    title: 'Your Team Gets the Details',
+    body: 'We share the caller details, messages, and important information with the right person on your team, so you stay informed and your staff can focus without worrying about missed calls.',
   },
 ]
 
@@ -31,19 +31,19 @@ export default function OverflowWorkflow() {
   return (
     <ProcessBand
       headingId="overflow-workflow-heading"
-      badge="Your team first. Backup when needed."
+      badge="How overflow answering works"
       badgeIcon="icon-refresh"
       heading={
         <>
-          How Our Overflow Call
+          How do We Keep Your Business Calls
           <br />
-          Answering Service Works
+          Covered When Things Get Busy?
         </>
       }
-      intro="Your number. Your greeting. A clear next step for every forwarded call."
+      intro="Your number. Your schedule. Your approved script."
       steps={STEPS}
-      ctaLabel="Discuss My Call Flow"
-      footnote="Forwarding options depend on your phone system and service plan."
+      ctaLabel="See How We Will Handle Your Calls"
+      footnote="Call forwarding options depend on your plan."
     />
   )
 }

@@ -3,23 +3,23 @@ import Link from 'next/link'
 const BENEFITS = [
   {
     icon: 'icon-devices',
-    title: 'Keep Up With Peak Call Volumes',
-    body: 'Give unanswered calls a backup route while your staff finish their current conversations. Capture new inquiries without pulling your team away from customers.',
+    title: 'Keep Up With High Call Volumes',
+    body: 'When several calls come in at once, our call overflow service answers the extra calls your team cannot reach. Capture new inquiries without keeping customers waiting.',
   },
   {
     icon: 'icon-clock',
-    title: 'Cover Lunch Breaks & Meetings',
-    body: 'Arrange coverage around planned gaps, so callers can speak with a receptionist and leave useful details while your team is away from the desk.',
+    title: 'Coverage for Lunch Breaks & Meetings',
+    body: 'Keep calls covered during lunch breaks, meetings, and busy work hours. Our overflow reception service gives callers someone to speak with when your staff are away from their desks.',
   },
   {
     icon: 'icon-users',
-    title: 'Ease the Pressure of Staff Absences',
-    body: 'Maintain call coverage during sickness, annual leave, and temporary staffing gaps, with receptionists following your agreed handling instructions.',
+    title: 'Manage Staff Absences',
+    body: 'Maintain reliable call coverage during sick days, annual leave, and staff shortages. Our overflow call handling solution helps prevent missed calls when fewer team members are available.',
   },
   {
     icon: 'icon-calendar',
-    title: 'Prepare for Seasonal & Campaign Demand',
-    body: 'Plan extra answering support around promotions and busy seasons, helping more inquiries receive attention when demand increases.',
+    title: 'Prepare for Peak Seasons & Campaigns',
+    body: 'Handle sudden increases in calls during promotions, holidays, and busy seasons. Give more callers a timely response when demand increases.',
   },
 ]
 
@@ -33,19 +33,19 @@ export default function OverflowBenefits() {
       <div className="site-container">
         <div className="mx-auto max-w-2xl text-center">
           <p className="icon-mask icon-bolt [--icon-size:1rem] inline-flex items-center gap-2 bg-[#8CA365]/10 text-[#5f7a3a] rounded-full text-sm font-semibold px-4 py-1.5">
-            How overflow answering helps
+            How Overflow Answering Helps
           </p>
           <h2
             id="overflow-benefits-heading"
             className="mt-3 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.12] tracking-tight text-[#1d4b37]"
           >
-            Keep Calls Covered When
+            Never Miss a Call When
             <br />
             Your Team Gets Busy
           </h2>
           <p className="mt-3 text-lg leading-relaxed text-gray-600">
-            From everyday interruptions to seasonal demand, overflow answering supports your team when calls need extra
-            attention.
+            When your team can&rsquo;t answer, we step in. Our overflow call handling solution keeps calls covered
+            without interrupting your team&rsquo;s work.
           </p>
         </div>
 
@@ -87,14 +87,14 @@ export default function OverflowBenefits() {
 
         <div className="mt-9 flex flex-col items-start gap-5 border-t border-gray-300/50 pt-6 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-lg font-bold text-[#1d4b37]">
-            Support for busy moments. Built around your team.
+            Simple call forwarding. Reliable live answering. No missed opportunities.
           </p>
           <Link
             prefetch={false}
             href="/contact-us"
             className="icon-mask icon-arrow-right [--icon-size:0.95rem] inline-flex flex-shrink-0 flex-row-reverse items-center gap-3 rounded-lg bg-[#8CA365] px-6 py-3 text-lg font-bold text-white transition-all hover:-translate-y-0.5 hover:bg-[#9cb374]"
           >
-            Find My Overflow Coverage
+            Set Up My Overflow Coverage
           </Link>
         </div>
       </div>

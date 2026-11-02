@@ -4,7 +4,8 @@ import OverflowBenefits from '@/features/overflow/OverflowBenefits'
 import OverflowWorkflow from '@/features/overflow/OverflowWorkflow'
 import OverflowReceptionists from '@/features/overflow/OverflowReceptionists'
 import OverflowIntegrations from '@/features/overflow/OverflowIntegrations'
-import CoreServices from '@/features/homepage/CoreServices'
+import OverflowIndustries from '@/features/overflow/OverflowIndustries'
+import OverflowOutcomes from '@/features/overflow/OverflowOutcomes'
 import IndustriesTabs from '@/components/IndustriesTabs'
 import Testimonials from '@/components/Testimonials'
 import FaqSection from '@/components/FaqSection'
@@ -14,9 +15,9 @@ import { overflowFaq } from '@/components/faq-content'
 const BASE_URL = 'https://livephoneanswering.com'
 
 export const metadata = {
-  title: 'Overflow Call Answering Service for Busy Teams | Live Phone Answering',
+  title: "24/7 Overflow Call Answering Service for Busy Businesses",
   description:
-    'Overflow call answering for US businesses. When your team is already on the phone, a live receptionist answers in your business name, captures inquiries, and follows your call-handling instructions.',
+    "Overflow answering service for businesses that need coverage for busy seasons. 24/7 and custom service for lawyers, contractors, doctors & retail businesses.",
   alternates: { canonical: '/overflow-call-answering' },
   openGraph: {
     type: 'website',
@@ -83,11 +84,11 @@ export default function OverflowCallAnsweringPage() {
       {/* Carries the hero's "See How Overflow Works" anchor. */}
       <OverflowBenefits />
       <OverflowWorkflow />
-      <CoreServices />
+      <OverflowIndustries />
       <OverflowReceptionists />
-      <IndustriesTabs />
+      <IndustriesTabs heading="Tailored to Match Your Operational Workflow" intro="Supporting specialized industries, our receptionists integrate directly into your software and daily operations to ensure effortless team alignment." />
       <OverflowIntegrations />
-      <Testimonials />
+      <OverflowOutcomes />
       <FaqSection {...overflowFaq} />
       <ContactFormSection theme="dark" />
 

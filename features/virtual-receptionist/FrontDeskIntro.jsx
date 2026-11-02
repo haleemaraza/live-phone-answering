@@ -3,18 +3,18 @@ import Link from 'next/link'
 const COVERAGE = [
   {
     icon: 'icon-phone',
-    title: 'Welcome every caller',
-    body: 'A consistent greeting that reflects your business.',
+    title: 'No missed calls',
+    body: 'They answer every call on time, consistently. No matter if you are at a meeting or enjoying your free time, never have to worry about missing an important customer or potential lead. We will be there to answer.',
   },
   {
     icon: 'icon-calendar',
-    title: 'Handle the next step',
-    body: 'Screen, transfer, book, or take a clear message.',
+    title: 'Handle every call accordingly',
+    body: 'They screen, transfer, book, take messages. We screen and transfer calls, book appointments, take messages, and make sure callers get the help they need without unnecessary delays.',
   },
   {
     icon: 'icon-report',
-    title: 'Keep your team informed',
-    body: 'Pass on the details needed for a useful follow-up.',
+    title: 'Keep you informed',
+    body: 'They provide info needed for decision making. We share important messages, caller details, appointment updates, and other information so you can make decisions and follow up when needed.',
   },
 ]
 
@@ -30,28 +30,25 @@ export default function FrontDeskIntro() {
             id="front-desk-heading"
             className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] leading-tight tracking-tight"
           >
-            A professional front desk.
-            <br className="hidden sm:block" /> Without the extra desk.
+            Hire a full professional front desk 
+
+            <br className="hidden sm:block" /> without adding an extra desk.
           </h2>
           <hr className="w-14 h-1 mx-auto my-6 border-0 rounded bg-[#8CA365]" />
           <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
-            Our virtual receptionist service gives your business a real person to welcome callers, handle routine
-            requests, and keep important conversations moving.
+            Our virtual receptionist service helps you have a real person who handles calls, welcomes your callers, and keeps your business moving, while you do other stuff.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
-          <div>
+          <div className="mt-40">
             <h3 className="text-2xl md:text-3xl font-bold text-[#34414A] mb-5 border-l-4 border-[#8CA365] pl-4">
               What is a virtual receptionist?
             </h3>
             <p className="text-gray-600 leading-relaxed mb-4">
-              A virtual receptionist handles calls remotely on behalf of your business. They answer in your company
-              name and follow your instructions to screen calls, schedule appointments, and take messages.
+             A virtual receptionist is a real person who answers your business calls from a remote location. They can guide callers, transfer urgent lines, and schedule meetings. Your customers experience a seamless front desk interaction without ever knowing the receptionist is working from a different location.
             </p>
-            <p className="text-gray-600 leading-relaxed mb-6">
-              You choose how calls are handled. Your customers get a professional, personal response.
-            </p>
+            
             <Link
               prefetch={false}
               href="/how-it-works"

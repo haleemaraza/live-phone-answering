@@ -1,9 +1,9 @@
 import Link from 'next/link'
 
 const STEPS = [
-  { number: '01', title: 'Welcome', body: '"Thank you for calling. How can I help?"' },
-  { number: '02', title: 'Understand', body: "Capture the caller's request and contact details." },
-  { number: '03', title: 'Hand off', body: 'Send your team a clear summary for follow-up.' },
+  { number: '01', title: 'Welcome', body: 'Greet every caller with a friendly, personal welcome and make them feel valued from the start. This creates a stronger connection between you and your clients.' },
+  { number: '02', title: 'Understand', body: "Listen carefully, understand what the caller needs, and collect their contact details and important information. We make sure every caller gets the attention they deserve." },
+  { number: '03', title: 'Follow Through', body: "Send your team a clear call summary with the caller's request and any next steps, so they can follow up without missing important details. Every inquiry gets the attention it needs, even after the call ends." },
 ]
 
 // The waveform is one <path> built at build time rather than ~48 <div> bars,
@@ -20,18 +20,17 @@ export default function CallExperience() {
       <div className="site-container">
         <div className="text-center max-w-3xl mx-auto mb-10 md:mb-12">
           <p className="icon-mask icon-bolt inline-flex items-center gap-2 bg-[#8CA365]/10 text-[#6b8a3e] rounded-full text-sm font-semibold px-4 py-1.5 mb-5">
-            Every call has a next step
+            Every call matters. Every customer counts.
           </p>
           <h2
             id="call-experience-heading"
             className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] leading-tight tracking-tight mb-5"
           >
-            A better call experience.
-            <br className="hidden sm:block" /> A simpler day for your team.
+            Better Calls. Happier Customers. 
+            <br className="hidden sm:block" />Less Work for Your Team.
           </h2>
           <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
-            A personal welcome, the right questions, and a clear handoff.
-          </p>
+Give every caller a warm welcome, quick answers, and the right support. We make sure no customer is left waiting and every call is handled with care.          </p>
         </div>
 
 
@@ -77,8 +76,8 @@ export default function CallExperience() {
                   aria-hidden="true"
                 ></span>
                 <span className="min-w-0 flex-grow">
-                  <span className="block text-sm font-bold text-[#34414A]">New quote request</span>
-                  <span className="block text-xs text-gray-500 mt-0.5">Bathroom repair &middot; Callback requested</span>
+                  <span className="block text-sm font-bold text-[#34414A]">New Service Request</span>
+                  <span className="block text-xs text-gray-500 mt-0.5">Plumbing repair | Customer requested a callback</span>
                 </span>
                 <span
                   className="icon-mask icon-check [--icon-size:1.125rem] h-7 w-7 flex-shrink-0 rounded-full bg-[#8CA365]/15 text-[#6b8a3e] flex items-center justify-center"
@@ -95,7 +94,8 @@ export default function CallExperience() {
             href="/contact-us"
             className="inline-flex items-center gap-2 text-[#34414A] font-semibold hover:text-[#8CA365] transition-colors"
           >
-            Let&rsquo;s tailor your call experience &rarr;
+            
+Let's create a better call experience for your business &rarr;
           </Link>
         </div>
       </div>

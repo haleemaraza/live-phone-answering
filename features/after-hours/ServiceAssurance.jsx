@@ -31,20 +31,28 @@ export default function ServiceAssurance() {
       <div className="site-container grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,1.08fr)_minmax(0,1fr)] lg:gap-12">
         <div className="lg:py-2">
           <p className="icon-mask icon-shield-check [--icon-size:1rem] inline-flex items-center gap-2 bg-white/10 text-[#a8c47d] rounded-full text-sm font-semibold px-4 py-1.5">
-            After-hours confidence
+            After-Hours Phone Answering &mdash; Holidays, Weekends &amp; Evenings Covered
           </p>
 
           <h2
             id="assurance-heading"
             className="mt-4 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.15] tracking-tight text-white"
           >
-            Your office closes.
+            What is an After Hours
             <br />
-            <span className="text-[#8CA365]">The conversation continues.</span>
+            <span className="text-[#8CA365]">Answering Service?</span>
           </h2>
 
           <p className="mt-4 text-base leading-relaxed text-white/65">
-            A clear next step for callers. Peace of mind for you.
+            An after hours answering service is a professional call answering solution that handles your phone calls
+            when your office is closed. This includes evenings, overnight hours, weekends, and holidays.
+          </p>
+
+          <p className="mt-4 text-base leading-relaxed text-white/65">
+            Think about a plumbing company. A homeowner discovers a burst pipe at midnight and needs help right away.
+            If the call goes to voicemail, chances are they will contact another plumber. With an after hours phone
+            answering service, a trained receptionist answers the call, gathers information, and forwards the
+            emergency to the right person.
           </p>
         </div>
 

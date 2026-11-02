@@ -14,7 +14,7 @@ const SECTION_BACKGROUND = {
   backgroundRepeat: 'repeat, repeat, no-repeat, no-repeat',
 }
 
-const CHECKS = ['Custom greetings', 'Call screening & transfers', 'Appointment booking']
+const CHECKS = ['Custom scripts', 'Quick call screening and transfer', 'Fast appointment booking']
 
 const WORKFLOW = [
   { icon: 'icon-phone', title: 'Greet the caller', body: 'Your business name and welcome' },
@@ -81,20 +81,24 @@ export default function VirtualReceptionistHero() {
 
       <div className="site-container relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center pt-10 pb-16 lg:pt-14 lg:pb-20">
         <div>
-          <p className="icon-mask icon-headset inline-flex items-center gap-2 bg-white/70 backdrop-blur-sm text-[#295657] rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider px-5 py-2 mb-6 shadow-sm border border-white/50">
-            Real people. A professional first impression.
+          <p className="icon-mask icon-headset inline-flex items-center gap-2 bg-white/70 backdrop-blur-sm text-[#295657] rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider px-5 py-2 mb-6 shadow-sm border border-white/50">     
+            Long Lasting First Impression
+
           </p>
 
           <h1
             id="vr-hero-heading"
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#1a2e35] leading-[1.1] tracking-tight"
           >
-            Virtual Receptionist Service That Keeps Your Business Moving
+            24/7 Virtual Receptionist Service  Hire Live Virtual Receptionist
+
           </h1>
 
           <p className="text-base sm:text-lg text-[#3d5c42] mt-6 max-w-xl leading-relaxed">
-            Give callers a friendly welcome with a live virtual receptionist who answers in your business name,
-            schedules appointments, and captures leads &mdash; while you focus on your customers.
+            Never miss another customer call or potential lead. Our virtual receptionist team answers your calls, handles customer questions, takes messages, and books appointments. We make sure every caller gets friendly and helpful service. 
+          </p>
+          <p className="text-base sm:text-lg text-[#3d5c42] mt-6 max-w-xl leading-relaxed">
+Whether you're busy, away from the office, or helping another customer, our virtual receptionist service keeps your business available and connected. We handle your calls so you can focus on your work and grow your business.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mt-8">

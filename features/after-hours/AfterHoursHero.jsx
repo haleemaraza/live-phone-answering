@@ -68,20 +68,25 @@ export default function AfterHoursHero() {
       <div className="site-container relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center pt-10 pb-16 lg:pt-[2rem] lg:pb-20">
         <div>
           <p className="icon-mask icon-moon inline-flex items-center gap-2 bg-white/70 backdrop-blur-sm text-[#295657] rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider px-5 py-2 mb-6 shadow-sm border border-white/50">
-            Live support after your office closes
+            After Hours Phone Answering Service
           </p>
 
           <h1
             id="after-hours-hero-heading"
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#1a2e35] leading-[1.1] tracking-tight"
           >
-            After-Hours Answering Service{' '}
-            <span className="text-[#6b8a3e]">for Nights, Weekends &amp; Holidays</span>
+            24/7 Answering Service{' '}
+            <span className="text-[#6b8a3e]">for After Hours, Weekends &amp; Holidays</span>
           </h1>
 
           <p className="text-base sm:text-lg text-[#3d5c42] mt-6 max-w-xl leading-relaxed">
-            Give callers a helpful human response when your team has signed off. Capture inquiries, take messages, and
-            follow your call instructions while your office is closed.
+            Business doesn&rsquo;t stop at 5 PM. Answer every call, capture every message, and never miss an
+            opportunity even when your team is off duty.
+          </p>
+
+          <p className="text-base sm:text-lg text-[#3d5c42] mt-4 max-w-xl leading-relaxed">
+            With our 24/7 live answering service, every call gets a response, every message is recorded, and every
+            caller gets the attention they deserve.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
@@ -101,7 +106,7 @@ export default function AfterHoursHero() {
             </Link>
           </div>
 
-          <p className="text-sm text-[#5a6c6e] mt-5">Your business name. Your call instructions. Your schedule.</p>
+          <p className="text-sm text-[#5a6c6e] mt-5">Your Business. Your Schedule. Your Leads.</p>
         </div>
 
         {/* Badge and summary card are part of the supplied artwork, so

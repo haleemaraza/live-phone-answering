@@ -11,15 +11,15 @@ const TABS = [
     icon: 'icon-moon',
     label: 'Evenings & Overnight',
     eyebrow: 'Evenings & overnight',
-    titleTop: 'Clock out.',
-    titleBottom: "We'll take the next call.",
-    body: 'Give callers a helpful human response after closing, with clear instructions for messages, inquiries, and on-call requests.',
+    titleTop: 'Leave the Office.',
+    titleBottom: 'Never Miss a Call.',
+    body: 'Give every late-night caller a warm, professional human response, handling messages, new inquiries, and urgent requests.',
     rows: [
-      { icon: 'icon-chat', label: 'Message taking', body: 'Capture the details for your next business day.' },
-      { icon: 'icon-users', label: 'New inquiries', body: 'Give potential customers a clear next step.' },
-      { icon: 'icon-phone', label: 'On-call requests', body: 'Follow your agreed escalation instructions.' },
+      { icon: 'icon-chat', label: 'Message taking', body: 'Lock in every crucial detail so your team is ready the next morning.' },
+      { icon: 'icon-users', label: 'New inquiries', body: 'Turn after-hours callers into qualified leads with clear next steps.' },
+      { icon: 'icon-phone', label: 'On-call requests', body: 'Keep operations running by triggering your escalation protocols.' },
     ],
-    cta: { href: '/contact-us', label: 'Plan my evening coverage' },
+    cta: { href: '/contact-us', label: 'Lock In My Evening Coverage' },
     pill: 'Your evening, uninterrupted',
     image: '/images/after-hours-evening.webp',
     // this artwork already carries the pill and the message card
@@ -34,13 +34,13 @@ const TABS = [
     eyebrow: 'Weekends',
     titleTop: 'Saturday and Sunday.',
     titleBottom: 'Still answered.',
-    body: 'Weekend callers reach a real person who follows your instructions, so Monday starts with context instead of a backlog.',
+    body: 'Never start your Monday morning unprepared. Tailor live call coverage to match your exact business hours, time zones, and holiday calendars.',
     rows: [
-      { icon: 'icon-chat', label: 'Weekend messages', body: 'Collected in the format your team expects.' },
-      { icon: 'icon-users', label: 'New inquiries', body: 'Captured while your office is closed.' },
-      { icon: 'icon-phone', label: 'Urgent escalations', body: 'Routed by the rules you set out.' },
+      { icon: 'icon-chat', label: 'Weekend messages', body: 'Gathered, organized, and delivered in the format your team needs.' },
+      { icon: 'icon-users', label: 'New inquiries', body: 'Captured and qualified while your competitors are closed.' },
+      { icon: 'icon-phone', label: 'Urgent escalations', body: 'Dispatched immediately according to your custom priority rules.' },
     ],
-    cta: { href: '/contact-us', label: 'Plan my weekend coverage' },
+    cta: { href: '/contact-us', label: 'Plan My Weekend Coverage' },
     pill: 'Your weekend, covered',
     image: '/images/scheduling-receptionist.webp',
     alt: 'A receptionist handling weekend calls for a closed office',
@@ -53,13 +53,13 @@ const TABS = [
     eyebrow: 'Holidays & closures',
     titleTop: 'Closed for the day.',
     titleBottom: 'Open to your callers.',
-    body: 'Set your holiday dates and planned closures in advance, and callers still hear a helpful human response instead of a recording.',
+    body: 'Add your holiday dates in advance so callers talk to a real person instead of an automated message.',
     rows: [
-      { icon: 'icon-chat', label: 'Closure greeting', body: 'Explains when your team is back.' },
-      { icon: 'icon-users', label: 'New inquiries', body: 'Held for your first day back.' },
-      { icon: 'icon-phone', label: 'Urgent routing', body: 'Passed on if you have asked us to.' },
+      { icon: 'icon-chat', label: 'Closure greeting', body: 'Tells callers when your office will reopen.' },
+      { icon: 'icon-users', label: 'New inquiries', body: 'Saved for your team to check when you return.' },
+      { icon: 'icon-phone', label: 'Urgent routing', body: 'Forwarded right away if you need urgent alerts.' },
     ],
-    cta: { href: '/contact-us', label: 'Plan my holiday coverage' },
+    cta: { href: '/contact-us', label: 'Plan My Holiday Coverage' },
     pill: 'Your closures, planned ahead',
     image: '/images/real-human-empathy-live-phone-answering-service.webp',
     alt: 'A receptionist answering a call during a scheduled office closure',
@@ -76,19 +76,19 @@ export default function AfterHoursCoverage() {
         <div className="grid grid-cols-1 items-start gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,24rem)] lg:gap-16">
           <div>
             <p className="icon-mask icon-clock [--icon-size:1rem] inline-flex items-center gap-2 bg-[#8CA365]/10 text-[#5f7a3a] rounded-full text-sm font-semibold px-4 py-1.5">
-              Coverage that fits your hours
+              When You Clock Out, We Step In
             </p>
             <h2
               id="coverage-heading"
               className="mt-2 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.05] tracking-tight text-[#1a2e35]"
             >
-              Coverage From Closing Time
+              24/7 After-Hours Built Around
               <br />
-              <span className="text-[#295657]">Until Your Team Returns</span>
+              <span className="text-[#295657]">Your Schedule and Hours</span>
             </h2>
           </div>
           <p className="text-lg leading-relaxed text-gray-600 lg:pt-7">
-            Plan support around your opening hours, time zone, and scheduled closures.
+            Custom after-hours coverage built around your exact hours, time zones, and holidays.
           </p>
         </div>
 

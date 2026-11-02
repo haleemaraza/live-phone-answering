@@ -7,58 +7,49 @@ import { useState } from 'react'
 // toggles `hidden`, so none of this copy is hidden from crawlers.
 const SERVICES = [
   {
-    id: 'answering',
-    number: '01',
-    title: 'Personalized Call Answering',
-    body: 'Welcome callers in your business name, using your approved greeting and answers to common questions.',
-    cta: { href: '/virtual-receptionist', label: 'Explore personalized answering' },
-    quote: 'Thank you for calling your business. How may I help you this evening?',
-    checks: ['Your approved greeting', 'Your business information'],
-  },
-  {
-    id: 'messages',
-    number: '02',
-    title: 'Message Taking & Inquiry Capture',
-    body: 'Record the details your team needs — who called, why, and how to reach them — and send them the way you prefer.',
-    cta: { href: '/services', label: 'Explore message taking' },
-    quote: "I'll take those details now and make sure your team has them first thing tomorrow.",
-    checks: ['Your required details', 'Your preferred delivery'],
-  },
-  {
-    id: 'qualification',
-    number: '03',
-    title: 'Lead Qualification',
-    body: 'Ask the intake questions you provide, so genuine enquiries are easy to spot when you pick the message up.',
-    cta: { href: '/services', label: 'Explore lead qualification' },
-    quote: 'Can I ask a couple of quick questions so the right person can call you back?',
-    checks: ['Your intake questions', 'Your qualifying criteria'],
-  },
-  {
     id: 'scheduling',
-    number: '04',
-    title: 'Appointment Requests & Scheduling',
-    body: 'Follow your booking rules and availability, so callers can request a time without waiting for your office to reopen.',
+    number: '01',
+    title: 'After Hours Appointment Scheduling',
+    body: 'Our receptionists book appointments directly into your calendar and reduce scheduling delays. Trained agents follow your availability rules, confirm time zones, and send confirmations or reminders to callers, keeping your schedule current without asking staff to work overtime.',
     cta: { href: '/appointment-scheduling', label: 'Explore appointment scheduling' },
-    quote: 'I can note down a preferred time and the team will confirm it with you.',
-    checks: ['Your availability rules', 'Your booking preferences'],
+    quote: 'I can see an opening tomorrow at ten. Shall I put you down for that?',
+    checks: ['Your availability rules', 'Confirmed time zones'],
   },
   {
-    id: 'routing',
+    id: 'leads',
+    number: '02',
+    title: 'After Hours Lead Capture Service',
+    body: 'We collect new leads, qualify them, and forward them to your team. Our agents gather contact details, basic qualifying information, and contextual notes, then route high-priority prospects to sales by email, CRM entry, or SMS alert so nobody falls through the cracks.',
+    cta: { href: '/lead-capture', label: 'Explore lead capture' },
+    quote: "I'll take those details now and make sure your team has them first thing tomorrow.",
+    checks: ['Your qualifying questions', 'Your preferred delivery'],
+  },
+  {
+    id: 'weekend',
+    number: '03',
+    title: 'Weekend and Holiday Answering Service',
+    body: 'Weekend answering preserves continuity when your office is closed, so customers always reach a live representative. We act as an extension of your weekday operations, following your protocols to schedule, qualify, escalate, and document calls, so Monday starts with clear priorities and no backlog.',
+    cta: { href: '/services', label: 'Explore weekend coverage' },
+    quote: 'The office reopens Monday morning. I can take your details now so someone calls you first thing.',
+    checks: ['Your closure dates', 'Your Monday handoff'],
+  },
+  {
+    id: 'emergency',
+    number: '04',
+    title: 'After Hours Emergency Call Handling',
+    body: 'Emergency protocols make sure the right people receive important information without delay. Agents follow scripted procedures to collect key details, confirm any safety instructions, and relay concise reports to designated responders, which reduces confusion and creates a record of the call.',
+    cta: { href: '/call-routing', label: 'Explore urgent routing' },
+    quote: 'I am contacting the on-call engineer now and will stay on the line with you.',
+    checks: ['Your escalation path', 'A documented record'],
+  },
+  {
+    id: 'hipaa',
     number: '05',
-    title: 'Urgent Call Routing',
-    body: 'Follow your escalation instructions, so the calls you have marked urgent reach the right person.',
-    cta: { href: '/services', label: 'Explore urgent routing' },
-    quote: 'This sounds urgent — let me follow the escalation steps your team has set out.',
-    checks: ['Your escalation list', 'Your urgency criteria'],
-  },
-  {
-    id: 'summaries',
-    number: '06',
-    title: 'Call Summaries & Follow-Up',
-    body: 'Send each call through as a clear summary, so your team can pick the conversation up without replaying voicemails.',
-    cta: { href: '/services', label: 'Explore call summaries' },
-    quote: "I've written up a summary of the call so your team has the full picture.",
-    checks: ['Your summary format', 'Your delivery channel'],
+    title: 'HIPAA After Hours Answering Service',
+    body: 'Our agents handle protected health information securely and follow strict privacy protocols, using encrypted systems, trained scripts, and documented consent procedures. Calls can be logged into secure portals or your EHR with audit trails, and escalation paths can include authorized on-call clinicians.',
+    cta: { href: '/hipaa-compliant-answering-service', label: 'Explore HIPAA answering' },
+    quote: 'I can take your details securely and pass them to the on-call clinician.',
+    checks: ['Encrypted handling', 'Audit trail on every call'],
   },
 ]
 
@@ -71,19 +62,19 @@ export default function ReceptionistServices() {
         <div className="grid grid-cols-1 items-start gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,26rem)] lg:gap-12">
           <div>
             <p className="icon-mask icon-headset [--icon-size:1rem] inline-flex items-center gap-2 bg-[#8CA365]/10 text-[#5f7a3a] rounded-full text-sm font-semibold px-4 py-1.5">
-              More than picking up the phone
+              They Don't Just Pick the Calls
             </p>
             <h2
               id="services-heading"
               className="mt-2 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.05] tracking-tight text-[#1a2e35]"
             >
-              What Our After-Hours
+              What Can Our After Hours Phone
               <br />
-              <span className="text-[#295657]">Receptionists Can Handle</span>
+              <span className="text-[#295657]">Answering Service Handle for You?</span>
             </h2>
           </div>
           <p className="text-lg leading-relaxed text-gray-600 lg:pt-8">
-            Choose a service to see how your callers can be supported after closing.
+            Choose the service that matches your business needs.
           </p>
         </div>
 

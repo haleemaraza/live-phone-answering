@@ -15,23 +15,23 @@ import RatingsTrustBar from '@/components/RatingsTrustBar'
 import ContactFormSection from '@/components/ContactFormSection'
 
 export const metadata = {
-  title: "After-Hours Answering Service | Live Phone Answering",
-  description: "Never miss a lead after hours. Professional 24/7 after-hours answering service for US businesses to capture more leads and provide better service.",
+  title: "Best After Hours Answering Service 2026 - Call Now!",
+  description: "Stay available while competitors sleep. Discover how our after-hours answering service keeps your business reachable 24/7, including nights, weekends and holidays.",
   alternates: { canonical: "/after-hours-answering-service" },
   openGraph: {
     type: 'website',
     siteName: 'LivePhoneAnswering',
     locale: 'en_US',
     images: [{ url: '/images/Phone Answering Services.webp', width: 1122, height: 1402, alt: 'Live Phone Answering Service' }],
-    title: "After-Hours Answering Service | Live Phone Answering",
-    description: "Never miss a lead after hours. Professional 24/7 after-hours answering service for US businesses to capture more leads and provide better service.",
+    title: "Best After Hours Answering Service 2026 - Call Now!",
+    description: "Stay available while competitors sleep. Discover how our after-hours answering service keeps your business reachable 24/7, including nights, weekends and holidays.",
     url: "/after-hours-answering-service",
   },
   twitter: {
     card: 'summary_large_image',
     images: ['/images/Phone Answering Services.webp'],
-    title: "After-Hours Answering Service | Live Phone Answering",
-    description: "Never miss a lead after hours. Professional 24/7 after-hours answering service for US businesses to capture more leads and provide better service.",
+    title: "Best After Hours Answering Service 2026 - Call Now!",
+    description: "Stay available while competitors sleep. Discover how our after-hours answering service keeps your business reachable 24/7, including nights, weekends and holidays.",
   },
 }
 
