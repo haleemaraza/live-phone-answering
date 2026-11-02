@@ -74,9 +74,7 @@ export default function CallHandlingRules() {
                     className={`icon-mask ${rule.icon} [--icon-size:1.4rem] flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl bg-[#8CA365]/10 text-[#4f6630] transition-transform duration-300 group-hover:scale-110`}
                     aria-hidden="true"
                   ></span>
-                  <span className="text-sm font-bold text-[#8CA365]">
-                    {String(index + 1).padStart(2, '0')}
-                  </span>
+                 
                 </div>
                 <h3 className="text-xl font-bold leading-snug text-[#1a2e35]">{rule.title}</h3>
                 <p className="mt-3 flex-grow text-base leading-relaxed text-gray-600">{rule.body}</p>

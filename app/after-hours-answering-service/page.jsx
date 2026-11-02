@@ -10,6 +10,7 @@ import AfterHoursCoverage from '@/features/after-hours/AfterHoursCoverage'
 import ReceptionistServices from '@/features/after-hours/ReceptionistServices'
 import HowItWorksSteps from '@/features/after-hours/HowItWorksSteps'
 import CallHandlingRules from '@/features/after-hours/CallHandlingRules'
+import IndustriesTabs from '@/components/IndustriesTabs'
 import CoverageComparison from '@/features/after-hours/CoverageComparison'
 import RatingsTrustBar from '@/components/RatingsTrustBar'
 import ContactFormSection from '@/components/ContactFormSection'
@@ -78,7 +79,12 @@ export default function AfterHoursAnsweringServicePage() {
         <ServiceAssurance />
         <AfterHoursCoverage />
         <ReceptionistServices />
+        
         <HowItWorksSteps />
+        <IndustriesTabs
+          heading="Industries That Benefit From After Hours Answering Services"
+          intro="Every business can receive important calls after hours. Some industries rely on it more than others."
+        />
         <CallHandlingRules />
        
         <CoverageComparison />
