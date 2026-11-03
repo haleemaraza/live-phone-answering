@@ -19,7 +19,7 @@ const CRUMBS = [
   { label: 'Services', href: '/services' },
 ]
 
-const CHECKS = ['Live receptionists', 'Your intake questions', 'Clear lead summaries']
+const CHECKS = ['Live Receptionists', 'Custom Intake Questions', 'Actionable Lead Summaries']
 
 // Tells Google where this page sits in the site, which is what produces the
 // Home > Services > Lead Capture trail in search results.
@@ -73,33 +73,34 @@ export default function LeadCaptureHero() {
         <div className="grid grid-cols-1 items-center gap-10 pt-10 pb-16 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.93fr)] lg:gap-14 lg:pt-14 lg:pb-20">
           <div>
             <p className="icon-mask icon-user-plus inline-flex items-center gap-2 bg-white/70 backdrop-blur-sm text-[#295657] rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider px-5 py-2 mb-6 shadow-sm border border-white/50">
-              Live receptionists. Useful lead details.
+              Live Receptionists. Real Results.
             </p>
 
             <h1
               id="lead-capture-hero-heading"
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#1a2e35] leading-[1.1] tracking-tight"
             >
-              Lead Capture
+              Friendly Lead Capture
               <br />
               Answering Service
               <br />
-              <span className="text-[#6b8a3e]">for Your Business</span>
+              <span className="text-[#6b8a3e]">for Businesses</span>
             </h1>
 
             <p className="mt-5 text-[1.12rem] font-bold text-[#1a2e35]">
-              Give every new enquiry a clear next step.
+              Fast, friendly intake for every potential client.
             </p>
 
             <p className="mt-4 max-w-lg text-lg leading-relaxed text-gray-600">
-              Give prospective customers a real person to speak with when they call. Our receptionists collect contact
-              details, ask your approved intake questions, and capture what your team needs to follow up.
+              Give every caller a real person to speak with right away. Our trained receptionists collect essential
+              contact details, ask your key intake questions, understand the reason for each call, and gather all the
+              information your team needs to respond quickly.
             </p>
 
             <p className="mt-4 max-w-lg text-lg leading-relaxed text-gray-600">
-              Keep your team focused while we organize incoming enquiries around your instructions. With agreed
-              qualification and routing rules, suitable callers reach the right person or leave a clear request for a
-              callback.
+              We screen, filter, and qualify incoming calls based on your business requirements. High-priority leads
+              are transferred directly to the right team member, while other inquiries, messages, and requests are
+              documented and organized for timely callbacks and follow-ups.
             </p>
 
             <div className="mt-7 flex flex-col gap-4 sm:flex-row">

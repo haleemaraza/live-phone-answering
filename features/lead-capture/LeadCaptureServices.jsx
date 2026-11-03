@@ -4,32 +4,32 @@ const SERVICES = [
   {
     icon: 'icon-id-card',
     title: 'Inbound Lead Intake',
-    body: "Capture each caller's name, contact details, service needs, and preferred next step. Give your team useful information for a well-prepared follow-up.",
+    body: 'We welcome new callers, find out what they are looking for, and collect their contact details. Your team gets the information they need to pick up the conversation without asking customers to repeat themselves.',
   },
   {
     icon: 'icon-intake-list',
     title: 'Custom Qualification Questions',
-    body: 'Ask your approved questions about location, service requirements, and timeframe. Check enquiry details against the criteria agreed for your plan.',
+    body: 'Not every enquiry is the right fit, and that is okay. We ask the questions you have approved to understand what the caller needs, where they are located, and when they are looking to get started.',
   },
   {
     icon: 'icon-call-screen',
     title: 'Sales Enquiry Screening',
-    body: 'Distinguish new prospects from existing customers and other callers. Follow your instructions to guide each enquiry to the appropriate next step.',
+    body: 'We help your team separate new sales opportunities from existing customer calls and general enquiries. Each caller is guided to the right next step, so your sales team can spend more time talking to potential customers.',
   },
   {
     icon: 'icon-share',
     title: 'Priority Lead Routing',
-    body: 'Flag suitable enquiries and transfer callers when your team is available. When a transfer is unavailable, follow your agreed callback process.',
+    body: 'When someone is ready to move forward, we help make sure their enquiry reaches the right person. If your team is not available, we take their details and follow your instructions for a callback.',
   },
   {
     icon: 'icon-report',
     title: 'Structured Lead Summaries',
-    body: 'Organize captured details into clear, consistent summaries. Send the enquiry to your agreed contact through the delivery method set up for your business.',
+    body: 'We turn each conversation into a clear summary your team can quickly understand and act on. You will know who called, what they need, and what needs to happen next without going through lengthy call notes.',
   },
   {
     icon: 'icon-calendar-chat',
     title: 'Appointment Request Capture',
-    body: 'Record requests for consultations, estimates, or service visits, including preferred times. Pass them to your team for confirmation.',
+    body: 'When a caller wants to book a consultation, estimate, or service visit, we collect their preferred date and time. Your team receives the request and can confirm the appointment based on their availability.',
     cta: { href: '/appointment-scheduling', label: 'Explore appointment scheduling' },
   },
 ]
@@ -43,19 +43,19 @@ export default function LeadCaptureServices() {
       <div className="site-container">
         <div className="mx-auto max-w-3xl text-center">
           <p className="icon-mask icon-user-plus [--icon-size:1rem] inline-flex items-center gap-2 bg-[#8CA365]/10 text-[#5f7a3a] rounded-full text-sm font-semibold px-4 py-1.5">
-            Lead capture support
+            We help you with lead capturing
           </p>
           <h2
             id="lead-capture-services-heading"
             className="mt-4 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.14] tracking-tight text-[#1b4332]"
           >
-            Lead Capture and Intake
+            What Lead Capture and Intake
             <br />
-            Services We Handle
+            Services Do We Offer?
           </h2>
           <p className="mt-3 text-lg leading-relaxed text-gray-600">
-            Give every enquiry a consistent first response. Choose the intake, screening, and handoff support that fits
-            your business.
+            Give every potential customer a helpful first response. From collecting their details to identifying
+            promising leads, we make sure each enquiry gets the attention and follow-up it needs.
           </p>
         </div>
 
@@ -92,7 +92,7 @@ export default function LeadCaptureServices() {
 
         <div className="mt-6 flex flex-col items-start gap-5 rounded-xl bg-[#eaf0e0] px-6 py-5 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-[1.15rem] font-extrabold text-[#1b4332]">
-            Let&rsquo;s plan what happens when a new prospect calls.
+            Let&rsquo;s make sure no promising lead slips through the cracks.
           </p>
           <Link
             prefetch={false}
@@ -106,7 +106,8 @@ export default function LeadCaptureServices() {
         {/* What a given plan covers is agreed at setup, so the cards describe
             tasks rather than promise all of them. */}
         <p className="mt-5 text-center text-sm text-gray-600">
-          Intake questions, routing rules, and delivery options are agreed during setup.
+          We&rsquo;ll agree on the questions to ask, how to prioritize enquiries, and where your team&rsquo;s lead
+          details should be sent during setup.
         </p>
       </div>
     </section>

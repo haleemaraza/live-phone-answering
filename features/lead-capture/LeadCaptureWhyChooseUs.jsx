@@ -3,33 +3,33 @@ import Link from 'next/link'
 const REASONS = [
   {
     icon: 'icon-sliders',
-    title: 'Intake Built Around Your Business',
-    body: 'Choose the questions that matter to your services and customers. Your approved script guides each enquiry from the first greeting.',
+    title: 'Custom call scripts for every business',
+    body: 'Every question we ask is shaped around your specific services and offer. Your callers enjoy a smooth, friendly initial conversation that feels like a natural extension of your own team, building trust from the very first hello.',
   },
   {
     icon: 'icon-list-check',
-    title: 'Qualification You Define',
-    body: 'Where included, we check caller answers against your agreed criteria. Keep the definition of a suitable lead in your hands.',
+    title: 'Smart lead screening as per your criteria',
+    body: 'You set the exact criteria for what makes a great lead. We vet every incoming caller so your team only spends time talking to genuine, ready-to-buy prospects, and your sales team can focus where it generates revenue.',
   },
   {
     icon: 'icon-report',
-    title: 'Clear, Consistent Lead Summaries',
-    body: 'Receive contact details, service needs, and the next step in a consistent format. Give your team context for a useful follow-up.',
+    title: 'Instant lead summaries for better reach',
+    body: 'Say goodbye to lost contact details and messy handwriting. You get clean, structured summaries for every call so you can jump into follow-ups fully prepared, with the context needed to guide the next conversation.',
   },
   {
     icon: 'icon-phone-forward',
-    title: 'An Agreed Handoff Process',
-    body: 'Set who receives each enquiry and when a transfer should be attempted. Define the fallback when your team is unavailable.',
+    title: 'Reliable handoffs to help your busy team',
+    body: 'Set up clear paths for live transfers and urgent messages. If your team is busy or unavailable, our backup process makes sure every caller is taken care of without delay, so no important inquiry falls through the cracks.',
   },
   {
     icon: 'icon-layers',
-    title: 'Delivery That Fits Your Workflow',
-    body: 'Review your preferred delivery channels and tools during setup. Confirm supported options before calls begin.',
+    title: 'Easy integrations with your existing tools',
+    body: 'No need to learn complicated new software or change how you operate. We push incoming lead details, caller notes, and follow-up requests straight into the tools your team already relies on every day.',
   },
   {
     icon: 'icon-pencil-circle',
-    title: 'Instructions That Stay Relevant',
-    body: 'Review your intake questions and routing details as your business changes. Keep the process aligned with what your team needs.',
+    title: 'Flexible adjustments based on your requirements',
+    body: 'As your business changes, your call handling can too. Update your screening questions, availability schedules, or routing rules whenever you launch a new service, run a promotion, or adjust your working hours.',
   },
 ]
 
@@ -40,20 +40,20 @@ export default function LeadCaptureWhyChooseUs() {
         <div className="grid grid-cols-1 items-start gap-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] lg:gap-14">
           <div>
             <p className="icon-mask icon-shield-check [--icon-size:1rem] inline-flex items-center gap-2 bg-white/10 text-[#a8c47d] rounded-full text-sm font-semibold px-4 py-1.5">
-              Why choose Live Phone Answering
+              Reasons to choose Live Phone Answering
             </p>
             <h2
               id="lead-capture-why-heading"
               className="mt-4 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.12] tracking-tight text-white"
             >
-              Why Choose Us for
+              Why Work with Us for Your
               <br />
               Lead Capture Answering?
             </h2>
           </div>
           <p className="text-lg leading-relaxed text-white/70 lg:pt-14">
-            Your business defines a useful enquiry. We build the intake and handoff process around those details, so
-            your team knows what to do next.
+            We design your intake around your exact service offerings so every conversation represents your brand
+            accurately.
           </p>
         </div>
 
@@ -73,10 +73,10 @@ export default function LeadCaptureWhyChooseUs() {
         <div className="mt-9 flex flex-col items-start gap-5 border-t border-[#8CA365]/60 pt-6 sm:flex-row sm:items-center sm:justify-between">
           <p>
             <span className="block text-[1.4rem] font-extrabold text-white">
-              Give your team a clearer starting point.
+              Let us help your team get a better starting point.
             </span>
             <span className="mt-1 block text-lg text-white/70">
-              Let&rsquo;s define what happens when a new enquiry comes in.
+              Make your next follow-up a better-informed conversation.
             </span>
           </p>
 

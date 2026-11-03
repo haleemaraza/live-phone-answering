@@ -4,29 +4,29 @@ const QUESTIONS = [
   {
     icon: 'icon-user',
     title: 'Who Is Calling?',
-    body: 'Name, callback number, and email when relevant.',
+    body: 'Name, callback number, and property address when relevant.',
   },
   {
     icon: 'icon-report',
     title: 'What Do They Need?',
-    body: 'Service requested, location, and the reason for the enquiry.',
+    body: 'Service requested, the nature of the issue or repair, and the reason for the call.',
   },
   {
     icon: 'icon-check-circle',
-    title: 'Does the Enquiry Fit?',
-    body: 'Answers to your approved questions about service area, requirements, and timeframe.',
+    title: 'Does the Job Fit?',
+    body: 'Answers to your custom screening questions about service radius, job scope, and urgency.',
   },
   {
     icon: 'icon-arrow-right',
     title: 'What Happens Next?',
-    body: 'Transfer outcome, callback request, and the agreed follow-up destination.',
+    body: 'Dispatch outcome, callback request, and the agreed follow-up destination.',
   },
 ]
 
 const STAGES = [
-  { label: 'Capture', title: 'Record the enquiry', body: 'Who called and what they need.' },
-  { label: 'Qualification', title: 'Check your criteria', body: 'Apply your agreed intake rules.' },
-  { label: 'Follow-up', title: 'Make the next move', body: 'Your team takes the agreed next step.' },
+  { label: 'Capture', title: 'Log the inquiry', body: 'Who called and what the job is.' },
+  { label: 'Qualification', title: 'Verify your criteria', body: 'Apply your agreed service area and job-type rules.' },
+  { label: 'Follow-up', title: 'Make the next move', body: 'Your crew takes the agreed next step.' },
 ]
 
 export default function LeadCaptureDetails() {
@@ -37,19 +37,19 @@ export default function LeadCaptureDetails() {
     >
       <div className="site-container">
         <p className="icon-mask icon-report [--icon-size:1rem] inline-flex items-center gap-2 bg-[#8CA365]/10 text-[#5f7a3a] rounded-full text-sm font-semibold px-4 py-1.5">
-          Clear details. Informed follow-up.
+          Clear details. Timely follow-up.
         </p>
         <h2
           id="lead-capture-details-heading"
           className="mt-4 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.14] tracking-tight text-[#1b4332]"
         >
-          The Lead Details Your Team
+          The Service Details Your Crew
           <br />
-          Needs to Follow Up
+          Needs to Take Action
         </h2>
         <p className="mt-3 max-w-4xl text-lg leading-relaxed text-gray-600">
-          Know who called, what they need, and what should happen next. We collect the information agreed for your
-          business and organize it for your team.
+          Know who called, what the issue is, and what the next step should be. We gather the details tailored to
+          your trade and organize them for your field team.
         </p>
 
         <div className="mt-8 grid grid-cols-1 items-start gap-9 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1fr)] lg:gap-12">
@@ -81,7 +81,7 @@ export default function LeadCaptureDetails() {
 
             {/* The example is medical, so it is explicitly not advice or a booking. */}
             <p className="mt-2.5 text-[0.76rem] text-gray-500">
-              Example only. No medical advice or appointment confirmation.
+              Example only. No structural repairs or final pricing guarantees.
             </p>
           </div>
         </div>

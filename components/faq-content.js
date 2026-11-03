@@ -399,3 +399,42 @@ export const appointmentSchedulingFaq = {
     }
   ]
 }
+
+export const leadCaptureFaq = {
+  "heading": "Lead Capture Answering — Frequently Asked Questions",
+  "intro": "Everything you need to know about how we work, how you can get started and pricing.",
+  "sideTitle": "Have a specific question not answered here?",
+  "sideBody": "Contact us and we will be happy to answer your questions.",
+  "linkText": "Contact Support",
+  "linkHref": "/contact-us",
+  "items": [
+    {
+      "q": "How quickly do you answer calls?",
+      "a": "Every call is answered within three rings by a friendly person, making sure urgent customers talk to someone right away."
+    },
+    {
+      "q": "Do you work with our current software?",
+      "a": "Yes, we connect with your existing scheduling apps and calendars so new job details update automatically. Supported connections are confirmed during setup."
+    },
+    {
+      "q": "How do you block spam and unqualified calls?",
+      "a": "We ask your specific screening questions during the call to filter out tire kickers so your team only handles serious jobs."
+    },
+    {
+      "q": "What happens when calls come in after hours?",
+      "a": "We cover evenings and weekends live, taking down customer details and booking appointments even when your office is closed."
+    },
+    {
+      "q": "How do we get our lead notes?",
+      "a": "As soon as a call ends, a clear summary with the customer contact info and job details goes straight to your phone or email."
+    },
+    {
+      "q": "Can you transfer emergency calls to on-call techs?",
+      "a": "Yes, we follow your exact rules to route urgent emergency calls directly to your active technicians while scheduling regular jobs for normal hours."
+    },
+    {
+      "q": "How long does setup take?",
+      "a": "Getting started is simple, and we can have your custom intake script and software connections ready to go live in a day or two."
+    }
+  ]
+}

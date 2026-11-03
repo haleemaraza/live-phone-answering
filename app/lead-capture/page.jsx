@@ -3,7 +3,8 @@ import RatingsTrustBar from '@/components/RatingsTrustBar'
 import LeadCaptureServices from '@/features/lead-capture/LeadCaptureServices'
 import LeadCaptureHowItWorks from '@/features/lead-capture/LeadCaptureHowItWorks'
 import LeadCaptureDetails from '@/features/lead-capture/LeadCaptureDetails'
-import IntegrationsSection from '@/features/homepage/IntegrationsSection'
+import LeadCaptureIntegrations from '@/features/lead-capture/LeadCaptureIntegrations'
+import LeadCaptureSolutions from '@/features/lead-capture/LeadCaptureSolutions'
 import LeadCaptureBenefits from '@/features/lead-capture/LeadCaptureBenefits'
 import IndustriesTabs from '@/components/IndustriesTabs'
 import LeadCaptureReceptionists from '@/features/lead-capture/LeadCaptureReceptionists'
@@ -11,15 +12,16 @@ import LeadCaptureWhyChooseUs from '@/features/lead-capture/LeadCaptureWhyChoose
 import MinutePlans from '@/components/MinutePlans'
 import Testimonials from '@/components/Testimonials'
 import FaqSection from '@/components/FaqSection'
+import LeadCapturePerformance from '@/features/lead-capture/LeadCapturePerformance'
 import ContactFormSection from '@/components/ContactFormSection'
-import { homeFaq } from '@/components/faq-content'
+import { leadCaptureFaq } from '@/components/faq-content'
 
 const BASE_URL = 'https://livephoneanswering.com'
 
 export const metadata = {
-  title: 'Lead Capture Answering Service for Your Business | Live Phone Answering',
+  title: 'Lead Capture Answering Service: Turn Calls into Sales',
   description:
-    'Lead capture answering for US businesses. Live receptionists answer new enquiries in your business name, ask your approved intake questions, and pass clear lead details to your team.',
+    'Convert inbound calls into qualified leads instantly. Discover how professional answering services capture contact data, screen prospects, and boost ROI.',
   alternates: { canonical: '/lead-capture' },
   openGraph: {
     type: 'website',
@@ -40,9 +42,9 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Lead Capture Answering Service for Your Business',
+  title: 'Lead Capture Answering Service: Turn Calls into Sales',
     description:
-      'Give every new enquiry a clear next step — live receptionists collect contact details, ask your intake questions, and capture what your team needs to follow up.',
+    'Convert inbound calls into qualified leads instantly. Discover how professional answering services capture contact data, screen prospects, and boost ROI.',
     images: ['/images/Phone Answering Services.webp'],
   },
 }
@@ -74,14 +76,14 @@ export default function LeadCapturePage() {
       <LeadCaptureServices />
       <LeadCaptureHowItWorks />
       <LeadCaptureDetails />
-      <IntegrationsSection />
+      <LeadCaptureIntegrations />
       <LeadCaptureBenefits />
-      <IndustriesTabs />
+      <IndustriesTabs heading="Tailored to Match Your Operational Workflow" intro="Supporting specialized industries, our receptionists integrate directly into your software and daily operations to ensure effortless team alignment." />
       <LeadCaptureWhyChooseUs />
-      <LeadCaptureReceptionists />
+      <LeadCaptureSolutions />
       <MinutePlans />
-      <Testimonials />
-      <FaqSection {...homeFaq} />
+      <LeadCapturePerformance />
+      <FaqSection {...leadCaptureFaq} />
       <ContactFormSection theme="dark" />
 
 

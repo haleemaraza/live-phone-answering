@@ -169,7 +169,7 @@ export default function IndustriesTabs({
                             display:none, so only the open tab's icons load. */}
                         {card.icon && (
                           <img
-                            src={`/icons/train/${card.icon}.webp`}
+                            src={`/icons/train/${/.(webp|png|jpe?g|svg)$/.test(card.icon) ? card.icon : `${card.icon}.webp`}`}
                             alt=""
                             width={56}
                             height={56}

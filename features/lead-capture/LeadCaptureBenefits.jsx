@@ -3,23 +3,23 @@ import Link from 'next/link'
 const BENEFITS = [
   {
     icon: 'icon-clipboard-check',
-    title: 'Better-Informed Follow-Up',
-    body: "Start the next conversation with the caller's contact details, service needs, and preferred next step. Spend less time piecing together incomplete messages.",
+    title: 'Reach Back Out with Confidence',
+    body: 'No more guessing or chasing down missing information. Your team gets complete details, like who called, what they need, and their timeline, so you can start every call ready to help right away.',
   },
   {
     icon: 'icon-clock',
-    title: 'Fewer Interruptions for Your Team',
-    body: 'Let receptionists handle initial enquiries while your staff focus on customers and ongoing work. Route calls according to the instructions you approve.',
+    title: 'Keep Your Day Distraction-Free',
+    body: 'Stop losing your momentum to constant phone interruptions. We handle the initial intake so your staff can stay focused on serving current clients and finishing important work uninterrupted.',
   },
   {
     icon: 'icon-filter-check',
-    title: 'Clearer Priorities for New Enquiries',
-    body: 'Where qualification is included, use agreed criteria to flag relevant enquiries and route them to the right person. Give your team context for deciding what to do next.',
+    title: 'Focus Only on Your Best Leads',
+    body: 'We organize incoming calls using your specific criteria. High-priority opportunities get flagged and sent directly to the right person, so your team can reach the potential client before a competitor does.',
   },
   {
     icon: 'icon-chat',
-    title: 'A More Helpful First Impression',
-    body: "Give prospective customers a real person to speak with. Capture their questions and explain the next step using your business's approved information.",
+    title: 'Create a Great First Impression',
+    body: 'Ditch automated voice menus and give callers a real human touch. A helpful voice greets your potential clients right away, answers basic questions, and makes them feel cared for immediately.',
   },
 ]
 
@@ -32,19 +32,19 @@ export default function LeadCaptureBenefits() {
       <div className="site-container">
         <div className="mx-auto max-w-3xl text-center">
           <p className="icon-mask icon-smile [--icon-size:1rem] inline-flex items-center gap-2 bg-[#8CA365]/10 text-[#5f7a3a] rounded-full text-sm font-semibold px-4 py-1.5">
-            Benefits of lead capture answering
+            Why smart lead capture works for you
           </p>
           <h2
             id="lead-capture-benefits-heading"
             className="mt-4 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.14] tracking-tight text-[#1b4332]"
           >
-            Turn Inbound Enquiries
+            Turn Incoming Calls into
             <br />
-            Into Clear Next Steps
+            Ready-to-Buy Clients
           </h2>
           <p className="mt-3 text-lg leading-relaxed text-gray-600">
-            Give your team useful caller details and more time to act on them. Help prospective customers move forward
-            with a clear, professional first response.
+            Give your team the right details so they can close deals faster, while giving your callers a warm,
+            professional welcome from the first second.
           </p>
         </div>
 
@@ -85,7 +85,7 @@ export default function LeadCaptureBenefits() {
 
         <div className="mt-8 flex flex-col items-start gap-5 rounded-xl bg-[#eef0e6] px-6 py-5 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-[1.15rem] font-extrabold text-[#1b4332]">
-            Make your next follow-up a better-informed conversation.
+            Give your team the context they need to turn calls into customers.
           </p>
           <Link
             prefetch={false}

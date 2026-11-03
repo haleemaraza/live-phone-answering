@@ -98,7 +98,7 @@ function TestimonialCard({ item }) {
   const platform = PLATFORMS[item.platform]
 
   return (
-    <figure className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md transition-shadow break-inside-avoid">
+    <figure className="h-full bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md transition-shadow">
       <div>
         <figcaption className="flex justify-between items-start mb-4">
           <div className="flex items-center gap-3">
@@ -151,7 +151,9 @@ export default function Testimonials({ id }) {
           <h3 className="text-lg font-semibold text-gray-700">Rated 4.9/5 Stars for Service &amp; Reliability</h3>
         </div>
 
-        <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+        {/* Grid rather than CSS columns: multi-column flows cards down each
+            column at their natural height, which is what staggered them. */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
           {TESTIMONIALS.map((item) => (
             <TestimonialCard key={item.name} item={item} />
           ))}
