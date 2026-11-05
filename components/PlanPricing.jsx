@@ -5,11 +5,11 @@ import { PLANS } from '@/components/MinutePlans'
 // PLANS and are never retyped, so they cannot drift apart; only the wording
 // around them varies per page.
 export default function PlanPricing({
-  heading = 'Live Phone Answering Pricing',
-  intro = 'Choose the monthly receptionist minutes your business needs. Our live receptionists answer calls, take messages, route callers, and help you capture more opportunities without hiring in-house staff.',
+  heading = 'Virtual Receptionist Plans That Fit Your Business',
+  intro = 'Our virtual receptionists help manage caller inquiries, capture leads, schedule appointments, and keep your customer interactions organized. Choose a plan based on the level of support your business needs.',
   badge = 'Best Value',
   descriptions = {},
-  customTitle = 'Need 1,000+ Minutes or Custom Coverage?',
+  customTitle = 'Need 1,000+ Minutes or Specialized Receptionist Support?',
   customBody = 'Discuss call volumes, coverage hours, and handling requirements with our team.',
   footnote = 'Plan features and supported workflows are confirmed during setup.',
   headingId = 'plan-pricing-heading',

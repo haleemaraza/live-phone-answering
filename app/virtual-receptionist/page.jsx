@@ -50,10 +50,7 @@ export default function VirtualReceptionistPage() {
       <CallExperience />
       <SetupSteps />
       <CoverageOptions />
-      <MinutePlans
-        heading="Live Phone Answering Plans That Fit Your Business"
-        intro="Choose a plan based on your call volume, business hours, and support needs. Get reliable call handling without the cost of hiring a full-time receptionist."
-      />
+      <MinutePlans />
       <ToolsConnect />
       <IndustriesTabs heading="Tailored to Match Your Operational Workflow" intro="Supporting specialized industries, our receptionists integrate directly into your software and daily operations to ensure effortless team alignment." />
       <BusinessVoice />

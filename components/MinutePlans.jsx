@@ -4,81 +4,89 @@ export const PLANS = [
   {
     tag: 'Starter',
     minutes: '100 Minutes',
-    name: 'Starter Answering',
+    name: 'Starter Virtual Receptionist',
     description:
-      'For small businesses that need professional live answering for overflow calls, missed calls, or light monthly call volume.',
+      'Ideal for small businesses that need help welcoming callers, answering basic questions, and keeping track of incoming inquiries.',
     price: '$199',
     overage: 'Extra minutes: $1.99/min',
     features: [
       '100 receptionist minutes included',
-      'Live call answering',
-      'Message taking and call notes',
-      'Basic call screening',
-      'Email call summaries',
+      'Personalized business greeting',
+      'Basic customer inquiry handling',
+      'Caller name and contact information collection',
+      'Message taking and delivery',
+      'Business information and FAQ responses',
+      'Call transfer to designated contacts',
     ],
     cta: 'Start Starter Plan',
   },
   {
     tag: 'Growth',
     minutes: '250 Minutes',
-    name: 'Growth Answering',
+    name: 'Growth Virtual Receptionist',
     description:
-      'For growing businesses that need consistent call answering, lead capture, call routing, and customer support throughout the month.',
+      'Perfect for growing businesses that want help managing customer inquiries, qualifying leads, and handling appointment requests.',
     price: '$497.50',
     overage: 'Extra minutes: $1.99/min',
     features: [
       '250 receptionist minutes included',
       'Everything in Starter',
-      'Custom call script',
-      'Lead intake questions',
-      'Appointment request handling',
-      'Daily call summaries',
+      'Custom call scripts and instructions',
+      'Lead qualification and intake questions',
+      'Appointment scheduling and booking',
+      'Calendar coordination',
+      'Call screening and routing',
+      'Customer inquiry management',
+      'Daily call and lead summaries',
     ],
     cta: 'Get Growth Plan',
-    featured: true,
-    badge: 'Best Value',
   },
   {
     tag: 'Business',
     minutes: '500 Minutes',
-    name: 'Business Answering',
+    name: 'Business Virtual Receptionist',
     description:
-      'For busy businesses that receive higher call volume and need reliable live answering support without hiring a full-time receptionist.',
+      'Designed for busy businesses that need more hands-on receptionist support and structured call management across different customer needs.',
     price: '$995',
     overage: 'Extra minutes: $1.99/min',
     features: [
       '500 receptionist minutes included',
       'Everything in Growth',
+      'Advanced appointment scheduling',
+      'Multiple call handling workflows',
+      'Advanced call routing and transfers',
+      'Detailed customer and lead information capture',
+      'CRM data entry and updates',
+      'Customized responses for different caller needs',
       'Priority call handling',
-      'Advanced routing instructions',
-      'Multiple call scenarios',
-      'Weekly performance summary',
+      'Weekly call activity and performance reports',
     ],
     cta: 'Choose Business Plan',
   },
 ]
 
 const CUSTOM_TAGS = [
-  '24/7 Answering',
-  'After-Hours Support',
-  'Call Overflow',
-  'Bilingual Answering',
-  'Appointment Scheduling',
-  'CRM Entry',
+  '24/7 Virtual Receptionist Coverage',
+  'After-Hours Receptionist Support',
+  'Appointment Booking and Management',
+  'Lead Qualification and Intake',
+  'CRM Updates and Customer Records',
+  'Industry-Specific Call Handling',
+  'Multi-Location Receptionist Support',
 ]
 
 const BILLING_NOTES = [
   {
     title: 'How Minutes Are Calculated',
-    body: 'Minutes are based on receptionist handling time, including live talk time, message taking, call notes, and required after-call work.',
+    body: 'Minutes include the time our receptionists spend speaking with callers, collecting information, scheduling appointments, transferring calls, and completing required after-call tasks.',
   },
   {
     title: 'Additional Minutes',
-    body: "If your monthly included minutes are used, extra minutes are billed at your plan's additional-minute rate.",
+    body: 'Need more time than your monthly plan includes? Additional receptionist minutes are billed at $1.99 per minute.',
   },
   {
     title: 'Upgrade Anytime',
-    body: 'Start with a smaller plan and move to a larger minute package as your call volume grows.',
+    body: 'Start with the plan that suits your current call volume. As your business grows, you can upgrade to a larger package with more minutes and additional receptionist support.',
   },
 ]
 
@@ -176,8 +184,8 @@ export default function MinutePlans({
   theme = 'dark',
   ctaHref = '#contact',
   // Pages can retitle the block; the plans themselves never change.
-  heading = 'Live Phone Answering Pricing',
-  intro = 'Choose the monthly minutes your business needs. Our live receptionists answer calls, take messages, route callers, and help you capture more opportunities without hiring in-house staff.',
+  heading = 'Virtual Receptionist Plans That Fit Your Business',
+  intro = 'Our virtual receptionists help manage caller inquiries, capture leads, schedule appointments, and keep your customer interactions organized. Choose a plan based on the level of support your business needs.',
 }) {
   const t = THEMES[theme]
 
@@ -218,10 +226,10 @@ export default function MinutePlans({
         </ul>
 
         <div className={`mt-10 rounded-3xl border p-8 text-center shadow-md ${t.panel}`}>
-          <h3 className="text-2xl font-bold">Need 1,000+ Minutes or Special Coverage?</h3>
+          <h3 className="text-2xl font-bold">Need 1,000+ Minutes or Specialized Receptionist Support?</h3>
           <p className={`mx-auto mt-3 max-w-3xl text-sm leading-7 ${t.customBody}`}>
-            Custom volume plans are available for high-call-volume businesses, after-hours answering, weekend coverage, bilingual
-            answering, medical workflows, legal intake, dispatch support, and multi-location businesses.
+            Get a custom virtual receptionist package tailored to your business operations, call volume, and customer service
+            requirements.
           </p>
           <ul className="mt-6 flex flex-wrap justify-center gap-3 list-none">
             {CUSTOM_TAGS.map((tag) => (
