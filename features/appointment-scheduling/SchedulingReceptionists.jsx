@@ -48,9 +48,9 @@ export default function SchedulingReceptionists() {
             id="scheduling-receptionists-heading"
             className="mt-4 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.12] tracking-tight text-[#1b4332]"
           >
-            Live Virtual Receptionists
+            Live Virtual Receptionists{' '}
             <br />
-            for Appointment
+            for Appointment{' '}
             <br />
             Scheduling
           </h2>

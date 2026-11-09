@@ -46,7 +46,7 @@ export default function SchedulingIndustries() {
             id="scheduling-industries-heading"
             className="mt-3 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.14] tracking-tight text-[#1d4b37]"
           >
-            HIPAA Compliant Appointment Scheduling
+            HIPAA Compliant Appointment Scheduling{' '}
             <br />
             Services Designed for Your Industry
           </h2>

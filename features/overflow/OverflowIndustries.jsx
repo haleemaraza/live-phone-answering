@@ -57,7 +57,7 @@ export default function OverflowIndustries() {
             id="overflow-industries-heading"
             className="mt-3 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.14] tracking-tight text-[#1d4b37]"
           >
-            Live Phone Answering for Different
+            Live Phone Answering for Different{' '}
             <br />
             Industries &amp; Business Needs
           </h2>

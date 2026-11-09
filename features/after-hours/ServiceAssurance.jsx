@@ -38,7 +38,7 @@ export default function ServiceAssurance() {
             id="assurance-heading"
             className="mt-4 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.15] tracking-tight text-white"
           >
-            What is an After Hours
+            What is an After Hours{' '}
             <br />
             <span className="text-[#8CA365]">Answering Service?</span>
           </h2>

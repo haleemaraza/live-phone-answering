@@ -78,7 +78,7 @@ export default function CallRoutingHero() {
               id="call-routing-hero-heading"
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#1a2e35] leading-[1.1] tracking-tight"
             >
-              Call Routing &amp; Transfer
+              Call Routing &amp; Transfer{' '}
               <br />
               <span className="text-[#6b8a3e]">Answering Service</span>
             </h1>

@@ -84,7 +84,7 @@ export default function OverflowCallAnsweringPage() {
       {/* Carries the hero's "See How Overflow Works" anchor. */}
       <OverflowBenefits />
       <OverflowWorkflow />
-      <OverflowIndustries />
+      {/* <OverflowIndustries /> */}
       <OverflowReceptionists />
       <IndustriesTabs heading="Tailored to Match Your Operational Workflow" intro="Supporting specialized industries, our receptionists integrate directly into your software and daily operations to ensure effortless team alignment." />
       <OverflowIntegrations />

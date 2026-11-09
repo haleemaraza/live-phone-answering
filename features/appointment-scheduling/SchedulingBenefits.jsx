@@ -38,7 +38,7 @@ export default function SchedulingBenefits() {
             id="scheduling-benefits-heading"
             className="mt-4 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.14] tracking-tight text-[#1b4332]"
           >
-            Cut Down Phone Distractions
+            Cut Down Phone Distractions{' '}
             <br />
             to Focus on Client Care
           </h2>

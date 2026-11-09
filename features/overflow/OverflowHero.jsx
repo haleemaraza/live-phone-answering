@@ -74,11 +74,9 @@ export default function OverflowHero() {
               id="overflow-hero-heading"
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#1a2e35] leading-[1.1] tracking-tight"
             >
-              Overflow Call Answering Service
-              <br />
-              Answering Service
-              <br />
-              <span className="text-[#6b8a3e]">for Busy Businesses</span>
+              Overflow Call Answering Service 
+            
+              <span className="text-[#6b8a3e]"> for Busy Businesses</span>
             </h1>
 
             <p className="mt-4 text-[1.12rem] font-bold text-[#1a2e35] sm:text-[1.22rem]">

@@ -38,7 +38,7 @@ export default function OverflowReceptionists() {
             id="overflow-receptionists-heading"
             className="mt-3 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.14] tracking-tight text-[#1d4b37]"
           >
-            HIPAA-Compliant Live Answering
+            HIPAA-Compliant Live Answering{' '}
             <br />
             for Healthcare Practices
           </h2>
@@ -73,20 +73,7 @@ export default function OverflowReceptionists() {
               </figcaption>
             </figure>
 
-            <p className="absolute -left-4 bottom-[13%] flex w-[64%] items-center gap-3.5 rounded-xl bg-white px-4 py-3 shadow-xl">
-              <span
-                className="icon-mask icon-phone [--icon-size:1.1rem] flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-[#eaf1dd] text-[#295657]"
-                aria-hidden="true"
-              ></span>
-              <span className="min-w-0">
-                <span className="block text-[0.58rem] font-bold uppercase tracking-[0.14em] text-gray-600">
-                  Your approved greeting
-                </span>
-                <span className="mt-1 block text-base font-bold leading-snug text-[#1a2e35]">
-                  &ldquo;Thank you for calling. How can I help?&rdquo;
-                </span>
-              </span>
-            </p>
+            
           </div>
 
           <div>

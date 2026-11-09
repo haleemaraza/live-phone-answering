@@ -32,7 +32,7 @@ export default function LeadCaptureSolutions() {
             id="lead-capture-solutions-heading"
             className="mt-4 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.14] tracking-tight text-[#1b4332]"
           >
-            Simple Solutions to Your
+            Simple Solutions to Your{' '}
             <br />
             Biggest Call Intake Headaches
           </h2>

@@ -38,7 +38,7 @@ export default function CallRoutingBenefits() {
             id="call-routing-benefits-heading"
             className="mt-4 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.14] tracking-tight text-[#1b4332]"
           >
-            Fewer Interruptions. Clearer Connections.
+            Fewer Interruptions. Clearer Connections.{' '}
             <br />
             Better Call Handling.
           </h2>
@@ -63,7 +63,7 @@ export default function CallRoutingBenefits() {
             </span>
             <figcaption className="bg-[#1d4b37] px-6 py-6">
               <span className="block text-[1.35rem] font-extrabold leading-tight text-white">
-                More time for
+                More time for{' '}
                 <br />
                 focused work
               </span>

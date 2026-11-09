@@ -37,7 +37,7 @@ export default function LeadCaptureIntegrations() {
             id="lead-capture-integrations-heading"
             className="mt-3 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.14] tracking-tight text-[#1b4332]"
           >
-            Seamlessly Syncs With
+            Seamlessly Syncs With{' '}
             <br />
             Your Growth Stack
           </h2>

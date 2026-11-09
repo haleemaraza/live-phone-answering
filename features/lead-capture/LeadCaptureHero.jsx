@@ -80,9 +80,9 @@ export default function LeadCaptureHero() {
               id="lead-capture-hero-heading"
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#1a2e35] leading-[1.1] tracking-tight"
             >
-              Friendly Lead Capture
+              Friendly Lead Capture{' '}
               <br />
-              Answering Service
+              Answering Service{' '}
               <br />
               <span className="text-[#6b8a3e]">for Businesses</span>
             </h1>

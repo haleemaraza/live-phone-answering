@@ -39,7 +39,7 @@ export default function OverflowBenefits() {
             id="overflow-benefits-heading"
             className="mt-3 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.12] tracking-tight text-[#1d4b37]"
           >
-            Never Miss a Call When
+            Never Miss a Call When{' '}
             <br />
             Your Team Gets Busy
           </h2>

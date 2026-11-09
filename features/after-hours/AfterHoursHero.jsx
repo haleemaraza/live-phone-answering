@@ -79,14 +79,10 @@ export default function AfterHoursHero() {
             <span className="text-[#6b8a3e]">for After Hours, Weekends &amp; Holidays</span>
           </h1>
 
+          {/* Kept to ~150 characters so the hero summary stays scannable. */}
           <p className="text-base sm:text-lg text-[#3d5c42] mt-6 max-w-xl leading-relaxed">
-            Business doesn&rsquo;t stop at 5 PM. Answer every call, capture every message, and never miss an
-            opportunity even when your team is off duty.
-          </p>
-
-          <p className="text-base sm:text-lg text-[#3d5c42] mt-4 max-w-xl leading-relaxed">
-            With our 24/7 live answering service, every call gets a response, every message is recorded, and every
-            caller gets the attention they deserve.
+            Business doesn&rsquo;t stop at 5 PM. Our live receptionists answer every call, capture every message, and
+            make sure no caller is left waiting after hours.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mt-8">

@@ -226,7 +226,7 @@ export default function MinutePlans({
         </ul>
 
         <div className={`mt-10 rounded-3xl border p-8 text-center shadow-md ${t.panel}`}>
-          <h3 className="text-2xl font-bold">Need 1,000+ Minutes or Specialized Receptionist Support?</h3>
+          <p className="text-2xl font-bold">Need 1,000+ Minutes or Specialized Receptionist Support?</p>
           <p className={`mx-auto mt-3 max-w-3xl text-sm leading-7 ${t.customBody}`}>
             Get a custom virtual receptionist package tailored to your business operations, call volume, and customer service
             requirements.
@@ -252,7 +252,7 @@ export default function MinutePlans({
         <ul className="mt-10 grid gap-5 md:grid-cols-3 list-none">
           {BILLING_NOTES.map((note) => (
             <li key={note.title} className={`rounded-2xl border p-6 ${t.panel}`}>
-              <h3 className="text-lg font-bold">{note.title}</h3>
+              <p className="text-lg font-bold">{note.title}</p>
               <p className={`mt-3 text-sm leading-7 ${t.panelBody}`}>{note.body}</p>
             </li>
           ))}

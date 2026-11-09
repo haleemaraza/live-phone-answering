@@ -35,7 +35,7 @@ export default function OverflowWorkflow() {
       badgeIcon="icon-refresh"
       heading={
         <>
-          How do We Keep Your Business Calls
+          How do We Keep Your Business Calls{' '}
           <br />
           Covered When Things Get Busy?
         </>

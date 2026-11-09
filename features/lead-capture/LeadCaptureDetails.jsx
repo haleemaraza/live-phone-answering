@@ -43,7 +43,7 @@ export default function LeadCaptureDetails() {
           id="lead-capture-details-heading"
           className="mt-4 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.14] tracking-tight text-[#1b4332]"
         >
-          The Service Details Your Crew
+          The Service Details Your Crew{' '}
           <br />
           Needs to Take Action
         </h2>

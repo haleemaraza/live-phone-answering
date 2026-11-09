@@ -79,7 +79,7 @@ export default function SchedulingHero() {
               id="scheduling-hero-heading"
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#1a2e35] leading-[1.1] tracking-tight"
             >
-              Appointment Scheduling Answering Service
+              Appointment Scheduling Answering Service{' '}
               <br />
               <span className="text-[#7d9b4e]">That Books Appointments for You 24/7</span>
             </h1>

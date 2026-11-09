@@ -15,7 +15,7 @@ import MinutePlans from '@/components/MinutePlans'
 import ContactFormSection from '@/components/ContactFormSection'
 import RatingsTrustBar from '@/components/RatingsTrustBar'
 export const metadata = {
-  title: "24/7 Virtual Receptionist Service | Live Phone Answering Support",
+  title: "Hire a Virtual Receptionist | Live Call Answering",
   description: " Hire a professional virtual receptionist for 24/7 live phone answering. Save 50–80% vs. in-house staff. Handle calls, appointments, messages & more. Call now!" ,
   alternates: { canonical: "/virtual-receptionist" },
   openGraph: {

@@ -1,13 +1,5 @@
 import Link from 'next/link'
-
-const TOOLS = [
-  { slug: 'hubspot', name: 'HubSpot' },
-  { slug: 'notion', name: 'Notion' },
-  { slug: 'calendly', name: 'Calendly' },
-  { slug: 'googlecalendar', name: 'Google Calendar' },
-  { slug: 'zendesk', name: 'Zendesk' },
-  { slug: 'zapier', name: 'Zapier' },
-]
+import LogoMarquee from '@/components/LogoMarquee'
 
 const GROUPS = [
   {
@@ -99,7 +91,7 @@ export default function OverflowIntegrations() {
             id="overflow-integrations-heading"
             className="mt-3 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.14] tracking-tight text-[#1d4b37]"
           >
-            Sync Every Call with
+            Sync Every Call with{' '}
             <br />
             Your Existing Tech Stack
           </h2>
@@ -109,21 +101,9 @@ export default function OverflowIntegrations() {
           </p>
         </div>
 
-        <ul className="mt-8 flex list-none flex-wrap items-center justify-center gap-x-10 gap-y-5 sm:gap-x-14">
-          {TOOLS.map((tool) => (
-            <li key={tool.slug} className="flex h-10 items-center">
-              <img
-                src={`/logos/${tool.slug}.svg`}
-                alt={`${tool.name} integration`}
-                width={40}
-                height={40}
-                loading="lazy"
-                decoding="async"
-                className="h-9 w-auto transition-transform hover:scale-110"
-              />
-            </li>
-          ))}
-        </ul>
+        {/* Same scrolling strip as the homepage; fade matches this section's
+            background so the edges dissolve into it. */}
+        <LogoMarquee fade="#fafaf8" className="mt-8" />
 
         {/* Keeps the tool list honest: naming a product is not a promise that a
             direct integration exists. */}

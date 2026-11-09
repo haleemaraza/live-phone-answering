@@ -82,7 +82,7 @@ export default function LeadCapturePage() {
       <LeadCaptureWhyChooseUs />
       <LeadCaptureSolutions />
       <MinutePlans />
-      <LeadCapturePerformance />
+      {/* <LeadCapturePerformance /> */}
       <FaqSection {...leadCaptureFaq} />
       <ContactFormSection theme="dark" />
 

@@ -26,8 +26,9 @@ export default function CallExperience() {
             id="call-experience-heading"
             className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#34414A] leading-tight tracking-tight mb-5"
           >
-            Better Calls. Happier Customers. 
-            <br className="hidden sm:block" />Less Work for Your Team.
+            Better Calls. Happier Customers.{' '}
+            <br className="hidden sm:block" />
+            Less Work for Your Team.
           </h2>
           <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
 Give every caller a warm welcome, quick answers, and the right support. We make sure no customer is left waiting and every call is handled with care.          </p>

@@ -34,7 +34,7 @@ export default function SchedulingHowItWorks() {
       badge="From picking the call to booking an appointment"
       heading={
         <>
-          How Does Our Appointment 
+          How Does Our Appointment{' '}
           <br />
          Scheduling Answering Service Work?
         </>

@@ -54,9 +54,9 @@ export default function CallRoutingRules() {
               id="call-routing-rules-heading"
               className="mt-4 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.14] tracking-tight text-[#1b4332]"
             >
-              Your Call Routing Rules,
+              Your Call Routing Rules,{' '}
               <br />
-              From First Contact to
+              From First Contact to{' '}
               <br />
               Backup Plan
             </h2>

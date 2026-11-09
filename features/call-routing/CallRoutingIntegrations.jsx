@@ -74,9 +74,9 @@ export default function CallRoutingIntegrations() {
               id="call-routing-integrations-heading"
               className="mt-4 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.1] tracking-tight text-[#1b4332]"
             >
-              Your phone system.
+              Your phone system.{' '}
               <br />
-              Your tools.
+              Your tools.{' '}
               <br />
               One clear call plan.
             </h2>
@@ -116,7 +116,7 @@ export default function CallRoutingIntegrations() {
               aria-hidden="true"
             ></span>
             <p className="mt-3 text-[1.5rem] font-extrabold leading-tight text-white">
-              Live Phone
+              Live Phone{' '}
               <br />
               Answering
             </p>

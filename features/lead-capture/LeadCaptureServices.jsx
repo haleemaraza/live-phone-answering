@@ -49,7 +49,7 @@ export default function LeadCaptureServices() {
             id="lead-capture-services-heading"
             className="mt-4 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.14] tracking-tight text-[#1b4332]"
           >
-            What Lead Capture and Intake
+            What Lead Capture and Intake{' '}
             <br />
             Services Do We Offer?
           </h2>

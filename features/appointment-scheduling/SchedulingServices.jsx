@@ -8,37 +8,37 @@ const SERVICES = [
   },
   {
     img: 'appointment-rescheduling',
-    title: 'Appointment Rescheduling Answering Service',
+    title: 'Easy Rescheduling and Changes',
     body: 'When plans change, our real agents help your clients pick a new time smoothly. We handle everything on the phone instantly so your customers stay happy, and your internal staff never has to waste precious time doing it manually.',
   },
   {
     img: 'cancellation-handling',
-    title: 'Appointment Cancellation Answering Service',
+    title: 'Professional Cancellation Handling',
     body: 'If someone needs to cancel a visit, our team handles it gently and professionally. We open up the free spot immediately so another waiting customer can book it, keeping your business day fully packed and active.',
   },
   {
     icon: 'icon-bell',
-    title: 'Appointment Reminder Answering Service',
+    title: 'Friendly Human Reminder Calls',
     body: 'Our live team calls your clients to remind them about their upcoming visits. This personal touch builds a strong emotional bond, ensures people actually show up on time, and keeps your daily schedule running completely on track.',
   },
   {
     icon: 'icon-refresh',
-    title: 'Automated Appointment Reminder Service',
+    title: 'Automated Reminder Text and Emails',
     body: 'Our automated system sends out quick reminders to your clients without you lifting a finger. This regular tracking saves you money and gives your busy team more time to focus on their main projects.',
   },
   {
     icon: 'icon-chats',
-    title: 'Two-Way Appointment Confirmation SMS',
+    title: 'Two-Way SMS Confirmations',
     body: 'We send text reminders that let your customers reply directly to confirm or change their time slot. This quick cross-channel messaging makes your booking process simple for everyone involved.',
   },
   {
     icon: 'icon-moon',
-    title: 'After-Hours Appointment Scheduling Service',
+    title: 'After-Hours Scheduling Support',
     body: 'Our team answers your phone lines through the night. We capture those late-night buyers so you can stay competitive and never miss a chance to grow your revenue.',
   },
   {
     icon: 'icon-calendar-refresh',
-    title: 'Real-Time Calendar Updates and Booking Management',
+    title: 'Real-Time Calendar Syncing',
     body: 'The moment an agent books or changes a slot, your online calendar updates. This live tracking stops double-bookings, removes administrative lag, and keeps your business data neat and ready.',
   },
 ]
@@ -58,7 +58,7 @@ export default function SchedulingServices() {
             id="scheduling-services-heading"
             className="mt-4 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.14] tracking-tight text-[#1d4b37]"
           >
-            What Can Our Appointment 
+            What Can Our Appointment{' '}
             <br />
             Scheduling Answering Service Do for You?
           </h2>
@@ -67,9 +67,16 @@ export default function SchedulingServices() {
           </p>
         </div>
 
-        <ul className="mt-8 grid list-none grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {SERVICES.map((service) => (
-            <li key={service.title} className="h-full rounded-xl border border-gray-200/80 bg-white p-6">
+        {/* Six columns so the first six cards sit three-up while the final two
+            split the last row in half instead of leaving an empty third. */}
+        <ul className="mt-8 grid list-none grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-6">
+          {SERVICES.map((service, index) => (
+            <li
+              key={service.title}
+              className={`h-full rounded-xl border border-gray-200/80 bg-white p-6 ${
+                index >= SERVICES.length - 2 ? 'lg:col-span-3' : 'lg:col-span-2'
+              }`}
+            >
               {/* Decorative: the card's own heading already names the service. */}
               {service.img ? (
                 <img

@@ -42,7 +42,7 @@ export default function SchedulingTools() {
             id="scheduling-tools-heading"
             className="mt-3 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.14] tracking-tight text-[#1d4b37]"
           >
-            We Work With the Scheduling
+            We Work With the Scheduling{' '}
             <br />
             Tools You Already Use
           </h2>
@@ -51,9 +51,14 @@ export default function SchedulingTools() {
           </p>
         </div>
 
-        <ul className="mt-10 grid list-none grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {TOOLS.map((tool) => (
-            <li key={tool.title} className="flex">
+        {/* Six columns so the first three sit three-up and the last two split
+            the final row in half rather than leaving an empty third. */}
+        <ul className="mt-10 grid list-none grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-6">
+          {TOOLS.map((tool, index) => (
+            <li
+              key={tool.title}
+              className={`flex ${index >= TOOLS.length - 2 ? 'lg:col-span-3' : 'lg:col-span-2'}`}
+            >
               <div className="group flex w-full flex-col rounded-2xl border border-gray-200 bg-white p-7 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-[#8CA365] hover:shadow-xl">
                 <span
                   className={`icon-mask ${tool.icon} [--icon-size:1.5rem] mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-[#8CA365]/10 text-[#4f6630] transition-transform duration-300 group-hover:scale-110`}

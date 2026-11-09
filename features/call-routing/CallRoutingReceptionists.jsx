@@ -56,9 +56,9 @@ export default function CallRoutingReceptionists() {
             id="call-routing-receptionists-heading"
             className="mt-4 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.12] tracking-tight text-[#1b4332]"
           >
-            Live Virtual Receptionists
+            Live Virtual Receptionists{' '}
             <br />
-            for Call Screening and
+            for Call Screening and{' '}
             <br />
             Transfers
           </h2>

@@ -36,7 +36,7 @@ export default function LeadCaptureHowItWorks() {
       badge="From the first call to the right follow-up"
       heading={
         <>
-          How Our Lead Capture
+          How Our Lead Capture{' '}
           <br />
           Answering Service Works
         </>

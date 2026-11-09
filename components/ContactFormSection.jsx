@@ -106,7 +106,7 @@ export default function ContactFormSection({
           </div>
 
           <div className="bg-white rounded-3xl p-8 md:p-10 shadow-2xl relative">
-            <h3 className="text-2xl font-bold text-[#34414A] mb-2">Create Your Account</h3>
+            <p className="text-2xl font-bold text-[#34414A] mb-2">Create Your Account</p>
             <p className="text-gray-500 text-sm mb-8">
               Fill out the details below and our onboarding team will reach out in minutes.
             </p>

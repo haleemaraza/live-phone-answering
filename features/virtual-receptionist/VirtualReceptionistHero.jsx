@@ -90,8 +90,7 @@ export default function VirtualReceptionistHero() {
             id="vr-hero-heading"
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#1a2e35] leading-[1.1] tracking-tight"
           >
-            24/7 Virtual Receptionist Service  Hire Live Virtual Receptionist
-
+Hire a Virtual Receptionist  Live Call Answering
           </h1>
 
           <p className="text-base sm:text-lg text-[#3d5c42] mt-6 max-w-xl leading-relaxed">
@@ -146,10 +145,7 @@ Whether you're busy, away from the office, or helping another customer, our virt
             className="w-full h-auto rounded-3xl shadow-xl border border-white/60"
           />
 
-          <p className="hidden sm:flex absolute top-5 right-0 lg:-right-6 items-center gap-2 bg-white rounded-full px-4 py-2 shadow-lg text-sm font-semibold text-[#34414A]">
-            <span className="w-2 h-2 rounded-full bg-[#8CA365]" aria-hidden="true"></span>
-            Your business. Your greeting.
-          </p>
+         
 
         
         </div>

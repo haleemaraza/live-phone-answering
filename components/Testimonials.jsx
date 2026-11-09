@@ -148,7 +148,7 @@ export default function Testimonials({ id }) {
         </h2>
 
         <div className="flex items-center justify-center gap-2 mb-16">
-          <h3 className="text-lg font-semibold text-gray-700">Rated 4.9/5 Stars for Service &amp; Reliability</h3>
+          <p className="text-lg font-semibold text-gray-700">Rated 4.9/5 Stars for Service &amp; Reliability</p>
         </div>
 
         {/* Grid rather than CSS columns: multi-column flows cards down each

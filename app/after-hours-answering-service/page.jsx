@@ -87,7 +87,7 @@ export default function AfterHoursAnsweringServicePage() {
         />
         <CallHandlingRules />
        
-        <CoverageComparison />
+        {/* <CoverageComparison /> */}
 
         <MinutePlans />
         <FaqSection {...afterHoursFaq} />

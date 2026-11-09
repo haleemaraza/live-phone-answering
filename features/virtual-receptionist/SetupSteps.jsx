@@ -34,7 +34,7 @@ export default function SetupSteps() {
       badge="Designed around your business needs"
       heading={
         <>
-          How Our Virtual Receptionist
+          How Our Virtual Receptionist{' '}
           <br />
           Service Works
         </>

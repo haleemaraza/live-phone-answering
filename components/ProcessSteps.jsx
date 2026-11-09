@@ -104,7 +104,7 @@ export default function ProcessSteps({
           >
             {heading ?? (
               <>
-                How Our Live Phone Answering Service Works
+                How Our Live Phone Answering Service Works{' '}
                 <br className="hidden md:block" />
                 — Set Up in
                 <span className="text-[#8CA365]"> Under 5 Minutes</span>

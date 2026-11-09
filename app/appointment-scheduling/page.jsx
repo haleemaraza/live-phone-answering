@@ -152,11 +152,9 @@ export default function AppointmentSchedulingPage() {
         <SchedulingTools />
         <SchedulingBenefits />
         <IndustriesTabs heading="Tailored to Match Your Operational Workflow" intro="Supporting specialized industries, our receptionists integrate directly into your software and daily operations to ensure effortless team alignment." />
-        <SchedulingIndustries />
+        {/* <SchedulingIndustries /> */}
         <SchedulingWhyChooseUs />
         <SchedulingReceptionists />
-        <SchedulingWhyChooseUs />
-
         <SchedulingNoShows />
         <PlanPricing
           headingId='scheduling-pricing-heading'

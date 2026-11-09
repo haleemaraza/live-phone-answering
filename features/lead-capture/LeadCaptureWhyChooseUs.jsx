@@ -46,7 +46,7 @@ export default function LeadCaptureWhyChooseUs() {
               id="lead-capture-why-heading"
               className="mt-4 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.12] tracking-tight text-white"
             >
-              Why Work with Us for Your
+              Why Work with Us for Your{' '}
               <br />
               Lead Capture Answering?
             </h2>

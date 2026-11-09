@@ -2472,9 +2472,9 @@ export default function MedicalAnsweringServicePage() {
                   Everything you need to know about getting started, pricing, and how our receptionists act as an extension of your business.
                 </p>
                 <div className="bg-slate-50 border border-gray-200 rounded-2xl p-6">
-                  <h4 className="font-bold text-[#34414A] mb-2">
+                  <p className="font-bold text-[#34414A] mb-2">
                     Have a specific question?
-                  </h4>
+                  </p>
                   <p className="text-sm text-gray-600 mb-4">
                     Our team is here to help you build the perfect custom call flow.
                   </p>
@@ -2539,7 +2539,7 @@ export default function MedicalAnsweringServicePage() {
               <h2
                 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white text-center mb-6 leading-tight tracking-tight"
               >
-                Ready to Give Your Patients a Better Experience?
+                Ready to Give Your Patients a Better Experience?{' '}
                 <br className="hidden md:block" />
                 <span className="text-[#8CA365]">
                   Start Your Medical Answering Service Today

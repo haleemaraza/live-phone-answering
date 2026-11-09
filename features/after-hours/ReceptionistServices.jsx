@@ -68,7 +68,7 @@ export default function ReceptionistServices() {
               id="services-heading"
               className="mt-2 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.05] tracking-tight text-[#1a2e35]"
             >
-              What Can Our After Hours Phone
+              What Can Our After Hours Phone{' '}
               <br />
               <span className="text-[#295657]">Answering Service Handle for You?</span>
             </h2>
@@ -102,13 +102,13 @@ export default function ReceptionistServices() {
                       onClick={() => setOpen(expanded ? null : service.id)}
                       className="flex w-full items-center gap-5 px-5 py-3.5 text-left transition-colors hover:text-[#295657]"
                     >
-                      <span className="text-base font-semibold tabular-nums text-[#566e34]">{service.number}</span>
+                      <span className="text-base font-semibold tabular-nums text-[#566e34]">{service.number} </span>
                       <span
                         className={`flex-grow text-[1.02rem] font-bold leading-snug ${
                           expanded ? 'text-[#295657]' : 'text-[#34414A]'
                         }`}
                       >
-                        {service.title}
+                         {service.title}
                       </span>
                       <span
                         className={`icon-mask ${expanded ? 'icon-minus' : 'icon-plus'} [--icon-size:1.1rem] text-[#6b8a3e]`}

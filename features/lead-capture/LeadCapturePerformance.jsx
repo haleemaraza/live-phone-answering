@@ -53,7 +53,7 @@ export default function LeadCapturePerformance() {
             id="lead-capture-performance-heading"
             className="mt-3 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.14] tracking-tight text-[#1b4332]"
           >
-            Proven Performance
+            Proven Performance{' '}
             <br />
             Across Every Call
           </h2>

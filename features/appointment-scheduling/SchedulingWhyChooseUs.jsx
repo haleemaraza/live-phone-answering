@@ -46,7 +46,7 @@ export default function SchedulingWhyChooseUs() {
               id="scheduling-why-heading"
               className="mt-4 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.12] tracking-tight text-white"
             >
-              Why Choose Our Appointment
+              Why Choose Our Appointment{' '}
               <br />
               Scheduling Answering Service?
             </h2>

@@ -34,7 +34,7 @@ export default function HowItWorksSteps() {
       badge="Clear process that we follow"
       heading={
         <>
-          How Does an After Hours
+          How Does an After Hours{' '}
           <br />
           Answering Service Work?
         </>

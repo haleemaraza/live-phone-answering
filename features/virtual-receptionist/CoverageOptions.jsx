@@ -29,22 +29,35 @@ const DARK = {
   idealValue: 'text-gray-500',
 }
 
-function Card({ theme, eyebrow, title, body, idealFor, children }) {
+function Card({ theme, eyebrow, title, body, idealFor, href, note, children }) {
   return (
-    <li
-      className={`flex flex-col rounded-3xl p-7 lg:p-8 transition-all duration-300 hover:-translate-y-1.5 hover:border-[#8CA365] hover:shadow-2xl ${theme.card}`}
-    >
-      <p className={`text-[10px] font-bold uppercase tracking-[0.18em] mb-5 ${theme.eyebrow}`}>{eyebrow}</p>
+    <li className="flex">
+      {/* The whole card is the link. No aria-label here: a shorter name than
+          the visible text fails the label-in-name rule, so the card's own
+          text is the accessible name. */}
+      <Link
+        prefetch={false}
+        href={href}
+        className={`group flex w-full flex-col rounded-3xl p-7 lg:p-8 transition-all duration-300 hover:-translate-y-1.5 hover:border-[#8CA365] hover:shadow-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#6b8a3e] focus-visible:ring-offset-2 ${theme.card}`}
+      >
+        <span className={`block text-[10px] font-bold uppercase tracking-[0.18em] mb-5 ${theme.eyebrow}`}>
+          {eyebrow}
+        </span>
 
-      <div className={`rounded-2xl px-5 py-6 mb-7 ${theme.panel}`} aria-hidden="true">
-        {children}
-      </div>
+        <span className={`block rounded-2xl px-5 py-6 mb-7 ${theme.panel}`} aria-hidden="true">
+          {children}
+        </span>
 
-      <h3 className={`text-2xl font-extrabold mb-3 ${theme.title}`}>{title}</h3>
-      <p className={`text-sm leading-relaxed flex-grow ${theme.body}`}>{body}</p>
+        <h3 className={`text-2xl font-extrabold mb-3 ${theme.title}`}>{title}</h3>
+        <span className={`block text-sm leading-relaxed flex-grow ${theme.body}`}>{body}</span>
 
-      <p className={`text-xs font-bold mt-6 pt-5 border-t ${theme.rule} ${theme.idealLabel}`}>Ideal for</p>
-      <p className={`text-xs mt-1 ${theme.idealValue}`}>{idealFor}</p>
+        <span className={`block text-xs font-bold mt-6 pt-5 border-t ${theme.rule} ${theme.idealLabel}`}>Ideal for</span>
+        <span className={`block text-xs mt-1 ${theme.idealValue}`}>{idealFor}</span>
+
+        <span className="icon-mask icon-arrow-right [--icon-size:0.85rem] mt-5 flex flex-row-reverse items-center justify-end gap-2 text-sm font-semibold text-[#6b8a3e] before:transition-transform before:duration-300 group-hover:before:translate-x-1">
+          {note}
+        </span>
+      </Link>
     </li>
   )
 }
@@ -76,8 +89,10 @@ export default function CoverageOptions() {
             title="All Incoming Calls"
             body="Let our receptionists answer your calls during your selected business hours. We greet your customers, answer their questions, take messages, and make sure no important call goes unanswered."
             idealFor="Everyday call support"
+            href="/services"
+            note="See all answering services"
           >
-            <div className="flex items-center justify-center gap-3">
+            <span className="flex items-center justify-center gap-3">
               <span className="flex flex-col gap-1.5">
                 {['JS', 'MK', 'DT'].map((initials) => (
                   <span
@@ -94,7 +109,7 @@ export default function CoverageOptions() {
               <span className="icon-mask icon-users [--icon-size:1.125rem] flex flex-col items-center gap-1 rounded-xl bg-white border border-gray-200 px-3 py-2.5 text-[9px] font-semibold text-[#34414A] before:text-[#8CA365]">
                 Reception team
               </span>
-            </div>
+            </span>
           </Card>
 
           <Card
@@ -103,8 +118,10 @@ export default function CoverageOptions() {
             title="Overflow Call Support"
             body="Keep your team’s lines open while our receptionists answer calls that go unanswered. When your team is busy or taking a break, we step in so no caller is left waiting."
             idealFor="Busy periods and staff breaks"
+            href="/overflow-call-answering"
+            note="Explore overflow call answering"
           >
-            <div className="flex items-center justify-center gap-3">
+            <span className="flex items-center justify-center gap-3">
               <span className="icon-mask icon-phone [--icon-size:1.5rem] flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-white text-[#0f2925]"></span>
               <span className="flex flex-col gap-2">
                 <span className="rounded-full bg-white border border-gray-200 px-3 py-1.5 text-[10px] font-semibold text-[#34414A]">
@@ -114,7 +131,7 @@ export default function CoverageOptions() {
                   Receptionist picks up
                 </span>
               </span>
-            </div>
+            </span>
           </Card>
 
           <Card
@@ -123,8 +140,10 @@ export default function CoverageOptions() {
             title="After-Hours Call Support"
             body="Make sure callers can reach someone during evenings, weekends, or other agreed hours. We answer questions, take messages, and capture new leads even when your office is closed."
             idealFor="Calls outside normal business hours"
+            href="/after-hours-answering-service"
+            note="See after-hours answering"
           >
-            <div className="flex items-center justify-center gap-4">
+            <span className="flex items-center justify-center gap-4">
               <span className="icon-mask icon-moon [--icon-size:1.75rem] flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-full bg-[#0f2925] text-white"></span>
               <span className="flex flex-col gap-1.5">
                 {AFTER_HOURS.map((item) => (
@@ -136,7 +155,7 @@ export default function CoverageOptions() {
                   </span>
                 ))}
               </span>
-            </div>
+            </span>
           </Card>
         </ul>
 

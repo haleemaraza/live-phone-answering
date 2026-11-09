@@ -82,7 +82,7 @@ export default function AfterHoursCoverage() {
               id="coverage-heading"
               className="mt-2 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.05] tracking-tight text-[#1a2e35]"
             >
-              24/7 After-Hours Built Around
+              24/7 After-Hours Built Around{' '}
               <br />
               <span className="text-[#295657]">Your Schedule and Hours</span>
             </h2>
@@ -138,7 +138,7 @@ export default function AfterHoursCoverage() {
                 <div className="px-1 py-1 sm:px-3">
                   <p className="text-[0.7rem] font-bold uppercase tracking-[0.16em] text-[#566e34]">{tab.eyebrow}</p>
                   <h3 className="mt-1.5 text-2xl font-extrabold leading-[1.12] tracking-tight text-[#1a2e35] sm:text-[2.1rem]">
-                    {tab.titleTop}
+                    {tab.titleTop}{' '}
                     <br />
                     <span className="text-[#295657]">{tab.titleBottom}</span>
                   </h3>

@@ -32,7 +32,7 @@ export default function SchedulingNoShows() {
             id="scheduling-noshows-heading"
             className="mt-3 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.14] tracking-tight text-[#1d4b37]"
           >
-            Reduce No-Show Appointments
+            Reduce No-Show Appointments{' '}
             <br />
              Cut no-shows by up to 80% 
           </h2>

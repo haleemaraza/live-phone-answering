@@ -129,7 +129,9 @@ export default function IndustriesTabs({
                 <svg className="w-5 h-5 hidden sm:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={industry.iconPath} />
                 </svg>
+                <h3>
                 {industry.label}
+                </h3>
               </button>
             )
           })}

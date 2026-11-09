@@ -48,7 +48,7 @@ export default function CallRoutingServices() {
             id="call-routing-services-heading"
             className="mt-4 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.14] tracking-tight text-[#1b4332]"
           >
-            Call Screening, Routing and
+            Call Screening, Routing and{' '}
             <br />
             Transfer Services We Handle
           </h2>
