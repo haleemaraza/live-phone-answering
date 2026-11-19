@@ -3,33 +3,33 @@ import Link from 'next/link'
 const SERVICES = [
   {
     icon: 'icon-call-screen',
-    title: 'Caller Screening',
-    body: 'Find out who is calling, why they need help, and who they want to reach. Follow your instructions to separate relevant enquiries from other calls.',
+    title: 'Smart Call Screening',
+    body: 'We ask who’s calling and why, so we can separate important business calls from spam and prioritize what matters most to you. Our receptionists follow your specific guidelines to verify caller details, filter out unwanted solicitations, and ensure urgent inquiries get immediate attention.',
   },
   {
     icon: 'icon-org-chart',
-    title: 'Staff & Department Routing',
-    body: 'Guide callers to the agreed person or team, including appointments, accounts, sales, or support. Use your contact directory to choose the next step.',
+    title: 'Direct Department Routing',
+    body: 'We seamlessly guide callers straight to the right person or department, whether it’s sales, customer support, or billing. By using your customized team directory, we remove the hassle of automated phone trees and connect clients to the exact expert who can help them best.',
   },
   {
     icon: 'icon-phone-chat',
-    title: 'Announced Call Transfers',
-    body: 'Where supported, introduce the caller and explain the reason for the call before connecting. Check whether the recipient is available to accept it.',
+    title: 'Warm Introductions',
+    body: 'Instead of cold transfers, we introduce the caller and give you a brief heads-up on what they need before putting them through. We check if you are available to accept the call first, allowing you to prepare for the conversation and provide a more personalized response.',
   },
   {
     icon: 'icon-phone-clock',
-    title: 'Availability-Based Routing',
-    body: 'Follow your approved transfer windows, working hours, and availability instructions. Use the agreed alternative when someone cannot take a call.',
+    title: 'Schedule-Based Transfers',
+    body: "Calls are routed based on your actual working hours and real-time availability, jumping to your backup plan whenever you're tied up. You can set custom transfer windows for different days so your team is never interrupted outside of working hours.",
   },
   {
     icon: 'icon-buildings-arrow',
-    title: 'Multi-Location Call Routing',
-    body: "Direct enquiries to the appropriate branch or team using your agreed setup. Match the caller's request to the locations and contacts you specify.",
+    title: 'Multi-Branch Support',
+    body: 'Got several locations? We match each caller to the closest office or right local team based on what they need. Whether you operate across different cities or distinct specialized branches, we make sure regional inquiries land in the right place every time.',
   },
   {
     icon: 'icon-doc-reply',
-    title: 'Messages & Backup Contacts',
-    body: 'When a connection cannot be completed, follow your backup instructions. Capture a clear message or try an approved alternate contact.',
+    title: 'Detailed Messages & Backups',
+    body: 'If your main line is busy, we take thorough notes or forward the caller to a secondary contact so you never miss an inquiry. We capture key contact info and call details instantly, passing them along via email or message so your team can follow up promptly.',
   },
 ]
 
@@ -48,13 +48,12 @@ export default function CallRoutingServices() {
             id="call-routing-services-heading"
             className="mt-4 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.14] tracking-tight text-[#1b4332]"
           >
-            Call Screening, Routing and{' '}
+            Call Screening, Routing, and Transfer{' '}
             <br />
-            Transfer Services We Handle
+            How We Handle Your Calls
           </h2>
           <p className="mt-3 text-lg leading-relaxed text-gray-600">
-            Give every caller a clear next step. Shape your call handling around your team, their availability, and the
-            instructions you approve.
+            Make sure every caller gets where they need to go &mdash; on your schedule and by your rules.
           </p>
         </div>
 
@@ -79,21 +78,21 @@ export default function CallRoutingServices() {
 
         <div className="mt-6 flex flex-col items-start gap-5 rounded-xl bg-[#eef0e6] px-6 py-5 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-[1.15rem] font-extrabold text-[#1b4332]">
-            Your team. Your destinations. Your routing rules.
+            Your team. Your branches. Your setup.
           </p>
           <Link
             prefetch={false}
             href="/contact-us"
             className="icon-mask icon-arrow-right [--icon-size:0.9rem] inline-flex flex-shrink-0 flex-row-reverse items-center gap-3 rounded-lg bg-[#1d4b37] px-6 py-3.5 text-base font-bold text-white transition-all hover:-translate-y-0.5 hover:bg-[#164032]"
           >
-            Build My Call Routing Plan
+            Create My Call Plan
           </Link>
         </div>
 
         {/* What a given plan supports is agreed at setup, so the cards describe
             tasks rather than promise all of them. */}
         <p className="mt-5 text-center text-sm text-gray-600">
-          Transfer options, destinations, and backup handling are confirmed during setup.
+          We&rsquo;ll fine-tune all transfer rules, destinations, and backup steps together during setup.
         </p>
       </div>
     </section>

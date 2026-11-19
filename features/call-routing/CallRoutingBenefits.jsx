@@ -3,23 +3,23 @@ import Link from 'next/link'
 const BENEFITS = [
   {
     icon: 'icon-split-arrows',
-    title: 'A clearer path for callers',
-    body: 'Help people reach the appropriate staff member or department using the reason for their call and your agreed contact list.',
+    title: 'A clearer path for your callers',
+    body: 'Help callers reach the right person without unnecessary transfers or confusion. We use the reason for their call and your approved contact list to guide each enquiry to the appropriate team member or department.',
   },
   {
     icon: 'icon-report',
-    title: 'Easier follow-up',
-    body: "Capture the caller's name, callback number, and reason for calling when a connection cannot be completed.",
+    title: 'Smoother follow-ups',
+    body: "When a call cannot be transferred or completed, we collect the caller's name, contact number, and reason for calling. Your team has the details needed to return calls and follow up without starting from scratch.",
   },
   {
     icon: 'icon-chat',
-    title: 'A personal first impression',
-    body: 'Give callers a real person who listens, explains the next step, and represents your business with your approved greeting.',
+    title: 'A more personal caller experience',
+    body: 'Give every caller a real person to speak with. Our receptionists answer using your business name and preferred greeting, listen to their needs, and explain what happens next.',
   },
   {
     icon: 'icon-sliders',
-    title: 'More control over call handling',
-    body: 'Set contact windows, transfer instructions, and backup steps around the way your team works.',
+    title: 'Call handling on your terms',
+    body: 'Decide how and when calls should be handled. Set preferred contact hours, transfer instructions, alternative contacts, and backup steps so calls are managed according to the way your business operates.',
   },
 ]
 
@@ -38,12 +38,12 @@ export default function CallRoutingBenefits() {
             id="call-routing-benefits-heading"
             className="mt-4 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.14] tracking-tight text-[#1b4332]"
           >
-            Fewer Interruptions. Clearer Connections.{' '}
+            Fewer Disruptions. Better Connections.{' '}
             <br />
-            Better Call Handling.
+            More Efficient Call Handling.
           </h2>
           <p className="mt-3 text-lg leading-relaxed text-gray-600">
-            Give callers a helpful first response while your team stays focused on the work that needs them.
+            Make sure every caller gets the right response without pulling your team away from important work.
           </p>
         </div>
 
@@ -63,13 +63,13 @@ export default function CallRoutingBenefits() {
             </span>
             <figcaption className="bg-[#1d4b37] px-6 py-6">
               <span className="block text-[1.35rem] font-extrabold leading-tight text-white">
-                More time for{' '}
+                More time for the{' '}
                 <br />
-                focused work
+                work that matters
               </span>
               <span className="mt-2 block text-base leading-relaxed text-white/70">
-                Let receptionists screen incoming enquiries and follow your contact rules, so your team can give
-                attention to relevant calls.
+                Let your team focus while we manage incoming calls. Our receptionists screen incoming calls, follow
+                your routing instructions, and direct callers to the appropriate person or department.
               </span>
               <span className="mt-5 flex items-center gap-4 border-t border-white/15 pt-4">
                 <span
@@ -77,7 +77,7 @@ export default function CallRoutingBenefits() {
                   aria-hidden="true"
                 ></span>
                 <span className="text-[0.62rem] font-bold uppercase tracking-[0.16em] text-[#a8c47d]">
-                  Support for your working day
+                  Support that fits your workday
                 </span>
               </span>
             </figcaption>
@@ -102,7 +102,7 @@ export default function CallRoutingBenefits() {
 
         <div className="mt-5 flex flex-col items-start gap-5 rounded-xl bg-[#eef0e6] px-6 py-5 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-[1.15rem] font-extrabold text-[#1b4332]">
-            Keep your team focused. Keep callers informed.
+            Keep your team focused. Make every call count.
           </p>
           <Link
             prefetch={false}

@@ -19,7 +19,7 @@ const CRUMBS = [
   { label: 'Services', href: '/services' },
 ]
 
-const CHECKS = ['Live receptionists', 'Your routing rules', 'Clear backup steps']
+const CHECKS = ['Dedicated receptionists', 'Custom transfer protocols', 'Reliable overflow workflows']
 
 // Tells Google where this page sits in the site, which is what produces the
 // Home > Services > Call Routing trail in search results.
@@ -78,24 +78,28 @@ export default function CallRoutingHero() {
               id="call-routing-hero-heading"
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#1a2e35] leading-[1.1] tracking-tight"
             >
-              Call Routing &amp; Transfer{' '}
+              Intelligent Call Routing &amp;{' '}
               <br />
-              <span className="text-[#6b8a3e]">Answering Service</span>
+              <span className="text-[#6b8a3e]">Direct Transfer Service</span>
             </h1>
 
             <p className="mt-5 text-[1.12rem] font-bold text-[#1a2e35]">
-              A helpful first answer. A clear path to the right person.
+              An expert first impression. Direct access to the right decision-maker.
             </p>
 
             <p className="mt-4 max-w-lg text-lg leading-relaxed text-gray-600">
-              Give callers a real person who understands why they are calling. Our receptionists screen enquiries and
-              follow your routing instructions to connect suitable calls with your agreed staff or department
-              contacts.
+              Our professional receptionists greet your callers warmly, understand their needs, and transfer them
+              directly to the right person using your custom instructions.
             </p>
 
             <p className="mt-4 max-w-lg text-lg leading-relaxed text-gray-600">
-              When someone is unavailable, the next step is already planned. We follow your approved backup
-              instructions, capture useful details, and pass a clear message to the right person for follow-up.
+              When your team is busy, we handle the overflow smoothly by following your backup plan, recording
+              important details, and notifying you instantly.
+            </p>
+
+            <p className="mt-4 max-w-lg text-lg leading-relaxed text-gray-600">
+              This seamless call routing and transfer process eliminates caller wait times, keeps your operations
+              organized, and ensures no important opportunity is ever missed.
             </p>
 
             <div className="mt-7 flex flex-col gap-4 sm:flex-row">
@@ -148,9 +152,9 @@ export default function CallRoutingHero() {
                 aria-hidden="true"
               ></span>
               <span className="min-w-0">
-                <span className="block text-[1.05rem] font-bold text-white">The right contact. A clear next step.</span>
+                <span className="block text-[1.05rem] font-bold text-white">Direct connections. Zero guesswork.</span>
                 <span className="mt-1 block text-base leading-relaxed text-white/70">
-                  Screen the call. Follow your rules. Keep your team informed.
+                  Filter the inquiry. Execute your workflow. Keep everyone aligned.
                 </span>
               </span>
             </figcaption>

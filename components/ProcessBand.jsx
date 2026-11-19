@@ -39,9 +39,11 @@ export default function ProcessBand({
           >
             {badge}
           </p>
+          {/* scroll-mt keeps the sticky header off the heading when a page
+              links to this band by its id. */}
           <h2
             id={headingId}
-            className="mt-4 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.14] tracking-tight text-white"
+            className="mt-4 scroll-mt-28 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.14] tracking-tight text-white"
           >
             {heading}
           </h2>
@@ -68,6 +70,13 @@ export default function ProcessBand({
 
                 <h3 className="mt-4 text-[1.1rem] font-bold text-[#1b4332]">{step.title}</h3>
                 <p className="mt-2.5 flex-grow text-base leading-relaxed text-gray-600">{step.body}</p>
+
+                {/* Optional: pages that don't pass a tag render exactly as before. */}
+                {step.tag && (
+                  <span className="mt-4 w-full rounded-lg bg-[#eef2e6] px-3 py-2 text-sm font-semibold text-[#4f6630]">
+                    {step.tag}
+                  </span>
+                )}
               </div>
 
               {index < steps.length - 1 && (

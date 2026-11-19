@@ -1,18 +1,19 @@
 import CallRoutingHero from '@/features/call-routing/CallRoutingHero'
 import RatingsTrustBar from '@/components/RatingsTrustBar'
 import CallRoutingServices from '@/features/call-routing/CallRoutingServices'
-import LeadCaptureHowItWorks from '@/features/lead-capture/LeadCaptureHowItWorks'
+import CallRoutingHowItWorks from '@/features/call-routing/CallRoutingHowItWorks'
 import CallRoutingRules from '@/features/call-routing/CallRoutingRules'
 import CallRoutingIntegrations from '@/features/call-routing/CallRoutingIntegrations'
 import CallRoutingBenefits from '@/features/call-routing/CallRoutingBenefits'
 import IndustriesTabs from '@/components/IndustriesTabs'
 import CallRoutingReceptionists from '@/features/call-routing/CallRoutingReceptionists'
-import LeadCaptureWhyChooseUs from '@/features/lead-capture/LeadCaptureWhyChooseUs'
+import CallRoutingWhyChooseUs from '@/features/call-routing/CallRoutingWhyChooseUs'
 import Testimonials from '@/components/Testimonials'
+import CallRoutingPerformance from '@/features/call-routing/CallRoutingPerformance'
 import PlanPricing from '@/components/PlanPricing'
 import FaqSection from '@/components/FaqSection'
 import ContactFormSection from '@/components/ContactFormSection'
-import { homeFaq } from '@/components/faq-content'
+import { callRoutingFaq } from '@/components/faq-content'
 
 const BASE_URL = 'https://livephoneanswering.com'
 
@@ -72,16 +73,33 @@ export default function CallRoutingPage() {
       <CallRoutingHero />
       <RatingsTrustBar label="Trusted by 5,000+ US businesses routing calls to the right person" />
       <CallRoutingServices />
-      <LeadCaptureHowItWorks />
+      <CallRoutingHowItWorks />
       <CallRoutingRules />
       <CallRoutingIntegrations />
       <CallRoutingBenefits />
-      <IndustriesTabs />
+      <IndustriesTabs
+        heading="Tailored to Match Your Operational Workflow"
+        intro="Supporting specialized industries, our receptionists integrate directly into your software and daily operations to ensure effortless team alignment."
+      />
       <CallRoutingReceptionists />
-      <LeadCaptureWhyChooseUs />
+      <CallRoutingWhyChooseUs />
       <Testimonials />
-      <PlanPricing headingId="call-routing-pricing-heading" />
-      <FaqSection {...homeFaq} />
+      <CallRoutingPerformance />
+      <PlanPricing
+        headingId="call-routing-pricing-heading"
+        descriptions={{
+          'Starter Virtual Receptionist':
+            'Ideal for small businesses that need help directing incoming calls and connecting customers with the right contacts.',
+          'Growth Virtual Receptionist':
+            'Perfect for growing businesses that handle calls for different team members, departments, or service inquiries.',
+          'Business Virtual Receptionist':
+            'Designed for businesses with multiple departments, higher call volumes, and more detailed call distribution requirements.',
+        }}
+        customTitle="Need 1,000+ Minutes or Customized Call Routing?"
+        customBody="Get a custom package built around your business structure, phone system, departments, and call transfer requirements."
+        footnote="Transfer options, destinations, and backup handling are confirmed during setup."
+      />
+      <FaqSection {...callRoutingFaq} />
       <ContactFormSection theme="dark" />
 
 

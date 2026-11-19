@@ -3,18 +3,18 @@ import Link from 'next/link'
 const POINTS = [
   {
     icon: 'icon-chat',
-    title: 'Listen before routing',
-    body: "Capture the caller's name, reason for calling, and requested contact so the next step fits their enquiry.",
+    title: 'Understand the Caller Before Taking Action',
+    body: "Every call starts with listening. Our receptionists ask for the caller's name, understand the reason for their call, and identify who they need to speak with, so each enquiry is directed appropriately.",
   },
   {
     icon: 'icon-phone-forward',
-    title: 'Handle transfers thoughtfully',
-    body: 'Follow your approved contact list and availability instructions. Where supported, introduce the caller before connecting.',
+    title: 'Connect Every Caller to the Right Contact',
+    body: "Once we understand the request, we use your approved contact list, transfer instructions, and your team's availability. Where supported, we introduce the caller before completing the transfer.",
   },
   {
     icon: 'icon-report',
-    title: 'Make messages useful',
-    body: 'If a contact is unavailable, follow your backup plan and capture clear details for your team to follow up.',
+    title: 'Keep Important Messages From Getting Lost',
+    body: "When a transfer cannot be completed, we follow your backup instructions and record the caller's name, callback number, reason for calling, and any important message for your team.",
   },
 ]
 
@@ -39,33 +39,35 @@ export default function CallRoutingReceptionists() {
             />
           </span>
           <figcaption className="bg-[#1d4b37] px-6 py-6">
-            <span className="block text-[1.15rem] font-bold text-white">A real person. A considered next step.</span>
+            <span className="block text-[1.15rem] font-bold text-white">
+              A Friendly Voice. A Smarter Way to Handle Every Call.
+            </span>
             <span className="mt-4 block h-px w-16 bg-[#a8c47d]" aria-hidden="true"></span>
             <span className="mt-4 block text-base leading-relaxed text-white/70">
-              Listening to your callers. Following your instructions.
+              Give callers a real person who takes the time to listen, understand their needs, and guide them to the
+              right next step.
             </span>
           </figcaption>
         </figure>
 
         <div>
           <p className="icon-mask icon-headset [--icon-size:1rem] inline-flex items-center gap-2 bg-[#8CA365]/10 text-[#5f7a3a] rounded-full text-sm font-semibold px-4 py-1.5">
-            Live virtual receptionists
+            Live virtual receptionist services
           </p>
 
           <h2
             id="call-routing-receptionists-heading"
             className="mt-4 text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.12] tracking-tight text-[#1b4332]"
           >
-            Live Virtual Receptionists{' '}
+            Professional Call Screening{' '}
             <br />
-            for Call Screening and{' '}
+            and Transfers, Handled by{' '}
             <br />
-            Transfers
+            Real Receptionists
           </h2>
 
           <p className="mt-4 text-lg leading-relaxed text-gray-600">
-            Give callers a helpful first point of contact. Our receptionists answer in your business name, understand
-            why someone is calling, and follow your instructions for the next step.
+            Make every incoming call easier to manage with a live receptionist who represents your business.
           </p>
 
           <ul className="mt-6 list-none divide-y divide-gray-300/50 border-t border-gray-300/50">
@@ -92,7 +94,8 @@ export default function CallRoutingReceptionists() {
           </Link>
 
           <p className="mt-3 text-base text-gray-600">
-            Greetings, transfer options, and backup steps are agreed during setup.
+            Your greetings, contact lists, transfer preferences, availability rules, and backup instructions are agreed
+            upon during setup.
           </p>
         </div>
       </div>

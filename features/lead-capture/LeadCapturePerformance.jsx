@@ -74,7 +74,7 @@ export default function LeadCapturePerformance() {
                 {/* Stat and label are one heading so the full claim reads as a
                     single phrase, with the figure sized up visually. */}
                 <h3 className="leading-tight text-[#1a2e35]">
-                  <span className="block text-4xl font-extrabold tracking-tight text-[#4f6630]">{metric.stat}</span>
+                  <span className="block text-4xl font-extrabold tracking-tight text-[#4f6630]">{metric.stat}</span>{' '}
                   <span className="mt-1.5 block text-lg font-bold">{metric.label}</span>
                 </h3>
 

@@ -438,3 +438,257 @@ export const leadCaptureFaq = {
     }
   ]
 }
+
+export const callRoutingFaq = {
+  "heading": "Frequently Asked Questions About Call Routing and Transfers",
+  "intro": "Everything you need to know about how we work, how you can get started and pricing.",
+  "sideTitle": "Have a specific question not answered here?",
+  "sideBody": "Contact us and we will be happy to answer your questions.",
+  "linkText": "Contact Support",
+  "linkHref": "#contact",
+  "items": [
+    {
+      "q": "What is call routing and transfer?",
+      "a": "It directs incoming calls to the right person or department based on your instructions."
+    },
+    {
+      "q": "How does your call transfer service work?",
+      "a": "Our receptionists answer calls, understand the caller's needs, and transfer them to the appropriate contact."
+    },
+    {
+      "q": "Can you transfer calls to specific employees?",
+      "a": "Yes. We follow your contact list and transfer instructions to reach specific employees or departments."
+    },
+    {
+      "q": "What happens if someone is unavailable?",
+      "a": "We take a message, collect caller details, or transfer the call to an alternative contact based on your instructions."
+    },
+    {
+      "q": "Can I choose which calls get transferred?",
+      "a": "Yes. You decide which calls should be transferred, screened, or handled as messages."
+    },
+    {
+      "q": "Can you transfer calls to mobile phones?",
+      "a": "Yes. We can transfer calls to approved mobile numbers, office lines, and remote employees."
+    },
+    {
+      "q": "Do I need special equipment?",
+      "a": "No. We work with your existing phone setup and help configure call forwarding to our receptionists."
+    }
+  ]
+}
+
+export const medicalFaq = {
+  "heading": "Frequently Asked Questions About Medical Answering Services",
+  "intro": "Everything you need to know about getting started, what receptionists handle, and how patient calls reach your practice.",
+  "sideTitle": "Have a specific question?",
+  "sideBody": "Our team is here to help you build the perfect call plan for your practice.",
+  "linkText": "Contact Support",
+  "linkHref": "/contact-us",
+  "items": [
+    {
+      "q": "What is a medical answering service?",
+      "a": "A medical answering service provides live receptionists who answer calls for a healthcare practice. They use your approved greeting, capture patient enquiries and appointment requests, and follow your instructions for messages, transfers and on-call routing."
+    },
+    {
+      "q": "What can receptionists handle for a medical practice?",
+      "a": "Receptionists handle administrative call work: new patient enquiries, appointment requests and changes, practice messages, referral and document status questions, billing and admin questions, and professional calls from other clinicians. Clinical decisions always remain with your healthcare team."
+    },
+    {
+      "q": "Can you book appointments directly into our system?",
+      "a": "Appointment request handling is included on the Growth and Business plans. Direct booking into your practice software depends on the access, permissions and supported tasks we confirm with you during setup, so requests and confirmed bookings always stay clearly distinguished."
+    },
+    {
+      "q": "How are after-hours and on-call calls handled?",
+      "a": "You define which calls need your on-call team, the contact order, retry steps and the final fallback. Our receptionists follow those approved instructions and record which contacts were attempted along with the handoff status."
+    },
+    {
+      "q": "How is patient information handled?",
+      "a": "Before calls begin we agree the intake fields receptionists collect, caller verification steps, who can receive each message, approved delivery routes, and recording and retention arrangements. The specific safeguards and agreements that apply to your practice are confirmed during setup."
+    },
+    {
+      "q": "Do you sign a Business Associate Agreement?",
+      "a": "Any third party that handles protected health information on your behalf needs a Business Associate Agreement in place before the first call is answered. Our team will confirm the applicable agreements, documentation and service scope with your practice before launch."
+    },
+    {
+      "q": "Will receptionists give medical advice?",
+      "a": "No. Receptionists work within documented reception boundaries. They capture requests such as prescription or results callbacks and route them to your clinical team, and they do not approve medication, interpret results or give clinical advice."
+    },
+    {
+      "q": "How long does setup take for a practice?",
+      "a": "Most practices are live quickly once we agree your greeting, approved questions, appointment rules and contact routes. We review call forwarding, software access and message delivery, then test the agreed routes with your team before going live."
+    }
+  ]
+}
+
+export const franchiseFaq = {
+  "heading": "Frequently Asked Questions About Franchise Answering Services",
+  "intro": "Everything you need to know about brand-approved call handling, location routing, and getting your network set up.",
+  "sideTitle": "Have a specific question?",
+  "sideBody": "Our team is here to help you build a call plan for your brand and your locations.",
+  "linkText": "Contact Support",
+  "linkHref": "/contact-us",
+  "items": [
+    {
+      "q": "What is a franchise answering service?",
+      "a": "A franchise answering service provides live receptionists who answer calls in your brand name across multiple locations. They capture customer enquiries, follow your approved call instructions, and route each request to the franchise location responsible for it."
+    },
+    {
+      "q": "How do you know which location a call belongs to?",
+      "a": "We confirm the service address and what the customer is requesting, then match it against your franchise directory of approved territories and service types. The enquiry then follows the agreed route to the responsible location."
+    },
+    {
+      "q": "What happens when territories overlap or a caller is outside your coverage?",
+      "a": "Those exceptions are agreed in advance. Uncertain matches go to your nominated review contact before the enquiry is assigned, callers outside coverage receive your approved response and the request is recorded for the designated team, and when a location is unavailable we follow the agreed backup or callback route."
+    },
+    {
+      "q": "Can each location have its own hours, contacts and calendar?",
+      "a": "Yes. Your greeting, service descriptions, required questions and approved answers stay consistent brand-wide, while opening hours, service areas, booking calendars, local and backup contacts, and authorized prices are set per location."
+    },
+    {
+      "q": "Can you work with franchisors, multi-unit owners and single franchisees?",
+      "a": "Yes. Franchisors set shared greetings, approved answers and head-office escalation routes; multi-unit operators keep each location's contacts and booking rules distinct within one coordinated plan; individual franchisees get local enquiry, message and overflow support that follows brand guidelines."
+    },
+    {
+      "q": "How are changes to call instructions handled?",
+      "a": "Changes follow an agreed path: a request is raised, an authorized contact approves it, the effective date is recorded, and the instructions are checked. You decide who can request updates and who approves brand-wide or local changes."
+    },
+    {
+      "q": "Do you work with our phone system and booking tools?",
+      "a": "We review your existing numbers, carrier forwarding settings and transfer instructions, confirm which local calendars and booking permissions apply, and agree whether tasks use a connector, authorized portal access or message delivery. Supported tasks and connection methods are confirmed during setup."
+    },
+    {
+      "q": "Can you handle after-hours and overflow calls for local teams?",
+      "a": "Yes. When local teams are busy or closed we follow your agreed call instructions, including approved backup contacts, so customer enquiries are captured and passed to the right team for follow-up."
+    }
+  ]
+}
+
+export const messageTakingFaq = {
+  "heading": "Frequently Asked Questions About Message Taking Services",
+  "intro": "Everything you need to know about how messages are captured, what they contain, and how they reach your team.",
+  "sideTitle": "Have a specific question?",
+  "sideBody": "Our team is here to help you build a message plan around the details your team needs.",
+  "linkText": "Contact Support",
+  "linkHref": "/contact-us",
+  "items": [
+    {
+      "q": "What is a message taking service?",
+      "a": "A message taking service answers calls your team cannot take and records who called, why they called and the callback details you have agreed. The message is then sent to your chosen recipient through your preferred delivery method."
+    },
+    {
+      "q": "What information is included in a message?",
+      "a": "A typical message includes the caller's name, callback number, the reason for calling, any preferred callback time the caller requested, and the agreed message recipient. The exact fields are set during setup so every message gives your team the context it needs."
+    },
+    {
+      "q": "How do messages reach my team?",
+      "a": "You choose the destination and supported delivery method during setup, such as email, SMS or a supported connector. We confirm who receives each message so there is no ambiguity about who follows up."
+    },
+    {
+      "q": "Can receptionists answer questions as well as take messages?",
+      "a": "Receptionists work within the scope you define. You decide what they can answer using your approved information, what they should capture as a message, and which requests need to go to your team."
+    },
+    {
+      "q": "Can you take appointment or booking requests?",
+      "a": "Yes, as requests. Booking, rescheduling and cancellation requests are recorded for your scheduling team to review. A recorded request is not a confirmed booking unless direct scheduling has been agreed separately."
+    },
+    {
+      "q": "What happens outside my coverage hours?",
+      "a": "Coverage hours are agreed before your first call, along with your greeting, questions and message recipient. Calls that reach us within those hours follow your message plan; anything outside them follows the arrangement you set up."
+    },
+    {
+      "q": "Do you work with my existing phone number?",
+      "a": "Yes. We review your existing number, carrier forwarding settings and coverage preferences, then set up and test call forwarding before your first live call."
+    },
+    {
+      "q": "Will receptionists promise a callback time?",
+      "a": "No. They explain the approved next step using your wording and record the caller's preferred callback time as a request. Your team confirms any time or booking."
+    }
+  ]
+}
+
+export const hotelFaq = {
+  "heading": "Frequently Asked Questions About Hotel Answering Services",
+  "intro": "Everything you need to know about reservation enquiries, approved property answers, and how guest requests reach your team.",
+  "sideTitle": "Have a specific question?",
+  "sideBody": "Our team is here to help you build a call plan around your property and your front desk.",
+  "linkText": "Contact Support",
+  "linkHref": "/contact-us",
+  "items": [
+    {
+      "q": "What is a hotel answering service?",
+      "a": "A hotel answering service gives prospective and staying guests a live response when your front desk is busy or away from the phone. Receptionists answer in your hotel's name, handle reservation enquiries, answer approved property questions and pass guest messages to the right member of your team."
+    },
+    {
+      "q": "Can you confirm a reservation, or only take the enquiry?",
+      "a": "Both are possible, and the boundary is agreed with you. By default we capture stay dates, guest numbers, room preferences and callback details as an enquiry for your reservations team to confirm. Reservation actions are completed only where supported system access and agreed permissions allow, which is confirmed during setup."
+    },
+    {
+      "q": "What property questions can receptionists answer?",
+      "a": "Only what your hotel has approved. Typical areas are check-in and check-out times, parking and directions, breakfast and dining, facilities and services, pet policies, room information and accessibility details. Anything outside the approved brief is referred to your team."
+    },
+    {
+      "q": "How do guest requests reach my team?",
+      "a": "Each call type has an agreed route. Housekeeping and maintenance requests go through your departmental contact route, guest concerns follow your duty-manager handoff, and business calls go to the designated contact. Every record states the request, the action taken and the next step."
+    },
+    {
+      "q": "Can you handle late arrivals and after-hours calls?",
+      "a": "Yes. You set the coverage hours and the calls to forward, including busy or unanswered calls. We share approved arrival information or contact your duty team when a guest needs assistance, following the instructions you have agreed."
+    },
+    {
+      "q": "Do you work with our property management system?",
+      "a": "We review your existing systems before launch and agree what can be checked or actioned, and when your hotel confirms the booking. The connection method, whether a supported connector, authorised access or a message-only handoff, is confirmed during setup."
+    },
+    {
+      "q": "Can you support more than one property?",
+      "a": "Yes. Small hotel groups keep greetings, property details and staff contacts distinct for each location, so callers get the right information for the property they are asking about."
+    },
+    {
+      "q": "What happens if your team cannot reach our system or our duty contact?",
+      "a": "If system access is unavailable we follow the agreed enquiry and handoff process instead. If a duty contact cannot be reached, we follow the contact order, supported retries and fallback steps you set during setup."
+    }
+  ]
+}
+
+export const orderTakingFaq = {
+  "heading": "Frequently Asked Questions About Order Taking Services",
+  "intro": "Everything you need to know about how phone orders are captured, what your team receives, and where your approval is required.",
+  "sideTitle": "Have a specific question?",
+  "sideBody": "Our team is here to help you build a call plan around your catalogue and order rules.",
+  "linkText": "Contact Support",
+  "linkHref": "/contact-us",
+  "items": [
+    {
+      "q": "What is an order taking answering service?",
+      "a": "An order taking answering service helps customers place orders when your team is busy or away from the phone. Receptionists answer in your business name, capture product choices, quantities and delivery details, and follow the handling route your business has approved."
+    },
+    {
+      "q": "Do you place the order in our system, or just record it?",
+      "a": "Both are possible, and the boundary is agreed with you. By default we capture the request and pass it to your team. Where system entry is included, we enter the details through your agreed process and record the actual submission status, so it is always clear what was captured versus submitted."
+    },
+    {
+      "q": "What does the order record contain?",
+      "a": "A typical record shows the product, variant or SKU, quantity, customer contact details, delivery preference and payment status, along with a request reference, the current status and the next action. The exact fields are agreed during setup."
+    },
+    {
+      "q": "Can you take payment over the phone?",
+      "a": "Payment support is agreed during setup and depends on your approved payment process and what is supported. Where payment is not included, the record shows payment as not taken and your team arranges it as part of the next action."
+    },
+    {
+      "q": "What product questions can receptionists answer?",
+      "a": "Only what your catalogue and approved information cover, such as sizes, colours, product options, pack sizes and current price or campaign details from the source you nominate. Quotes and anything outside the agreed rules are recorded and routed to your team."
+    },
+    {
+      "q": "What happens if an item is unavailable or a price is unclear?",
+      "a": "Those exceptions have a defined route. We record the issue and follow your agreed handoff for unavailable items, substitutions, unclear prices and changes needing approval, so the customer gets a clear next step rather than an answer we are not authorised to give."
+    },
+    {
+      "q": "Can you handle repeat orders and existing-order enquiries?",
+      "a": "Yes. For repeat orders we record the previous order or account reference and confirm the items requested again. For existing orders we record the order reference and share approved status information where it is accessible to us."
+    },
+    {
+      "q": "Which order platforms do you work with?",
+      "a": "We review your existing tools before launch, including order platforms, customer records and payment routes, and agree the product source, required fields and permissions. The connection method, whether approved portal access, a connector or message delivery, is confirmed during setup."
+    }
+  ]
+}
