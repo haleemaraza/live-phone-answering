@@ -35,7 +35,7 @@ const breadcrumbSchema = {
       '@type': 'ListItem',
       position: CRUMBS.length + 1,
       name: 'After-Hours Answering',
-      item: 'https://livephoneanswering.com/after-hours-answering-service',
+      item: 'https://livephoneanswering.com/after-hours',
     },
   ],
 }
@@ -110,7 +110,7 @@ export default function AfterHoursHero() {
         <div className="mx-auto w-full max-w-[560px]">
           <img
             src="/images/after-hours-hero.webp"
-            srcSet="/images/after-hours-hero-560.webp 560w, /images/after-hours-hero.webp 992w"
+            srcSet="/images/lnc.webp"
             sizes="(max-width: 1024px) 90vw, 560px"
             alt="A receptionist wearing a headset taking an after-hours call, beside a captured message summary for a recurring appointment booking"
             width={992}

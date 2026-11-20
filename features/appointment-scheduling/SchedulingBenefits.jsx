@@ -50,18 +50,18 @@ export default function SchedulingBenefits() {
 
         {/* 0.75fr is what makes the uncropped photo's height land on the
             benefits list beside it, so the two columns end level. */}
-        <div className="mt-9 grid grid-cols-1 items-start gap-8 lg:grid-cols-[minmax(0,1.14fr)_minmax(0,1fr)] lg:gap-11">
-          {/* The caption panel is part of the supplied artwork, so it is not
-              drawn again in HTML and the photo is not cropped. */}
+        {/* items-stretch so the photo grows to the height of the list beside
+            it; left to itself it finished ~140px short at desktop widths. */}
+        <div className="mt-9 grid grid-cols-1 items-stretch gap-8 lg:grid-cols-[minmax(0,1.14fr)_minmax(0,1fr)] lg:gap-11">
           <figure className="overflow-hidden rounded-2xl">
             <img
-              src="/images/scheduling-benefits.webp"
+              src="/images/ac.png"
               alt="A receptionist in a green blazer smiling as she takes notes for a visitor at a front desk, above the line: Be present for the people you serve. Let your receptionists handle the first enquiry."
               width={1100}
               height={892}
               loading="lazy"
               decoding="async"
-              className="block h-auto w-full"
+              className="block h-full min-h-[20rem] w-full object-cover"
             />
           </figure>
 

@@ -10,7 +10,12 @@ import CallRoutingReceptionists from '@/features/call-routing/CallRoutingRecepti
 import CallRoutingWhyChooseUs from '@/features/call-routing/CallRoutingWhyChooseUs'
 import Testimonials from '@/components/Testimonials'
 import CallRoutingPerformance from '@/features/call-routing/CallRoutingPerformance'
-import PlanPricing from '@/components/PlanPricing'
+import MinutePlans from '@/components/MinutePlans'
+import {
+  CALL_ROUTING_PLANS,
+  CALL_ROUTING_CUSTOM_TAGS,
+  CALL_ROUTING_BILLING_NOTES,
+} from '@/features/call-routing/call-routing-plans'
 import FaqSection from '@/components/FaqSection'
 import ContactFormSection from '@/components/ContactFormSection'
 import { callRoutingFaq } from '@/components/faq-content'
@@ -85,19 +90,16 @@ export default function CallRoutingPage() {
       <CallRoutingWhyChooseUs />
       <Testimonials />
       <CallRoutingPerformance />
-      <PlanPricing
-        headingId="call-routing-pricing-heading"
-        descriptions={{
-          'Starter Virtual Receptionist':
-            'Ideal for small businesses that need help directing incoming calls and connecting customers with the right contacts.',
-          'Growth Virtual Receptionist':
-            'Perfect for growing businesses that handle calls for different team members, departments, or service inquiries.',
-          'Business Virtual Receptionist':
-            'Designed for businesses with multiple departments, higher call volumes, and more detailed call distribution requirements.',
-        }}
+      <MinutePlans
+        eyebrow="Call routing and transfer plans that connect every caller"
+        heading="Get Every Call to the Right Person Without the Runaround"
+        intro="Our receptionists screen incoming calls, identify caller needs, and transfer them to the appropriate team member or department based on your instructions. Choose a plan based on your call volume and routing requirements."
+        panelNote="Start with the routing you need. Upgrade anytime as your call volume grows."
+        plans={CALL_ROUTING_PLANS}
         customTitle="Need 1,000+ Minutes or Customized Call Routing?"
         customBody="Get a custom package built around your business structure, phone system, departments, and call transfer requirements."
-        footnote="Transfer options, destinations, and backup handling are confirmed during setup."
+        customTags={CALL_ROUTING_CUSTOM_TAGS}
+        billingNotes={CALL_ROUTING_BILLING_NOTES}
       />
       <FaqSection {...callRoutingFaq} />
       <ContactFormSection theme="dark" />

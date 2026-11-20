@@ -7,6 +7,12 @@ import OverflowIntegrations from '@/features/overflow/OverflowIntegrations'
 import OverflowIndustries from '@/features/overflow/OverflowIndustries'
 import OverflowOutcomes from '@/features/overflow/OverflowOutcomes'
 import IndustriesTabs from '@/components/IndustriesTabs'
+import MinutePlans from '@/components/MinutePlans'
+import {
+  OVERFLOW_PLANS,
+  OVERFLOW_CUSTOM_TAGS,
+  OVERFLOW_BILLING_NOTES,
+} from '@/features/overflow/overflow-plans'
 import Testimonials from '@/components/Testimonials'
 import FaqSection from '@/components/FaqSection'
 import ContactFormSection from '@/components/ContactFormSection'
@@ -18,12 +24,12 @@ export const metadata = {
   title: "24/7 Overflow Call Answering Service for Busy Businesses",
   description:
     "Overflow answering service for businesses that need coverage for busy seasons. 24/7 and custom service for lawyers, contractors, doctors & retail businesses.",
-  alternates: { canonical: '/overflow-call-answering' },
+  alternates: { canonical: '/overflow-call-handling' },
   openGraph: {
     type: 'website',
     siteName: 'LivePhoneAnswering',
     locale: 'en_US',
-    url: '/overflow-call-answering',
+    url: '/overflow-call-handling',
     title: 'Overflow Call Answering Service for Busy Teams',
     description:
       'Your team answers first. We handle the calls they cannot reach — live receptionist backup using your greeting and your instructions.',
@@ -54,7 +60,7 @@ const serviceSchema = {
   serviceType: 'Overflow call answering',
   description:
     'Live receptionist support for calls a business cannot take, using the greeting, approved questions, and call-handling instructions agreed with that business.',
-  url: `${BASE_URL}/overflow-call-answering`,
+  url: `${BASE_URL}/overflow-call-handling`,
   areaServed: { '@type': 'Country', name: 'United States' },
   provider: {
     '@type': 'Organization',
@@ -89,6 +95,17 @@ export default function OverflowCallAnsweringPage() {
       <IndustriesTabs heading="Tailored to Match Your Operational Workflow" intro="Supporting specialized industries, our receptionists integrate directly into your software and daily operations to ensure effortless team alignment." />
       <OverflowIntegrations />
       <OverflowOutcomes />
+      <MinutePlans
+        eyebrow="Overflow call handling plans that keep every caller connected"
+        heading="Handle More Calls Without Keeping Your Customers Waiting"
+        intro="Our overflow answering service steps in when your phone lines are occupied, helping you answer additional calls, capture important inquiries, and keep your customers connected. Choose a plan based on your call volume and overflow support needs."
+        panelNote="Start with the coverage you need. Upgrade anytime as your incoming call volume grows."
+        plans={OVERFLOW_PLANS}
+        customTitle="Need 1,000+ Minutes or Customized Call Coverage?"
+        customBody="Get a custom overflow answering package designed around your call volume, business hours, and existing phone system."
+        customTags={OVERFLOW_CUSTOM_TAGS}
+        billingNotes={OVERFLOW_BILLING_NOTES}
+      />
       <FaqSection {...overflowFaq} />
       <ContactFormSection theme="dark" />
 

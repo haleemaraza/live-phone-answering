@@ -49,8 +49,10 @@ export default function OverflowReceptionists() {
           </p>
         </div>
 
-        <div className="mt-7 grid grid-cols-1 items-start gap-10 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1fr)] lg:gap-10">
-          <div className="relative">
+        {/* items-stretch so the photo grows to the height of the cards beside
+            it; left to itself it finished ~175px short at desktop widths. */}
+        <div className="mt-7 grid grid-cols-1 items-stretch gap-10 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1fr)] lg:gap-10">
+          <div className="relative flex">
             {/* Pale tile peeking out of the top-left corner, as in the reference. */}
             <div
               className="pointer-events-none absolute -left-3 -top-3 h-28 w-48 rounded-2xl bg-[#e4eed6]"
@@ -58,19 +60,21 @@ export default function OverflowReceptionists() {
             ></div>
 
             {/* Photo and caption bar share one clipped, rounded box. */}
-            <figure className="relative overflow-hidden rounded-2xl">
+            {/* object-contain, not cover: this is composed artwork and cover
+                cropped the HIPAA shield off the left edge. The figure carries
+                the artwork's own background colour, so the padding needed to
+                match the column height is invisible. */}
+            <figure className="relative w-full overflow-hidden rounded-2xl bg-[#f4e9e0]">
               <img
-                src="/images/zero-bot-frustration-live-answering-service.webp"
+                src="/images/scwh.webp"
                 alt="A live virtual receptionist wearing a headset answering an overflow call in an open-plan office"
-                width={1200}
-                height={1000}
+                width={1374}
+                height={1145}
                 loading="lazy"
                 decoding="async"
-                className="aspect-[6/5] w-full object-cover"
+                className="h-full min-h-[20rem] w-full object-contain"
               />
-              <figcaption className="bg-[#1d4b37] px-5 py-3 text-center text-base text-white/90">
-                Your practice&rsquo;s voice. Confidential patient support.
-              </figcaption>
+              
             </figure>
 
             

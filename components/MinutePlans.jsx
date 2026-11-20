@@ -180,12 +180,22 @@ const THEMES = {
   },
 }
 
+// Every piece of copy is a prop with the site-wide value as its default, so a
+// page that passes nothing renders exactly as before. A page with its own
+// plan wording (after-hours, for example) overrides only what differs — the
+// prices and minutes still come from whatever PLANS it is handed.
 export default function MinutePlans({
   theme = 'dark',
   ctaHref = '#contact',
-  // Pages can retitle the block; the plans themselves never change.
+  eyebrow = 'Simple Monthly Minute Plans • Live Receptionists • No Long-Term Contract',
   heading = 'Virtual Receptionist Plans That Fit Your Business',
   intro = 'Our virtual receptionists help manage caller inquiries, capture leads, schedule appointments, and keep your customer interactions organized. Choose a plan based on the level of support your business needs.',
+  panelNote = 'Start with the minutes you need. Upgrade anytime as your call volume grows.',
+  plans = PLANS,
+  customTitle = 'Need 1,000+ Minutes or Specialized Receptionist Support?',
+  customBody = 'Get a custom virtual receptionist package tailored to your business operations, call volume, and customer service requirements.',
+  customTags = CUSTOM_TAGS,
+  billingNotes = BILLING_NOTES,
 }) {
   const t = THEMES[theme]
 
@@ -203,7 +213,7 @@ export default function MinutePlans({
       <div className="site-container relative">
         <div className="mx-auto max-w-3xl text-center">
           <p className={`inline-flex items-center rounded-full border px-5 py-2 text-sm font-semibold shadow-sm ${t.eyebrow}`}>
-            Simple Monthly Minute Plans • Live Receptionists • No Long-Term Contract
+            {eyebrow}
           </p>
           <h2 id="minute-plans-heading" className={`mt-6 text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight ${t.heading}`}>
             {heading}
@@ -212,13 +222,11 @@ export default function MinutePlans({
         </div>
 
         <div className={`mt-10 rounded-2xl border px-6 py-5 text-center shadow-md ${t.panel}`}>
-          <p className="text-sm font-semibold">
-            Start with the minutes you need. Upgrade anytime as your call volume grows.
-          </p>
+          <p className="text-sm font-semibold">{panelNote}</p>
         </div>
 
         <ul className="mt-12 grid gap-8 lg:grid-cols-3 list-none">
-          {PLANS.map((plan) => (
+          {plans.map((plan) => (
             <li key={plan.name}>
               <PlanCard plan={plan} theme={t} ctaHref={ctaHref} />
             </li>
@@ -226,13 +234,10 @@ export default function MinutePlans({
         </ul>
 
         <div className={`mt-10 rounded-3xl border p-8 text-center shadow-md ${t.panel}`}>
-          <p className="text-2xl font-bold">Need 1,000+ Minutes or Specialized Receptionist Support?</p>
-          <p className={`mx-auto mt-3 max-w-3xl text-sm leading-7 ${t.customBody}`}>
-            Get a custom virtual receptionist package tailored to your business operations, call volume, and customer service
-            requirements.
-          </p>
+          <p className="text-2xl font-bold">{customTitle}</p>
+          <p className={`mx-auto mt-3 max-w-3xl text-sm leading-7 ${t.customBody}`}>{customBody}</p>
           <ul className="mt-6 flex flex-wrap justify-center gap-3 list-none">
-            {CUSTOM_TAGS.map((tag) => (
+            {customTags.map((tag) => (
               <li
                 key={tag}
                 className={`rounded-full border px-4 py-2 text-sm font-semibold ${t.tag}`}
@@ -250,7 +255,7 @@ export default function MinutePlans({
         </div>
 
         <ul className="mt-10 grid gap-5 md:grid-cols-3 list-none">
-          {BILLING_NOTES.map((note) => (
+          {billingNotes.map((note) => (
             <li key={note.title} className={`rounded-2xl border p-6 ${t.panel}`}>
               <p className="text-lg font-bold">{note.title}</p>
               <p className={`mt-3 text-sm leading-7 ${t.panelBody}`}>{note.body}</p>

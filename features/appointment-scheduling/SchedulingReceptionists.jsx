@@ -29,7 +29,7 @@ export default function SchedulingReceptionists() {
             so they are not drawn again in HTML and the photo is not cropped. */}
         <figure className="overflow-hidden rounded-xl">
           <img
-            src="/images/scheduling-receptionists.webp"
+            src="/images/r22.png"
             alt="A live virtual receptionist wearing a headset smiling at her screen while handling an appointment call, above the line: A real conversation. A clear next step. Appointment support that follows your instructions."
             width={896}
             height={1191}

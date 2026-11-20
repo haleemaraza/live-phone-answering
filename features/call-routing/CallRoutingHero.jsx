@@ -136,7 +136,7 @@ export default function CallRoutingHero() {
           <figure className="flex h-full flex-col overflow-hidden rounded-xl">
             <span className="relative block min-h-[20rem] flex-grow">
               <img
-                src="/images/zero-bot-frustration-live-answering-service.webp"
+                src="/images/h5.png"
                 alt="A live receptionist wearing a headset screening a call before transferring it"
                 width={1200}
                 height={1200}
@@ -146,18 +146,7 @@ export default function CallRoutingHero() {
                 className="absolute inset-0 h-full w-full object-cover"
               />
             </span>
-            <figcaption className="flex items-center gap-5 bg-[#1d4b37] px-6 py-5">
-              <span
-                className="icon-mask icon-call-transfer [--icon-size:2.1rem] flex-shrink-0 border-r border-white/20 pr-5 text-[#a8c47d]"
-                aria-hidden="true"
-              ></span>
-              <span className="min-w-0">
-                <span className="block text-[1.05rem] font-bold text-white">Direct connections. Zero guesswork.</span>
-                <span className="mt-1 block text-base leading-relaxed text-white/70">
-                  Filter the inquiry. Execute your workflow. Keep everyone aligned.
-                </span>
-              </span>
-            </figcaption>
+            
           </figure>
         </div>
       </div>

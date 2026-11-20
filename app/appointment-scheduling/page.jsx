@@ -11,7 +11,12 @@ import SchedulingBenefits from '@/features/appointment-scheduling/SchedulingBene
 import IndustriesTabs from '@/components/IndustriesTabs'
 import SchedulingReceptionists from '@/features/appointment-scheduling/SchedulingReceptionists'
 import SchedulingWhyChooseUs from '@/features/appointment-scheduling/SchedulingWhyChooseUs'
-import PlanPricing from '@/components/PlanPricing'
+import MinutePlans from '@/components/MinutePlans'
+import {
+  SCHEDULING_PLANS,
+  SCHEDULING_CUSTOM_TAGS,
+  SCHEDULING_BILLING_NOTES,
+} from '@/features/appointment-scheduling/scheduling-plans'
 import FaqSection from '@/components/FaqSection'
 import ContactFormSection from '@/components/ContactFormSection'
 import { appointmentSchedulingFaq } from '@/components/faq-content'
@@ -156,19 +161,16 @@ export default function AppointmentSchedulingPage() {
         <SchedulingWhyChooseUs />
         <SchedulingReceptionists />
         <SchedulingNoShows />
-        <PlanPricing
-          headingId='scheduling-pricing-heading'
-          heading='Appointment Scheduling Answering Service Pricing'
-          intro='Choose the monthly receptionist minutes your business needs. Growth and Business plans include appointment request handling. For direct calendar booking or more complex scheduling, request a custom quote.'
-          badge='Appointment request support'
-          descriptions={{
-            'Starter Answering': 'For businesses that need live call answering, message taking, and basic call screening.',
-            'Growth Answering': 'For growing teams that need caller intake and appointment request handling.',
-            'Business Answering': 'For higher call volumes and more detailed call routing requirements.',
-          }}
-          customTitle='Need 1,000+ Minutes or Custom Scheduling?'
-          customBody='Discuss direct booking, calendar compatibility, and scheduling requirements with our team.'
-          footnote='Appointment request handling captures booking requests for your team. Direct calendar booking and integrations are confirmed separately.'
+        <MinutePlans
+          eyebrow="Appointment scheduling plans to keep your calendar organized"
+          heading="Make Booking Appointments Easier for Your Customers"
+          intro="Our receptionists handle booking requests, check availability, manage schedule changes, and help keep your calendar up to date. Choose a plan based on your appointment volume and scheduling needs."
+          panelNote="Start with the scheduling support you need. Upgrade anytime as your appointment volume grows."
+          plans={SCHEDULING_PLANS}
+          customTitle="Need 1,000+ Minutes or Customized Scheduling Support?"
+          customBody="Get a custom appointment scheduling package built around your business hours, booking volume, and calendar requirements."
+          customTags={SCHEDULING_CUSTOM_TAGS}
+          billingNotes={SCHEDULING_BILLING_NOTES}
         />
         <FaqSection {...appointmentSchedulingFaq} />
         <ContactFormSection theme="dark" />

@@ -54,7 +54,7 @@ export default function LeadCaptureBenefits() {
               drawn again in HTML and the photo is not cropped. */}
           <figure className="overflow-hidden rounded-xl">
             <img
-              src="/images/lead-capture-benefits.webp"
+              src="/images/lcf.png"
               alt="A receptionist in a green blazer smiling as she takes notes for a visitor at a front desk, above the line: Be present for the people you serve. Let your receptionists handle the first enquiry."
               width={1100}
               height={892}

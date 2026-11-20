@@ -14,8 +14,8 @@ const NAV_LINKS = [
     label: 'Services',
     children: [
       { href: '/virtual-receptionist', label: 'Live Receptionist' },
-      { href: '/after-hours-answering-service', label: 'After Hours Answering Service' },
-      { href: '/overflow-call-answering', label: 'Overflow Call Answering' },
+      { href: '/after-hours', label: 'After Hours Answering Service' },
+      { href: '/overflow-call-handling', label: 'Overflow Call Handling' },
       { href: '/appointment-scheduling', label: 'Appointment Scheduling Service' },
       { href: '/lead-capture', label: 'Lead Capture' },
       { href: '/call-routing', label: 'Call Routing Service' },

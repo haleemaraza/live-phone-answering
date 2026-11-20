@@ -29,7 +29,7 @@ export default function CallRoutingReceptionists() {
         <figure className="flex flex-col overflow-hidden rounded-xl">
           <span className="relative block min-h-[18rem] flex-grow">
             <img
-              src="/images/zero-bot-frustration-live-answering-service.webp"
+              src="/images/re.png"
               alt="A live receptionist wearing a headset listening to a caller before transferring them"
               width={1200}
               height={1200}
@@ -38,16 +38,7 @@ export default function CallRoutingReceptionists() {
               className="absolute inset-0 h-full w-full object-cover"
             />
           </span>
-          <figcaption className="bg-[#1d4b37] px-6 py-6">
-            <span className="block text-[1.15rem] font-bold text-white">
-              A Friendly Voice. A Smarter Way to Handle Every Call.
-            </span>
-            <span className="mt-4 block h-px w-16 bg-[#a8c47d]" aria-hidden="true"></span>
-            <span className="mt-4 block text-base leading-relaxed text-white/70">
-              Give callers a real person who takes the time to listen, understand their needs, and guide them to the
-              right next step.
-            </span>
-          </figcaption>
+          
         </figure>
 
         <div>

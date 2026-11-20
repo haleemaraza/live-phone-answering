@@ -7,6 +7,12 @@
     RewriteCond %{HTTPS} off
     RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+    # Renamed routes. These URLs were live before the rename, so they are
+    # redirected rather than left to 404. They run before the generic rules
+    # below so the old path never reaches the .html rewrite.
+    RewriteRule ^after-hours-answering-service/?$ /after-hours [R=301,L]
+    RewriteRule ^overflow-call-answering/?$ /overflow-call-handling [R=301,L]
+
     # /index.html -> /
     RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
     RewriteRule ^ / [R=301,L]

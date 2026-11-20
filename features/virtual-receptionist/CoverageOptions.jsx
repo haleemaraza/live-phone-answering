@@ -118,7 +118,7 @@ export default function CoverageOptions() {
             title="Overflow Call Support"
             body="Keep your team’s lines open while our receptionists answer calls that go unanswered. When your team is busy or taking a break, we step in so no caller is left waiting."
             idealFor="Busy periods and staff breaks"
-            href="/overflow-call-answering"
+            href="/overflow-call-handling"
             note="Explore overflow call answering"
           >
             <span className="flex items-center justify-center gap-3">
@@ -140,7 +140,7 @@ export default function CoverageOptions() {
             title="After-Hours Call Support"
             body="Make sure callers can reach someone during evenings, weekends, or other agreed hours. We answer questions, take messages, and capture new leads even when your office is closed."
             idealFor="Calls outside normal business hours"
-            href="/after-hours-answering-service"
+            href="/after-hours"
             note="See after-hours answering"
           >
             <span className="flex items-center justify-center gap-4">

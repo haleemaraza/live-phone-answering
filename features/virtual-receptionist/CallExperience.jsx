@@ -41,7 +41,7 @@ Give every caller a warm welcome, quick answers, and the right support. We make 
                 carried in the alt text so it is still read and indexed. */}
             <img
               src="/images/call-card.webp"
-              srcSet="/images/call-card-300.webp 300w, /images/call-card.webp 416w"
+              srcSet="/images/3s.webp"
               sizes="(max-width: 1024px) 280px, 300px"
               alt="Oak &amp; Pine Services receiving an incoming inquiry: the caller says they need a quick fix for a plumbing issue, and a real person answers for a quick response"
               width={416}

@@ -31,7 +31,7 @@ const SERVICES = [
     eyebrow: '24/7 Coverage',
     title: 'After-Hours Answering',
     body: "Extend your business hours. We cover evenings, weekends, and holidays so you don't have to.",
-    href: '/after-hours-answering-service',
+    href: '/after-hours',
   },
   {
     eyebrow: 'English & Spanish',

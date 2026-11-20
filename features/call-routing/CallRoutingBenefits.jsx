@@ -52,7 +52,7 @@ export default function CallRoutingBenefits() {
           <figure className="flex flex-col overflow-hidden rounded-xl sm:col-span-2 lg:col-span-1 lg:row-span-2">
             <span className="relative block min-h-[14rem] flex-grow">
               <img
-                src="/images/real-human-empathy-live-phone-answering-service.webp"
+                src="/images/iii.webp"
                 alt="A business owner working at a laptop without being interrupted by the phone"
                 width={1200}
                 height={1200}
@@ -61,26 +61,7 @@ export default function CallRoutingBenefits() {
                 className="absolute inset-0 h-full w-full object-cover"
               />
             </span>
-            <figcaption className="bg-[#1d4b37] px-6 py-6">
-              <span className="block text-[1.35rem] font-extrabold leading-tight text-white">
-                More time for the{' '}
-                <br />
-                work that matters
-              </span>
-              <span className="mt-2 block text-base leading-relaxed text-white/70">
-                Let your team focus while we manage incoming calls. Our receptionists screen incoming calls, follow
-                your routing instructions, and direct callers to the appropriate person or department.
-              </span>
-              <span className="mt-5 flex items-center gap-4 border-t border-white/15 pt-4">
-                <span
-                  className="icon-mask icon-clock [--icon-size:1.6rem] flex-shrink-0 border-r border-white/20 pr-4 text-[#a8c47d]"
-                  aria-hidden="true"
-                ></span>
-                <span className="text-[0.62rem] font-bold uppercase tracking-[0.16em] text-[#a8c47d]">
-                  Support that fits your workday
-                </span>
-              </span>
-            </figcaption>
+         
           </figure>
 
           {BENEFITS.map((benefit) => (

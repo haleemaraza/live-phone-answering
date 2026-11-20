@@ -137,7 +137,7 @@ export default function ReceptionistServices() {
           <div className="flex flex-col overflow-hidden rounded-xl bg-[#0f2925]">
             <div className="relative flex-shrink-0">
               <img
-                src="/images/after-hours-greeting.webp"
+                src="/images/achk.webp"
                 alt="An after-hours receptionist wearing a headset greeting a caller"
                 width={1566}
                 height={672}
@@ -147,35 +147,7 @@ export default function ReceptionistServices() {
               />
             </div>
 
-            <div className="flex flex-grow flex-col p-5 sm:p-6">
-              <p className="text-[0.68rem] font-bold uppercase tracking-[0.18em] text-[#8CA365]">
-                Illustrative greeting
-              </p>
-
-              {SERVICES.map((service) => (
-                <div key={service.id} hidden={open !== service.id}>
-                  <blockquote className="mt-2 text-[1.15rem] font-bold leading-[1.3] text-white sm:text-[1.32rem]">
-                    &ldquo;{service.quote}&rdquo;
-                  </blockquote>
-
-                  <ul className="mt-4 list-none space-y-2.5 border-t border-white/15 pt-4">
-                    {service.checks.map((check) => (
-                      <li key={check} className="flex items-center gap-3 text-base text-white/80">
-                        <span
-                          className="icon-mask icon-check [--icon-size:0.7rem] flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-[#8CA365] text-white"
-                          aria-hidden="true"
-                        ></span>
-                        {check}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-
-              <p className="mt-auto pt-5 text-[0.74rem] italic text-white/55">
-                Example wording is customized during setup.
-              </p>
-            </div>
+        
           </div>
         </div>
 

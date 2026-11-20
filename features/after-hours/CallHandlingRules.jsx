@@ -50,7 +50,9 @@ function RuleCard({ rule }) {
           aria-hidden="true"
         ></span>
       </div>
-      <h4 className="text-xl font-bold leading-snug text-[#1a2e35]">{rule.title}</h4>
+      {/* h3, not h4: the section heading above these cards is an h2, so h4
+          skips a level for screen readers and search engines. */}
+      <h3 className="text-xl font-bold leading-snug text-[#1a2e35]">{rule.title}</h3>
       <p className="mt-3 flex-grow text-base leading-relaxed text-gray-600">{rule.body}</p>
     </div>
   )

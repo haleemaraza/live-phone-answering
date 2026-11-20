@@ -43,7 +43,7 @@ const CAPABILITIES = [
     title: 'Answers to Common Questions',
     body: 'Callers get accurate answers about your services, business hours, and policies. This gives customers the information they need without interrupting your workday.',
     note: 'Helpful answers in your business voice',
-    href: '/after-hours-answering-service',
+    href: '/after-hours',
   },
 ]
 

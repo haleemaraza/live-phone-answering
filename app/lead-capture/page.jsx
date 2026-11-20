@@ -10,6 +10,11 @@ import IndustriesTabs from '@/components/IndustriesTabs'
 import LeadCaptureReceptionists from '@/features/lead-capture/LeadCaptureReceptionists'
 import LeadCaptureWhyChooseUs from '@/features/lead-capture/LeadCaptureWhyChooseUs'
 import MinutePlans from '@/components/MinutePlans'
+import {
+  LEAD_CAPTURE_PLANS,
+  LEAD_CAPTURE_CUSTOM_TAGS,
+  LEAD_CAPTURE_BILLING_NOTES,
+} from '@/features/lead-capture/lead-capture-plans'
 import Testimonials from '@/components/Testimonials'
 import FaqSection from '@/components/FaqSection'
 import LeadCapturePerformance from '@/features/lead-capture/LeadCapturePerformance'
@@ -81,7 +86,17 @@ export default function LeadCapturePage() {
       <IndustriesTabs heading="Tailored to Match Your Operational Workflow" intro="Supporting specialized industries, our receptionists integrate directly into your software and daily operations to ensure effortless team alignment." />
       <LeadCaptureWhyChooseUs />
       <LeadCaptureSolutions />
-      <MinutePlans />
+      <MinutePlans
+        eyebrow="Lead capture plans that turn calls into opportunities"
+        heading="Choose Your Plan — Never Let a Potential Customer Slip Through the Cracks"
+        intro="Our receptionists help capture potential leads, collect important customer details, ask the right questions, and make sure your sales team has the information they need to follow up. Choose a plan based on your incoming lead volume and qualification needs."
+        panelNote="Start with the lead capture you need. Upgrade anytime as your inquiry volume grows."
+        plans={LEAD_CAPTURE_PLANS}
+        customTitle="Need 1,000+ Minutes or Customized Lead Capture Support?"
+        customBody="Get a custom package designed around your lead volume, sales process, and customer acquisition needs."
+        customTags={LEAD_CAPTURE_CUSTOM_TAGS}
+        billingNotes={LEAD_CAPTURE_BILLING_NOTES}
+      />
       {/* <LeadCapturePerformance /> */}
       <FaqSection {...leadCaptureFaq} />
       <ContactFormSection theme="dark" />

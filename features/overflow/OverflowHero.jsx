@@ -35,7 +35,7 @@ const breadcrumbSchema = {
       '@type': 'ListItem',
       position: CRUMBS.length + 1,
       name: 'Overflow Call Answering',
-      item: 'https://livephoneanswering.com/overflow-call-answering',
+      item: 'https://livephoneanswering.com/overflow-call-handling',
     },
   ],
 }

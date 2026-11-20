@@ -56,10 +56,10 @@ export default function OverflowBenefits() {
               bottom edge up with the benefits list beside it. */}
           <figure className="overflow-hidden rounded-2xl">
             <img
-              src="/images/overflow-benefits.webp"
+              src="/images/ocw.png"
               alt="A shop owner showing material samples to a customer at the counter, above the line: Stay focused on the customer in front of you. Give incoming callers a helpful response when your team is occupied."
-              width={1100}
-              height={848}
+              width={800}
+              height={548}
               loading="lazy"
               decoding="async"
               className="block h-auto w-full"

@@ -70,7 +70,7 @@ export default function LeadCaptureDetails() {
 
           <div>
             <img
-              src="/images/lead-capture-summary.webp"
+              src="/images/mpa.webp"
               alt="An illustrative lead summary for a medical appointment enquiry: callback requested today, appointment request for a new patient consultation, patient status first-time caller, reason for call asking about appointment availability, contact details name and callback number captured, and the next step for your team, practice team to follow up"
               width={1100}
               height={764}

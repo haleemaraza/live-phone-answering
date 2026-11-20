@@ -138,8 +138,8 @@ export default function LeadCaptureHero() {
               drawn again in HTML and the photo is not cropped. */}
           <figure className="overflow-hidden rounded-xl">
             <img
-              src="/images/lead-capture-hero.webp"
-              srcSet="/images/lead-capture-hero-560.webp 560w, /images/lead-capture-hero.webp 928w"
+              src="/images/hh4.png"
+              srcSet="/images/hh4.png"
               sizes="(max-width: 1024px) 90vw, 520px"
               alt="A receptionist wearing a headset writing in a notebook at her desk, above the line: From first hello to clear follow-up. Caller details. Service needs. Agreed next steps."
               width={928}
