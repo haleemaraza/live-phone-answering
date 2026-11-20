@@ -28,7 +28,9 @@ export const metadata = {
   description:
     'Professional live phone answering services for US businesses. Real human receptionists available 24/7.',
 
-  // Prevent search engines from indexing the website
+  // Prevent search engines from indexing the website.
+  // This preview deliberately keeps noindex and carries no Search Console
+  // verification tag — that belongs to the live site only.
   robots: {
     index: false,
     follow: false,
