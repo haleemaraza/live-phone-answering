@@ -12,10 +12,15 @@ const outfit = Outfit({
   display: 'swap',
 })
 
+// One style only. Asking for both normal and italic makes next/font emit two
+// entries for this query, which Turbopack rejects during `next build`
+// ("next/font/google queries have exactly one entry") — that is what broke the
+// deploy. Nothing on the site uses italic Fraunces, so dropping it costs
+// nothing and halves the font files shipped.
 const fraunces = Fraunces({
   subsets: ['latin'],
   weight: ['700', '800', '900'],
-  style: ['normal', 'italic'],
+  style: 'normal',
   variable: '--font-fraunces',
   display: 'swap',
 })
