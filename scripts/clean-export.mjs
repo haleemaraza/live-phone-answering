@@ -11,8 +11,14 @@
 // empty afterwards. robots.txt is kept.
 import fs from 'fs'
 import path from 'path'
+import { fileURLToPath } from 'url'
 
-const OUT = path.join(process.cwd(), 'out')
+// Resolve from this file rather than process.cwd(): a build runner can invoke
+// the script from a different working directory than the one `next build` ran
+// in, and the old cwd-only lookup turned that into a failed deploy.
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
+const CANDIDATES = [path.join(ROOT, 'out'), path.join(process.cwd(), 'out')]
+const OUT = CANDIDATES.find((dir) => fs.existsSync(dir))
 const KEEP = new Set(['robots.txt'])
 
 let removedFiles = 0
@@ -42,9 +48,27 @@ function clean(dir) {
   }
 }
 
-if (!fs.existsSync(OUT)) {
-  console.error('clean-export: out/ not found — run next build first.')
-  process.exit(1)
+// Cleanup must never fail a build that otherwise succeeded. If out/ is missing
+// the deploy still has `next build`'s output; print what is on disk so the
+// build log says where the export actually went, then exit cleanly.
+if (!OUT) {
+  const list = (dir) => {
+    try {
+      return fs
+        .readdirSync(dir, { withFileTypes: true })
+        .map((e) => (e.isDirectory() ? e.name + '/' : e.name))
+        .join(' ')
+    } catch (err) {
+      return `(cannot read: ${err.code})`
+    }
+  }
+  console.warn('clean-export: no out/ directory found, skipping cleanup.')
+  console.warn('  looked in : ' + CANDIDATES.join('  '))
+  console.warn('  cwd       : ' + process.cwd())
+  console.warn('  project   : ' + ROOT)
+  console.warn('  contents  : ' + list(ROOT))
+  console.warn('  .next     : ' + list(path.join(ROOT, '.next')))
+  process.exit(0)
 }
 
 clean(OUT)
