@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev ",
-    "build": "next build && node scripts/clean-export.mjs",
+    "dev": "node scripts/dev.mjs",
+    "build": "tailwindcss --postcss ./postcss.build.config.js -i ./styles/globals.src.css -o ./app/globals.css --minify && next build && node scripts/clean-export.mjs",
     "start": "next start"
   },
   "dependencies": {
