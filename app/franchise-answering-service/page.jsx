@@ -21,6 +21,10 @@ export const metadata = {
   description:
     'Franchise answering service for multi-location brands. Live receptionists answer in your brand name, capture customer enquiries, and route each request to the right franchise location.',
   alternates: { canonical: '/franchise-answering-service' },
+  // Kept out of search for now: noindex tells Google not to list the page,
+  // while follow still lets it reach the linked pages. Remove this line (and
+  // restore the route in app/sitemap.js) when the page should go public.
+  robots: { index: false, follow: true },
   openGraph: {
     type: 'website',
     siteName: 'LivePhoneAnswering',

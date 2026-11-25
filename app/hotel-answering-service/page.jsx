@@ -22,6 +22,10 @@ export const metadata = {
   description:
     'Hotel answering service for reservation enquiries and guest calls. Live receptionists answer in your property name, share approved hotel information and pass guest requests to your team.',
   alternates: { canonical: '/hotel-answering-service' },
+  // Kept out of search for now: noindex tells Google not to list the page,
+  // while follow still lets it reach the linked pages. Remove this line (and
+  // restore the route in app/sitemap.js) when the page should go public.
+  robots: { index: false, follow: true },
   openGraph: {
     type: 'website',
     siteName: 'LivePhoneAnswering',

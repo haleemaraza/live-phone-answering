@@ -20,6 +20,10 @@ export const metadata = {
   description:
     'Live message taking service for US businesses. Receptionists answer in your business name, capture who called, why they called and the callback details your team needs to follow up.',
   alternates: { canonical: '/message-taking' },
+  // Kept out of search for now: noindex tells Google not to list the page,
+  // while follow still lets it reach the linked pages. Remove this line (and
+  // restore the route in app/sitemap.js) when the page should go public.
+  robots: { index: false, follow: true },
   openGraph: {
     type: 'website',
     siteName: 'LivePhoneAnswering',

@@ -19,6 +19,10 @@ export const metadata = {
   description:
     'Live answering for property teams. Our receptionists capture rental enquiries, record tenant maintenance details, and route calls using your instructions across every property you manage.',
   alternates: { canonical: '/real-estate-answering-service' },
+  // Kept out of search for now: noindex tells Google not to list the page,
+  // while follow still lets it reach the linked pages. Remove this line (and
+  // restore the route in app/sitemap.js) when the page should go public.
+  robots: { index: false, follow: true },
   openGraph: {
     type: 'website',
     siteName: 'LivePhoneAnswering',

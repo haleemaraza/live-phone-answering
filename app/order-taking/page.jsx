@@ -22,6 +22,10 @@ export const metadata = {
   description:
     'Order taking answering service for phone orders. Live receptionists capture product choices, variants, quantities and delivery details using your catalogue and approved process.',
   alternates: { canonical: '/order-taking' },
+  // Kept out of search for now: noindex tells Google not to list the page,
+  // while follow still lets it reach the linked pages. Remove this line (and
+  // restore the route in app/sitemap.js) when the page should go public.
+  robots: { index: false, follow: true },
   openGraph: {
     type: 'website',
     siteName: 'LivePhoneAnswering',
