@@ -7,6 +7,9 @@ export const metadata = {
   description:
     'Practical guides on live answering services, missed calls, and virtual receptionists for US businesses. Written for owners who answer their own phones.',
   alternates: { canonical: '/blog' },
+  // Kept out of search for now, along with the individual posts. Remove this
+  // line (and restore the routes in app/sitemap.js) to let it be indexed again.
+  robots: { index: false, follow: true },
   openGraph: {
     type: 'website',
     siteName: 'LivePhoneAnswering',

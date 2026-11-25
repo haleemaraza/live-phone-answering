@@ -63,6 +63,10 @@ export async function generateMetadata({ params }) {
     title: `${post.title} | Live Phone Answering`,
     description: post.description,
     alternates: { canonical: url },
+    // Blog posts are kept out of search for now. follow stays on so the links
+    // in a post still lead to the public pages. Remove this line (and restore
+    // the posts in app/sitemap.js) to let them be indexed again.
+    robots: { index: false, follow: true },
     openGraph: {
       type: 'article',
       siteName: 'LivePhoneAnswering',

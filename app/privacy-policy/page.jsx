@@ -3,6 +3,9 @@ export const metadata = {
   title: "Privacy Policy | Live Phone Answering",
   description: "How Live Phone Answering collects, uses and protects your information, and the choices you have about your data.",
   alternates: { canonical: "/privacy-policy" },
+  // Kept out of search for now. Remove this line (and restore the route in
+  // app/sitemap.js) to let it be indexed again.
+  robots: { index: false, follow: true },
   openGraph: {
     type: 'website',
     siteName: 'LivePhoneAnswering',
